@@ -122,19 +122,17 @@ _________________________
 -------------------------
 */
 section{
-	position: relative;
-	height: 85%;
-	margin: 0 auto;
 	padding: 10px;
 }
 #formularioInicioSesion{
 	width: 500px;
 	height: 600px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	background-color: white;
 	position: relative;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%);
 	left: 50%;
-	top: 50%;
 	border-radius: 5px;
 	opacity: 0.9;
 }

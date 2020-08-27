@@ -120,16 +120,18 @@ _________________________
 -------------------------
 */
 section{
-	position: relative;
-	height: 88.89%;
+	/*position: relative;
+	height: 88.89%;*/
+	padding: 10px;
 }
 
 #message {
 	position: relative;
 	width: 50%;
-	height: 100%;
+	height: 700px;
 	font-family:'Open Sans', sans-serif;
-	float: right;
+	left: 100%;
+	transform: translateX(-100%);
 }
 
 .info{
