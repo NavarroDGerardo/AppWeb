@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NutriFeed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link href="css/estilos.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+
+	<link rel="icon" href="imgs/logo-prov.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<img src="imgs/logo-prov.png">
+		<ul class="menu">
+			<li data-sn="inicio" class="selected">Inicio</li>
+			<li data-sn="acerca" class="acerca">Acerca de</li>
+			<li data-sn="comunidad">Comunidad</li>
+			<li data-sn="beneficios">Beneficios</li>
+		</ul>
+
+		<ul class="ini-reg">
+			<a href="iniSesion.html">Iniciar sesión</a>
+			<a href="registro.html">Únete ahora</a>
+		</ul>
+	</div>
+
+	<section id="inicio">
+		<div id="message">
+			<div class="info">
+				<h1>NutriFeed</h1>
+				<p class="ad">"No tienes que comer menos, solo tienes que comer mejor."</p>
+				<p>Experimenta nuevos sabores y vive experiencias a través de la comida saludable.</p>
+				<button class="aprende">Aprende más</button>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="acerca">
+		<div id="message">
+			<div class="info">
+				<h2>Seguir una dieta puede ser complicado</h2>
+				
+				<p>NutriFeed es una aplicación especializada en el asesoramiento nutricional, efocada a todas aquellas personas que quieran tener un estilo de vida más saludable.</p>
+				
+				<p>¡Contamos con el mejor asesoramiento para que alcances todas tus metas! NutriFeed cuenta con una red de nutriólogos, apasionados y dispuestos a brindar sus servicios desde cualquier parte del país.</p>
+				
+				<p>Sé parte de esta comunidad. Conoce a más personas mientras alcanzas tus objetivos.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="comunidad">
+		<div id="message">
+			<div class="info">
+				<h2>Nuestra comunidad</h2>
+				<p>Para poder conseguir el cambio que queremos, es importante tener un objetivo y estar motivado. Por eso, en NutriFeed tenemos una comunidad interactiva en que la puedes compartir tu progreso.</p>
+
+				<p>Sube tus fotos, recetas y dietas. Formar parte de la comunidad te ayudará a visualizar tu progreso.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="beneficios">
+		<div id="message">
+			<div class="info">
+				<h2>Nutrición al alcance de tus manos</h2>
+				<ul>
+					<p>Ser saludable nunca fue tan sencillo</p>
+					<li>Conéctate con tu nutriólogo.</li>
+					<li>Continua tu dieta con una variedad de recetas.</li>
+					<li>Recibe recomendaciones de snacks saludables.</li>
+					<li>Registra tus alimentos.</li>
+					<li>Recibe retroalimentación constante.</li>
+					<li>Sé parte de la comunidad.</li>
+				</ul>
+				<a href="registro.html" target="_blank"><button class="unirse">Unirse ahora</button></a>
+			</div>
+		</div>
+	</section>
+
+
+	<div id="footer">
+		<h1>© Copyright NutriFeed. Derechos reservados.</h1 class="logo_l">
+	</div>
+
+	<script>
+		$('li').on('click',function(){
+			$('li').removeClass('selected');
+			$(this).addClass('selected');
+			$('section').hide();
+			$("#" + $(this).data('sn')).fadeIn();
+		});
+
+		$('.aprende').on('click',function(){
+			$('li').removeClass('selected');
+			$('.acerca').addClass('selected');
+			$('#inicio').hide();
+			$("#acerca").fadeIn();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NutriFeed | Registro</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link href="css/estilosInicioSesion.css" rel="stylesheet">
+	<link href="css/reset.css" rel="stylesheet">
+
+	<link rel="icon" href="imgs/logo-prov.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="header">
+		<img src="imgs/logo-prov.png">
+		<ul class="menu">
+			<a href="index.html"><li>Menú principal</li></a>
+		</ul>
+
+		<ul class="ini-reg">
+			<p>Registro</p>
+		</ul>
+	</div>
+
+	<section id="inicioSesion">
+		<div id="formularioInicioSesion">
+			<div id="info">
+				<img src="imgs/logo-prov.png">
+				<h2>Unirse</h2><br>
+				<form class="formulario">
+					<div class="reg1">
+						<input type="text" id="fnombreUsuario" name="fnombreUsuario"placeholder="Nombre de usuario"><br><br><br>
+						<input type="text" id="correoUsuario" name="correoUsuario"placeholder="Correo electrónico"><br><br><br><br>
+						<button type="button" class="sig" id="1">Siguiente</button>
+					</div>
+					<div class="reg2">
+						<input type="text" id="celularUsuario" name="celularUsuario"placeholder="Número de celular"><br><br><br>
+						<input type="text" id="contraseñaUsuario" name="contraseñaUsuario"placeholder="Contraseña"><br><br><br><br>
+						<button type="button" class="sig" id="2">Siguiente</button>
+					</div>
+					<div class="reg3">
+						<input type="text" id="edadUsuario" name="edadUsuario"placeholder="¿Cuál es tu edad?"><br><br><br>
+						<input type="text" id="sexoUsuario" name="sexoUsuario"placeholder="¿Cuál es tu sexo?"><br><br><br><br>
+						<input type="submit" value="Completar registro"><br><br>
+					</div>
+					<h3 class="error">Llena todos los campos para continuar</h3>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<div id="footer">
+		<h1>© Copyright NutriFeed. Derechos reservados.</h1 class="logo_l">
+	</div>
+
+	<script>
+		$('#1').on('click',function(){
+			if ($('#fnombreUsuario').val()=="" || $('#correoUsuario').val()==""){
+				$('.error').fadeIn();
+			}
+			else {
+				$('.error').hide();
+				$('.reg1').hide();
+				$('.reg2').fadeIn();
+			}
+		});
+		$('#2').on('click',function(){
+			if ($('#edadUsuario').val()=="" || $('#sexoUsuario').val()==""){
+				$('.error').fadeIn();
+			}
+			else {
+				$('.error').hide();
+				$('.reg2').hide();
+				$('.reg3').fadeIn();
+			}
+		});
+	</script>
+
+</body>
+</html>
