@@ -101,6 +101,7 @@ _________________________
 -------------------------
 */
 #footer{
+	margin-top: 20px;
 	font-family: 'Rubik', sans-serif;
 	height: 100px;
 	font-size: 18px;
@@ -123,19 +124,21 @@ section{
 	/*position: relative;
 	height: 88.89%;*/
 	padding: 10px;
+	height: 82%;
 }
 
 #message {
+	margin-top: 20px;
 	position: relative;
 	width: 50%;
-	height: 700px;
+	height: 100%;
 	font-family:'Open Sans', sans-serif;
 	left: 100%;
 	transform: translateX(-100%);
 }
 
 .info{
-	position: absolute;
+	position: relative;
 	width: 80%;
 	top: 50%;
 	left: 50%;
