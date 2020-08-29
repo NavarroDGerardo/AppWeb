@@ -19,7 +19,7 @@ _________________________
 -------------------------
 */
 #header {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 45px;
 	box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, 0.2);
 	opacity: 0.9;
@@ -109,6 +109,7 @@ section{
 	float: right;
 }
 .info{
+	font-family: 'Quicksand', sans-serif;
 	position: relative;
 	width: 80%;
 	margin-right: 80px;
@@ -117,10 +118,11 @@ section{
 	float: right;
 }
 .info h1{
+	font-family: 'Caveat', cursive;
 	margin-right: 15px;
-	font-size: 50px;
+	font-size: 70px;
 	margin-bottom: 20px;
-	text-align: right;
+	text-align: center;
 }
 .info h2{
 	margin-left: 15px;
