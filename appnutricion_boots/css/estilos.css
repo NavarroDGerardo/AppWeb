@@ -101,7 +101,6 @@ section{
 	padding: 10px;
 	height: 88%;
 }
-
 #message {
 	font-family:'Open Sans', sans-serif;
 	margin-top: 20px;
@@ -210,4 +209,81 @@ _________________________
 	color: green;
   	border: 1px solid;
   	border-color: green;
+}
+
+/*
+	_________________________
+	|						|
+	|		REPONSIVE  		|
+	|						|
+	-------------------------
+*/
+
+@media screen and (max-width:700px){ 
+	/*
+	_________________________
+	|						|
+	|		 cuerpo    		|
+	|						|
+	-------------------------
+	*/
+	section{
+		height: 100%;
+	}
+	#message {
+		margin-top: 20%;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: white;
+		opacity: 0.9;
+		text-align: center;
+		width: 100%;
+		height: 550px;
+		float: right;
+	}
+	.info{
+		position: relative;
+		width: 100%;
+		margin-right: 0px;
+		transform: translateY(-50%) translateX(-50%);
+		left: 50%;
+		top: 50%;
+		float: none;
+	}
+	.info h1{
+		margin-right: 0px;
+		font-size: 50px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.info h2{
+		font-size: 30px;
+	}
+	.info p{
+		margin-left: 10px;
+		margin-right: 10px;
+		line-height: 1.3;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	/*
+	_________________________
+	|						|
+	|		  footer 		|
+	|						|
+	-------------------------
+	*/
+	#footer{
+		margin-top: 40%;
+		font-size: 15px;
+		text-align: center;
+	}
+	#footer .content{
+		position: relative;
+		transform: translateY(-50%);
+		top: 50%;
+		line-height: 16px;
+	}
 }
