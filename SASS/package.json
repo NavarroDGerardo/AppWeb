@@ -7,6 +7,7 @@
     "autoprefixer": "^9.8.6",
     "bootstrap": "^4.5.2",
     "clean-css-cli": "^4.3.0",
+    "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "stylelint": "^13.6.1",
     "watch": "^1.0.2"
@@ -16,8 +17,10 @@
   },
   "scripts": {
     "test": "echo \"Error> no specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/main.scss public/css/main.css",
-    "watch-css":"nodemon -e scss -x \"npm run build-css"
+    "build-css": "node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css",
+    "build-bootstrap": "node-sass --include-path scss scss/styles.scss public/styles/styles.css",
+    "watch-bootstrap": "nodemon -e scss -x \"npm run build-bootstrap\""
   },
   "repository": {
     "type": "git",
