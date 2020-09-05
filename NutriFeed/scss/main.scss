@@ -1,0 +1,21 @@
+@import "personalizacion";
+@import "header";
+@import "footer";
+@import "body-index";
+@import "responsive-index";
+
+body, html { 
+    height: $full-size;
+    background: url(../imgs/background.jpg) no-repeat $center $center $fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.selected{
+    color: $black;
+    border-bottom: 1px solid;
+    border-color: $primary;
+}
+  

@@ -1,0 +1,40 @@
+{
+  "name": "nutrifeed",
+  "version": "1.0.0",
+  "description": "proyecto de la materia de apliaciones web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-bootstrap": "node-sass --include-path scss scss/main.scss public/scss/main.css",
+    "watch-bootstrap": "nodemon -e scss -x \"npm run build-bootstrap\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NavarroDGerardo/AppWeb.git"
+  },
+  "keywords": [
+    "nutricion",
+    "html",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "nutrifeed",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^4.5.2",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "stylelint": "^13.7.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^4.5.2",
+    "clean-css-cli": "^4.3.0",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.6.1",
+    "watch": "^1.0.2"
+  }
+}
