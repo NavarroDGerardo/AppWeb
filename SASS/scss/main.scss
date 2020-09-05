@@ -1,0 +1,65 @@
+@use '_footer';
+
+$color-primario: pink;
+$fuente: Helvetica,sans-serif;
+$tamanio_grande: 50px;
+
+body{
+    background-color: $color-primario;
+    font: $fuente;
+    font-size: $tamanio_grande;
+}
+
+@mixin estilo-radio($color, $size) {
+    color: $color;
+    font-size: $size;
+}
+
+.clase1{
+    font: $fuente;
+    @include estilo-radio(blue, 50 px);
+}
+
+.clase2{
+    font-weight: bold;
+    @include estilo-radio(red, $tamanio_grande);
+}
+
+@mixin  border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.box{
+    @include border-radius(10px);
+}
+
+.box_red{
+    color: red;
+    @include border-radius(10px);
+}
+
+$valor: 3;
+h3{
+    color: if($valor == 5, green, yellow);
+}
+
+.parrafo_entrada{
+    @if $valor == 2 { font-size: 10px; }
+    @else if $valor == 3 { font-size: 50px; color: blue;}
+    @else { font-weight: bold;}
+}
+
+@for $iterador from 1 through 4{
+    .p#{$iterador}{
+        font-size: $iterador * 10px;
+    }
+}
+
+@each $color_seleccionado in red,blue,green,black{
+    .p_#{$color_seleccionado}{
+        color: $color_seleccionado;
+    }
+}

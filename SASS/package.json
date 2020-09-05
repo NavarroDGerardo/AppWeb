@@ -1,0 +1,35 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Proyecto de clase de sass",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^4.5.2",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.6.1",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error> no specified\" && exit 1",
+    "build-css":"node-sass --include-path scss scss/main.scss public/css/main.css",
+    "watch-css":"nodemon -e scss -x \"npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NavarroDGerardo/AppWeb.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "yayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavarroDGerardo/AppWeb/issues"
+  },
+  "homepage": "https://github.com/NavarroDGerardo/AppWeb#readme"
+}
