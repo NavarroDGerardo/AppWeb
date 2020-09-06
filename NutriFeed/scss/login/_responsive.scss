@@ -1,0 +1,57 @@
+@import "variables";
+
+
+@media screen and (max-width:700px){ 
+    /*
+    _________________________
+    |						|
+    |		  cuerpo 		|
+    |						|
+    -------------------------
+    */
+    #formularioInicioSesion{
+        width: $scale-80;
+        height: 500px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        background-color: $white;
+        position: $relative;
+        transform: translateX(-$scale-50) translateY(-$scale-50);
+        left: $scale-50;
+        top: $scale-50;
+        border-radius: 5px;
+        opacity: 0.9;
+    }
+    #info{
+        font-family: $font-family-rubik;
+        text-align: $center;
+        & img {
+            margin-top: $scale-10;
+            width: $size-100;
+        }
+        & h2 {
+            color: $secondary;
+            margin-top: $size-10;
+            font-size: $size-30;
+        }
+    }
+
+    /*
+    _________________________
+    |						|
+    |		  footer 		|
+    |						|
+    -------------------------
+    */
+    #footer{
+        margin-top: 0%;
+        font-size: 15px;
+        text-align: $center;
+        & .content {
+            position: $relative;
+            transform: translateY(-$scale-50);
+            top: $scale-50;
+            line-height: 16px;
+        }
+    }
+}

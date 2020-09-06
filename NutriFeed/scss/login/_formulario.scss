@@ -1,0 +1,74 @@
+@import "variables";
+
+/*
+  _________________________
+  |						|
+  |		formulario 		|
+  |						|
+  -------------------------
+  */
+#info form{
+    margin-top: 25px;
+    & input[type=text] {
+        text-align: $center;
+        margin: none;
+        width: 60%;
+        font-family: $font-family-rubik;
+        font-size: $size-20;
+        padding: 12px $size-20;
+        border: none;
+        border-bottom: 1px solid;
+        border-color: $green-border;
+    }
+    & input[type=submit] {
+        cursor: $pointer;
+        text-align: $center;
+        width: $scale-50;
+        font-family: $font-family-rubik;
+        font-size: $size-20;
+        padding: 12px $size-20;
+        border: none;
+        border-radius: $size-10;
+        background-color: $green-border;
+        color: $white;
+        &:hover{
+            color: $green-ligth;
+        }
+    }
+    & a {
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+.sig{
+    cursor: $pointer;
+    text-align: $center;
+    width: $scale-50;
+    font-family: $font-family-rubik;
+    font-size: $size-20;
+    padding: 12px $size-20;
+    border: none;
+    border-radius: $size-10;
+    background-color: $green-border;
+    color: $white;
+    &:hover{
+        color: $green-ligth;
+    }
+}
+
+.reg2{
+    display: none;
+}
+.reg3{
+    display: none;
+}
+.error{
+    color: $red;
+    margin-top: 15px;
+    font-size: $size-20;
+    display: none;
+}
