@@ -690,7 +690,6 @@ $close-color: $white !default;*/
  }
 
 
-
  .buttons-profile button{
  	margin-right: 2%;
  	font-size: 15px;
@@ -703,6 +702,7 @@ $close-color: $white !default;*/
    
  }
 .datos-profile{
+  font-size: 15px;
   margin-left:  53% ;
   margin-top: -20%;
 }
