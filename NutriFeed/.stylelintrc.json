@@ -1,0 +1,11 @@
+{
+    "extends": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "scss/at-rule-name-space-after": "always",
+    "scss/block-opening-brace-space-before": "always",
+    "scss/block-closing-brace-newline-after": "always",
+    "scss/at-else-empty-line-before": "never"
+  }
+}
