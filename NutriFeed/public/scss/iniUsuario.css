@@ -463,14 +463,19 @@ h1 {
     height: 50px;
     font-size: 20px;
  	position: relative;
- 	right: -300px;
- 	top: 40px;
+ 	right: -42%;
+ 	top: 10px;
  	background-color: #4d4d4d;
     border: 2px solid rgba(51,51,51,0.5);
    
  }
 
- 
+ .datos-profile{
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  margin-left:  20% ;
+  margin-top: -12%;
+}
 
 /*
 _________________________
@@ -660,6 +665,12 @@ $close-color: $white !default;*/
    
  }
 
+ .datos-profile{
+  font-size: 24px;
+  margin-left:  35% ;
+  margin-top: -19%;
+}
+
 }
 
 /* Responsive layout Phone */
@@ -691,7 +702,10 @@ $close-color: $white !default;*/
  	
    
  }
-
+.datos-profile{
+  margin-left:  53% ;
+  margin-top: -20%;
+}
 
 
 }
