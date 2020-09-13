@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>NutriFeed</title>
+	<link rel="icon" href="imgs/logo-prov.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="scss/nutri.css" />
+
+	<!--CSS-->
+	<!--<link href="css/estilos.css" rel="stylesheet">-->
+	<link href="css/reset.css" rel="stylesheet">
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  			<a class="navbar-brand" href="#">
+			    <img src="imgs/logo-prov.png" width="50" height="50" alt="">
+			 </a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+    			<ul class="navbar-nav">
+    				<a href="#"><li class="selected">Horario</li></a>
+    				<a href="#"><li>Pacientes</li></a>
+    				<a href="#"><li>Recetas</li></a>
+    				<a href="#"><li>Nutriologos</li></a>
+                </ul>
+                <form class="form-inline">
+                    
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                </form>
+  			</div>
+		</nav>
+	</header>
+
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div id="nutri_profile" class="col-sm-8">
+			<div class="profile_pic_container"> 
+				<img src="../public/imgs/profilepic.jpg" class="profile_pic">
+			</div>
+			<div class="prodile_info_container">
+				<p class="nombre_nutri">Estefania Fuentes Avalos</p>
+				<p class="info_nutri">Numero de nutriologos: 5</p>
+				<p class="info_nutri">Numero de pacientes: 25</p>
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-2"></div>
+		<div id="buttons_container" class="col-sm-8">
+			<button type="button" class="btn btn-outline-success opciones">Agregar pacientes</button>
+			<button type="button" class="btn btn-outline-success opciones">Agregar nutriologos</button>
+		</div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<table class="table">
+				<thead>
+				  <tr>
+					<th scope="col-sm-1">#</th>
+					<th scope="col-sm-2">Hora</th>
+					<th scope="col-sm-5">Nombre</th>
+					<th scope="col-sm-4">Ver perfil</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<th scope="row">1</th>
+					<td>9:00 A.M.</td>
+					<td>Diego Gerardo Navarro González</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">2</th>
+					<td>9:30 A.M.</td>
+					<td>Carlos Alberto Maldonado Viveros</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">3</th>
+					<td>10:00 A.M.</td>
+					<td>Jimena Bermudez Bautista</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">4</th>
+					<td>10:30 A.M.</td>
+					<td>Nancy Elizabeth Medina Ramírez</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">5</th>
+					<td>11:00 A.M.</td>
+					<td>Diego Gerardo Navarro González</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				  <tr>
+					<th scope="row">6</th>
+					<td>11:30 A.M.</td>
+					<td>Nancy Elizabeth Medina Ramírez</td>
+					<td><a href="#">edit</a></td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+
+	<footer id="footer">
+		<div class="content">
+			<h1>© Copyright NutriFeed. Derechos reservados.</h1>
+			<h2>Contacto: 55-5464-7665</h2>
+		</div>
+	</footer>
+
+	<!--Más bootstrap-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
