@@ -1,8 +1,8 @@
 @import "personalizacion";
 @import "header";
 @import "footer";
-@import "body-index";
-@import "responsive-index";
+
+$verde_nutrifeed: rgb(8, 121, 8);
 
 body, html { 
     height: $full-size;
@@ -40,6 +40,120 @@ body, html {
     opacity: 0.9; 
 
 }
-  
-  
-  
+
+
+#nutri_profile{
+    background-color: #fff;
+    padding: 0;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 5px;
+    border-color: $verde_nutrifeed;
+    border-bottom-width: 0;
+    height: 200px;
+    margin-top: 50px;
+}
+
+%information-containers{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.profile_pic_container{
+    @extend %information-containers;
+}
+
+.prodile_info_container{
+    @extend %information-containers;
+}
+
+#buttons_container{
+    background-color: #fff;
+    padding: 0;
+    opacity: 0.9;
+    border-style: solid;
+    border-width: 5px;
+    border-color: $verde_nutrifeed;
+    height: 50px;
+    border-top-width: 0;
+    margin-bottom: 50px;
+}
+
+.profile_pic{
+    width: 25%;
+    height: 70%;
+    margin-top: 5%;
+    margin-left: 37%;
+    border-radius: 50%;
+}
+
+@mixin information ($fontsize, $marginTop, $color) {
+    text-align: center;
+    color: $color;
+    font-size: $fontsize;
+    margin-top: $marginTop;
+}
+
+
+.nombre_nutri{
+    @include information(30px, 35px, $verde_nutrifeed);
+}
+
+.info_nutri{
+    @include information(20px, 20px, black);
+}
+
+.opciones_nutri{
+    margin-top: 13%;
+    margin-left: 10%;
+    width: 70%;
+    font-size: 100%;
+}
+
+@function divisionBotones($w: 100%){
+    @return $w/5;
+}
+
+.opciones{
+    margin-left: divisionBotones();
+    width: divisionBotones();
+}
+
+@mixin formato_tabla($bColor, $color, $opacity) {
+    background-color: $bColor;
+    color: $color;
+    opacity: $opacity;
+}
+
+table{
+    thead{
+        @include formato_tabla($verde_nutrifeed, #fff, 0.9);
+    }
+    
+    tbody{
+        @include formato_tabla(#fff, $verde_nutrifeed, 0.9);
+    }
+
+    a{
+        color: $verde_nutrifeed;
+    }
+}
+
+
+//responsive 
+
+@media screen and (max-width:1100px){
+    .opciones{
+        margin-left: 4%;
+        width: 44%;
+    }
+
+    .profile_pic{
+        width: 50%;
+        height: 70%;
+        margin-top: 10%;
+        margin-left: 25%;
+        border-radius: 50%;
+    }
+}
