@@ -18,28 +18,32 @@
 /* Responsive layout Phone */
 @media screen and (max-width: 700px) {
     #footer {
-        margin-top: 40%;
-        font-size: 15px;
-        text-align: center;
-        .content {
-            position: relative;
-            transform: translateY(-50%);
-            top: 50%;
-            line-height: 16px;
+        margin-top: $size-20;
+    font-family: $font-family-rubik;
+    height: $size-100;
+    font-size: 18px;
+    background-color: $white;
+    opacity: 0.9;
+    text-align: $center;
+    & .content {
+        position: $relative;
+        transform: translateY(-$scale-50);
+        top: $scale-50;
+        line-height: $size-30;
         }
     }
 }
 .selected {
-    color: #000;
+    color: $black;
     border-bottom: 1px solid;
-    border-color: green;
+    border-color: $green-color;
 }
 @media screen and (max-width: 900px) {
     .column {
-        width: 50%;
+        width: $scale-50;
     }
     .feed {
-        max-width: 700px;
+        max-width: $size-700;
     }
     .header-profile {
         img {
@@ -51,11 +55,11 @@
         button {
             margin-right: 5%;
             width: 170px;
-            height: 50px;
+            height: $size-50;
             font-size: 20px;
             position: relative;
-            right: -100px;
-            top: 100px;
+            right: -$size-100;
+            top: $size-100;
         }
     }
     .datos-profile {
@@ -66,7 +70,7 @@
 }
 @media screen and (max-width: 600px) {
     .column {
-        width: 50%;
+        width: $scale-50;
     }
     .feed {
         max-width: 340px;
@@ -81,8 +85,8 @@
         button {
             margin-right: 2%;
             font-size: 15px;
-            width: 100px;
-            height: 30px;
+            width: $size-100;
+            height: $size-30;
             position: relative;
             right: -35px;
             top: 120px;
@@ -91,7 +95,7 @@
     .datos-profile {
         font-size: 15px;
         margin-left: 53%;
-        margin-top: -20%;
+        margin-top: -$scale-20;
     }
 }
 

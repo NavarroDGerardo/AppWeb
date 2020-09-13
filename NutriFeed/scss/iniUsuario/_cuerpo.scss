@@ -12,13 +12,13 @@
     box-sizing: border-box;
 }
 .feed {
-    font-family: "Quicksand", sans-serif;
+    font-family: $font-family-quicksand;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
 h1 {
-    font-size: 50px;
+    font-size: $size-50;
     word-break: break-all;
 }
 .row {
@@ -39,17 +39,17 @@ h1 {
 }
 .content {
     background-color: white;
-    padding: 10px;
+    padding: $size-10;
 }
 .header-profile {
     img {
-        border-radius: 50%;
+        border-radius: $scale-50;
         position: relative;
         right: -35px;
-        top: 50px;
+        top: $size-50;
     }
-    height: 40%;
-    width: 100%;
+    height: $size-40;
+    width: $scale-100;
     background-color: rgba(51,51,51,0.5);
 }
 .buttons-profile {
@@ -58,18 +58,18 @@ h1 {
         line-height: 1em;
         margin-right: 5%;
         width: 170px;
-        height: 50px;
-        font-size: 20px;
+        height: $size-50;
+        font-size: $size-20;
         position: relative;
         right: -42%;
-        top: 10px;
+        top: $size-10;
         background-color: #4d4d4d;
         border: 2px solid rgba(51,51,51,0.5);
     }
 }
 .datos-profile {
-    font-family: "Quicksand", sans-serif;
+    font-family: $font-family-quicksand;
     font-size: 25px;
-    margin-left: 20%;
+    margin-left: $scale-20;
     margin-top: -12%;
 }
