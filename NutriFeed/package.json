@@ -11,7 +11,7 @@
     "watch-login": "nodemon -e scss -x \"npm run build-login\"",
     "build-nutri": "node-sass --include-path scss scss/nutri.scss public/scss/nutri.css",
     "watch-nutri": "nodemon -e scss -x \"npm run build-nutri\"",
-    "build-initUser": "node-sass --include-path scss scss/iniUsuario/inicioUsuario.scss public/scss/inicioUsuario.css",
+    "build-initUser": "node-sass --include-path scss scss/iniUsuario/inicioUsuario.scss public/scss/inicioUsuario.css", 
     "watch-initUser": "nodemon -e scss -x \"npm run build-initUser\"",
     "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output public/css/main.min.css public/css/main.css ",
     "css:lint": "stylelint --config .stylelintrc --syntax scss \"scss/**/*.scss\""

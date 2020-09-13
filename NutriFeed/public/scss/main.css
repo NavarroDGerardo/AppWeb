@@ -7353,7 +7353,7 @@ $close-color: $white !default;*/
     color: gray;
     cursor: pointer; }
     #header a:hover {
-      color: green; }
+      color: #000; }
   #header .menu {
     left: 100px; }
   #header .ini-reg {
