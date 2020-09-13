@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+/*
+  _________________________
+  |						|
+  |		  menu     		|
+  |						|
+  -------------------------
+  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+#header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 45px;
+  box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+  opacity: 0.9; }
+  #header img {
+    margin-right: 20px; }
+  #header ul {
+    color: gray;
+    font-size: 20px; }
+  #header li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    color: gray;
+    height: 50px;
+    line-height: 50px; }
+    #header li:hover {
+      color: #000;
+      border-bottom: 1px solid;
+      border-color: green; }
+  #header a {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer; }
+    #header a:hover {
+      color: green; }
+
+/*
+  _________________________
+  |						|
+  |		  footer 		|
+  |						|
+  -------------------------
+  */
+#footer {
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  height: 100px;
+  font-size: 18px;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
+/*
+  _________________________
+  |						|
+  |		  cuerpo 		|
+  |						|
+  -------------------------
+  */
+* {
+  box-sizing: border-box; }
+
+.feed {
+  font-family: "Quicksand", sans-serif;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1 {
+  font-size: 50px;
+  word-break: break-all; }
+
+.row {
+  margin: 8px -16px;
+  padding: 8px; }
+  .row > .column {
+    padding: 8px; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.column {
+  float: left;
+  width: 25%; }
+
+.content {
+  background-color: white;
+  padding: 10px; }
+
+.header-profile {
+  height: 40%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.5); }
+  .header-profile img {
+    border-radius: 50%;
+    position: relative;
+    right: -35px;
+    top: 50px; }
+
+.buttons-profile button {
+  text-align: center;
+  line-height: 1em;
+  margin-right: 5%;
+  width: 170px;
+  height: 50px;
+  font-size: 20px;
+  position: relative;
+  right: -42%;
+  top: 10px;
+  background-color: #4d4d4d;
+  border: 2px solid rgba(51, 51, 51, 0.5); }
+
+.datos-profile {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  margin-left: 20%;
+  margin-top: -12%; }
+
+/*
+      _________________________
+      |           |
+      |   REPONSIVE     |
+      |           |
+      -------------------------
+  */
+/*
+    _________________________
+    |           |
+    |     footer    |
+    |           |
+    -------------------------
+    */
+/* Responsive layout ipad-  */
+/* Responsive layout Phone */
+@media screen and (max-width: 700px) {
+  #footer {
+    margin-top: 40%;
+    font-size: 15px;
+    text-align: center; }
+    #footer .content {
+      position: relative;
+      transform: translateY(-50%);
+      top: 50%;
+      line-height: 16px; } }
+
+.selected {
+  color: #000;
+  border-bottom: 1px solid;
+  border-color: green; }
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%; }
+  .feed {
+    max-width: 700px; }
+  .header-profile img {
+    width: 160px;
+    height: 160px; }
+  .buttons-profile button {
+    margin-right: 5%;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+    right: -100px;
+    top: 100px; }
+  .datos-profile {
+    font-size: 24px;
+    margin-left: 35%;
+    margin-top: -19%; } }
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%; }
+  .feed {
+    max-width: 340px; }
+  .header-profile img {
+    width: 120px;
+    height: 120px; }
+  .buttons-profile button {
+    margin-right: 2%;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    right: -35px;
+    top: 120px; }
+  .datos-profile {
+    font-size: 15px;
+    margin-left: 53%;
+    margin-top: -20%; } }
+
+body, html {
+  height: 100%;
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  background: url(../imgs/backgroundIniUsuario.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }

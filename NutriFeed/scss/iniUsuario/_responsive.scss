@@ -1,0 +1,97 @@
+@import "variables";
+
+/*
+      _________________________
+      |           |
+      |   REPONSIVE     |
+      |           |
+      -------------------------
+  */
+/*
+    _________________________
+    |           |
+    |     footer    |
+    |           |
+    -------------------------
+    */
+/* Responsive layout ipad-  */
+/* Responsive layout Phone */
+@media screen and (max-width: 700px) {
+    #footer {
+        margin-top: 40%;
+        font-size: 15px;
+        text-align: center;
+        .content {
+            position: relative;
+            transform: translateY(-50%);
+            top: 50%;
+            line-height: 16px;
+        }
+    }
+}
+.selected {
+    color: #000;
+    border-bottom: 1px solid;
+    border-color: green;
+}
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+    .feed {
+        max-width: 700px;
+    }
+    .header-profile {
+        img {
+            width: 160px;
+            height: 160px;
+        }
+    }
+    .buttons-profile {
+        button {
+            margin-right: 5%;
+            width: 170px;
+            height: 50px;
+            font-size: 20px;
+            position: relative;
+            right: -100px;
+            top: 100px;
+        }
+    }
+    .datos-profile {
+        font-size: 24px;
+        margin-left: 35%;
+        margin-top: -19%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 50%;
+    }
+    .feed {
+        max-width: 340px;
+    }
+    .header-profile {
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .buttons-profile {
+        button {
+            margin-right: 2%;
+            font-size: 15px;
+            width: 100px;
+            height: 30px;
+            position: relative;
+            right: -35px;
+            top: 120px;
+        }
+    }
+    .datos-profile {
+        font-size: 15px;
+        margin-left: 53%;
+        margin-top: -20%;
+    }
+}
+
