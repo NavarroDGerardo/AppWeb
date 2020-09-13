@@ -7241,6 +7241,7 @@ a.text-dark:hover, a.text-dark:focus {
 .feed {
   font-family: "Quicksand", sans-serif;
   max-width: 1000px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -7267,9 +7268,10 @@ h1 {
   padding: 10px; }
 
 .header-profile {
-  height: 40px;
+  height: 280px;
   width: 100%;
   background-color: rgba(51, 51, 51, 0.5); }
+
   .header-profile img {
     border-radius: 50%;
     position: relative;
@@ -7367,7 +7369,7 @@ h1 {
     height: 30px;
     position: relative;
     right: -35px;
-    top: 120px; }
+   margin-top: -15px; }
   .datos-profile {
     font-size: 15px;
     margin-left: 53%;
