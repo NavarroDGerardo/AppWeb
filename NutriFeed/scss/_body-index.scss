@@ -63,9 +63,9 @@ _________________________
 |						|
 -------------------------
 */
-.unirse{
+
+.button-basic{
     margin-top: 25px;
-    margin-left: -$size-50;
     background-color: transparent;
     border: 1px solid;
     color: $black;
@@ -74,11 +74,6 @@ _________________________
     text-decoration: none;
     display: inline-block;
     font-size: 22px;
-    & a {
-        text-decoration: none;
-        color: $black;
-        cursor: pointer;
-    }
     &:hover{
         cursor: pointer;
         color: $primary;
@@ -86,22 +81,17 @@ _________________________
         border-color: $primary;
     }
 }
+.unirse{
+    @extend .button-basic;
+    margin-left: -$size-50;
+    & a {
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+    } 
+}
 
 .aprende{
-    margin-top: 25px;
-    background-color: transparent;
-    border: 1px solid;
-    color: $black;
-    padding: 15px 32px;
-    text-align: $center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    &:hover {
-        cursor: pointer;
-        color: $primary;
-        border: 1px solid;
-        border-color: $primary;
-    }
+    @extend .button-basic;
 }
 
