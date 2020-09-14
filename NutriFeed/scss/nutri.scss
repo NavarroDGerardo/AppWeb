@@ -1,7 +1,9 @@
 @import "personalizacion";
 @import "../node_modules/bootstrap/scss/bootstrap.scss"; 
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "header";
 @import "footer";
+@import "recetas";
 
 body, html { 
     height: $full-size;
