@@ -1,0 +1,85 @@
+@import "variables";
+
+/*
+      _________________________
+      |           |
+      |   REPONSIVE     |
+      |           |
+      -------------------------
+  */
+/*
+    _________________________
+    |           |
+    |     footer    |
+    |           |
+    -------------------------
+    */
+/* Responsive layout ipad-  */
+/* Responsive layout Phone */
+@media screen and (max-width: 700px) {
+    #footer {
+        margin-top: $size-20;
+        font-family: $font-family-rubik;
+        height: $size-100;
+        font-size: 18px;
+        background-color: $white;
+        opacity: 0.9;
+        text-align: $center;
+        & .content {
+            position: $relative;
+            transform: translateY(-$scale-50);
+            top: $scale-50;
+            line-height: $size-30;
+            }
+        }
+}
+
+@media screen and (max-width: 900px) {
+    .header-profile {
+        img {
+            width: 160px;
+            height: 160px;
+        }
+    }
+    .buttons-profile {
+        button {
+            margin-right: 5%;
+            width: 170px;
+            height: $size-50;
+            font-size: 20px;
+            position: relative;
+            right: -400px;
+            top: $size-30;
+        }
+    }
+    .datos-profile {
+        font-size: 24px;
+        margin-left: 35%;
+        margin-top: -19%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header-profile {
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .buttons-profile {
+        button {
+            margin-right: 2%;
+            font-size: 15px;
+            width: $size-100;
+            height: $size-30;
+            position: relative;
+            right: -300px;
+            top: $size-80;
+        }
+    }
+    .datos-profile {
+        font-size: 15px;
+        margin-left: 53%;
+        margin-top: -$scale-20;
+    }
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html lang="es">
+  <head>
+    <title>NutriFeed Inicio</title>
+    <link rel="icon" href="imgs/logo-prov.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="scss/progreso.css"> 
+    <link href="css/reset.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/logo-prov.png" width="50" height="50" alt="">
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <a href="acerca.html"><li>Acerca de</li></a>
+              <a href="comunidad.html"><li>Ayuda</li></a>
+              <a href="index.html"><li>Cerrar sesión</li></a>
+              
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+    <div class="header-profile">
+        <a class = "profile-photo" href="inicioUsuario.html">
+            <img src="imgs/profilepic.jpg" alt="Avatar" width="150" height="150" >
+        </a>
+        <div class= "buttons-profile">
+            <button type="button" class="btn btn-dark">Agregar</button>
+            <input type="text" class="datos" name="fname" placeholder="KG"><br>
+            <input type="text" class="datos" name="fname" placeholder="IMC">
+        </div>
+        <div class = "datos-profile">  
+            <h4> Progreso</h4>             
+            <h4> Daniela Fernandez</h4>
+        </div>
+    </div>
+
+    <section>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ENTRADA</th>
+                <th scope="col">FECHA</th>
+                <th scope="col"># KG</th>
+                <th scope="col"># IMC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>12/09/2020</td>
+                <td>96.7</td>
+                <td>29.85</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>19/09/2020</td>
+                <td>95.04</td>
+                <td>29.32</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>26/09/2020</td>
+                <td>95.99</td>
+                <td>29.40</td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+
+
+    <footer id="footer">
+      <div class="content">
+        <h1>© Copyright NutriFeed. Derechos reservados.</h1>
+        <h2>Contacto: 55-5464-7665</h2>
+      </div>
+    </footer>
+
+    <!--Más bootstrap-->
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

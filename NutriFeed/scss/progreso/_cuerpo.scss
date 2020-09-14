@@ -1,0 +1,60 @@
+@import "variables";
+
+/*
+  _________________________
+  |						|
+  |		  cuerpo 		|
+  |						|
+  -------------------------
+  */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: $size-50;
+    word-break: break-all;
+}
+
+.content {
+    background-color: white;
+    padding: $size-10;
+}
+.header-profile {
+    img {
+        border-radius: $scale-50;
+        position: relative;
+        right: -35px;
+        top: $size-50;
+    }
+    height: 250px;
+    width: $scale-100;
+    background-color: rgba(51,51,51,0.5);
+}
+.buttons-profile {
+    button {
+        text-align: center;
+        line-height: 1em;
+        margin-right: 5%;
+        width: 170px;
+        height: $size-50;
+        font-size: $size-20;
+        position: relative;
+        right: -500px;
+        top: $size-20;
+        background-color: #4d4d4d;
+        border: 2px solid rgba(51,51,51,0.5);
+    }
+}
+.datos-profile {
+    font-family: $font-family-quicksand;
+    font-size: 25px;
+    margin-left: $scale-20;
+    margin-top: -12%;
+}
+
+.datos{
+    right: 200px;
+    top: $size-10;
+}

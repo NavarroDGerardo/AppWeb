@@ -1,0 +1,17 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "header";
+@import "footer";
+@import "cuerpo";
+@import "responsive";
+
+body , html{
+	height: $full-size;
+	margin: auto;
+	font-family: "Quicksand", sans-serif;
+	background: url(../imgs/backgroundIniUsuario.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
