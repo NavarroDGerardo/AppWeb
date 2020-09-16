@@ -15,6 +15,8 @@
     "watch-initUser": "nodemon -e scss -x \"npm run build-initUser\"",
     "build-progreso": "node-sass --include-path scss scss/progreso/progreso.scss public/scss/progreso.css", 
     "watch-progreso": "nodemon -e scss -x \"npm run build-progreso\"",
+    "build-dieta": "node-sass --include-path scss scss/dieta/dieta.scss public/scss/dieta.css", 
+    "watch-dieta": "nodemon -e scss -x \"npm run build-dieta\"",
     "css:minify": "cleancss --level 1 --source-map --source-map-inline-sources --output public/css/main.min.css public/css/main.css ",
     "css:lint": "stylelint --config .stylelintrc --syntax scss \"scss/**/*.scss\""
   },
