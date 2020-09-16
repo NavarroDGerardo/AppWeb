@@ -7,7 +7,13 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
@@ -7256,11 +7262,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 25px; }
 
 .tp {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 .elimination {
   color: red; }
+  .elimination:hover {
+    color: #C20808; }
 
 .px {
   margin-bottom: 10px;

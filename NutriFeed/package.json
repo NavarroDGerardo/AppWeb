@@ -9,7 +9,7 @@
     "watch-index": "nodemon -e scss -x \"npm run build-index\"",
     "build-login": "node-sass --include-path scss scss/login/login.scss public/scss/login.css",
     "watch-login": "nodemon -e scss -x \"npm run build-login\"",
-    "build-nutri": "node-sass --include-path scss scss/nutri.scss public/scss/nutri.css",
+    "build-nutri": "node-sass --include-path scss scss/nutri/nutri.scss public/scss/nutri.css",
     "watch-nutri": "nodemon -e scss -x \"npm run build-nutri\"",
     "build-initUser": "node-sass --include-path scss scss/iniUsuario/inicioUsuario.scss public/scss/inicioUsuario.css",
     "watch-initUser": "nodemon -e scss -x \"npm run build-initUser\"",

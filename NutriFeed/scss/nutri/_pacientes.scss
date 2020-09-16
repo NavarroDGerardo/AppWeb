@@ -1,0 +1,25 @@
+@import "../personalizacion";
+
+.tp{
+    margin-top: $size-20 - 5;
+    margin-bottom: $size-20 - 5;
+}
+
+.elimination{
+    color: $red;
+    &:hover{
+        color: $red-hover;
+    }
+}
+
+.px{
+    margin-bottom: $size-10;
+    margin-left: $scale-30;
+    width: $scale-40;
+    background-color: $verde_nutrifeed;
+}
+
+.px:hover{
+    color: $verde_nutrifeed;
+    background-color: $white;
+}
