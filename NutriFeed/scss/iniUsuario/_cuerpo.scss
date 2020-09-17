@@ -1,75 +1,113 @@
-@import "variables";
-
+@import "../personalizacion";
 /*
   _________________________
-  |						|
-  |		  cuerpo 		|
-  |						|
+  |           |
+  |     cuerpo    |
+  |           |
   -------------------------
   */
-
-* {
-    box-sizing: border-box;
-}
-.feed {
-    font-family: $font-family-quicksand;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-h1 {
-    font-size: $size-50;
-    word-break: break-all;
-}
-.row {
-    margin: 8px -16px;
-    padding: 8px;
-    >.column {
-        padding: 8px;
-    }
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-.column {
-    float: left;
-    width: 25%;
-}
-.content {
-    background-color: white;
-    padding: $size-10;
-}
+ 
+/* Header de perfil */
 .header-profile {
-    img {
+    position: $relative;
+    height: $size-100*2+$size-80;
+    width: $full-size;
+    background-color: $header-grey; 
+    & img {
         border-radius: $scale-50;
-        position: relative;
-        right: -35px;
+        position: $relative;
+        right: -($size-30 + 5);
         top: $size-50;
     }
-    height: $size-40;
-    width: $scale-100;
-    background-color: rgba(51,51,51,0.5);
 }
-.buttons-profile {
-    button {
-        text-align: center;
-        line-height: 1em;
-        margin-right: 5%;
-        width: 170px;
-        height: $size-50;
-        font-size: $size-20;
-        position: relative;
-        right: -42%;
-        top: $size-10;
-        background-color: #4d4d4d;
-        border: 2px solid rgba(51,51,51,0.5);
-    }
+
+
+.buttons-profile  {  
+  position: $relative;
+  top: $scale-10; 
+  & button {
+    text-align: $center;
+    line-height: 1em;
+    margin-right: 5%;
+    width: 170px;
+    height: $size-50;
+    position: $relative;
+    right: -45%;
+    font-size: $size-20;
+    background-color: $grey-background;
+    border: 2px solid $header-grey;
+  }  
 }
+
+
 .datos-profile {
-    font-family: $font-family-quicksand;
-    font-size: 25px;
-    margin-left: $scale-20;
-    margin-top: -12%;
+  position: $relative;
+  font-family: $font-family-quicksand;
+  font-size: 25px;
+  margin-left: $scale-20;
+  margin-top: -12%; }
+
+  /* Dropdown Button */
+
+.dropdown-toggle{
+  position: $relative;
+  right: -65%;
+  top: $size-20;
+}
+
+/* Display web-version */
+ .web-version {
+  display: block;
+
+}
+.mobile-version {
+  display: none;
+}
+
+/* Feed version web */
+
+.container-gallery{
+  
+  background-color: $white;
+   padding: 5px; 
+  text-align: $center;
+  font-size: 28px;
+    font-family: $font-family-caveat;
+
+}
+
+/* svg icono ojo */
+
+.bi-eye-fill{
+  margin-left: 85%;
+  position: $relative;
+  top: -28px;
+
+}
+
+
+ h1 {
+   word-break: break-all;
+}
+ .row {
+   margin: 8px -16px;
+   padding: 8px;
+}
+ .row > .column {
+   padding: 8px;
+}
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+ .column {
+   float: left;
+   width: 25%;
+}
+
+.col h4{
+  text-align: $center;
+  font-family: $font-family-caveat;
+  font-size: $size-30;
 }

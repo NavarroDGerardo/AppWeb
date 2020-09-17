@@ -1,101 +1,225 @@
-@import "variables";
-
-/*
-      _________________________
-      |           |
-      |   REPONSIVE     |
-      |           |
-      -------------------------
+@import "../personalizacion";/*
+  _________________________
+  |           |
+  |     Responsive    |
+  |           |
+  -------------------------
   */
-/*
-    _________________________
-    |           |
-    |     footer    |
-    |           |
-    -------------------------
-    */
-/* Responsive layout ipad-  */
-/* Responsive layout Phone */
+  @media (min-width: 1199.98px) {
+    .datos-profile {
+      font-family: $font-family-opensans;
+      font-size: 26px;
+      margin-left: 15%;
+      margin-top: -7%; 
+    }
+   
+    #footer{
+      margin-top: $scale-10;
+    }
+   
+}
+@media (max-width: 1199.98px) {
+
+  /* Header de perfil */
+
+  .buttons-profile button{
+    width: 180px;
+    height: $size-60;
+    position: $relative;
+    right: -36%;
+    top: $size-20;
+    font-size: $size-20;
+  } 
+
+  .datos-profile {
+    font-family: $font-family-opensans;
+    font-size: 26px;
+    margin-left: $scale-20;
+    margin-top: -15%; 
+  }
+
+  .container {
+    margin-top: $scale-10;
+  }
+
+  #row2{
+    margin-top: $scale-10;  
+  }
+  /* Fix footer */
+  #footer {
+    margin-top: 250px; 
+  }
+}
+   
+   
 @media screen and (max-width: 700px) {
-    #footer {
-        margin-top: $size-20;
+   
+  .datos-profile {
+    font-family: $font-family-opensans;
+    font-size: $size-40;
+    margin-left: $scale-20;
+    margin-top: $scale-20; 
+  }
+  #footer {
+    margin-top: $size-20;
     font-family: $font-family-rubik;
     height: $size-100;
     font-size: 18px;
     background-color: $white;
     opacity: 0.9;
-    text-align: $center;
+    text-align: $center; 
     & .content {
-        position: $relative;
-        transform: translateY(-$scale-50);
-        top: $scale-50;
-        line-height: $size-30;
-        }
-    }
+      position: $relative;
+      transform: translateY(-$scale-50);
+      top: $scale-50;
+      line-height: $size-30; 
+    };
+  }
 }
-.selected {
-    color: $black;
-    border-bottom: 1px solid;
-    border-color: $green-color;
-}
-@media screen and (max-width: 900px) {
-    .column {
-        width: $scale-50;
+     
+@media screen and (max-width: 991.98px) {
+  /* Display mobile version */
+
+  .web-version {
+    display: none;
+  }
+  .mobile-version {
+    display: block;
+  }
+
+  /* Header de perfil fix */
+
+  .header-profile img {
+    width: 160px;
+    height: 160px; 
+  }
+  
+  .buttons-profile button {
+    margin-right: 2%;
+    width: 160px;
+    height: $size-50;
+    font-size: $size-20;
+    position: $relative;
+    right: -200px;
+    top: $size-30; 
+  }
+  .datos-profile {
+    font-size: 24px;
+    margin-left: 35%;
+    margin-top: -$scale-20; 
+  }
+
+/* Feed Mobile version */
+
+  .mobile-version{
+    & .column{
+      width: $scale-50;
     }
-    .feed {
-        max-width: $size-700;
+    & .content {
+      font-family: $font-family-caveat;
+      font-size: $size-30; 
+      background-color:$white;
+      padding: 5px;
     }
-    .header-profile {
-        img {
-            width: 160px;
-            height: 160px;
-        }
+    & .feed{
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $size-20;
+    } 
+  }
+
+  /* Pop up Carousel fix */
+
+  .description{
+    text-align: $center;
+    margin-top: 5%;
+    & h2 {
+      margin-bottom: $scale-10;
+      font-size: $size-30;
+      font-family: $font-family-caveat;
     }
-    .buttons-profile {
-        button {
-            margin-right: 5%;
-            width: 170px;
-            height: $size-50;
-            font-size: 20px;
-            position: relative;
-            right: -$size-100;
-            top: $size-100;
-        }
+    & p{
+      font-family: $font-family-opensans;
+      font-size: 15px;
     }
-    .datos-profile {
-        font-size: 24px;
-        margin-left: 35%;
-        margin-top: -19%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .column {
-        width: $scale-50;
-    }
-    .feed {
-        max-width: 340px;
-    }
-    .header-profile {
-        img {
-            width: 120px;
-            height: 120px;
-        }
-    }
-    .buttons-profile {
-        button {
-            margin-right: 2%;
-            font-size: 15px;
-            width: $size-100;
-            height: $size-30;
-            position: relative;
-            right: -35px;
-            top: 120px;
-        }
-    }
-    .datos-profile {
-        font-size: 15px;
-        margin-left: 53%;
-        margin-top: -$scale-20;
-    }
+  }
 }
 
+@media (max-width: 749px) {
+  /* Display mobile version */
+
+  .web-version {
+    display: none;
+  }
+  .mobile-version {
+    display: block;
+
+    & .column{
+      width: $scale-50;
+    }
+    & .feed{
+      width: 340px;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: $size-20;
+    }  
+    & .content{
+      font-size: $size-20;
+      font-family: $font-family-caveat;
+      background-color:$white;
+      padding: 5px; 
+    }
+  }
+
+  /* Header de perfil fix */
+
+  .profile-photo{
+    position: $relative;
+    top: -28px;
+    right: 5%;
+  }
+
+
+  .buttons-profile  {
+    top: $scale-10;
+  }
+
+  .buttons-profile .btn{
+    position: $relative;
+    right: -5%;
+    font-size: 16px;
+    width: $size-100;
+    height: $size-40;
+
+  }
+
+  .header-profile .datos-profile{
+      font-size: 16px;
+      position: absolute;
+      right: 5%;
+      top: $scale-50;
+  }
+
+  /* Feed mobile version */
+
+  * {
+    box-sizing: border-box; 
+  }
+  
+  /* Pop up carousel fix */ 
+
+  .description{
+    & h2{
+      margin-bottom: $scale-10;
+      font-size: $size-20;
+      font-family: $font-family-caveat;
+    }
+    & p{
+      font-family: $font-family-opensans;
+      font-size: $size-10;
+    }
+  }
+}
+   
+   
