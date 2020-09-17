@@ -8,9 +8,7 @@
 }
 
 .card{
-    width: $scale-25;
     margin-top: $size-40;
-    margin-left: 6%;
     float: left;
 }
 
@@ -39,4 +37,22 @@
     color: $verde_nutrifeed;
     text-align: $center;
     margin-bottom: $size-20+5;
+}
+
+.addReceta{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.addReceta:hover{
+    color: $verde_nutrifeed;
+    background-color: white;
+}
+
+@media screen and (max-width:1160px){
+    .boton_card{
+        width: 100%;
+        margin-left: 0;
+    }
 }
