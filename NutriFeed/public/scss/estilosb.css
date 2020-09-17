@@ -112,6 +112,7 @@
   }
 
 .datos-profile {
+  position: relative;
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
   margin-left: 20%;
@@ -191,7 +192,22 @@
   |           |
   -------------------------
   */
+  @media (min-width: 1199.98px) {
+body{
+    background-color: pink;
+    }
+
+ .datos-profile {
+  font-family: "Quicksand", sans-serif;
+  font-size: 26px;
+  margin-left: 15%;
+  margin-top: -7%; 
+   }
+  }
   @media (max-width: 1199.98px) {
+    body{
+    background-color: blue;
+    }
     /* Header de perfil */
 
   .buttons-profile button{
@@ -231,6 +247,15 @@
 
 
   @media screen and (max-width: 700px) {
+body{
+    background-color: yellow;
+  }
+.datos-profile {
+  font-family: "Quicksand", sans-serif;
+  font-size: 40px;
+  margin-left: 20%;
+  margin-top: 20%; 
+   }
   #footer {
     margin-top: 20px;
     font-family: "Rubik", sans-serif;
@@ -244,6 +269,9 @@
       transform: translateY(-50%);
       top: 50%;
       line-height: 30px; } 
+
+
+
     }
 
 
@@ -251,7 +279,9 @@
 
 @media screen and (max-width: 991.98px) {
   /* Display mobile version */
-
+body{
+    background-color: green;
+  }
   .web-version {
   display: none;
            }
@@ -326,7 +356,10 @@
 }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 749px) {
+  body{
+    background-color: red;
+  }
 
   /* Display mobile version */
 
@@ -365,7 +398,8 @@
       font-size: 16px;
       position: absolute;
       right: 5%;
-      top: 45%;
+      top: 50%;
+
 
     }
 
