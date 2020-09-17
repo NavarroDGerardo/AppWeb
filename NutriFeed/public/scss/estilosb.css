@@ -193,9 +193,7 @@
   -------------------------
   */
   @media (min-width: 1199.98px) {
-body{
-    background-color: pink;
-    }
+
 
  .datos-profile {
   font-family: "Quicksand", sans-serif;
@@ -205,9 +203,7 @@ body{
    }
   }
   @media (max-width: 1199.98px) {
-    body{
-    background-color: blue;
-    }
+   
     /* Header de perfil */
 
   .buttons-profile button{
@@ -247,9 +243,7 @@ body{
 
 
   @media screen and (max-width: 700px) {
-body{
-    background-color: yellow;
-  }
+
 .datos-profile {
   font-family: "Quicksand", sans-serif;
   font-size: 40px;
@@ -279,9 +273,7 @@ body{
 
 @media screen and (max-width: 991.98px) {
   /* Display mobile version */
-body{
-    background-color: green;
-  }
+
   .web-version {
   display: none;
            }
@@ -357,9 +349,7 @@ body{
 }
 
 @media (max-width: 749px) {
-  body{
-    background-color: red;
-  }
+ 
 
   /* Display mobile version */
 
