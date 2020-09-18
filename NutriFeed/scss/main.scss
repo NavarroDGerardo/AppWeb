@@ -14,6 +14,25 @@ body, html {
         background-size: cover;
 }
 
+ body:after{
+  content: "beta";
+  position: $fixed;
+  width: $size-80;
+  height: $size-25;
+  background: $green-border;
+  top: 7px;
+  left: -$size-20;
+  text-align: $center;
+  font-size: 13px;
+  font-family: $sans-serif-font;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $white;
+  line-height: 27px;
+  transform:rotate(-45deg);
+}
+
+
 .selected{
     color: $black;
     border-bottom: 1px solid;
