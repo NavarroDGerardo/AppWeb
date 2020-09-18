@@ -6,6 +6,11 @@
 @import "recetas";
 @import "pacientes";
 
+.row{
+    width: 100%;
+    margin: auto;
+}
+
 body, html { 
     height: $full-size;
     background: url($img-backgorund) no-repeat $center $center $fixed; 
