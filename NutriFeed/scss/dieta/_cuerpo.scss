@@ -1,0 +1,51 @@
+@import "../personalizacion";
+/*
+  _________________________
+  |           |
+  |     cuerpo        |
+  |           |
+  -------------------------
+  */
+
+/* navbar */
+.md-tabs {
+    position: $relative;
+    z-index: 1;
+    padding: .7rem;
+    margin-right: 1rem;
+    margin-bottom: -$size-20;
+    margin-left: 1rem;
+    background-color: $green-tab;
+    border: 0;
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 5px 11px 0 $web-black-shadow, 0 4px 15px 0 $black-shadow-intense;
+    box-shadow: 0 5px 11px 0 $web-black-shadow, 0 4px 15px 0 $black-shadow-intense; 
+}
+  
+.nav-item a{
+    font-family: $font-family-quicksand;
+    font-size: $size-20;
+    color: $black;
+}
+
+/* recuadro con info */
+.tab-content{
+    width: $scale-40;
+    margin-top: $scale-10;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $font-family-quicksand;
+    font-size: 16px;
+    background-color: $white-ligth;
+
+    & h1,p{
+        position: $relative;
+        top: -$scale-20;
+        margin-bottom: 2%;
+    }
+    & h1{
+        font-family: $font-family-caveat;
+        text-align: $center;
+        font-size: $size-30;
+    }
+}

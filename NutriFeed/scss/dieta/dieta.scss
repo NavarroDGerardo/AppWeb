@@ -1,28 +1,17 @@
 @import "../personalizacion";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"; 
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../header";
-@import "../footer"; 
+@import "header";
+@import "footer"; 
+@import "cuerpo"; 
+@import "responsive"; 
 
-body, html { 
+body, html {
+    font-family: $font-family-quicksand;
     height: $full-size;
-    background: url($img-backgorund) no-repeat $center $center $fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-.md-tabs {
-    position: relative;
-    z-index: 1;
-    padding: .7rem;
-    margin-right: 1rem;
-    margin-bottom: -20px;
-    margin-left: 1rem;
-    background-color: $green-ligth;
-    border: 0;
-    border-radius: .25rem;
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    background: url($img-backgorundDieta) no-repeat $center $center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
 }

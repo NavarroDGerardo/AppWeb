@@ -1,0 +1,23 @@
+@import "../personalizacion";
+/*
+  _________________________
+  |           |
+  |     footer    |
+  |           |
+  -------------------------
+  */
+
+#footer{
+    font-family: $font-family-rubik;
+    height: $size-80;
+    font-size: 16px;
+    background-color: $white;
+    opacity: 0.9;
+    text-align: $center; 
+    & .content {
+        position: $relative;
+        transform: translateY(-$scale-50);
+        top: $scale-50;
+        line-height: $size-30;
+    }
+}

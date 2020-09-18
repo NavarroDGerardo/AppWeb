@@ -1,16 +1,25 @@
 $white: #fff !default;
+$white-ligth: rgba(255, 255, 255, 0.9);
+
 $black: #000 !default;
 $black-shadow: rgba(0, 0, 0, 0.2);
+$web-black-shadow: rgba(0, 0, 0, 0.18);
+$black-shadow-intense: rgba(0, 0, 0, 0.15);
+
 $red: red !default;
+$red-hover: #C20808;
+
 $green-color: green; 
-$gray-color: gray;
 $green-border: #008939;
 $green-ligth:#D3FFB6;
-$red-hover: #C20808;
-$header-grey: rgba(51, 51, 51, 0.5);
-$grey-background: #4d4d4d;
-
 $verde_nutrifeed: rgb(8, 121, 8);
+$green-tab: #408000;
+
+$gray-color: gray;
+$grey-background: #4d4d4d;
+$header-grey: rgba(51, 51, 51, 0.5);
+
+
 
 $primary: $green-color !default;
 $secondary: $gray-color !default;
@@ -63,16 +72,8 @@ $relative: relative;
 
 $pointer: pointer;
 
-//  Mixins
-
-@mixin transformation ($scaleX, $scaleY, $position, $left, $top) {
-  position: $position;
-  transform: translateX(-$scaleX) translateY(-$scaleY);
-  left: $left;
-  top: $top;
-}
-
 //  Imgs
 $img-backgorund: "../imgs/background.jpg";
 $img-backgorund1: "../imgs/background1.jpg";
 $img-backgorundUsuario: "../imgs/backgroundIniUsuario.jpg";
+$img-backgorundDieta: "../imgs/backDieta.jpg";
