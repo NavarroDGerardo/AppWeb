@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html lang="es">
   <head>
-    <title>NutriFeed</title>
+    <title>NutriFeed Dieta</title>
     <link rel="icon" href="imgs/logo-prov.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="scss/dieta.css"> 
     <link href="css/reset.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 
     <header id="header" >
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,13 +33,13 @@
           <a class="nav-link active" id="desayuno-tab" data-toggle="tab" href="#desayuno" role="tab" aria-controls="desayuno" aria-selected="true">Desayuno</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="colacion1-tab" data-toggle="tab" href="#colacion1" role="tab" aria-controls="colacion1" aria-selected="false">Colación</a>
+            <a class="nav-link" id="colacion1-tab" data-toggle="tab" href="#colacion1" role="tab" aria-controls="colacion1" aria-selected="false">Colación 1</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" id="comida-tab" data-toggle="tab" href="#comida" role="tab" aria-controls="comida" aria-selected="false">Comida</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="colacion2-tab" data-toggle="tab" href="#colacion2" role="tab" aria-controls="colacion2" aria-selected="false">Colación</a>
+            <a class="nav-link" id="colacion2-tab" data-toggle="tab" href="#colacion2" role="tab" aria-controls="colacion2" aria-selected="false">Colación 2</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" id="cena-tab" data-toggle="tab" href="#cena" role="tab" aria-controls="cena" aria-selected="false">Cena</a>
@@ -55,6 +55,7 @@
             placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
         </div>
         <div class="tab-pane fade" id="comida" role="tabpanel" aria-labelledby="comida-tab">
+            <h1>Comida</h1>
             <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1
             labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft
             beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
@@ -64,6 +65,7 @@
             scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
         </div>
         <div class="tab-pane fade" id="colacion1" role="tabpanel" aria-labelledby="colacion1-tab">
+             <h1>Colación 11:00 a.m.</h1>
             <p>Colación 1: Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
             fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
             skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
@@ -72,6 +74,7 @@
             craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
         </div>
         <div class="tab-pane fade" id="colacion2" role="tabpanel" aria-labelledby="colacion2-tab">
+            <h1>Colación 17:00 p.m.</h1>
             <p>Colación 2: Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
             fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
             skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
@@ -80,6 +83,7 @@
             craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
         </div>
         <div class="tab-pane fade" id="cena" role="tabpanel" aria-labelledby="cena-tab">
+             <h1>Cena</h1>
             <p>Cena: Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro
             fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone
             skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings
@@ -90,7 +94,7 @@
     </div>
 
 
-    <footer id="footer">
+    <footer  class="mt-auto" id="footer">
       <div class="content">
         <h1>© Copyright NutriFeed. Derechos reservados.</h1>
         <h2>Contacto: 55-5464-7665</h2>
