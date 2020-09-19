@@ -54,6 +54,12 @@
             font-size: $size-20;
             text-align: $center;
         }
+
+        & .dropdown{
+        position: $relative;
+        right: -15%;
+      }
+  /*
     }
 
     /*

@@ -56,4 +56,10 @@
     & .ini-reg{
         right: 0;
     }
+
+   & .dropdown {
+    position: $absolute;
+    right: $scale-10;
+}
+
 }
