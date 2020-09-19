@@ -44,8 +44,12 @@
     "autoprefixer": "^9.8.6",
     "bootstrap": "^4.5.2",
     "clean-css-cli": "^4.3.0",
+    "datatables.net": "^1.10.22",
+    "datatables.net-bs4": "^1.10.22",
+    "datatables.net-dt": "^1.10.22",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
     "stylelint": "^13.6.1",
     "watch": "^1.0.2"
   }

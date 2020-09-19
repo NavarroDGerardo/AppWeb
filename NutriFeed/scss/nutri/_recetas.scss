@@ -1,4 +1,6 @@
 @import "../personalizacion";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css";
 
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block; 

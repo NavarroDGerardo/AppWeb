@@ -17,6 +17,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
@@ -7351,6 +7353,13 @@ img {
   .elimination:hover {
     color: #C20808; }
 
+#agregar {
+  background-color: #087908; }
+
+#agregar:hover {
+  color: #087908;
+  background-color: #fff; }
+
 .px {
   margin-bottom: 10px;
   margin-left: 30%;
@@ -7359,6 +7368,25 @@ img {
 
 .px:hover {
   color: #087908;
+  background-color: #fff; }
+
+.copyrightTittle {
+  font: inherit;
+  font-size: 18px; }
+
+.contact {
+  font: inherit;
+  font-size: 18px; }
+
+.dataTables_info {
+  color: #087908;
+  background-color: #ffffff;
+  opacity: 0.9; }
+
+label {
+  color: #087908;
+  font-weight: bolder;
+  opacity: 0.9;
   background-color: #fff; }
 
 .row {
