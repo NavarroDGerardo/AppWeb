@@ -7453,6 +7453,56 @@ label {
   color: red;
   cursor: pointer; }
 
+.imgReceta {
+  width: 100%; }
+
+.cont {
+  float: left; }
+
+.imgContainer {
+  background-color: #087908;
+  padding: 10px; }
+
+.tituloReceta {
+  font-size: 50px;
+  text-align: center;
+  color: #087908;
+  margin-top: 50px; }
+
+.descripcionCorta {
+  font-size: 35px;
+  text-align: center;
+  color: #000000;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 50px; }
+
+.contTittle {
+  background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  opacity: 0.9;
+  margin-top: 25px; }
+
+.description {
+  border-top: 2px solid;
+  border-color: green;
+  background-color: #fff;
+  opacity: 0.9;
+  padding-bottom: 30px; }
+
+.tituloDescripcion {
+  text-align: center;
+  font-size: 40px;
+  color: #087908;
+  margin-top: 15px; }
+
+.pasosReceta {
+  font-size: 30px;
+  margin-top: 15px;
+  list-style-type: circle;
+  margin-left: 50px; }
+
 .row {
   width: 100%;
   margin: auto; }
