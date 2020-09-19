@@ -16,34 +16,53 @@
 <body>
 
 	<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="#">
-					<img src="imgs/logo-prov.png" width="50" height="50" alt="">
-				</a>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="imgs/logo-prov.png" width="50" height="50" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<a href="recetas.html"><li>Regresar</li></a>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-      
-        </div>
-             </div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="selected"><a href="index.html">Inicio</a></li>
-						<li><a href="acerca.html">Acerca de</a></li>
-						<li><a href="comunidad.html">Comunidad</a></li>
-						<li><a href="beneficios.html">Beneficios</a></li>
-						<li><a href="inicioSesion.html">Iniciar Sesión</a></li>
-						<li><a href="registro.html">¡Únete ahora!</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+	<section id="body_part">
+		<div id="formularioReceta">
+			<div id="info">
+				<h2>Registar receta</h2>
+				<form class="formulario" action="nutri.html">
+					<input type="text" id="fnombreReceta" name="fnombreReceta" placeholder="Nombre de la receta" required><br>
+
+					<textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Descripción de la receta"></textarea><br>
+
+					<div class="form-grou">
+						<h2>¡Elige una imagen!</h2>
+					    <label for="exampleFormControlFile1">Example file input</label>
+					    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+					</div>
+					
+					<input type="submit" value="Registrar receta"><br>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="content">
+			<h1>© Copyright NutriFeed. Derechos reservados.</h1>
+			<h2>Contacto: 55-5464-7665</h2>
+		</div>
+	</footer>
 
 
 	<script src="../node_modules/jquery/dist/jquery.js"></script>
-	<script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
