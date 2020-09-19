@@ -12,7 +12,7 @@
 #header {
     font-family: $font-family-quicksand;
     font-size: 45px;
-    box-shadow: $size-0 $size-0 $size-0 1.5px rgba(0, 0, 0, 0.2);
+    box-shadow: $size-0 $size-0 $size-0 1.5px $black-shadow;
     opacity: 0.9;
      
     
@@ -29,7 +29,7 @@
     & li{
         display: inline-block;
         margin-right: $size-20;
-        cursor: pointer;
+        cursor: $pointer;
         color: $secondary;
         height: $size-50;
         line-height: $size-50;
@@ -43,7 +43,7 @@
     & a{
         text-decoration: none;
         color: $secondary;
-        cursor: pointer;
+        cursor: $pointer;
         &:hover{
             color: $black;
         }
