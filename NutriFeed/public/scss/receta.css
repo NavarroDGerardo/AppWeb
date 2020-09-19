@@ -1,0 +1,43 @@
+/*
+  _________________________
+  |           |
+  |     menu        |
+  |           |
+  -------------------------
+  */
+#header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 45px;
+  box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, 0.2);
+  opacity: 0.9; }
+  #header img {
+    margin-right: 20px; }
+  #header ul {
+    color: gray;
+    font-size: 20px; }
+  #header li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    color: gray;
+    height: 50px;
+    line-height: 50px; }
+    #header li:hover {
+      color: #000;
+      border-bottom: 1px solid;
+      border-color: green; }
+  #header a {
+    text-decoration: none;
+    color: gray;
+    cursor: pointer; }
+    #header a:hover {
+      color: #000; }
+  #header .menu {
+    left: 100px; }
+  #header .ini-reg {
+    right: 0; }
+
+    .dropdown{
+      position: absolute;
+      right: 10%;
+    }
