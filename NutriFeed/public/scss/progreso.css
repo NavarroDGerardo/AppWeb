@@ -7180,49 +7180,62 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*
   _________________________
-  |						|
-  |		  menu     		|
-  |						|
+  |						            |
+  |		       menu     		|
+  |					            	|
   -------------------------
   */
+section{
+  height: 36.5%;
+}
+
 #header {
   font-family: "Quicksand", sans-serif;
   font-size: 45px;
   box-shadow: 0px 0px 0px 1.5px rgba(0, 0, 0, 0.2);
-  opacity: 0.9; }
-  #header img {
-    margin-right: 20px; }
-  #header ul {
-    color: gray;
-    font-size: 20px; }
-  #header li {
-    display: inline-block;
-    margin-right: 20px;
-    cursor: pointer;
-    color: gray;
-    height: 50px;
-    line-height: 50px; }
-    #header li:hover {
-      color: #000;
-      border-bottom: 1px solid;
-      border-color: green; }
-  #header a {
-    text-decoration: none;
-    color: gray;
-    cursor: pointer; }
-    #header a:hover {
-      color: #000; }
-  #header .menu {
-    left: 100px; }
-  #header .ini-reg {
-    right: 0; }
+  opacity: 0.9; 
+}
+#header img {
+  margin-right: 20px; 
+}
+#header ul {
+  color: gray;
+  font-size: 20px; 
+}
+#header li {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  color: gray;
+  height: 50px;
+  line-height: 50px; 
+}
+#header li:hover {
+  color: #000;
+  border-bottom: 1px solid;
+  border-color: green; 
+}
+#header a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer; 
+}
+#header a:hover {
+  color: #000; 
+}
+#header .menu {
+  left: 100px; 
+}
+#header .ini-reg {
+  right: 0; 
+}
 
 @use "../personalizacion";
 /*
   _________________________
-  |						|
-  |		  footer 		|
-  |						|
+  |						            |
+  |		      footer 		    |
+  |						            |
   -------------------------
   */
 #footer {
@@ -7230,33 +7243,69 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*
   _________________________
-  |						|
-  |		  cuerpo 		|
-  |						|
+  |						            |
+  |		      cuerpo 		    |
+  |						            |
   -------------------------
-  */
-* {
-  box-sizing: border-box; }
+*/
+*{
+  box-sizing: border-box; 
+}
 
 h1 {
   font-size: 50px;
-  word-break: break-all; }
+  word-break: break-all; 
+}
 
 .content {
   background-color: white;
-  padding: 10px; }
+  padding: 10px; 
+}
 
 .header-profile {
-  height: 250px;
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.5); }
-  .header-profile img {
-    border-radius: 50%;
-    position: relative;
-    right: -35px;
-    top: 50px; }
+  background-color: rgba(51, 51, 51, 0.5); 
+}
 
-.buttons-profile button {
+.header-profile img {
+  border-radius: 50%;
+}
+
+.datos-profile{
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.datos-profile img{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.datos-profile h4{
+  color: white;
+  margin-top: 10px;
+}
+
+.buttons-profile{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttons-profile input{
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid; 
+  border-color: green;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.buttons-profile button{
+  margin-bottom: 10px;
+}
+/*.buttons-profile button {
   text-align: center;
   line-height: 1em;
   margin-right: 5%;
@@ -7277,7 +7326,7 @@ h1 {
 
 .datos {
   right: 200px;
-  top: 10px; }
+  top: 10px; }*/
 
 /*
       _________________________
@@ -7285,7 +7334,7 @@ h1 {
       |   REPONSIVE     |
       |           |
       -------------------------
-  */
+*/
 /*
     _________________________
     |           |
@@ -7295,7 +7344,7 @@ h1 {
     */
 /* Responsive layout ipad-  */
 /* Responsive layout Phone */
-@media screen and (max-width: 700px) {
+/*@media screen and (max-width: 700px) {
   #footer {
     margin-top: 20px;
     font-family: "Rubik", sans-serif;
@@ -7342,7 +7391,7 @@ h1 {
   .datos-profile {
     font-size: 15px;
     margin-left: 53%;
-    margin-top: -20%; } }
+    margin-top: -20%; } }*/
 
 body, html {
   height: 100%;
