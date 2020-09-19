@@ -7413,6 +7413,10 @@ _________________________
     width: 100%;
     height: 550px;
     float: right; }
+    .dropdown{
+      position: relative;
+      left: 55%;
+    }
   .info {
     position: relative;
     width: 100%;
