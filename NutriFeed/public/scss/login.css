@@ -1,27 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+.footer-style, #footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content, #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7171,6 +7179,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.footer-style, #footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content, #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
 /*
   _________________________
   |						|
@@ -7207,6 +7226,7 @@ a.text-dark:hover, a.text-dark:focus {
   #header .ini-reg {
     right: 0px; }
 
+@use "../personalizacion";
 /*
   _________________________
   |						|
@@ -7215,14 +7235,16 @@ a.text-dark:hover, a.text-dark:focus {
   -------------------------
   */
 #footer {
-  margin-top: 20px;
-  font-family: "Rubik", sans-serif;
   height: 100px;
   font-size: 18px;
+  margin-top: 20px; }
+
+.footer-style, #footer {
+  font-family: "Rubik", sans-serif;
   background-color: #fff;
   opacity: 0.9;
   text-align: center; }
-  #footer .content {
+  .footer-style .content, #footer .content {
     position: relative;
     transform: translateY(-50%);
     top: 50%;
@@ -7262,6 +7284,17 @@ section {
     color: gray;
     margin-top: 10px;
     font-size: 30px; }
+
+.footer-style, #footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content, #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
 
 /*
   _________________________
@@ -7327,6 +7360,17 @@ section {
   margin-top: 15px;
   font-size: 20px;
   display: none; }
+
+.footer-style, #footer {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content, #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
 
 @media screen and (max-width: 700px) {
   /*

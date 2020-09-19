@@ -32,7 +32,7 @@
     width: 170px;
     height: $size-50;
     position: $relative;
-    right: -45%;
+    right: -48%;
     font-size: $size-20;
     background-color: $grey-background;
     border: 2px solid $header-grey;
@@ -41,6 +41,7 @@
 
 
 .datos-profile {
+  width: 36%;
   position: $relative;
   font-family: $font-family-quicksand;
   font-size: 25px;

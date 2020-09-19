@@ -25,18 +25,14 @@ section{
     transform: translateY(-$scale-50);
     top: $scale-50;
     float: right;
-    & h1{
+    & h2{
         font-family: $font-family-caveat;
         margin-right: 15px;
         font-size: $size-70;
         margin-bottom: $size-20;
         text-align: $center;
     }
-    & h2 {
-        margin-left: 15px;
-        font-size: $size-40;
-        margin-bottom: $size-20;
-    }
+   
     & p {
         line-height: 1.5;
         font-size: $size-20;

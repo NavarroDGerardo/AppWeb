@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    </head>    
+    <body>
+        <div class="container mb-3 mt-3">
+            <table class="table table-striped table-bordered mydatatable" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Estado</th>
+                        <th>Nutriologo</th>
+                        <th>Ver perfil</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>eduardo</td>
+                        <td>Morbido</td>
+                        <td>Octavio</td>
+                        <td>ver</td>
+                        <td>eliminar</td>
+                    </tr>
+                    <tr>
+                        <td>eduardo</td>
+                        <td>Morbido</td>
+                        <td>Octavio</td>
+                        <td>ver</td>
+                        <td>eliminar</td>
+                    </tr>
+                    <tr>
+                        <td>eduardo</td>
+                        <td>Morbido</td>
+                        <td>Octavio</td>
+                        <td>ver</td>
+                        <td>eliminar</td>
+                    </tr>
+                    <tr>
+                        <td>eduardo</td>
+                        <td>Morbido</td>
+                        <td>Octavio</td>
+                        <td>ver</td>
+                        <td>eliminar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="../node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="../node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+        <script>
+            $('.mydatatable').DataTable();
+        </script>
+
+    </body>
+
+</html>

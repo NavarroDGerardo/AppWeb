@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
-/*!
- * Bootstrap v4.5.2 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
@@ -17,9 +11,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+.footer-style {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
+/*!
+ * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7169,6 +7182,17 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.footer-style {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
 /*
   _________________________
   |						|
@@ -7207,6 +7231,20 @@ a.text-dark:hover, a.text-dark:focus {
     left: 100px; }
   #header .ini-reg {
     right: 0; }
+  #header .dropdown {
+    position: absolute;
+    right: 10%; }
+
+.footer-style {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
 
 /*
   _________________________
@@ -7224,6 +7262,17 @@ a.text-dark:hover, a.text-dark:focus {
   opacity: 0.9;
   text-align: center; }
   #footer .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
+
+.footer-style {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content {
     position: relative;
     transform: translateY(-50%);
     top: 50%;
@@ -7268,10 +7317,87 @@ a.text-dark:hover, a.text-dark:focus {
   color: #087908;
   background-color: white; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Verdana, sans-serif; }
+
+.mySlides {
+  height: 350px;
+  display: none; }
+
+.imgCarroussel {
+  margin-left: 15%;
+  width: 70%;
+  height: 350px; }
+
+img {
+  vertical-align: middle; }
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; }
+
+.text {
+  color: #087908;
+  background-color: #fff;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 70%;
+  margin-left: 15%;
+  opacity: 0.85;
+  text-align: center; }
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0; }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active {
+  background-color: #717171; }
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px; } }
+
 @media screen and (max-width: 1160px) {
   .boton_card {
     width: 100%;
     margin-left: 0; } }
+
+@media only screen and (max-width: 600px) {
+  .imgCarroussel {
+    width: 100%;
+    margin-left: 0; }
+  .text {
+    width: 100%;
+    margin-left: 0; } }
+
+.footer-style {
+  font-family: "Rubik", sans-serif;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center; }
+  .footer-style .content {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    line-height: 30px; }
 
 .tp {
   margin-top: 15px;
@@ -7282,6 +7408,13 @@ a.text-dark:hover, a.text-dark:focus {
   .elimination:hover {
     color: #C20808; }
 
+#agregar {
+  background-color: #087908; }
+
+#agregar:hover {
+  color: #087908;
+  background-color: #fff; }
+
 .px {
   margin-bottom: 10px;
   margin-left: 30%;
@@ -7291,6 +7424,29 @@ a.text-dark:hover, a.text-dark:focus {
 .px:hover {
   color: #087908;
   background-color: #fff; }
+
+.copyrightTittle {
+  font: inherit;
+  font-size: 18px; }
+
+.contact {
+  font: inherit;
+  font-size: 18px; }
+
+.dataTables_info {
+  color: #087908;
+  background-color: #ffffff;
+  opacity: 0.9; }
+
+label {
+  color: #087908;
+  font-weight: bolder;
+  opacity: 0.9;
+  background-color: #fff; }
+
+.eliminar:hover {
+  color: red;
+  cursor: pointer; }
 
 .row {
   width: 100%;

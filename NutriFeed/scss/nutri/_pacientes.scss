@@ -12,6 +12,15 @@
     }
 }
 
+#agregar{
+    background-color: $verde_nutrifeed;
+}
+
+#agregar:hover{
+    color: $verde_nutrifeed;
+    background-color: $white;
+}
+
 .px{
     margin-bottom: $size-10;
     margin-left: $scale-30;
@@ -23,3 +32,32 @@
     color: $verde_nutrifeed;
     background-color: $white;
 }
+
+.copyrightTittle{
+    font: inherit;
+    font-size: 18px;
+}
+
+.contact{
+    font: inherit;
+    font-size: 18px;
+}
+
+.dataTables_info{
+    color: $verde_nutrifeed;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+label{
+    color: $verde_nutrifeed;
+    font-weight: bolder;
+    opacity: 0.9;
+    background-color: #fff;
+}
+
+.eliminar:hover{
+    color: red;
+    cursor: pointer;
+}
+

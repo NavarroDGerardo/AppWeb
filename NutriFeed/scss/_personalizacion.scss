@@ -78,4 +78,17 @@ $pointer: pointer;
 $img-backgorund: "../imgs/background.jpg";
 $img-backgorund1: "../imgs/background1.jpg";
 $img-backgorundUsuario: "../imgs/backgroundIniUsuario.jpg";
-$img-backgorundDieta: "../imgs/backDieta.jpg";
+$img-backgorundDieta: "../imgs/backDieta.jpg"; 
+
+.footer-style{ 
+    font-family: $font-family-rubik;
+    background-color: $white;
+    opacity: 0.9;
+    text-align: $center;
+    & .content {
+        position: $relative;
+        transform: translateY(-$scale-50);
+        top: $scale-50;
+        line-height: $size-30;
+    }
+}
