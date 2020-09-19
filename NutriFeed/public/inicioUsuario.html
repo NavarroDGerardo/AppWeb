@@ -27,9 +27,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <a href="acerca.html"><li>Anotaciones</li></a>
-              <a href="comunidad.html"><li>Ayuda</li></a>
-              <a href="index.html"><li>Cerrar sesión</li></a>
+              <li><a href="acerca.html">Anotaciones</a></li>
+              <li><a href="comunidad.html">Ayuda</a></li>
+              <li><a href="index.html">Cerrar sesión</a></li>
               
             </ul>
           </div>
@@ -44,7 +44,7 @@
     <div class= "buttons-profile ">
   <button  type="button" class="btn btn-dark">Dieta</button>
   <button  type="button" class="btn btn-dark">Progreso</button>
-  <button  type="button" class="btn btn-dark" href="recetasUsuario.html">Recetas</button>
+  <button data-href="recetasUsuario.html" type="button" class="btn btn-dark" >Recetas</button>
   </div>
     <div class = "column-sm- datos-profile">               
       <h4> Daniela Fernandez</h4>
@@ -332,11 +332,11 @@
     </footer>
   
   <!--Funcionalidad pop up carousel-->
-   <script src="../node_modules/jquery/dist/jquery.min.js">
+   <script>
     $(document).ready(function() {
       $('.mdb-select').materialSelect();
      });
-  </script>
+    </script>
 
     <!--Más bootstrap-->
     <script src="../node_modules/jquery/dist/jquery.js"></script>
