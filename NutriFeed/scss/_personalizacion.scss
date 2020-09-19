@@ -92,3 +92,6 @@ $img-backgorundDieta: "../imgs/backDieta.jpg";
         line-height: $size-30;
     }
 }
+
+$icons-path: "https://fonts.googleapis.com/icon?family=Material+Icons" !default;
+@import url($icons-path);
