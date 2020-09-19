@@ -7206,11 +7206,9 @@ a.text-dark:hover, a.text-dark:focus {
     left: 100px; }
   #header .ini-reg {
     right: 0; }
-
-    .dropdown{
-      position: absolute;
-      right: 10%;
-    }
+  #header .dropdown {
+    position: absolute;
+    right: 10%; }
 
 /*
   _________________________
@@ -7232,6 +7230,30 @@ a.text-dark:hover, a.text-dark:focus {
     transform: translateY(-50%);
     top: 50%;
     line-height: 30px; }
+
+.imgCard {
+  height: 400px; }
+
+.titulo {
+  color: #177e17;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold; }
+
+.card {
+  margin-top: 25px;
+  width: 50%;
+  margin-left: 25%; }
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 70%;
+    margin-left: 15%; } }
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 100%;
+    margin: 0; } }
 
 /*
   _________________________
@@ -7345,7 +7367,17 @@ _________________________
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
     top: 50%;
-    float: none; }
+    float: none;
+    /*
+    }
+
+    /*
+    _________________________
+    |						|
+    |		  footer 		|
+    |						|
+    -------------------------
+    */ }
     .info h1 {
       margin-right: 0px;
       font-size: 50px;
@@ -7359,27 +7391,18 @@ _________________________
       line-height: 1.3;
       font-size: 20px;
       text-align: center; }
-
-      .dropdown{
-        position: relative;
-        right: -15%;
-      }
-  /*
-    _________________________
-    |						|
-    |		  footer 		|
-    |						|
-    -------------------------
-    */
-  #footer {
-    margin-top: 40%;
-    font-size: 15px;
-    text-align: center; }
-    #footer .content {
+    .info .dropdown {
       position: relative;
-      transform: translateY(-50%);
-      top: 50%;
-      line-height: 16px; } }
+      right: -15%; }
+    .info #footer {
+      margin-top: 40%;
+      font-size: 15px;
+      text-align: center; }
+      .info #footer .content {
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
+        line-height: 16px; } }
 
 body, html {
   height: 100%;
@@ -7389,7 +7412,7 @@ body, html {
   -o-background-size: cover;
   background-size: cover; }
 
-  body:after{
+body:after {
   content: "beta";
   position: fixed;
   width: 80px;
@@ -7404,8 +7427,7 @@ body, html {
   font-weight: bold;
   color: #fff;
   line-height: 27px;
-  transform:rotate(-45deg);
-}
+  transform: rotate(-45deg); }
 
 .selected {
   color: #000;
