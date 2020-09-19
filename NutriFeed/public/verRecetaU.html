@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head>
+		<title>NutriFeed</title>
+		<link rel="icon" href="imgs/logo-prov.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="scss/nutri.css" />
+		<link href="css/reset.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="#">
+					<img src="imgs/logo-prov.png" width="50" height="50" alt="">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li><a href="recetasUsuario.html">Regresar</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+        <div class="row">
+			<div class="col-sm-1"></div>
+            <div class="contTittle col-sm-10">
+                <div class="cont imgContainer col-xs-12 col-md-12 col-lg-4">
+                    <img class="imgReceta" src="../public/imgs/feed7.jpg" alt="Card image">
+                </div>
+                <div class="cont col-xs-12 col-md-12 col-lg-8">
+                    <h1 class="tituloReceta">Enchiladas y huevito</h1>
+                    <p class="descripcionCorta">Huevito rico con una especie de rollito con aguacate, esta rico pruebalo para quedar maravillado</p>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="description col-sm-10">
+                <h1 class="tituloDescripcion">Pasos a realizar</h1>
+                <ul>
+                    <li class="pasosReceta">poner huevito</li>
+                    <li class="pasosReceta">Cocinar huevito</li>
+                    <li class="pasosReceta">Preparar chilaquiles</li>
+                    <li class="pasosReceta">poner aguacate encima</li>
+                    <li class="pasosReceta">Commer yummy</li>
+                </ul>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+		<footer id="footer">
+			<div class="content">
+				<h1>© Copyright NutriFeed. Derechos reservados.</h1>
+				<h2>Contacto: 55-5464-7665</h2>
+			</div>
+		</footer>
+
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 6000); // Change image every 2 seconds
+			}
+		</script>
+
+	</body>
+</html>
