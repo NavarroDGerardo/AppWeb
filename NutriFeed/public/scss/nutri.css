@@ -7444,6 +7444,10 @@ label {
   opacity: 0.9;
   background-color: #fff; }
 
+.eliminar:hover {
+  color: red;
+  cursor: pointer; }
+
 .row {
   width: 100%;
   margin: auto; }
