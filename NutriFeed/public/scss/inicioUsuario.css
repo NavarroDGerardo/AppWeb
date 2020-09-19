@@ -7257,17 +7257,20 @@ a.text-dark:hover, a.text-dark:focus {
     width: 170px;
     height: 50px;
     position: relative;
-    right: -45%;
+    right: -48%;
     font-size: 20px;
     background-color: #4d4d4d;
     border: 2px solid rgba(51, 51, 51, 0.5); }
 
 .datos-profile {
+  width: 36%;
   position: relative;
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
   margin-left: 20%;
   margin-top: -12%; }
+
+ 
 
 /* Dropdown Button */
 .dropdown-toggle {
@@ -7457,9 +7460,10 @@ h1 {
     width: 100px;
     height: 40px; }
   .header-profile .datos-profile {
+    width: 40%;
     font-size: 16px;
     position: absolute;
-    right: 5%;
+    right: 3%;
     top: 50%; }
   /* Feed mobile version */
   * {
