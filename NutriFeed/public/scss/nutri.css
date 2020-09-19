@@ -7457,9 +7457,12 @@ label {
   width: 100%;
   margin: auto; }
 
+#footer {
+  margin-top: 200px; }
+
 body, html {
   height: 100%;
-  background: url("../imgs/backgroundIniUsuario.jpg") no-repeat center center fixed;
+  background: url("../imgs/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7556,6 +7559,10 @@ table tbody {
 
 table a {
   color: #087908; }
+
+@media screen and (max-width: 1200px) {
+  #buttons_container {
+    height: 70px; } }
 
 @media screen and (max-width: 1100px) {
   .opciones {
