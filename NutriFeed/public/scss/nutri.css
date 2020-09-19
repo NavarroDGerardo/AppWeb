@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url(../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url(../node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 .footer-style {
   font-family: "Rubik", sans-serif;
   background-color: #fff;
@@ -7454,7 +7459,7 @@ label {
 
 body, html {
   height: 100%;
-  background: url("../imgs/background.jpg") no-repeat center center fixed;
+  background: url("../imgs/backgroundIniUsuario.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
