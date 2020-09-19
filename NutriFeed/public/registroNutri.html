@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="es">
+	<head>
+		<title>NutriFeed | Iniciar sesión</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="scss/login.css" />
+		<link href="css/reset.css" rel="stylesheet">
+
+		<link rel="icon" href="imgs/logo-prov.png">
+	</head>
+	<body>
+
+		<header id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="index.html">
+				<img src="imgs/logo-prov.png" width="50" height="50" alt="">
+				</a>
+				<ul class="navbar-nav">
+					<li><a href="nutriologos.html" class="return">Regresar</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section id="inicioSesion">
+			<div id="formularioInicioSesion">
+				<div id="info">
+					<img src="imgs/logo-prov.png" alt="Logo">
+					<h2>Registro de Nutriólogo</h2>
+					<form class="formulario" action="nutri.html">
+						<input type="text" id="fnombreNutri" name="fnombreNutri" placeholder="Nombre de nutriólogo" required><br><br><br>
+						<input type="text" id="salario" name="salario" placeholder="Salario" required><br><br><br>
+						<input type="submit" value="Registrar"><br><br>
+					</form>
+				</div>
+			</div>
+		</section>
+
+
+		<div id="footer">
+			<div class="content">
+				<h1>© Copyright NutriFeed. Derechos reservados.</h1>
+				<h2>Contacto: 55-5464-7665</h2>
+			</div>
+		</div>
+
+		<script src="../node_modules/jquery/dist/jquery.js"></script>
+		<script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>
