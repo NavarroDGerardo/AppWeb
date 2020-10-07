@@ -28,7 +28,7 @@
               "projects/nutri-feed-app/src/assets"
             ],
             "styles": [
-              "projects/nutri-feed-app/src/styles.scss"
+              "projects/nutri-feed-app/src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -92,7 +92,7 @@
               "projects/nutri-feed-app/src/assets"
             ],
             "styles": [
-              "projects/nutri-feed-app/src/styles.scss"
+              "projects/nutri-feed-app/src/styles/styles.scss"
             ],
             "scripts": []
           }
