@@ -10,10 +10,14 @@
     margin-top: $size-20;
     font-family: $font-family-rubik;
     height: $size-100;
-    font-size: 18px;
+    font-size: 10px;
     background-color: $white;
     opacity: 0.9;
     text-align: $center;
+
+    & h1,h2{
+      font-size: 18px;
+    }
 
     & .content{
         position: $relative;
@@ -22,3 +26,5 @@
         line-height: $size-30;
     }
 } 
+
+

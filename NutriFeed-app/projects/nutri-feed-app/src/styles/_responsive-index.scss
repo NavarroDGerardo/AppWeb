@@ -7,6 +7,16 @@
       -------------------------
   */
   
+@media screen and (max-width:800px){ 
+
+    #header{
+    & .dropdown{
+      
+    right: 10%;
+     }
+    }
+}
+
   @media screen and (max-width:700px){ 
     /*
     _________________________
@@ -19,7 +29,7 @@
         height: $full-size;
     }
     #message {
-        margin-top: 20%;
+        margin-top: 5%;
         position: $relative;
         top: $scale-50;
         transform: translateY(-$scale-50);
@@ -27,7 +37,7 @@
         opacity: 0.9;
         text-align: $center;
         width: $full-size;
-        height: 5$size-50;
+        height: 500px;
         float: right;
     }
     .info{
@@ -55,10 +65,17 @@
             text-align: $center;
         }
 
-        & .dropdown{
-        position: $relative;
-        right: -15%;
-      }
+
+    }
+
+  #header{
+    & .dropdown{
+      
+    right: 20%;
+     }
+
+    }
+
   /*
     }
 
@@ -80,5 +97,6 @@
             line-height: 16px;
         }
     }
+
 }
-}
+

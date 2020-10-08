@@ -11,11 +11,11 @@
 
 #header {
     font-family: $font-family-quicksand;
+    position: relative;
     font-size: 45px;
     box-shadow: $size-0 $size-0 $size-0 1.5px $black-shadow;
     opacity: 0.9;
      
-    
        
     & img{
         margin-right: $size-20;
@@ -58,8 +58,17 @@
     }
 
    & .dropdown {
-    position: $absolute;
-    right: $scale-10;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+
+    /*
+   position: relative;
+   transform: translateX(-50%) translateY(-50%);
+    left: 25%;
+    top: 25%;
+    */
 }
 
 }
