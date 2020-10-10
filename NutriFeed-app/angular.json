@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "nutriFeed-app"
+    }
+  },
+  "defaultProject": "nutriFeed-app",
+  "cli": {
+    "analytics": false
+  }
 }
