@@ -9,6 +9,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 
 import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
+import { BeneficiosModule } from './module/beneficios/beneficios.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AcercaModule } from './module/acerca/acerca.module';
     BrowserModule,
     AppRoutingModule,
     ComunidadModule,
-    AcercaModule
+    AcercaModule,
+    BeneficiosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

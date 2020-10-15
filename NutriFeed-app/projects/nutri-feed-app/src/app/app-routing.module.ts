@@ -5,7 +5,8 @@ import { IndexBodyComponent } from './Components/index-body/index-body.component
 const routes: Routes = [
   {path:'', component:IndexBodyComponent},
   {path:'acerca', loadChildren:'./module/acerca/acerca.module#AcercaModule'},
-  {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'}
+  {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'},
+  {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'}
 ];
 
 @NgModule({
