@@ -10,6 +10,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
+import { NutriModule } from './module/nutri/nutri.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BeneficiosModule } from './module/beneficios/beneficios.module';
     AppRoutingModule,
     ComunidadModule,
     AcercaModule,
-    BeneficiosModule
+    BeneficiosModule,
+    NutriModule
   ],
   providers: [],
   bootstrap: [AppComponent]
