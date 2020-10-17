@@ -6,7 +6,8 @@ const routes: Routes = [
   {path:'', component:IndexBodyComponent},
   {path:'acerca', loadChildren:'./module/acerca/acerca.module#AcercaModule'},
   {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'},
-  {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'}
+  {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'},
+  {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'}
 ];
 
 @NgModule({
