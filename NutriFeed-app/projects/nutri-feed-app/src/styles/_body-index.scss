@@ -28,7 +28,7 @@ section{
     & h2{
         font-family: $font-family-caveat;
         margin-right: 15px;
-        font-size: $size-70;
+        font-size: $size-60;
         margin-bottom: $size-20;
         text-align: $center;
     }
@@ -79,7 +79,8 @@ _________________________
 }
 .unirse{
     @extend .button-basic;
-    margin-left: -$size-50;
+    margin-top: 0px;
+    margin-left: 150px;
     & a {
         text-decoration: none;
         color: $black;
