@@ -1,0 +1,341 @@
+@import "../../../../../styles/personalizacion";
+/*
+  _________________________
+  |                        |
+  |         cuerpo         |
+  |                        |
+  -------------------------
+  */
+ 
+/* Header de perfil */
+.header-profile {
+    position: $relative;
+    height: $size-100*2+$size-80;
+    width: $full-size;
+    background-color: $header-grey; 
+    & img {
+        border-radius: $scale-50;
+        position: $relative;
+        right: -($size-30 + 5);
+        top: $size-50;
+    }
+}
+
+
+.buttons-profile  {  
+  position: $relative;
+  top: $scale-10; 
+  & button {
+    text-align: $center;
+    line-height: 1em;
+    margin-right: 5%;
+    width: 170px;
+    height: $size-50;
+    position: $relative;
+    right: -48%;
+    font-size: $size-20;
+    background-color: $grey-background;
+    border: 2px solid $header-grey;
+  }  
+}
+
+
+.datos-profile {
+  width: 36%;
+  position: $relative;
+  font-family: $font-family-quicksand;
+  font-size: 25px;
+  margin-left: $scale-20;
+  margin-top: -12%; }
+
+  /* Dropdown Button */
+
+.dropdown-toggle{
+  position: $relative;
+  right: -65%;
+  top: $size-20;
+}
+
+/* Display web-version */
+ .web-version {
+  display: block;
+
+}
+.mobile-version {
+  display: none;
+}
+
+/* Feed version web */
+
+.container-gallery{
+  
+  background-color: $white;
+   padding: 5px; 
+  text-align: $center;
+  font-size: 28px;
+    font-family: $font-family-caveat;
+
+}
+
+/* svg icono ojo */
+
+.bi-eye-fill{
+  margin-left: 85%;
+  position: $relative;
+  top: -28px;
+
+}
+
+
+ h1 {
+   word-break: break-all;
+}
+ .row {
+   margin: 8px -16px;
+   padding: 8px;
+}
+ .row > .column {
+   padding: 8px;
+}
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+ .column {
+   float: left;
+   width: 25%;
+}
+
+.col h4{
+  text-align: $center;
+  font-family: $font-family-caveat;
+  font-size: $size-30;
+}
+
+/*
+  _________________________
+  |                       |
+  |       Responsive      |
+  |                       |
+  -------------------------
+*/
+
+  @mixin footerMargin($margin-top) {
+    margin-top: $margin-top;
+  }
+
+  @mixin datosProfile($fontSize, $margin-left, $margin-top) {
+    font-family: $font-family-opensans;
+    font-size: $fontSize;
+    margin-left: $margin-left;
+    margin-top: $margin-top;
+  }
+
+  @mixin buttonsProfile($width, $height, $position, $right, $top, $font-size) {
+    width: $width;
+    height: $height;
+    position: $position;
+    right: $right;
+    top: $top;
+    font-size: $font-size;
+  }
+
+  @media (min-width: 1199.98px) {
+    .datos-profile {
+      @include datosProfile(26px, 15%, -7%); 
+    }
+   
+    #footer{
+      @include footerMargin($scale-10);
+    }
+   
+}
+@media (max-width: 1199.98px) {
+
+  /* Header de perfil */
+
+  .buttons-profile button{
+    @include buttonsProfile(180px, $size-60, $relative, -36%, $size-20, $size-20);
+  } 
+
+  .datos-profile {
+    @include datosProfile(26px, $scale-20, -15%);
+  }
+
+  .container {
+    margin-top: $scale-10;
+  }
+
+  #row2{
+    margin-top: $scale-10;  
+  }
+  /* Fix footer */
+  #footer {
+    @include footerMargin(250px);
+  }
+}
+   
+   
+@media screen and (max-width: 700px) {
+   
+  .datos-profile {
+    @include datosProfile($size-40, $scale-20, $scale-20);
+  }
+  #footer {
+    @include footerMargin($size-20);
+    font-family: $font-family-rubik;
+    height: $size-100;
+    font-size: 18px;
+    background-color: $white;
+    opacity: 0.9;
+    text-align: $center; 
+    & .content {
+      position: $relative;
+      transform: translateY(-$scale-50);
+      top: $scale-50;
+      line-height: $size-30; 
+    };
+  }
+}
+     
+@media screen and (max-width: 991.98px) {
+  /* Display mobile version */
+
+  .web-version {
+    display: none;
+  }
+  .mobile-version {
+    display: block;
+  }
+
+  /* Header de perfil fix */
+
+  .header-profile img {
+    width: 160px;
+    height: 160px; 
+  }
+  
+  .buttons-profile button {
+    margin-right: 2%;
+    @include buttonsProfile(160px, $size-50, $relative, -200px, $size-30, $size-20);
+  }
+  .datos-profile {
+    font-size: 24px;
+    margin-left: 35%;
+    margin-top: -$scale-20; 
+  }
+
+/* Feed Mobile version */
+
+  .mobile-version{
+    & .column{
+      width: $scale-50;
+    }
+    & .content {
+      font-family: $font-family-caveat;
+      font-size: $size-30; 
+      background-color:$white;
+      padding: 5px;
+    }
+    & .feed{
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: $size-20;
+    } 
+  }
+
+  /* Pop up Carousel fix */
+
+  .description{
+    text-align: $center;
+    margin-top: 5%;
+    & h2 {
+      margin-bottom: $scale-10;
+      font-size: $size-30;
+      font-family: $font-family-caveat;
+    }
+    & p{
+      font-family: $font-family-opensans;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 749px) {
+  /* Display mobile version */
+
+  .web-version {
+    display: none;
+  }
+  .mobile-version {
+    display: block;
+
+    & .column{
+      width: $scale-50;
+    }
+    & .feed{
+      width: 340px;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: $size-20;
+    }  
+    & .content{
+      font-size: $size-20;
+      font-family: $font-family-caveat;
+      background-color:$white;
+      padding: 5px; 
+    }
+  }
+
+  /* Header de perfil fix */
+
+  .profile-photo{
+    position: $relative;
+    top: -28px;
+    right: 5%;
+  }
+
+
+  .buttons-profile  {
+    top: $scale-10;
+  }
+
+  .buttons-profile .btn{
+    position: $relative;
+    right: -5%;
+    font-size: 16px;
+    width: $size-100;
+    height: $size-40;
+
+  }
+
+  .header-profile .datos-profile{
+      width: 40%;
+      font-size: 16px;
+      position: absolute;
+      right: 3%;
+      top: $scale-50;
+  }
+
+  /* Feed mobile version */
+
+  * {
+    box-sizing: border-box; 
+  }
+  
+  /* Pop up carousel fix */ 
+
+  .description{
+    & h2{
+      margin-bottom: $scale-10;
+      font-size: $size-20;
+      font-family: $font-family-caveat;
+    }
+    & p{
+      font-family: $font-family-opensans;
+      font-size: $size-10;
+    }
+  }
+}
