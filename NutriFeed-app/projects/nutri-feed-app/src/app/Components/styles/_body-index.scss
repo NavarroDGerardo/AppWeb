@@ -1,0 +1,94 @@
+@import "personalizacion";
+/*
+  _________________________
+  |						|
+  |		 cuerpo    		|
+  |						|
+  -------------------------
+  */
+section{
+    padding: $size-10;
+    height: 88%;
+}
+#message {
+    font-family:$font-family-opensans;
+    margin-top: $size-20;
+    width: $scale-50;
+    height: $full-size;
+    float: right;
+}
+.info{
+    font-family: $font-family-quicksand;
+    position: $relative;
+    width: 80%;
+    margin-right: $size-80;
+    transform: translateY(-$scale-50);
+    top: $scale-50;
+    float: right;
+    & h2{
+        font-family: $font-family-caveat;
+        margin-right: 15px;
+        font-size: $size-60;
+        margin-bottom: $size-20;
+        text-align: $center;
+    }
+   
+    & p {
+        line-height: 1.5;
+        font-size: $size-20;
+        margin-bottom: 15px;
+    }
+    & ul {
+        margin-left: 15px;
+        margin-top: $size-20;
+        text-align: left;
+        font-size: $size-20;
+        list-style-type: square;
+    }
+    & li{
+        margin-left: $size-50;
+        margin-bottom: 14px;
+    }
+}
+
+
+/*
+_________________________
+|						|
+|		 botones		|
+|						|
+-------------------------
+*/
+
+.button-basic{
+    margin-top: 25px;
+    background-color: transparent;
+    border: 1px solid;
+    color: $black;
+    padding: 15px 32px;
+    text-align: $center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    &:hover{
+        cursor: pointer;
+        color: $primary;
+        border: 1px solid;
+        border-color: $primary;
+    }
+}
+.unirse{
+    @extend .button-basic;
+    margin-top: 0px;
+    margin-left: 150px;
+    & a {
+        text-decoration: none;
+        color: $black;
+        cursor: pointer;
+    } 
+}
+
+.aprende{
+    @extend .button-basic;
+}
+
