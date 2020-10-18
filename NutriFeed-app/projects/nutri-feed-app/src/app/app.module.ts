@@ -11,6 +11,7 @@ import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
 import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.module';
+import { RegistroRoutingModule } from './module/registro/registro-routing.module';
 import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 
@@ -30,7 +31,11 @@ import { PacienteModule } from './module/paciente/paciente.module';
     BeneficiosModule,
     NutriModule,
     IniciarSesionModule,
+<<<<<<< HEAD
     PacienteModule
+=======
+    RegistroRoutingModule
+>>>>>>> 65ac17d0c54558cbecd698254749ca86be4d2ea6
   ],
   providers: [],
   bootstrap: [AppComponent]
