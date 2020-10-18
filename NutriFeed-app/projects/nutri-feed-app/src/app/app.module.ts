@@ -31,11 +31,8 @@ import { PacienteModule } from './module/paciente/paciente.module';
     BeneficiosModule,
     NutriModule,
     IniciarSesionModule,
-<<<<<<< HEAD
-    PacienteModule
-=======
+    PacienteModule,
     RegistroRoutingModule
->>>>>>> 65ac17d0c54558cbecd698254749ca86be4d2ea6
   ],
   providers: [],
   bootstrap: [AppComponent]
