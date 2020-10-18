@@ -7,6 +7,7 @@ const routes: Routes = [
   {path:'acerca', loadChildren:'./module/acerca/acerca.module#AcercaModule'},
   {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'},
   {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'},
+  {path: 'w3c', loadChildren:'./module/w3c/w3c.module#W3CModule'},
   {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'}
 ];
 

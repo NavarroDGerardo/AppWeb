@@ -10,6 +10,7 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
+import { W3CModule } from './module/w3c/w3c.module';
 import { NutriModule } from './module/nutri/nutri.module';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NutriModule } from './module/nutri/nutri.module';
     ComunidadModule,
     AcercaModule,
     BeneficiosModule,
+    W3CModule,
     NutriModule
   ],
   providers: [],
