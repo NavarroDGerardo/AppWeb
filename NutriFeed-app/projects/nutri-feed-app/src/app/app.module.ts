@@ -11,6 +11,7 @@ import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
 import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.module';
+import { RegistroRoutingModule } from './module/registro/registro-routing.module';
 import { NutriModule } from './module/nutri/nutri.module';
 
 
@@ -28,7 +29,8 @@ import { NutriModule } from './module/nutri/nutri.module';
     AcercaModule,
     BeneficiosModule,
     NutriModule,
-    IniciarSesionModule
+    IniciarSesionModule,
+    RegistroRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

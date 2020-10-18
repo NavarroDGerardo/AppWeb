@@ -6,7 +6,7 @@ import { RecetasComponent } from './components/recetas/recetas.component';
 import { NutriologosComponent } from './components/nutriologos/nutriologos.component';
 
 const routes: Routes = [
-  {path: 'horario', component:HorarioComponent},
+  {path: '', component:HorarioComponent},
   {path: "paciente", component:PacientesComponent},
   {path: "recetas", component:RecetasComponent},
   {path: "nutriologos", component:NutriologosComponent}
