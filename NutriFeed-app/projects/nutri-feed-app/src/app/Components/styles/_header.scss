@@ -1,0 +1,74 @@
+@import "personalizacion";
+ /*
+  _________________________
+  |						|
+  |		  menu     		|
+  |						|
+  -------------------------
+  */
+
+  
+
+#header {
+    font-family: $font-family-quicksand;
+    position: relative;
+    font-size: 45px;
+    box-shadow: $size-0 $size-0 $size-0 1.5px $black-shadow;
+    opacity: 0.9;
+     
+       
+    & img{
+        margin-right: $size-20;
+    }
+
+    & ul{
+        color: $secondary;
+        font-size: $size-20;
+    }
+
+    & li{
+        display: inline-block;
+        margin-right: $size-20;
+        cursor: $pointer;
+        color: $secondary;
+        height: $size-50;
+        line-height: $size-50;
+        &:hover{
+            color: $black;
+            border-bottom: 1px solid;
+            border-color: $primary;
+        }
+    }
+
+    & a{
+        text-decoration: none;
+        color: $secondary;
+        cursor: $pointer;
+        &:hover{
+            color: $black;
+        }
+    }
+
+    & .menu{
+        left: $size-100;
+    }
+
+    & .ini-reg{
+        right: 0;
+    }
+
+   & .dropdown {
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    transform: translateY(-50%);
+
+    /*
+   position: relative;
+   transform: translateX(-50%) translateY(-50%);
+    left: 25%;
+    top: 25%;
+    */
+}
+
+}

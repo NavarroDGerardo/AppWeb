@@ -10,7 +10,10 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ComunidadModule } from './module/comunidad/comunidad.module';
 import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
+import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.module';
+import { RegistroRoutingModule } from './module/registro/registro-routing.module';
 import { NutriModule } from './module/nutri/nutri.module';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { NutriModule } from './module/nutri/nutri.module';
     ComunidadModule,
     AcercaModule,
     BeneficiosModule,
-    NutriModule
+    NutriModule,
+    IniciarSesionModule,
+    RegistroRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
