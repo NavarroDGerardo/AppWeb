@@ -8,8 +8,9 @@ const routes: Routes = [
   {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'},
   {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'},
   {path: 'iniciarSesion', loadChildren:'./module/iniciar-sesion/iniciar-sesion.module#IniciarSesionModule'},
+  {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'},
+  {path: 'paciente', loadChildren: './module/paciente/paciente.module#PacienteModule'},
   {path: 'registro', loadChildren:'./module/registro/registro-routing.module#RegistroRoutingModule'},
-  {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'}
 ];
 
 @NgModule({

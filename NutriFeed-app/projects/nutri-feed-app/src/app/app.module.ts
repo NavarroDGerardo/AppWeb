@@ -13,6 +13,7 @@ import { BeneficiosModule } from './module/beneficios/beneficios.module';
 import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.module';
 import { RegistroRoutingModule } from './module/registro/registro-routing.module';
 import { NutriModule } from './module/nutri/nutri.module';
+import { PacienteModule } from './module/paciente/paciente.module';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { NutriModule } from './module/nutri/nutri.module';
     BeneficiosModule,
     NutriModule,
     IniciarSesionModule,
+    PacienteModule,
     RegistroRoutingModule
   ],
   providers: [],
