@@ -9,6 +9,7 @@ const routes: Routes = [
   {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'},
   {path: 'iniciarSesion', loadChildren:'./module/iniciar-sesion/iniciar-sesion.module#IniciarSesionModule'},
   {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'},
+  {path: 'w3c', loadChildren: './module/w3c-verificacion/w3c-verificacion-routing.module#W3cVerificacionRoutingModule'},
   {path: 'paciente', loadChildren: './module/paciente/paciente.module#PacienteModule'},
   {path: 'registro', loadChildren:'./module/registro/registro-routing.module#RegistroRoutingModule'},
 ];

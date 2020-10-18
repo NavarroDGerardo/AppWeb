@@ -14,6 +14,7 @@ import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.modu
 import { RegistroRoutingModule } from './module/registro/registro-routing.module';
 import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
+import { W3cVerificacionModule } from './module/w3c-verificacion/w3c-verificacion.module';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { PacienteModule } from './module/paciente/paciente.module';
     NutriModule,
     IniciarSesionModule,
     PacienteModule,
+    W3cVerificacionModule,
     RegistroRoutingModule
   ],
   providers: [],
