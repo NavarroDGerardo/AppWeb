@@ -6,10 +6,11 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { DietaComponent } from './components/dieta/dieta.component';
 import { ProgresoComponent } from './components/progreso/progreso.component';
 import { RecetaComponent } from './components/receta/receta.component';
+import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
 
 
 @NgModule({
-  declarations: [InicioComponent, DietaComponent, ProgresoComponent, RecetaComponent],
+  declarations: [InicioComponent, DietaComponent, ProgresoComponent, RecetaComponent, VerRecetaComponent],
   imports: [
     CommonModule,
     PacienteRoutingModule
