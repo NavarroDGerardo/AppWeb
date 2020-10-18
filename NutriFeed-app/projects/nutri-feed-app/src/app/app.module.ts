@@ -12,6 +12,7 @@ import { AcercaModule } from './module/acerca/acerca.module';
 import { BeneficiosModule } from './module/beneficios/beneficios.module';
 import { IniciarSesionModule } from './module/iniciar-sesion/iniciar-sesion.module';
 import { NutriModule } from './module/nutri/nutri.module';
+import { PacienteModule } from './module/paciente/paciente.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { NutriModule } from './module/nutri/nutri.module';
     AcercaModule,
     BeneficiosModule,
     NutriModule,
-    IniciarSesionModule
+    IniciarSesionModule,
+    PacienteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
