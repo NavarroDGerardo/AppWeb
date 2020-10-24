@@ -1,98 +1,187 @@
-<body>
-	<h1 class="titulo_page">RECETAS</h1>
-
-	<div class="container">  
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-		  </ol>
-	  
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-			<div class="item active">
-				<img src="../public/imgs/Recetas/Platillo_1.jpg" class="imagen_carousel" alt="">
-			</div>
-	  
-			<div class="item">
-				<img src="../public/imgs/Recetas/Platillo_2.jpg" class="imagen_carousel" alt="">
-			</div>
-		  
-			<div class="item">
-				<img src="../public/imgs/Recetas/Platillo_3.jpg" class="imagen_carousel" alt="">
-			</div>
-
-			<div class="item">
-				<img src="../public/imgs/Recetas/Platillo_4.jpg" class="imagen_carousel" alt="">
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+	<!-- Brand/logo -->
+	<a class="navbar-brand" href=""><img src="../../../../../assets/img/logo-prov.png" width="48" height="48" alt="logo"></a>
+	
+	<!-- Links -->
+	<ul class="navbar-nav">
+	  <li class="nav-item">
+		  <a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			  <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+			  <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+			</svg></a> 
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  <path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+		</svg></a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-journals" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		  <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
+		  <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+		</svg></a>
+	  </li>
+	  <li class="nav-item">
+	  <span class="mini-profilepic" role="link" tabindex="0" style="width: 40px; height: 40px;"><img alt="Foto del perfil" class="image-profile" data-testid="user-avatar" draggable="false" src="../../../../../assets/img/profilepic.jpg"></span>
+	</ul>
+  </nav>
+  <!-- Body de la app -->
+  <div class="container-fluid">
+	  <div class="row">
+		  <div class="col-md-2">
+		  </div>
+		  <!-- Area principal de en medio-->
+		  <div class="col-md-8"> 
+			  <!-- Grid entro del area principal -->    
+			  <div class="row">
+				  <div class="col-md-8 col-tarjetas">
+					  <!-- Tarjeta de feed 1 -->
+					  <div class="tarjeta-1">
+						  <div class="instagram-post">
+							  <div class="instagram-post-top">
+								<div class="instagram-post-avatar">
+							  <img src="../../../../../assets/img/profilepic.jpg" width="48" height="48" alt="logo">
+								</div>
+								<div class="instagram-post-username">
+								 Daniela Fernandez
+								</div>
+								<div class="instagram-post-date">
+								  Sept 1
+								</div>
+								<div class="instagram-post-bookmark">
+								  <span class="th th-bookmark-1-o"></span>
+								</div>
+							  </div>
+							  <div class="instagram-post-image">
+								<img src="../../../../../assets/img/receta_6.jpg" >
+							  </div>
+							  <div class="instagram-post-bottom">
+								<div class="instagram-post-text">
+								  <div> Pan Tostado y huevo <br> Receta para desayuno<br><i>#desayuna #huevo</i></div>
+								</div>
+								<div class="instagram-post-icons">
+								  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm4.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+									</svg></span>
+								  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path fill-rule="evenodd" d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+									</svg></span>
+								</div>
+								<div class="instagram-post-view">
+								  <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="modal" data-target="#modalQuickView">
+									  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+									  <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+									</svg></span>
+								</div>
+							  </div>
+							</div>
+						   </div>
+							 <!-- Tarjeta de feed 2 -->
+						   <div class="tarjeta-1">
+							  <div class="instagram-post">
+								  <div class="instagram-post-top">
+									<div class="instagram-post-avatar">
+								  <img src="../../../../../assets/img/profilepic.jpg" width="48" height="48" alt="logo">
+									</div>
+									<div class="instagram-post-username">
+									 Daniela Fernandez
+									</div>
+									<div class="instagram-post-date">
+									  Sept 1
+									</div>
+									<div class="instagram-post-bookmark">
+									  <span class="th th-bookmark-1-o"></span>
+									</div>
+								  </div>
+								  <div class="instagram-post-image">
+									<img src="../../../../../assets/img/receta_7.jpg">
+								  </div>
+								  <div class="instagram-post-bottom">
+									<div class="instagram-post-text">
+									  <div> Avena con frutos rojos <br> Receta para snack<br><i>#snack #avena #frutosrojos</i></div>
+									</div>
+									<div class="instagram-post-icons">
+									  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+										  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm4.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+										</svg></span>
+									  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
+										  <path fill-rule="evenodd" d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
+										</svg></span>
+									</div>
+									<div class="instagram-post-view">
+									  <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  data-toggle="modal" data-target="#modalQuickView">
+										  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+										  <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+										</svg></span>
+									</div>
+								  </div>
+								</div>
+							   </div>
+				  </div>
+				  <!-- Area de Search bar -->
+				  <div class="col-md-4">
+					  <div class="search-area">
+					  <form action="">
+						  <div class="p-1 bg-light rounded  shadow-sm mb-4">
+							  <div class="input-group">
+								<div class="input-group-prepend">
+								  <button id="button-addon2" type="submit" class="btn btn-link "><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+									  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+									  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+									</svg></button>
+								</div>
+								<input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+							  </div>
+							</div>
+					  </form>
+				  </div>
+			  
+				  </div>
+			  </div>
+		
+		  </div>
+		  <div class="col-md-2">
+		  </div>
+	  </div>
+	  <!-- Modal: modalQuickView Pop up-->
+	  <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" 
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+	<div class="modal-content">
+	  <div class="modal-body">
+		<div class="row row-carousel">
+		  <div class="col col-carousel">
+  
+			  <div class="image-receta">
+				  <img class="d-block "
+					src="../../../../../assets/img/receta_6.jpg"
+					alt="receta">
+				</div>
+				
+		  </div>
+		  <div class= "description">
+			  <div class= "description-text" >
+			<h2>
+			  Descripción
+			</h2>
+			<p>
+			  Desayuno: Huevo con nopales
+			</p>
+			<p>
+			  Comida: Pollo a la mexicana
+			</p>
+			<p>
+			  Cena: Sandwich de pavo
+			</p>
+		  </div>
 			</div>
 		  </div>
-	  
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-			<span class="sr-only">Next</span>
-		  </a>
 		</div>
 	  </div>
-
-	<div class="row">
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<a href="#" class="btn btn-primary addReceta">Ver todas las recetas</a>
-		</div>
-		<div class="col-sm-2"></div>
-		<div class="col-sm-2"></div>
-		<div class="col-sm-8">
-			<div class="card col-xs-12 col-md-6 col-lg-4">
-				<img class="card-img-top" src="../public/imgs/feed7.jpg" alt="Card image" style="width:100%">
-				<div class="card-body">
-					<h4 class="tituloCard">Enchiladas y huevito</h4>
-					<hr>
-					<p class="card-text">Huevito rico con una especie de rollito con aguacate, esta rico pruebalo para quedar maravillado</p>
-					<a href= "verRecetaU.html" class="btn btn-primary boton_card">Ver receta</a>
-					
-				</div>
-			</div>
-			<div class="card col-xs-12 col-md-6 col-lg-4">
-				<img class="card-img-top" src="../public/imgs/feed7.jpg" alt="Card image" style="width:100%">
-				<div class="card-body">
-					<h4 class="tituloCard">Enchiladas y huevito</h4>
-					<hr>
-					<p class="card-text">Huevito rico con una especie de rollito con aguacate, esta rico pruebalo para quedar maravillado</p>
-					<a href= "verRecetaU.html" class="btn btn-primary boton_card">Ver receta</a>
-					
-				</div>
-			</div>
-			<div class="card col-xs-12 col-md-6 col-lg-4">
-				<img class="card-img-top" src="../public/imgs/feed7.jpg" alt="Card image" style="width:100%">
-				<div class="card-body">
-					<h4 class="tituloCard">Enchiladas y huevito</h4>
-					<hr>
-					<p class="card-text">Huevito rico con una especie de rollito con aguacate, esta rico pruebalo para quedar maravillado</p>
-					<a href= "verRecetaU.html" class="btn btn-primary boton_card">Ver receta</a>
-					
-				</div>
-			</div>
-			<div class="card col-xs-12 col-md-6 col-lg-4">
-				<img class="card-img-top" src="../public/imgs/feed7.jpg" alt="Card image" style="width:100%">
-				<div class="card-body">
-					<h4 class="tituloCard">Enchiladas y huevito</h4>
-					<hr>
-					<p class="card-text">Huevito rico con una especie de rollito con aguacate, esta rico pruebalo para quedar maravillado</p>
-					<a href= "verRecetaU.html" class="btn btn-primary boton_card">Ver receta</a>
-					
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-2"></div>
 	</div>
+  </div>
+  
+  </div>
 	
 	<script src="../node_modules/jquery/dist/jquery.js"></script>
 	<script src="../node_modules/jquery/dist/jquery.slim.js"></script>
