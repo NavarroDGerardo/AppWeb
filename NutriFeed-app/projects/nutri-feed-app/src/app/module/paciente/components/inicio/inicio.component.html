@@ -1,295 +1,281 @@
-<div class="header-profile"> 
-    <a class = "profile-photo">
-    <img class="photo img-circle" src="imgs/profilepic.jpg" alt="Avatar" width="150" height="150" >
-    </a>
-      <div class= "buttons-profile ">
-    <button onclick="window.location.href='dieta.html'" type="button" class="btn btn-dark">Dieta</button>
-    <button onclick="window.location.href='progreso.html'"  type="button" class="btn btn-dark">Progreso</button>
-    <button onclick="window.location.href='recetasUsuario.html'" type="button" class="btn btn-dark" >Recetas</button>
-    </div>
-      <div class = "datos-profile">               
-        <h4> Daniela Fernandez</h4>
-        <p > <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-    </svg>CDMX, México </p>
-        <p> email@example.com </p>
-        <p >14 de Junio, 1995</p>
+
+    
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href=""><img src="../../../../../assets/img/logo-prov.png" width="48" height="48" alt="logo"></a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+        <a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+            <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+          </svg></a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-bar-chart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5h-2v12h2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+      </svg></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-journals" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
+        <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2v-1a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2zM1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+      </svg></a>
+    </li>
+    <li class="nav-item">
+    <span class="mini-profilepic" role="link" tabindex="0" style="width: 40px; height: 40px;"><img alt="Foto del perfil" class="image-profile" data-testid="user-avatar" draggable="false" src="../../../../../assets/img/profilepic.jpg"></span>
+  </ul>
+</nav>
+
+<!-- Body de pagina -->
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+            <!-- Side Navbar -->
+            <nav class=" d-none d-sm-block bg-light sidebar">
+                <ul class="nav nav-pills flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#"> Enero <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Febrero</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Marzo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Abril</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mayo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Junio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Julio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Agosto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Septiembre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Octubre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Noviembre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Diciembre</a>
+                  </li>
+                </ul>
+              </nav>
+		</div>
+		<div class="col-md-8">
+            <!-- Perfil de usuario -->
+      <div class="container-perfil-info"> 
+      
+        <a class = "profile-photo">
+        <img class="photo img-circle" src="../../../../../assets/img/profilepic.jpg" alt="Avatar" width="130" height="130" >
+        </a>
+        <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+          </svg>
+        <div class ="perfil-info">
+        <h4> Daniela Fernandez <span> (email@example.com )</span> </h4> 
+        <div class = "info-data">
+        <p >24 años</p>
         <p > 1.70 m</p>
         <p >72 kg</p>
+        <div> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>CDMX, México </div>
       </div>
-  
-    </div>
-   <!-- Dropdown mes -->
-    <div class="btn-group" >
+      
+      </div>
+      <a href="#" class="btn btn-lg btn-secondary btn-cerrar"> Cerrar sesión </a>
+      
+      <!-- Dropdown mes -->
+  <div class="btn-group drop" >
     <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Mes
     </button>
     <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Enero</a>
+      <a class="dropdown-item" href="#">Febrero</a>
+      <a class="dropdown-item" href="#">Marzo</a>
+      <a class="dropdown-item" href="#">Abril</a>
+      <a class="dropdown-item" href="#">Mayo</a>
+      <a class="dropdown-item" href="#">Junio</a>
+      <a class="dropdown-item" href="#">Julio</a>
       <a class="dropdown-item" href="#">Agosto</a>
       <a class="dropdown-item" href="#">Septiembre</a>
       <a class="dropdown-item" href="#">Octubre</a>
+      <a class="dropdown-item" href="#">Noviembre</a>
+      <a class="dropdown-item" href="#">Diciembre</a>
     </div>
   </div>
-  
-  <!-- Web Version -->
-  <div class="web-version">
-   
-  <!-- Feed -->
-  <div class="container">
-     <!-- Fila 1 --> 
-  <div class="row" id="row1">
-   <!-- Lunes -->
-  <div class="column">
-  <div class="container-gallery">
-  <img src="imgs/feed1.jpg" alt="" style="width:100%">
-  <h4>Lunes </h4> 
-  </div>
-  <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg>
-  </div>
-  
-  <!-- Martes -->
-  <div class="column">
-  <div class="container-gallery">
-   <img src="imgs/feed2.jpg" alt="" style="width:100%">
-   <h4>Martes</h4>    
-  </div>
-  <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg>
-  </div>
       
-  <!-- Miércoles -->
-  <div class="column">
-  <div class="container-gallery">
-  <img src="imgs/feed3.jpg" alt="" style="width:100%">
-  <h4>Miércoles</h4>
-  </div>
-    <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-     </svg>
-     </div>
-  <!-- Jueves -->
-  <div class="column">
-  <div class="container-gallery">
-   <img src="imgs/feed4.jpg" alt="" style="width:100%">
-   <h4>Jueves</h4>
-   </div>
-   <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg>
-   </div>
-   </div>
-      
-  <!-- Fila 2-->
-        <div class="row" id="row2">
-        <!-- Viernes -->
-        <div class="column">
-        <div class="container-gallery">
-        <img src="imgs/feed5.jpg" alt="" style="width:100%">
-        <h4>Viernes</h4>
-        </div>
-     <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-    </svg>
-    </div>
-      
-  <!-- Sábado -->
-    <div class="column">
-    
-    <div class="container-gallery">
-        <img src="imgs/feed6.jpg" alt="" style="width:100%">
-        <h4>Sábado</h4>
-        </div>
-        <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-       <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-       </svg>
       </div>
-  
-    <!-- Domingo -->
-    <div class="column">
-    <div class="container-gallery">
-    <img src="imgs/feed7.jpg" alt="" style="width:100%">
-    <h4>Domingo</h4>
-     </div>  
-    <svg width="25" height="25" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg> 
-  </div>
-  </div>
-  </div>
-  </div>
-  
-  
-  <!-- Versión Movil -->
-  <div class="mobile-version">
-   <div class="feed">
-  
-  
-    <div class="row">
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed1.jpg" alt="Lunes" style="width:100%">
-          <h3>Lunes </h3> 
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg> 
+          <!-- Menu semanas -->
+      <div class = "menu-semanas">
+          <a class="semana selected semana1">
+              <span>Semana 1</span>
+          </a>
+          <a class="semana semana2">
+           <span>Semana 2</span>
+          </a>
+          <a class="semana semana3">
+              <span>Semana 3</span>
+          </a>
+          <a class=" semana semana4">
+              <span>Semana 4</span>
+          </a>
+
       </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed2.jpg" alt="Martes" style="width:100%">
-          <h3>Martes</h3>
+
+             <!-- Profile Feed --> 
+      <div class="container-gallery">
+        <div class="row row-gallery " id="gallery-1">
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" src="../../../../../assets/img/feed1.jpg" data-toggle="modal" data-target="#modalComidas">
+            </div>
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" src="../../../../../assets/img/feed2.jpg " data-toggle="modal" data-target="#modalComidas">
+            </div>
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" src="../../../../../assets/img/feed3.jpg" data-toggle="modal" data-target="#modalComidas">
+            </div>
+            
+          </div>
+      </div>
+      <div class="row row-gallery" id="gallery-2">
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100"  src="../../../../../assets/img/feed4.jpg" data-toggle="modal" data-target="#modalComidas">
+            </div>
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" src="../../../../../assets/img/feed5.jpg" data-toggle="modal" data-target="#modalComidas">
+            </div>
+            <div class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" src="imgs_paciente/no-image.png" data-toggle="modal" data-target="#modalSubirC">
+            </div>
+          </div>
+          <div class="row row-gallery" id="gallery-2">
+            <div class="col-4 col-sm-4 col-lg-4 column">
+                <img class="w-100 h-100" src="imgs_paciente/no-image.png" data-toggle="modal" data-target="#modalSubirC">
+              </div>
+          </div>
+        </div>
+
         
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-        <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-         </svg> 
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed3.jpg" alt="Miercoles" style="width:100%">
-          <h3>Miércoles</h3>
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-         <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-            </svg> 
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed4.jpg" alt="Jueves" style="width:100% " >
-          <h3>Jueves</h3>
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-        <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg> 
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed5.jpg" alt="Viernes" style="width:100%">
-          <h3>Viernes</h3>
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-       <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-       </svg> 
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed6.jpg" alt="Sabado" style="width:100%">
-          <h3>Sábado</h3>
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-       <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-        <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg> 
-      </div>
-      <div class="column">
-        <div class="content">
-          <img src="imgs/feed7.jpg" alt="Domingo" style="width:100%">
-          <h3>Domingo</h3>
-          
-        </div>
-        <svg width="20" height="20" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" data-toggle="modal" data-target="#modalQuickView" xmlns="http://www.w3.org/2000/svg">
-    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-  </svg> 
-      </div>
+		<div class="col-md-2">
+		</div>
     </div>
-  
-  
     
-    </div>
-  
-  </div>
-  
-  <!-- Modal: modalQuickView Pop up Carousel-->
-  <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog" 
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="row">
-            <div class="col">
-              <!--Carousel Wrapper-->
-              <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
-                data-interval="false">
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100"
-                      src="imgs/c1.jpg"
-                      alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100"
-                      src="imgs/c3.jpg"
-                      alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100"
-                      src="imgs/c2.jpg"
-                      alt="Third slide">
-                  </div>
-                </div>
-                <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-                
+    <!-- Modal Ver comidas del día: modalComidas Pop up Carousel -->
+<div class="modal fade" id="modalComidas" tabindex="-1" role="dialog" 
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="row row-carousel">
+        <div class="col">
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails"
+            data-interval="false">
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <img class="d-block w-100 "
+                  src="imgs_paciente/c1.jpg"
+                  alt="First slide">
               </div>
-              <!--/.Carousel Wrapper-->
-            </div>
-            <div class="col">
-            <div class= "description">
-              <h2>
-                Descripción
-              </h2>
-              <p>
-                Desayuno: Huevo con nopales
-              </p>
-              <p>
-                Comida: Pollo a la mexicana
-              </p>
-              <p>
-                Cena: Sandwich de pavo
-              </p>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="imgs_paciente/c2.jpg"
+                  alt="Second slide">
               </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="imgs_paciente/c3.jpg"
+                  alt="Third slide">
               </div>
             </div>
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            
+          </div>
+          <!--/.Carousel Wrapper-->
+        </div>
+        <div class= "description">
+            <div class= "description-text" >
+          <h2>
+            Descripción
+          </h2>
+          <p>
+            Desayuno: Huevo con nopales
+          </p>
+          <p>
+            Comida: Pollo a la mexicana
+          </p>
+          <p>
+            Cena: Sandwich de pavo
+          </p>
+        </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </div>
-    
+
+   <!-- Modal Subir comidas: modalSubirC Pop up Carousel -->
+   <div class="modal fade" id="modalSubirC" tabindex="-1" role="dialog" 
+   aria-hidden="true">
+   <div class="modal-dialog modal-lg" role="document">
+     <div class="modal-content">
+       <div class="modal-body">
+         <div class="row row-carousel">
+           <div class="col col-upload">
+             <!--Botones subir foto-->
+           <div class="upload-container">
+            <form action="/action_page.php">
+              <input type="file" id="myFile" name="filename">
+              <br><input type="file" id="myFile" name="filename">
+              <br><input type="file" id="myFile" name="filename">
+              <br><textarea id="w3review" name="w3review" rows="4" cols="50">
+              Desayuno:
+              Comida:
+              Cena:
+                </textarea>
+              <br><input type="submit">
+            </form>
+           </div>
+          </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+</div>
 <!--Funcionalidad pop up carousel-->
 <script>
     $(document).ready(function() {
-        $('.mdb-select').materialSelect();
-    });
-</script>
+      $('.mdb-select').materialSelect();
+     });
+    </script>
   
 <!--Más bootstrap-->
 <script src="../node_modules/jquery/dist/jquery.js"></script>

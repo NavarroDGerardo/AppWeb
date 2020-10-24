@@ -12,7 +12,7 @@ $red-hover: #C20808;
 $green-color: green;
 $green-border: #008939;
 $green-ligth:#D3FFB6;
-$verde_nutrifeed: rgb(8, 121, 8);
+$verde_nutrifeed: rgb(84, 153, 98);
 $green-tab: #408000;
 
 $gray-color: gray;
@@ -36,7 +36,10 @@ $size-50: 50px;
 $size-60: 60px;
 $size-70: 70px;
 $size-80: 80px;
+$size-90: 90px;
 $size-100: 100px;
+$size-200: 200px;
+
 
 $scale-10: 10%;
 $scale-20: 20%;
@@ -59,6 +62,7 @@ $web-font-path3: "https://fonts.googleapis.com/css2?family=Caveat&family=EB+Gara
 @import url($web-font-path3);
 
 $sans-serif-font: sans-serif;
+$font-family-raleway:'Raleway', $sans-serif-font;
 $font-family-quicksand: 'Quicksand', $sans-serif-font;
 $font-family-rubik: 'Rubik', $sans-serif-font;
 $font-family-opensans: 'Open Sans', $sans-serif-font;
