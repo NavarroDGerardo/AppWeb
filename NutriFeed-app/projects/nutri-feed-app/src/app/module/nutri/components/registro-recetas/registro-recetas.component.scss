@@ -202,7 +202,7 @@ body, html {
       }
   }
 
-  #info form input[type=submit] {
+.botonRegistrar {
       margin-top: $size-50;
 
       margin-bottom: $size-10;
@@ -217,8 +217,9 @@ body, html {
       background-color: $green-border;
       color: $white;
   }
-  #info form input[type=submit]:hover {
-      color: $green-ligth;
+.botonRegistrar:hover {
+      background-color: $green-ligth;
+      color: $green-border;
   }
   #info form a {
     text-decoration: none;
