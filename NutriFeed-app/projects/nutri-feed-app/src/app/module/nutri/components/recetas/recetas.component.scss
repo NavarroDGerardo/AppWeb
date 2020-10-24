@@ -7,6 +7,15 @@
     margin: auto;
 }
 
+.card-img-top{
+    height: 250px;
+    margin-top: 20px;
+}
+
+.card-text{
+    height: 150px;
+}
+
 .selected{
     color: $black;
     border-bottom: 1px solid;
