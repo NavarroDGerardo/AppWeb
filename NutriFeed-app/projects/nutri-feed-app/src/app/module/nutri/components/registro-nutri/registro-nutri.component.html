@@ -1,13 +1,43 @@
-<section id="inicioSesion">
-  <div id="formularioInicioSesion">
-    <div id="info">
-      <img src="../../../../../assets/img/logo-prov.png" alt="Logo">
-      <h2>Registro de Nutriólogo</h2>
-      <form class="formulario" action="nutri.html">
-        <input type="text" id="fnombreNutri" name="fnombreNutri" placeholder="Nombre de nutriólogo" required><br><br><br>
-        <input type="text" id="salario" name="salario" placeholder="Salario" required><br><br><br>
-        <input type="submit" value="Registrar"><br><br>
-      </form>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="container-info"> 
+        <div class="registro-titulo">
+          <p>Registro de Nutriólogo</p>
+        </div>
+        <div class="form-container">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNombre">Nombre</label>
+                <input type="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido">Apellido</label>
+                <input type="apellido" class="form-control" id="inputApellido" placeholder="Apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Correo electrónico">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCiudad">Ciudad</label>
+                <input type="text" class="form-control" id="inputCiudad">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputSalario">Salario</label>
+                <input type="text" class="form-control" id="inputSalario">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </form>
+        </div>
+       
+      </div>
     </div>
+    <div class="col-md-2"></div>
   </div>
-</section>
+</div>
