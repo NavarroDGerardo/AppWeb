@@ -36,27 +36,27 @@
             <form [formGroup]='modeloDieta' (ngSubmit)='registrarDieta()'>
                 <div class="form-group">
                   <label for="inputDescripcion">Desayuno</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='desayuno'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='desayuno' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
                   <label for="inputDescripcion">Colación 1</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion1'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion1' required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="inputDescripcion">Comida</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='comida'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='comida' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
                   <label for="inputDescripcion">Colación 2</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion2'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion2' required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="inputDescripcion">Cena</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='cena'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='cena' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
                   <label for="inputDescripcion">Colación 3</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion3'></textarea>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion3' required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Registrar</button>
               </form>
