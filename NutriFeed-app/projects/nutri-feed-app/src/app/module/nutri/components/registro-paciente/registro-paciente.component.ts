@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validator, FormArray, Validators } from '@angular/forms';
 import { PACIENTE } from '../../../../models/Paciente';
+import { PacienteService } from '../../../service/paciente.service';
 
 
 @Component({
@@ -21,13 +22,15 @@ export class RegistroPacienteComponent implements OnInit {
     }
   )
 
-  constructor(private formbuild:FormBuilder) { }
+  constructor(private formbuild:FormBuilder, private pacienteService:PacienteService) { }
 
   ngOnInit(): void {
   }
 
   enviar(){
-    console.log(this.modeloPaciente.value)
+    console.log(this.modeloPaciente.value);
+    this.pacienteService.agregarPaciente(this.modeloPaciente.value)ñ
+    this.modeloPaciente.reset();
   }
 
 }

@@ -6,7 +6,12 @@ import { Subject } from 'rxjs';
 })
 export class RecetaService {
 
-  private recetaInscrita = new Subject<string>();
+  private recetaAgregada = new Subject<object>();
 
-  recetaInscritaAnunciada$ = this.recetaInscrita.asObservable();
+  recetaInscritaAnunciada$ = this.recetaAgregada.asObservable();
+
+  agregarReceta(receta: object){
+    this.recetaAgregada.next(receta);
+    console.log(receta);
+  }
 }

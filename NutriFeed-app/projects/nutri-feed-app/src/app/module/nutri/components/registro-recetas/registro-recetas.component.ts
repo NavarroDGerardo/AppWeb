@@ -29,7 +29,9 @@ export class RegistroRecetasComponent implements OnInit {
   }
 
   enviar(){
-    console.log(this.modeloReceta.value)
+    console.log(this.modeloReceta.value);
+    this.recetaService.agregarReceta(this.modeloReceta.value);
+    this.modeloReceta.reset();
   }
 
 }

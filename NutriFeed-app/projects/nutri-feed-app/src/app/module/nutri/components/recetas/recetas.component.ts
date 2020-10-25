@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { from } from 'rxjs';
 import { RECETA } from '../../../../models/Receta';
+import { RecetaService } from '../../../service/receta.service';
 
 @Component({
   selector: 'app-recetas',
@@ -9,7 +11,10 @@ import { RECETA } from '../../../../models/Receta';
 export class RecetasComponent implements OnInit {
 
   recetas = RECETA;
-  constructor() { }
+  recetasNuevas: object[] = [];
+  constructor(private recetaService:RecetaService) {
+    recetaService.recetaInscritaAnunciada$.subscribe(c=>{console.log(`${c}`)})
+   }
 
   ngOnInit(): void {
   }
