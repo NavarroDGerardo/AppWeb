@@ -3,7 +3,7 @@
 		<div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
-                <a href="registroUsuario.html" id="agregar" class="btn btn-primary px">Agregar pacientes</a>
+                <a routerLink="/nutri/registro-paciente" id="agregar" class="btn btn-primary px">Agregar pacientes</a>
             </div>
             <div class="col-sm-2"></div>
 			<div class="container mb-3 mt-3">
@@ -18,105 +18,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
+                        <tr *ngFor = "let px of pacientes">
+                            <td>{{px.nombre}} {{px.apellido}}</td>
+                            <td>{{px.estado}}</td>
+                            <td>{{px.nutriologo}}</td>
                             <td><a href="inicioUsuario.html">ver</a></td>
                             <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
                         </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                        <tr>
-                            <td>eduardo</td>
-                            <td>Morbido</td>
-                            <td>Octavio</td>
-                            <td><a href="inicioUsuario.html">ver</a></td>
-                            <td><a class="eliminar" onclick="borrado()">eliminar</a></td>
-                        </tr>
-                            
                     </tbody>
                 </table>
             </div>
