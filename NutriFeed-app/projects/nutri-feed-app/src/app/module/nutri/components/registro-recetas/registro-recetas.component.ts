@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
+import { Subscription } from 'rxjs';
 import { RECETA } from '../../../../models/Receta';
 import { RecetaService } from '../../../service/receta.service';
 
@@ -11,6 +12,8 @@ import { RecetaService } from '../../../service/receta.service';
 })
 export class RegistroRecetasComponent implements OnInit {
   recetas = RECETA;
+  //subscribe: Subscription;
+  
   modeloReceta = this.formbuild.group(
     {
       titulo: ['', Validators.required],
