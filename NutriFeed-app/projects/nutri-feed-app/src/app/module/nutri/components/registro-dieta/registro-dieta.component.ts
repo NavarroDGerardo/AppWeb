@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators, FormArray} from '@angular/forms'
+import { DietaService } from '../../../service/dieta.service';
 
 @Component({
   selector: 'app-registro-dieta',
@@ -21,13 +22,14 @@ export class RegistroDietaComponent implements OnInit {
     }
   );
 
-  constructor(private formBuild:FormBuilder) { }
+  constructor(private formBuild:FormBuilder, private dietaS:DietaService) { }
 
   ngOnInit(): void {
   }
 
   registrarDieta(){
     console.log(this.modeloDieta.value)
+    this.dietaS.registrarDieta(this.modeloDieta.value)
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators, FormArray} from '@angular/forms'
 import { PROGRESO } from '../../../../models/Progreso';
+import { ProgresoService } from '../../../service/progreso.service'
 
 @Component({
   selector: 'app-progreso',
@@ -19,13 +20,14 @@ export class ProgresoComponent implements OnInit {
     }
   );
 
-  constructor(private formBuild:FormBuilder) { }
+  constructor(private formBuild:FormBuilder, private progresoS:ProgresoService) { }
 
   ngOnInit(): void {
   }
 
   registrarProgreso(){
     console.log(this.modeloProgreso.value)
+    this.progresoS.registrarProgreso(this.modeloProgreso.value)
   }
 
 }

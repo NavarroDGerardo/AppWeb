@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { PROGRESO } from '../../models/Progreso'
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProgresoService {
 
-  private progresoRegistrado = new Subject<string>();
+  constructor(){}
 
-  progresoRegistradoAnunciado$ = this.progresoRegistrado.asObservable();
+  registrarProgreso(progreso: { imc: string; kg: string; fecha: string; }){
+    console.log("Registro exitoso", progreso)
+    PROGRESO.push(progreso)
+  }
 
 }

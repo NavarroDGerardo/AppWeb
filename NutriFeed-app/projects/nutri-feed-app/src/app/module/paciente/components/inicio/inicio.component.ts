@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators, FormArray} from '@angular/forms'
+import { DiarioService } from '../../../service/diario.service'
 
 @Component({
   selector: 'app-inicio',
@@ -18,13 +19,14 @@ export class InicioComponent implements OnInit {
     }
   );
 
-  constructor(private formBuild:FormBuilder) { }
+  constructor(private formBuild:FormBuilder, private diarioS:DiarioService) { }
 
   ngOnInit(): void {
   }
 
   registrarDiario(){
     console.log(this.modeloDiario.value)
+    this.diarioS.registrarDiario(this.modeloDiario.value)
   }
 
 }

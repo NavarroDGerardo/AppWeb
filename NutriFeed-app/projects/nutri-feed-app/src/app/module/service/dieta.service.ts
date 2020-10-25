@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { DIETA } from '../../models/Dieta'
 
 @Injectable({
   providedIn: 'root'
 })
 export class DietaService {
 
-  private dietaRegistrada = new Subject<string>();
+  constructor(){}
 
-  dietaRegistradaAnunciada$ = this.dietaRegistrada.asObservable();
+  registrarDieta(dieta: { desayuno: string; comida: string; cena: string; colaciones: { colacion1: string; colacion2: string; colacion3: string; }; }){
+    console.log("Registro exitoso", dieta)
+    DIETA.push(dieta)
+  }
 
 }

@@ -1,12 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { DIARIO } from '../../models/Diario'
 
 @Injectable({
   providedIn: 'root'
 })
 export class DiarioService {
 
-  private diarioRegistrado = new Subject<string>();
+  constructor(){}
 
-  diarioRegistradoAnunciado$ = this.diarioRegistrado.asObservable();
+  registrarDiario(diario: { desayuno: string; comida: string; cena: string; imgDesayuno: string; imgComida: string; imgCena: string; }){
+    console.log("Registro exitoso", diario)
+    DIARIO.push(diario)
+  }
+
 }
