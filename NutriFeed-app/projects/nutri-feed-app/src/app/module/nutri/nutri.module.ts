@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { NutriRoutingModule } from './nutri-routing.module';
 import { HorarioComponent } from './components/horario/horario.component';
@@ -17,7 +18,8 @@ import { RegistroPacienteComponent } from './components/registro-paciente/regist
   declarations: [HorarioComponent, PacientesComponent, RecetasComponent, NutriologosComponent, RegistroRecetasComponent, RegistroNutriComponent, VerPerfilPacienteComponent, RegistroDietaComponent, RegistroPacienteComponent],
   imports: [
     CommonModule,
-    NutriRoutingModule
+    NutriRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class NutriModule { }

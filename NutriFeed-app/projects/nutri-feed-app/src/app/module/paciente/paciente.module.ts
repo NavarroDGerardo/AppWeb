@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms'
 
 import { PacienteRoutingModule } from './paciente-routing.module';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -12,7 +13,8 @@ import { RecetaComponent } from './components/receta/receta.component';
   declarations: [InicioComponent, DietaComponent, ProgresoComponent, RecetaComponent],
   imports: [
     CommonModule,
-    PacienteRoutingModule
+    PacienteRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class PacienteModule { }

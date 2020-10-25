@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, Validators, FormArray} from '@angular/forms'
 
 @Component({
   selector: 'app-progreso',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progreso.component.scss']
 })
 export class ProgresoComponent implements OnInit {
+  modeloProgreso = this.formBuild.group (
+    {
+      imc: ['', Validators.required],
+      kg: ['', Validators.required]
+    }
+  );
 
-  constructor() { }
+  constructor(private formBuild:FormBuilder) { }
 
   ngOnInit(): void {
+  }
+
+  registrarProgreso(){
+    console.log(this.modeloProgreso.value)
   }
 
 }
