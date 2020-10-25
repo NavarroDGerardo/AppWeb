@@ -10,22 +10,26 @@
 }
 
 .card{
-    margin-top: 25px;
-    width: 50%;
-    margin-left: 25%;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
 }
+
 
 
 @media only screen and (max-width: 1000px) {
-    .card{
-        width: 70%;
-        margin-left: 15%;
-    }    
+       
 }
 
 @media only screen and (max-width: 700px) {
-    .card{
-        width: 100%;
-        margin: 0;
-    }    
+     
 }

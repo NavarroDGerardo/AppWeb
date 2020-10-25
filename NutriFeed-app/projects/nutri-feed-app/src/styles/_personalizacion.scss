@@ -57,9 +57,11 @@ $scale-90: 90%;
 $web-font-path1: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" !default;
 $web-font-path2: "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" !default;
 $web-font-path3: "https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap" !default;
+$web-font-path4: "https://fonts.googleapis.com/css2?family=Raleway&display=swap" !default;
 @import url($web-font-path1);
 @import url($web-font-path2);
 @import url($web-font-path3);
+@import url($web-font-path4);
 
 $sans-serif-font: sans-serif;
 $font-family-raleway:'Raleway', $sans-serif-font;
