@@ -252,9 +252,9 @@ aria-hidden="true">
              <!--Botones subir foto-->
            <div class="upload-container">
             <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
-              <input type="file" id="myFile" name="filename">
-              <br><input type="file" id="myFile" name="filename">
-              <br><input type="file" id="myFile" name="filename">
+              <input type="file" id="myFile" name="filename" formControlName='imgDesayuno' required>
+              <br><input type="file" id="myFile" name="filename" formControlName='imgComida' required>
+              <br><input type="file" id="myFile" name="filename" formControlName='imgCena'required>
               <br><textarea id="w3review" name="w3review" rows="4" cols="50">
               Desayuno:
               <input type="text" formControlName="desayuno" required/>
@@ -281,6 +281,4 @@ aria-hidden="true">
     </script>
 
 <!--Más bootstrap-->
-<script src="../node_modules/jquery/dist/jquery.js"></script>
-<script src="../node_modules/jquery/dist/jquery.slim.js"></script>
-<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+

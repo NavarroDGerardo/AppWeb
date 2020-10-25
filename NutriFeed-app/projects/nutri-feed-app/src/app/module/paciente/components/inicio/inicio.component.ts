@@ -11,7 +11,10 @@ export class InicioComponent implements OnInit {
     {
       desayuno: ['', Validators.required],
       comida: ['', Validators.required],
-      cena: ['', Validators.required]
+      cena: ['', Validators.required],
+      imgDesayuno: ['', Validators.required],
+      imgComida: ['', Validators.required],
+      imgCena: ['', Validators.required]
     }
   );
 

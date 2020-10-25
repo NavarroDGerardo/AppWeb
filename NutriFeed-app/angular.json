@@ -28,9 +28,14 @@
               "projects/nutri-feed-app/src/assets"
             ],
             "styles": [
-              "projects/nutri-feed-app/src/styles/styles.scss"
+              "projects/nutri-feed-app/src/styles/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"  
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",  
+              "node_modules/popper.js/dist/umd/popper.min.js",  
+              "node_modules/bootstrap/dist/js/bootstrap.min.js" 
+            ]
           },
           "configurations": {
             "production": {
