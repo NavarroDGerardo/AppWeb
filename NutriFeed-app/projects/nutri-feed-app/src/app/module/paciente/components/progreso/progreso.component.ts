@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators, FormArray} from '@angular/forms'
+import { PROGRESO } from '../../../../models/Progreso';
 
 @Component({
   selector: 'app-progreso',
@@ -7,10 +8,14 @@ import {FormBuilder, Validators, FormArray} from '@angular/forms'
   styleUrls: ['./progreso.component.scss']
 })
 export class ProgresoComponent implements OnInit {
+
+  progreso = PROGRESO;
+
   modeloProgreso = this.formBuild.group (
     {
       imc: ['', Validators.required],
-      kg: ['', Validators.required]
+      kg: ['', Validators.required],
+      fecha: new Date()
     }
   );
 

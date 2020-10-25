@@ -68,23 +68,11 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr *ngFor="let pro of progreso">
                       <th scope="row">1</th>
-                      <td>12/09/2020</td>
-                      <td>96.7</td>
-                      <td>29.85</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>19/09/2020</td>
-                      <td>95.04</td>
-                      <td>29.32</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>26/09/2020</td>
-                      <td>95.99</td>
-                      <td>29.40</td>
+                      <td>{{ pro.fecha }}</td>
+                      <td>{{ pro.kg }}</td>
+                      <td>{{ pro.imc }}</td>
                     </tr>
                   </tbody>
                 </table>
