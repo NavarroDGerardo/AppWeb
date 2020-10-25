@@ -6,8 +6,6 @@ import { RecetasComponent } from './components/recetas/recetas.component';
 import { NutriologosComponent } from './components/nutriologos/nutriologos.component';
 import { RegistroRecetasComponent } from './components/registro-recetas/registro-recetas.component';
 import { RegistroNutriComponent } from './components/registro-nutri/registro-nutri.component';
-import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
-import { RegistroDietaComponent } from './components/registro-dieta/registro-dieta.component';
 
 const routes: Routes = [
   {path: '', component:HorarioComponent},
@@ -15,9 +13,7 @@ const routes: Routes = [
   {path: "recetas", component:RecetasComponent},
   {path: "nutriologos", component:NutriologosComponent},
   {path: "registro-recetas", component:RegistroRecetasComponent},
-  {path: "registro-nutri", component:RegistroNutriComponent},
-  {path: "registro-paciente", component:RegistroPacienteComponent},
-  {path: "registro-dieta", component:RegistroDietaComponent}
+  {path: "registro-nutri", component:RegistroNutriComponent}
 ];
 
 @NgModule({
