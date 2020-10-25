@@ -7,18 +7,18 @@
           <p>Registro de Receta</p>
         </div>
         <div class="form-container">
-          <form>
+          <form [formGroup]="modeloReceta" (ngSubmit)="enviar()">
             <div class="form-group">
               <label for="inputNreceta">Nombre de la receta</label>
-              <input type="email" class="form-control" id="inputNreceta" placeholder="Nombre de la receta">
+              <input type="email" formControlName="titulo" required class="form-control" id="inputNreceta" placeholder="Nombre de la receta">
             </div>
             <div class="form-group">
               <label for="inputDescripcion">Descripción</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción"></textarea>
+              <textarea class="form-control" formControlName="description" required id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción"></textarea>
             </div>
             <div class="form-group">
               <label for="exampleFormControlFile1">Sube una imagen de la receta</label>
-              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              <input type="file" formControlName="img_url" required class="form-control-file" id="exampleFormControlFile1">
             </div>
             <button type="submit" class="btn btn-primary">Registrar</button>
           </form>
