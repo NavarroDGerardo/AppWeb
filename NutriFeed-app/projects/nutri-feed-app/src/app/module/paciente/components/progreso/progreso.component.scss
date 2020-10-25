@@ -1,205 +1,237 @@
 @import "../../../../../styles/personalizacion";
 
-$white: #fff !default;
-$black: #000 !default;
-$red: red !default;
-$green-color: green;
-$gray-color: gray;
-$green-border: #008939;
-$green-ligth:#D3FFB6;
+/*
+_________________________
+|						|
+|		  navbar   		|
+|						|
+-------------------------
+*/
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.bg-light {
+	background-color: #ffff !important;
+	border: 0.5px solid #d9d9d9;
+}
+.navbar-brand {
+	position: absolute;
+	left: 12%;
+}
+.navbar-nav {
+	position: relative;
+	left: 77%;
+	flex-direction: row;
+	.nav-item {
+		padding-left: 5px;
+	}
+}
+.mini-profilepic {
+	background-color: #fafafa;
+	background-color: rgba(var(--b3f,250,250,250),1);
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.image-profile {
+	height: 100%;
+	-webkit-touch-callout: none;
+	width: 100%;
+}
 
-$primary: $green-color !default;
-$secondary: $gray-color !default;
 
-// Sizes
-$full-size: 100%;
-$size-0: 0px;
-$size-10: 10px;
-$size-20: 20px;
-$size-30: 30px;
-$size-40: 40px;
-$size-50: 50px;
-$size-70: 70px;
-$size-80: 80px;
-$size-100: 100px;
-$size-700: 700px;
+/*
+_________________________
+|						|
+|		  body    		|
+|						|
+-------------------------
+*/
 
-$scale-10: 10%;
-$scale-20: 20%;
-$scale-50: 50%;
-$scale-80: 80%;
-$scale-100: 100%;
-
-//  Fonts
-
-$web-font-path1: "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" !default;
-$web-font-path2: "https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" !default;
-$web-font-path3: "https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Quicksand:wght@400;600&family=Signika&family=Ubuntu:ital,wght@1,300&display=swap" !default;
-@import url($web-font-path1);
-@import url($web-font-path2);
-@import url($web-font-path3);
-
-$sans-serif-font: sans-serif;
-$font-family-quicksand: 'Quicksand', $sans-serif-font;
-$font-family-rubik: 'Rubik', $sans-serif-font;
-$font-family-opensans: 'Open Sans', $sans-serif-font;
-$font-family-caveat: 'Caveat', cursive;
-
-//  Alination
-$center: center;
-
-$fixed: fixed;
-$relative: relative;
-
-$pointer: pointer;
-
-//  Mixins
-
-@mixin transformation ($scaleX, $scaleY, $position, $left, $top) {
-    position: $position;
-    transform: translateX(-$scaleX) translateY(-$scaleY);
-    left: $left;
-    top: $top;
+ .container-fluid {
+	height: 100%;
+}
+.drop {
+	display: none;
+}
+.container-perfil-info {
+	font-family: 'Raleway', sans-serif;
+	background-color: #ffff;
+	border: 0.5px solid #d9d9d9;
+	height: 200px;
+}
+.profile-photo {
+	position: relative;
+	top: 10%;
+	margin-left: 28px;
+	img {
+		border-radius: 50%;
+	}
+}
+.perfil-info {
+	position: relative;
+	left: 29%;
+	bottom: 45%;
+	width: 50%;
+	span {
+		font-size: 14px;
+	}
+}
+.bi-gear-fill {
+	position: relative;
+	left: 73%;
+	bottom: 15%;
+}
+.info-data {
+	position: relative;
+	top: 20px;
+	p {
+		display: inline;
+		padding-right: 20px;
+	}
+}
+.btn-act {
+	font-size: 12px;
+	width: 130px;
+	height: 35px;
+	background-color: rgb(84, 153, 98);
+	position: relative;
+	left: 42%;
+	top: -20%;
+}
+.actualizar-container {
+	height: 25%;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #8e8e8e;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	font-size: 14px;
+	font-weight: 500;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	letter-spacing: 1px;
+	text-align: center;
 }
 
 /*
-  _________________________
-  |						|
-  |		  cuerpo 		|
-  |						|
-  -------------------------
-  */
-
-  * {
-    box-sizing: border-box;
+ _________________________
+ |						|
+ |		  Responsive  	|
+ |						|
+ -------------------------
+ */
+@media (max-width: 767.98px) {
+	.profile-photo {
+		img {
+			height: 80px;
+			width: 80px;
+		}
+	}
+	.perfil-info {
+		position: relative;
+		left: 42%;
+		bottom: 28%;
+		h4 {
+			font-size: 20px;
+		}
+	}
+	.info-data {
+		position: relative;
+		top: -10px;
+		font-size: 14px;
+		p {
+			display: inline;
+			padding-right: 10px;
+		}
+	}
+	.bi-gear-fill {
+		position: relative;
+		left: 58%;
+		bottom: 10%;
+	}
+	.btn-act {
+		font-size: 9px;
+		width: 90px;
+		height: 28px;
+		position: relative;
+		bottom: 16%;
+		left: 37%;
+	}
 }
-
-h1 {
-    font-size: $size-50;
-    word-break: break-all;
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.perfil-info {
+		position: relative;
+		left: 42%;
+		bottom: 55%;
+	}
+	.bi-gear-fill {
+		left: 57%;
+		bottom: 10%;
+	}
+	.btn-act {
+		font-size: 10px;
+		width: 100px;
+		height: 31px;
+		bottom: 41%;
+		left: 39%;
+	}
+	.info-data {
+		top: 20%;
+	}
 }
-
-.content {
-    background-color: white;
-    padding: $size-10;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.bi-gear-fill {
+		left: 67%;
+		bottom: 10%;
+	}
+	.btn-act {
+		font-size: 10px;
+		width: 100px;
+		height: 29px;
+		bottom: 41%;
+		left: 42%;
+	}
 }
-.header-profile {
-    img {
-        border-radius: $scale-50;
-        position: relative;
-        right: -35px;
-        top: $size-50;
-    }
-    height: 250px;
-    width: $scale-100;
-    background-color: rgba(51,51,51,0.5);
-}
-.buttons-profile {
-    button {
-        text-align: center;
-        line-height: 1em;
-        margin-right: 5%;
-        width: 170px;
-        height: $size-50;
-        font-size: $size-20;
-        position: relative;
-        right: -500px;
-        top: $size-20;
-        background-color: #4d4d4d;
-        border: 2px solid rgba(51,51,51,0.5);
-    }
-}
-.datos-profile {
-    font-family: $font-family-quicksand;
-    font-size: 25px;
-    margin-left: $scale-20;
-    margin-top: -12%;
-}
-
-.datos{
-    right: 200px;
-    top: $size-10;
-}
-
-/*
-      _________________________
-      |           |
-      |   REPONSIVE     |
-      |           |
-      -------------------------
-  */
-/*
-    _________________________
-    |           |
-    |     footer    |
-    |           |
-    -------------------------
-    */
-/* Responsive layout ipad-  */
-/* Responsive layout Phone */
-@media screen and (max-width: 700px) {
-    #footer {
-        margin-top: $size-20;
-        font-family: $font-family-rubik;
-        height: $size-100;
-        font-size: 18px;
-        background-color: $white;
-        opacity: 0.9;
-        text-align: $center;
-        & .content {
-            position: $relative;
-            transform: translateY(-$scale-50);
-            top: $scale-50;
-            line-height: $size-30;
-            }
-        }
-}
-
-@media screen and (max-width: 900px) {
-    .header-profile {
-        img {
-            width: 160px;
-            height: 160px;
-        }
-    }
-    .buttons-profile {
-        button {
-            margin-right: 5%;
-            width: 170px;
-            height: $size-50;
-            font-size: 20px;
-            position: relative;
-            right: -400px;
-            top: $size-30;
-        }
-    }
-    .datos-profile {
-        font-size: 24px;
-        margin-left: 35%;
-        margin-top: -19%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .header-profile {
-        img {
-            width: 120px;
-            height: 120px;
-        }
-    }
-    .buttons-profile {
-        button {
-            margin-right: 2%;
-            font-size: 15px;
-            width: $size-100;
-            height: $size-30;
-            position: relative;
-            right: -300px;
-            top: $size-80;
-        }
-    }
-    .datos-profile {
-        font-size: 15px;
-        margin-left: 53%;
-        margin-top: -$scale-20;
-    }
+@media (min-width: 1445px) {
+	.profile-photo {
+		position: relative;
+		left: 8%;
+		img {
+			width: 160px;
+			height: 160px;
+		}
+	}
+	.perfil-info {
+		position: relative;
+		left: 30%;
+		bottom: 60%;
+	}
+	.btn-act {
+		font-size: 10px;
+		width: 100px;
+		height: 32px;
+		bottom: 42%;
+		left: 46%;
+	}
 }
