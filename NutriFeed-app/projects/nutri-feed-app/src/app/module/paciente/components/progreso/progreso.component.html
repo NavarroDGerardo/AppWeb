@@ -85,6 +85,17 @@
       <div class="col-md-2">
       </div>
     </div>
+    <div class="chart-wrapper">
+      <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [colors]="lineChartColors"
+          [legend]="lineChartLegend"
+          [chartType]="'line'"
+          [plugins]="lineChartPlugins">
+      </canvas>
+    </div>
   </div>
 
     <!--Más bootstrap-->

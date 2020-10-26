@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms'
+import { ChartsModule } from 'ng2-charts'
 
 import { PacienteRoutingModule } from './paciente-routing.module';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -14,7 +15,8 @@ import { RecetaComponent } from './components/receta/receta.component';
   imports: [
     CommonModule,
     PacienteRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartsModule
   ]
 })
 export class PacienteModule { }
