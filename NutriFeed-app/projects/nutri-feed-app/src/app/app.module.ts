@@ -16,6 +16,7 @@ import { RegistroRoutingModule } from './module/registro/registro-routing.module
 import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 import { W3cVerificacionModule } from './module/w3c-verificacion/w3c-verificacion.module';
+import { RegistroComponent } from './module/registro/components/registro/registro.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { W3cVerificacionModule } from './module/w3c-verificacion/w3c-verificacio
     AppComponent,
     IndexBodyComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

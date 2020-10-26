@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="87c6f39ce1a9d5293f8dc24a859790c0fb4475b0" datatype="html">
+        <source>&quot;No tienes que comer menos, solo tienes que comer mejor.&quot;</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/index-body/index-body.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Titulo</note>
+      </trans-unit>
+      <trans-unit id="1d8d41f0ef74af46e2188db0b06f97d17238f9b5" datatype="html">
+        <source>Experimenta nuevos sabores y vive experiencias a través de la comida saludable.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/index-body/index-body.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Texto1</note>
+      </trans-unit>
+      <trans-unit id="2d3b3c28812943404102e012fced8a534f836298" datatype="html">
+        <source>Aprende más</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/index-body/index-body.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Boton-Aprende</note>
+      </trans-unit>
+      <trans-unit id="2f13a0b74d0aaeaea7b9137a0919bd9351455491" datatype="html">
+        <source> idioma </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+        <note priority="1" from="description">Idioma</note>
+      </trans-unit>
+      <trans-unit id="45a4b797ab6931fb10ed4ad33c49a77582db3db8" datatype="html">
+        <source>Inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">Index</note>
+      </trans-unit>
+      <trans-unit id="42d3e05a06420956afd060a4667adeb8e7a74872" datatype="html">
+        <source>Acerca de</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description"> AcercaDe</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="d9b3d4f6143bd6bd9832f96ff285d9e53f71a4cb" datatype="html">
+        <source>Comunidad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description"> Comunidad</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="e9e6e33bdddb8bc8c3b5266e1db0775f5749a34a" datatype="html">
+        <source>Beneficios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description"> Beneficios</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="ea919d43fce1e699446551333f751074b000650e" datatype="html">
+        <source>W3C</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description"> w3c</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="7711785c715abdbb71198d8539af68baac86a2dc" datatype="html">
+        <source>Iniciar Sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description"> Inicio-Sesion</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="0d8a5c231e2dbfe06e52305665d17e0c3ce4ff46" datatype="html">
+        <source>¡Únete ahora!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/header/header.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description"> RegistroUsuario</note>
+        <note priority="1" from="meaning">Header </note>
+      </trans-unit>
+      <trans-unit id="150902bc2917214a7800cfcabc5b35c28b4b0d48" datatype="html">
+        <source>© Copyright NutriFeed. Derechos reservados.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/footer/footer.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description"> Derechos</note>
+        <note priority="1" from="meaning">Footer </note>
+      </trans-unit>
+      <trans-unit id="9a6022a9bac1e410797824c1fc5eda40ee6bd565" datatype="html">
+        <source>Contacto: 55-5464-7665</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/Components/footer/footer.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description"> Contacto</note>
+        <note priority="1" from="meaning">Footer </note>
+      </trans-unit>
+      <trans-unit id="bb56b0b9b2690d19b56d12f6ffecdaf96e015b16" datatype="html">
+        <source>Unirse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/registro/components/registro/registro.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Registro-Titulo</note>
+      </trans-unit>
+      <trans-unit id="0ac5848d3ee8b22b4f286fbd661a0649e42fe5ca" datatype="html">
+        <source>Siguiente</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/registro/components/registro/registro.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Boton-Siguiente</note>
+      </trans-unit>
+      <trans-unit id="616be854edac93bdcf0d16aa468e35d03e3a4872" datatype="html">
+        <source>Llena todos los campos para continuar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/registro/components/registro/registro.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Validacion</note>
+      </trans-unit>
+      <trans-unit id="77a054ec214c109efd4d5fd1b6316897971da223" datatype="html">
+        <source>Nuestra comunidad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/comunidad/components/vista/vista.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Titulo</note>
+      </trans-unit>
+      <trans-unit id="5285aaba481c34cf62d129b9e11045603cf6234d" datatype="html">
+        <source>Para poder conseguir el cambio que queremos, es importante tener un objetivo y estar motivado. Por eso, en NutriFeed tenemos una comunidad interactiva en que la puedes compartir tu progreso.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/comunidad/components/vista/vista.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Texto1</note>
+      </trans-unit>
+      <trans-unit id="469f3a921e0cb1ff0599fed82994e6ec734d989b" datatype="html">
+        <source>Sube tus fotos, recetas y dietas. Formar parte de la comunidad te ayudará a visualizar tu progreso.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/comunidad/components/vista/vista.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Texto2</note>
+      </trans-unit>
+      <trans-unit id="16abd2b4d86209744dc169d031922a6c3860ad42" datatype="html">
+        <source>Seguir una dieta puede ser complicado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/acerca/components/vista/vista.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Titulo</note>
+      </trans-unit>
+      <trans-unit id="c502b9b4badd52cca97e63f14e1d50a6bca87856" datatype="html">
+        <source> NutriFeed es una aplicación especializada en el asesoramiento nutricional, efocada a todas aquellas personas que quieran tener un estilo de vida más saludable.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/acerca/components/vista/vista.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Texto1</note>
+      </trans-unit>
+      <trans-unit id="56ba032e5cbb19f8ff5e042ca4a0a1f585d93d31" datatype="html">
+        <source>¡Contamos con el mejor asesoramiento para que alcances todas tus metas! NutriFeed cuenta con una red de nutriólogos, apasionados y dispuestos a brindar sus servicios desde cualquier parte del país.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/acerca/components/vista/vista.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Texto2</note>
+      </trans-unit>
+      <trans-unit id="6fb3861e30e5f65d5a396a0096af09642357a232" datatype="html">
+        <source>Nutrición al alcance de tus manos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <note priority="1" from="description">Titulo</note>
+      </trans-unit>
+      <trans-unit id="8ef6ef3ae54dabd6381da77fe45e71c4310f33b4" datatype="html">
+        <source> Ser saludable nunca fue tan sencillo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">Texto1</note>
+      </trans-unit>
+      <trans-unit id="a1c155c458d0266d72abdf6c3d39a2320225078a" datatype="html">
+        <source>Conéctate con tu nutriólogo.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="698a8c9a16c376c8e5296f499f18772c73636060" datatype="html">
+        <source>Continua tu dieta con una variedad de recetas.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="98ca1dc806eea5d8968676371a269ee348ea2689" datatype="html">
+        <source>Recibe recomendaciones de snacks saludables.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="bb7478b1e1b4858559bce86ac719e35502094cfe" datatype="html">
+        <source>Registra tus alimentos.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="394d94239d5f60dc30e37b593247d0e709b50a2a" datatype="html">
+        <source>Recibe retroalimentación constante.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="f14d192fc399547dc8b00150e809d3a22c88f219" datatype="html">
+        <source>Sé parte de la comunidad.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Bullet</note>
+      </trans-unit>
+      <trans-unit id="4fa9f11d7e3ba42a5ae049bb942fecdd0719ae14" datatype="html">
+        <source>Unirse ahora</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/beneficios/components/vista/vista.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">Boton-Unirse</note>
+      </trans-unit>
+      <trans-unit id="96a173656451ac4142c01bd89f60a9f1bc641657" datatype="html">
+        <source>Inicia sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/iniciar-sesion/components/ini-sesion/ini-sesion.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">IniciarSesion-Titulo</note>
+      </trans-unit>
+      <trans-unit id="2164cd8befe40510fe456c8a6bfbcf5a16accbcb" datatype="html">
+        <source><x id="START_HEADING_LEVEL3" equiv-text="&lt;h3&gt;"/>¿No tienes cuenta aún?<x id="LINE_BREAK" equiv-text="&lt;br&gt;"/>¡Únete ahora!<x id="CLOSE_HEADING_LEVEL3" equiv-text="&lt;/h3&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/iniciar-sesion/components/ini-sesion/ini-sesion.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">BotonIniS-Registro</note>
+      </trans-unit>
+      <trans-unit id="170f7de02b14690fb9c1999a16926c0044bfd5c1" datatype="html">
+        <source>Index</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">Index</note>
+      </trans-unit>
+      <trans-unit id="c2f95658d0065d4eb191aa9a7dc647fcf6692900" datatype="html">
+        <source>Acerca</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <note priority="1" from="description">AcercaDe</note>
+      </trans-unit>
+      <trans-unit id="cf04f7c4d68523426a322308a940acf7a2d09b29" datatype="html">
+        <source>Registro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Registro</note>
+      </trans-unit>
+      <trans-unit id="30d698bcccdd792693c5aaa4a5641f4cac21dbff" datatype="html">
+        <source>inicioSesion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">InicioSesion</note>
+      </trans-unit>
+      <trans-unit id="cdcbb652aa2a3509e0e6c4abcfbc85721e448351" datatype="html">
+        <source>Comunidad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">Comunidad</note>
+      </trans-unit>
+      <trans-unit id="8eafbb4e71258770e73c931f66dcc64ce131b151" datatype="html">
+        <source>Beneficios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Beneficios</note>
+      </trans-unit>
+      <trans-unit id="c15371c51b313e4a971686cf9be627ffd55f41a7" datatype="html">
+        <source>inicioUsuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">InicioUsuario</note>
+      </trans-unit>
+      <trans-unit id="3f584b69a659ea3f4cc3d08a286dd1874bbc9978" datatype="html">
+        <source>Dieta</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <note priority="1" from="description">Dieta</note>
+      </trans-unit>
+      <trans-unit id="5f11c7d2ae8f92ddaaa053df103e6fdbec238575" datatype="html">
+        <source>Nutri</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description">Nutri</note>
+      </trans-unit>
+      <trans-unit id="b587006961531faf9696d0b1f826910977e4c75d" datatype="html">
+        <source>Pacientes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description">Pacientes</note>
+      </trans-unit>
+      <trans-unit id="671fece9b49bf5a8b6bc18c1d6c08745a25c4f8b" datatype="html">
+        <source>Recetas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">Recetas</note>
+      </trans-unit>
+      <trans-unit id="f4e93a2c662477eab4965f6f98368e2a2ddf1ca3" datatype="html">
+        <source>Ver Receta</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">VerReceta</note>
+      </trans-unit>
+      <trans-unit id="4b6f165717f8595598c4870df640e9c84bb87dc3" datatype="html">
+        <source>recetasUsuario</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <note priority="1" from="description">RecetaUsuario</note>
+      </trans-unit>
+      <trans-unit id="2b77c35a33daa616575e130d9f57a4d88db701e5" datatype="html">
+        <source>Nutriologos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/w3c-verificacion/components/components.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+        <note priority="1" from="description">Nutriologos</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

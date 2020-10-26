@@ -29,12 +29,12 @@
             ],
             "styles": [
               "projects/nutri-feed-app/src/styles/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"  
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",  
-              "node_modules/popper.js/dist/umd/popper.min.js",  
-              "node_modules/bootstrap/dist/js/bootstrap.min.js" 
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -65,6 +65,13 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "en": {
+              "aot": true,
+              "outputPath": "dist/under-c-en/",
+              "i18nFile": "projects/nutri-feed-app/src/locale/messages.en.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "en"
             }
           }
         },
@@ -76,6 +83,9 @@
           "configurations": {
             "production": {
               "browserTarget": "nutriFeed-app:build:production"
+            },
+            "en": {
+              "browserTarget": "nutriFeed-app:build:en"
             }
           }
         },

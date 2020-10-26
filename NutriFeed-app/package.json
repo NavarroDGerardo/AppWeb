@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-en": "ng serve --configuration=en",
     "build": "ng build",
+    "build-en": "ng build --configuration=en",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "int:extract": "ng xi18n --output-path projects/nutri-feed-app/src/locale --ivy"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +33,7 @@
     "@angular-devkit/build-angular": "^0.1002.0",
     "@angular/cli": "~10.1.1",
     "@angular/compiler-cli": "~10.1.1",
+    "@angular/localize": "^10.1.4",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
