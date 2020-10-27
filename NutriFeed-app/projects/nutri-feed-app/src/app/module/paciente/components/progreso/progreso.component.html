@@ -44,7 +44,7 @@
             <form [formGroup]='modeloProgreso' (ngSubmit)='registrarProgreso()'>
               <p >IMC actual: <input type="text" class="datos" name="fname" placeholder="IMC" formControlName='imc' required> </p>
               <br><p > Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='kg' required></p>
-              <button type="submit">Registrar</button>
+              <button type="submit " class="btn btn-lg btn-secondary btn-act">Registrar</button>
             </form>
             <p>Valor del formulario: {{modeloProgreso.value | json}}</p>
 
@@ -54,7 +54,7 @@
           </div>
 
           <div class="actualizar-container">
-              <a href="#" class="btn btn-lg btn-secondary btn-act"> Actualizar </a>
+           
           </div>
 
           <div class="tabla-progreso">
@@ -78,6 +78,18 @@
                 </table>
 
           </div>
+
+          <div class="chart-wrapper">
+            <canvas baseChart
+                [datasets]="lineChartData"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors"
+                [legend]="lineChartLegend"
+                [chartType]="'line'"
+                [plugins]="lineChartPlugins">
+            </canvas>
+          </div>
           </div>
 
 
@@ -85,17 +97,7 @@
       <div class="col-md-2">
       </div>
     </div>
-    <div class="chart-wrapper">
-      <canvas baseChart
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [colors]="lineChartColors"
-          [legend]="lineChartLegend"
-          [chartType]="'line'"
-          [plugins]="lineChartPlugins">
-      </canvas>
-    </div>
+    
   </div>
 
     <!--Más bootstrap-->

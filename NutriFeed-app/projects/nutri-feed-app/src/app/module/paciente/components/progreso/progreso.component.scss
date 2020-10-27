@@ -106,10 +106,10 @@ _________________________
 	background-color: rgb(84, 153, 98);
 	position: relative;
 	left: 42%;
-	top: -20%;
+	top: 40%;
 }
 .actualizar-container {
-	height: 25%;
+	height: 5%;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
@@ -138,6 +138,12 @@ _________________________
  font-family: 'Raleway', sans-serif;
 }
 
+canvas{
+
+	background-color: white;
+}
+
+
 /*
  _________________________
  |						|
@@ -155,7 +161,7 @@ _________________________
 	.perfil-info {
 		position: relative;
 		left: 42%;
-		bottom: 28%;
+		bottom: 39%;
 		h4 {
 			font-size: 20px;
 		}
@@ -187,7 +193,7 @@ _________________________
 	.perfil-info {
 		position: relative;
 		left: 42%;
-		bottom: 55%;
+		bottom: 65%;
 	}
 	.bi-gear-fill {
 		left: 57%;
