@@ -17,6 +17,7 @@ import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 import { W3cVerificacionModule } from './module/w3c-verificacion/w3c-verificacion.module';
 import { RegistroComponent } from './module/registro/components/registro/registro.component';
+import { HeaderPacienteComponent } from './Components/header-paciente/header-paciente.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { RegistroComponent } from './module/registro/components/registro/registr
     IndexBodyComponent,
     HeaderComponent,
     FooterComponent,
-    RegistroComponent
+    RegistroComponent,
+    HeaderPacienteComponent
   ],
   imports: [
     BrowserModule,

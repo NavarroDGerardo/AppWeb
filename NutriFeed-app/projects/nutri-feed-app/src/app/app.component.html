@@ -1,3 +1,8 @@
-<app-header></app-header>
+<div *ngIf="loggedIn; else elseBlock">
+    <app-header></app-header>
+  </div>
+  <ng-template #elseBlock>
+    <app-header-paciente></app-header-paciente>
+  </ng-template>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
