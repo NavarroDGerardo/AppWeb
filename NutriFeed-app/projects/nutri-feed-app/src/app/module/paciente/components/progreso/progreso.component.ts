@@ -13,30 +13,49 @@ import { Color, Label } from 'ng2-charts';
 export class ProgresoComponent implements OnInit {
 
   progreso = PROGRESO;
+  fechaCompleta = new Date()
+  dia = this.fechaCompleta.getDay()
+  mes = this.fechaCompleta.getMonth()
+  anio = this.fechaCompleta.getFullYear()
+  imcV = new Array()
+  fechaV = new Array()
+  pesoV = new Array()
 
   modeloProgreso = this.formBuild.group (
     {
       imc: ['', Validators.required],
       kg: ['', Validators.required],
-      fecha: new Date()
+      fecha: `${this.dia}/${this.mes}/${this.anio}`
     }
   );
 
   constructor(private formBuild:FormBuilder, private progresoS:ProgresoService) { }
 
   ngOnInit(): void {
+    this.obtenerValores();
   }
 
   registrarProgreso(){
     console.log(this.modeloProgreso.value)
     this.progresoS.registrarProgreso(this.modeloProgreso.value)
+    this.imcV.push(this.modeloProgreso.value.imc)
+    this.fechaV.push(this.modeloProgreso.value.fecha)
+    this.pesoV.push(this.modeloProgreso.value.kg)
+  }
+
+  obtenerValores(){
+    for(var i = 0; i < this.progreso.length; i++){
+      this.imcV.push(this.progreso[i].imc);
+      this.fechaV.push(this.progreso[i].fecha)
+      this.pesoV.push(this.progreso[i].kg)
+    }
   }
 
   lineChartData: ChartDataSets[] = [
-    { data: [85, 72, 78, 75, 77, 75], label: 'Crude oil prices' },
+    { data: this.pesoV, label: 'Peso en kg' }
   ];
 
-  lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
+  lineChartLabels: Label[] = this.fechaV;
 
   lineChartOptions = {
     responsive: true,
@@ -44,13 +63,26 @@ export class ProgresoComponent implements OnInit {
 
   lineChartColors: Color[] = [
     {
-      borderColor: 'black',
-      backgroundColor: 'rgba(255,255,0,0.28)',
+      borderColor: '#f39233',
+      backgroundColor: '#f1e189',
+      pointBackgroundColor: '#d7385e'
     },
   ];
 
   lineChartLegend = true;
   lineChartPlugins = [];
   lineChartType = 'line';
+
+  lineChartData2: ChartDataSets[] = [
+    { data: this.imcV, label: 'IMC' }
+  ];
+
+  lineChartColors2: Color[] = [
+    {
+      borderColor: '#01c5c4',
+      backgroundColor: '#b8de6f',
+      pointBackgroundColor: '#e7e7de'
+    },
+  ];
 
 }

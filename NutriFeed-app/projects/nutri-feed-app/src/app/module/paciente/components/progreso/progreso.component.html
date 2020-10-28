@@ -46,7 +46,7 @@
               <br><p > Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='kg' required></p>
               <button type="submit " class="btn btn-lg btn-secondary btn-act">Registrar</button>
             </form>
-            <p>Valor del formulario: {{modeloProgreso.value | json}}</p>
+            <!-- <p>Valor del formulario: {{modeloProgreso.value | json}}</p> -->
 
         </div>
 
@@ -54,7 +54,7 @@
           </div>
 
           <div class="actualizar-container">
-           
+
           </div>
 
           <div class="tabla-progreso">
@@ -90,6 +90,19 @@
                 [plugins]="lineChartPlugins">
             </canvas>
           </div>
+
+          <div class="chart-wrapper">
+            <canvas baseChart
+                [datasets]="lineChartData2"
+                [labels]="lineChartLabels"
+                [options]="lineChartOptions"
+                [colors]="lineChartColors2"
+                [legend]="lineChartLegend"
+                [chartType]="'line'"
+                [plugins]="lineChartPlugins">
+            </canvas>
+          </div>
+
           </div>
 
 
@@ -97,7 +110,7 @@
       <div class="col-md-2">
       </div>
     </div>
-    
+
   </div>
 
     <!--Más bootstrap-->
