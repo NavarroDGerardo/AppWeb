@@ -16,7 +16,7 @@ import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-d
 
 
 @NgModule({
-  declarations: [HorarioComponent, PacientesComponent, RecetasComponent, NutriologosComponent, RegistroRecetasComponent, RegistroNutriComponent, VerPerfilPacienteComponent, RegistroDietaComponent, RegistroPacienteComponent, VerDietaPacienteComponent],
+  declarations: [HorarioComponent, PacientesComponent, RecetasComponent, RegistroRecetasComponent, RegistroNutriComponent, VerPerfilPacienteComponent, RegistroDietaComponent, RegistroPacienteComponent, VerDietaPacienteComponent],
   imports: [
     CommonModule,
     NutriRoutingModule,
