@@ -14,8 +14,8 @@ import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-d
 
 
 const routes: Routes = [
-  {path: '', component:HorarioComponent},
-  {path: "paciente", component:PacientesComponent},
+  {path: "horario", component:HorarioComponent},
+  {path: "pacientes", component:PacientesComponent},
   {path: "recetas", component:RecetasComponent},
   {path: "nutriologos", component:NutriologosComponent},
   {path: "registro-recetas", component:RegistroRecetasComponent},
