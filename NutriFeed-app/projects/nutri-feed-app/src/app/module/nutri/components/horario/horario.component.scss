@@ -53,6 +53,7 @@ _________________________
     -webkit-touch-callout: none;
     width: 100%;
 }
+
 /*
 _________________________
 |						|
@@ -60,10 +61,82 @@ _________________________
 |						|
 -------------------------
 */
+body {
+    background-color:  #f2f2f2;
+}
+.card{
+    background-color: salmon;
+    height: 800px;
+    
+}
+
 /*
 _________________________
 |						|
-|	    Responsive  	|
+|		  Responsive  	|
+|						|
+-------------------------
+*/
+
+@media (max-width: 575.98px) { 
+    .navbar-nav{
+       
+        left: 67%;
+       
+        
+    } 
+
+    .navbar-brand img{
+        width: 40px;
+        height: 40px;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar-nav{
+       
+        left: 70%;
+       
+      
+        
+    }
+    .navbar-brand img{
+        width: 40px;
+        height: 40px;
+    }
+
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+    .navbar-nav{
+       
+        left: 78%;
+       
+    }
+
+ }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+    
+ }
+
+
+@media (min-width: 1200px) { 
+    .navbar-nav{
+       
+        left: 80%; 
+        
+    }
+}
+
+/*
+_________________________
+|						|
+|		  body    		|
 |						|
 -------------------------
 */
@@ -75,17 +148,13 @@ _________________________
 	height: 200px;
 }
 .perfil-info {
-	position: absolute;
+	width: 500px;
+	position: relative;
 	left: 12%;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: red;
+	top: 10px;
 	span {
 		font-size: 14px;
 	}
-}
-.profile-photo {
-	float: left;
 }
 .profile_pic_container {
 	width: 130px;
@@ -96,10 +165,9 @@ _________________________
 	background-position: center;
 }
 .info {
-	margin-top: 30px;
-	margin-left: 20px;
-	float: right;
-	background-color: yellow;
+	left: 150px;
+	position: absolute;
+	width: 350px;
 }
 .info-data {
 	top: 20px;
@@ -146,6 +214,14 @@ _________________________
 		color: green;
 	}
 }
+
+/*
+_________________________
+|						|
+|	   Responsive  	    |
+|						|
+-------------------------
+*/
 @media (max-width: 650px) {
 	.container-perfil-info {
 		height: 270px;
@@ -159,7 +235,7 @@ _________________________
 	.profile-photo {
 		float: left;
 		position: absolute;
-		top: 0px;
+		top: 30px;
 		left: 7%;
 	}
 	.profile_pic_container {
@@ -167,14 +243,16 @@ _________________________
 		height: 100px;
 	}
 	.info {
-		top: -25px;
-		left: 38%;
+		top: 80px;
+		left: 280px;
 		position: absolute;
-		width: 40%;
+		width: 50%;
 	}
 	.info-data {
 		p {
-			font-size: 4vw;
+			font-size: 15px;
+			padding-right: 0px;
+			margin-left: 0px;
 		}
 	}
 	.btn-cerrar {
@@ -183,6 +261,7 @@ _________________________
 		bottom: 10px;
 	}
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.container-perfil-info {
 		height: 270px;
@@ -207,15 +286,15 @@ _________________________
 		height: 120px;
 	}
 	.info {
-		top: -15px;
-		left: 31%;
+		top: 60px;
+		left: 180px;
 		position: absolute;
 		width: 50%;
 	}
 	.info-data {
 		p {
 			font-size: 15px;
-			top: 100px;
+			top: 100px;	
 			padding-right: 0px;
 		}
 	}
