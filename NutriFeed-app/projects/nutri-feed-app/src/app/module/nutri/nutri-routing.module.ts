@@ -12,7 +12,6 @@ import { RegistroPacienteComponent } from './components/registro-paciente/regist
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
 
 
-
 const routes: Routes = [
   {path: "horario", component:HorarioComponent},
   {path: "pacientes", component:PacientesComponent},

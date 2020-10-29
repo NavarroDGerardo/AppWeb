@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NUTRIOLOGO } from '../../../../models/Nutriologo';
 
 @Component({
   selector: 'app-nutriologos',
@@ -7,8 +6,7 @@ import { NUTRIOLOGO } from '../../../../models/Nutriologo';
   styleUrls: ['./nutriologos.component.scss']
 })
 export class NutriologosComponent implements OnInit {
-  
-  nutriologos = NUTRIOLOGO;
+
   constructor() { }
 
   ngOnInit(): void {
