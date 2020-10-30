@@ -1,8 +1,11 @@
-<div *ngIf="loggedIn; else elseBlock">
+<div *ngIf="isLanding">
     <app-header></app-header>
-  </div>
-  <ng-template #elseBlock>
+</div>
+<div *ngIf="isPaciente">
     <app-header-paciente></app-header-paciente>
-  </ng-template>
+</div>
+<div *ngIf="isNutri">
+  <app-header-nutri></app-header-nutri>
+</div>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

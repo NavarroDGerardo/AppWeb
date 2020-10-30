@@ -13,10 +13,11 @@ import { VerPerfilPacienteComponent } from './components/ver-perfil-paciente/ver
 import { RegistroDietaComponent } from './components/registro-dieta/registro-dieta.component';
 import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
-  declarations: [HorarioComponent, NutriologosComponent, PacientesComponent, RecetasComponent, RegistroRecetasComponent, RegistroNutriComponent, VerPerfilPacienteComponent, RegistroDietaComponent, RegistroPacienteComponent, VerDietaPacienteComponent],
+  declarations: [HorarioComponent, NutriologosComponent, PacientesComponent, RecetasComponent, RegistroRecetasComponent, RegistroNutriComponent, VerPerfilPacienteComponent, RegistroDietaComponent, RegistroPacienteComponent, VerDietaPacienteComponent, HeaderComponent],
   imports: [
     CommonModule,
     NutriRoutingModule,

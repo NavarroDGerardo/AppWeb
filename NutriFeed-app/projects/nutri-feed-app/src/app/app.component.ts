@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
-  loggedIn= true;
+  isLanding= false;
+  isNutri = true;
+  isPaciente = false;  
 }

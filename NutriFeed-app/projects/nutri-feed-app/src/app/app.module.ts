@@ -12,7 +12,8 @@ import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 // import { RegistroComponent } from './module/registro/components/registro/registro.component';
 import { HeaderPacienteComponent } from './Components/header-paciente/header-paciente.component';
-import { LandingModule } from './module/landing/landing.module'
+import { LandingModule } from './module/landing/landing.module';
+import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component'
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LandingModule } from './module/landing/landing.module'
     HeaderComponent,
     FooterComponent,
     //RegistroComponent,
-    HeaderPacienteComponent
+    HeaderPacienteComponent,
+    HeaderNutriComponent
   ],
   imports: [
     BrowserModule,
