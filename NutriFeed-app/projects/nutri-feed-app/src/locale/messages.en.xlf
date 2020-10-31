@@ -1037,6 +1037,7 @@
       </trans-unit>
       <trans-unit id="fbdcd5e6cdd6852acfc2ab5ccae5a709b5be3f7b" datatype="html">
         <source><x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/>Tus pacientes<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/></source>
+        <target>Your Patients</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/pacientes/pacientes.component.html</context>
           <context context-type="linenumber">7</context>
@@ -1144,7 +1145,7 @@
       </trans-unit>
       <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
         <source>Email</source>
-        <target>Emailr</target>
+        <target>Email</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
           <context context-type="linenumber">22</context>
@@ -1269,7 +1270,7 @@
       </trans-unit>
       <trans-unit id="9467688a35d41f7994a049aec068e58f2ad85a50" datatype="html">
         <source>Octubre</source>
-        <source>October</source>
+        <target>October</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">36</context>
@@ -1308,7 +1309,7 @@
       </trans-unit>
       <trans-unit id="884f8d12f135433d0a19e9d8c9cd6d12127643a3" datatype="html">
         <source> Mes </source>
-        <source>Month</source>
+        <target>Month</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">72,73</context>
@@ -1398,7 +1399,7 @@
       </trans-unit>
       <trans-unit id="58fe3a7c876da63bde1232c2ef1ddd4d87582e24" datatype="html">
         <source>Octubre</source>
-        <source>October</source>
+        <target>October</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">84</context>
@@ -1461,7 +1462,7 @@
       </trans-unit>
       <trans-unit id="fbd9b9e152986ac6cd0c36258c82db7fccfc0eda" datatype="html">
         <source> Descripción </source>
-        <source>Description</source>
+        <target>Description</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">190,191</context>
@@ -1470,7 +1471,7 @@
       </trans-unit>
       <trans-unit id="1b4bb02ed360093544c27303954fc354f5c9a5a8" datatype="html">
         <source> Desayuno: Huevo con nopales </source>
-        <source>Breakfast: Eggs with nopales</source>
+        <target>Breakfast: Eggs with nopales</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">193,194</context>
@@ -1479,7 +1480,7 @@
       </trans-unit>
       <trans-unit id="c31ae0a9552e01f91eb3d97b3b2a3b985cd7f043" datatype="html">
         <source> Comida: Pollo a la mexicana </source>
-        <source> Lunch:  Mexican chicken</source>
+        <target> Lunch:  Mexican chicken</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">196,197</context>
@@ -1488,7 +1489,7 @@
       </trans-unit>
       <trans-unit id="a96ba683aca01bf23b5f1cd53e98d4c5d8341839" datatype="html">
         <source> Cena: Sandwich de pavo </source>
-        <source>Dinner: Turkey sandwich</source>
+        <target>Dinner: Turkey sandwich</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">199,200</context>
@@ -1497,7 +1498,7 @@
       </trans-unit>
       <trans-unit id="849a9bdf2f71229576c251c767bbd42441f26729" datatype="html">
         <source>Registro de Dieta</source>
-        <source>Diet Register</source>
+        <target>Diet Register</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
           <context context-type="linenumber">7</context>
@@ -1515,7 +1516,7 @@
       </trans-unit>
       <trans-unit id="06286ab258a7562b5dce58448c2d3b4ee07a4f21" datatype="html">
         <source>Agrega la descripción</source>
-        <source>Add a description</source>
+        <target>Add a description</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
           <context context-type="linenumber">13</context>
@@ -1560,7 +1561,7 @@
       </trans-unit>
       <trans-unit id="32cc570e01f240bf1a82c3063c62817224cc662f" datatype="html">
         <source>Colación 3</source>
-        <source>Collation 3</source>
+        <target>Snack 3</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
           <context context-type="linenumber">32</context>
@@ -1569,7 +1570,7 @@
       </trans-unit>
       <trans-unit id="7db6656696e23103136fbd0d76a97c83468be5f8" datatype="html">
         <source>Registro de Paciente</source>
-        <source>Patient Register</source>
+        <target>Patient Register</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
           <context context-type="linenumber">7</context>
@@ -1578,7 +1579,7 @@
       </trans-unit>
       <trans-unit id="afff781d130cccc987ca9f34d68c639596da947e" datatype="html">
         <source>Estado</source>
-        <source>State</source>
+        <target>State</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
           <context context-type="linenumber">27</context>
@@ -1587,7 +1588,7 @@
       </trans-unit>
       <trans-unit id="a29812e05509e49c51ed839e0129b8d0e9351102" datatype="html">
         <source>Nutriólogo</source>
-        <source>Nutriologist</source>
+        <target>Nutriologist</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
           <context context-type="linenumber">31</context>
@@ -1596,7 +1597,7 @@
       </trans-unit>
       <trans-unit id="17ce213b7d25e7c88cba71f4256505ec6944bd9f" datatype="html">
         <source> Cambiar dieta </source>
-        <source>Change Diet</source>
+        <target>Change Diet</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">31</context>
@@ -1605,7 +1606,7 @@
       </trans-unit>
       <trans-unit id="6dbdc5f0be3d92e33b94bd9a9cb0462ba8599c7e" datatype="html">
         <source>Desayuno 8:00 a.m.</source>
-        <source>Breakfast 8:00 a.m</source>
+        <target>Breakfast 8:00 a.m</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">32</context>
@@ -1614,7 +1615,7 @@
       </trans-unit>
       <trans-unit id="9ca92372e66e8524958a7900ee24363ab4a30c8a" datatype="html">
         <source>Huevo con espinaca</source>
-        <source>Eggs with spinach</source>
+        <target>Eggs with spinach</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">33</context>
@@ -1623,7 +1624,7 @@
       </trans-unit>
       <trans-unit id="1f49a000efc79e4941ddb00a198c93206446b10e" datatype="html">
         <source>Pollo con verduras</source>
-        <source>Chicken and vegetables</source>
+        <target>Chicken and vegetables</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">38</context>
@@ -1632,7 +1633,7 @@
       </trans-unit>
       <trans-unit id="620e11b535c5d88f8598e4b183227a4fb9973200" datatype="html">
         <source>Colación 11:00 a.m.</source>
-        <source>Colation 11:00 a.m.</source>
+        <target>Snack 11:00 a.m.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">42</context>
@@ -1641,7 +1642,7 @@
       </trans-unit>
       <trans-unit id="4b9b049a8e6d3693c2c66ec2823abdff91fa9016" datatype="html">
         <source>Nueces</source>
-        <source>Nuts</source>
+        <target>Nuts</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">43</context>
@@ -1650,7 +1651,7 @@
       </trans-unit>
       <trans-unit id="a360bbefcb28de6634c768411936b3595be542fc" datatype="html">
         <source>Colación 17:00 p.m.</source>
-        <source>Colation 17:00 p.m.</source>
+        <target>Snack 17:00 p.m.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">47</context>
@@ -1659,7 +1660,7 @@
       </trans-unit>
       <trans-unit id="05ce3105c551fd6d30018ac52aa3a5314d03b19d" datatype="html">
         <source>Paleta de limon</source>
-        <source>Lemon Ice Pop</source>
+        <target>Lemon Ice Pop</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">48</context>
@@ -1667,7 +1668,8 @@
         <note priority="1" from="description">colacion2 descripcion_nutri</note>
       </trans-unit>
       <trans-unit id="516840bce2ad8148771c244d4bed515b355629b8" datatype="html">
-        <source>Tuna salad</source>
+        <source>Ensalada de atún</source>
+        <target>Tuna salad</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
           <context context-type="linenumber">53</context>

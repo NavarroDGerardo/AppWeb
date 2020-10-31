@@ -106,6 +106,475 @@
         <note priority="1" from="description"> Contacto</note>
         <note priority="1" from="meaning">Footer </note>
       </trans-unit>
+      <trans-unit id="7533496cedbd12926671001f285391408519c40f" datatype="html">
+        <source> Enero <x id="START_TAG_SPAN" equiv-text="&lt;span class=&quot;sr-only&quot;&gt;"/>(current)<x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Enero </note>
+      </trans-unit>
+      <trans-unit id="e79eb74927ddb819d511e089c9244a409ea851cc" datatype="html">
+        <source>Febrero</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Febrero </note>
+      </trans-unit>
+      <trans-unit id="fbd5155cfa41061d314915772ac72dd19e3f0f4f" datatype="html">
+        <source>Marzo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Marzo </note>
+      </trans-unit>
+      <trans-unit id="0ef847555b4bfe11388eb350b403d31ac59696d9" datatype="html">
+        <source>Abril</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Abril </note>
+      </trans-unit>
+      <trans-unit id="d80255238af390cf3c88db4a8ea8851d462e2f04" datatype="html">
+        <source>Mayo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Mayo </note>
+      </trans-unit>
+      <trans-unit id="b278ca6c33a15b68333477e47b577a01f25cc98b" datatype="html">
+        <source>Junio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Junio </note>
+      </trans-unit>
+      <trans-unit id="2d4d776356d4861723ee3d2348e4e0109bcad56b" datatype="html">
+        <source>Julio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Julio </note>
+      </trans-unit>
+      <trans-unit id="95cc77d1f06252cb95216255f05a756851a98bff" datatype="html">
+        <source>Agosto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Agosto</note>
+      </trans-unit>
+      <trans-unit id="814164a6f476a5e05a29188bacdc11a5042fd18e" datatype="html">
+        <source>Septiembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Septiembre </note>
+      </trans-unit>
+      <trans-unit id="9467688a35d41f7994a049aec068e58f2ad85a50" datatype="html">
+        <source>Octubre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Octubre </note>
+      </trans-unit>
+      <trans-unit id="e94dbc7c925031dab8ddfb7e5204b182d0a3662b" datatype="html">
+        <source>Noviembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Noviembre </note>
+      </trans-unit>
+      <trans-unit id="8d1fe7de0f687e3bd0d7bfb38cc5a5bf2e029634" datatype="html">
+        <source>Diciembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description"> Mes</note>
+        <note priority="1" from="meaning">Diciembre </note>
+      </trans-unit>
+      <trans-unit id="0077e13a87f0d746b1798ab4c0037fd9458dab59" datatype="html">
+        <source>24 años</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">edad</note>
+      </trans-unit>
+      <trans-unit id="484cca509e765d71d8e54192527c57d93499fc72" datatype="html">
+        <source> Cerrar sesión </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description"> Boton</note>
+        <note priority="1" from="meaning">Cerrar sesión </note>
+      </trans-unit>
+      <trans-unit id="1cf6f87fc03400d030a08f63509d8bc58182e068" datatype="html">
+        <source> Mes </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+        <note priority="1" from="description">Mes</note>
+      </trans-unit>
+      <trans-unit id="0bed9aa2ead7454e6f9a0d944b1f1bd93df24f04" datatype="html">
+        <source>Enero</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Enero</note>
+      </trans-unit>
+      <trans-unit id="e3edad09a377e516c85a769b0addb16f50bf1cf8" datatype="html">
+        <source>Febrero</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">Febrero</note>
+      </trans-unit>
+      <trans-unit id="04ad22cb4a30f231cfd84591be2570761aec5476" datatype="html">
+        <source>Marzo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description">Marzo</note>
+      </trans-unit>
+      <trans-unit id="8ec099a2b64eca5980fa11c5150fe7c54e8419b5" datatype="html">
+        <source>Abril</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <note priority="1" from="description">Abril</note>
+      </trans-unit>
+      <trans-unit id="78b577d3b77c48c66815f465e03770aece2a3533" datatype="html">
+        <source>Mayo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="description">Mayo</note>
+      </trans-unit>
+      <trans-unit id="a620f944624a38b255a3c11ecee8f81c2b7c2208" datatype="html">
+        <source>Junio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Junio</note>
+      </trans-unit>
+      <trans-unit id="db73a03a2d729b8922dcd611de3d4afb7a5162fc" datatype="html">
+        <source>Julio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Julio</note>
+      </trans-unit>
+      <trans-unit id="807b4501ee8e27a8cbbcc38eaddd48ab7e5bd919" datatype="html">
+        <source>Agosto</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">Agosto</note>
+      </trans-unit>
+      <trans-unit id="9263f3507924095bfd2152fbbe88da8193047769" datatype="html">
+        <source>Septiembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Septiembre</note>
+      </trans-unit>
+      <trans-unit id="58fe3a7c876da63bde1232c2ef1ddd4d87582e24" datatype="html">
+        <source>Octubre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <note priority="1" from="description">Octubre</note>
+      </trans-unit>
+      <trans-unit id="44577c19caa9175c7cd47676fde099234cd38372" datatype="html">
+        <source>Noviembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+        <note priority="1" from="description">Noviembre</note>
+      </trans-unit>
+      <trans-unit id="e57bc908ff25272c9a908bfd2c3f7b6c88b7826c" datatype="html">
+        <source>Diciembre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+        <note priority="1" from="description">Diciembre</note>
+      </trans-unit>
+      <trans-unit id="bf22f2aef5495874257201e1dd6fa52c12b11842" datatype="html">
+        <source>Semana 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">Semana1</note>
+      </trans-unit>
+      <trans-unit id="edbef55689be7e8ef90ca85d75458644720f6bb1" datatype="html">
+        <source>Semana 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <note priority="1" from="description">Semana2</note>
+      </trans-unit>
+      <trans-unit id="69d2eddd8dd821202d9cd57e80933e5b615fb37b" datatype="html">
+        <source>Semana 3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <note priority="1" from="description">Semana3</note>
+      </trans-unit>
+      <trans-unit id="0db8a285d8193a67cd55958bc6d3df94a8b56f6e" datatype="html">
+        <source>Semana 4</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <note priority="1" from="description">Semana4</note>
+      </trans-unit>
+      <trans-unit id="32eab6eab5d6829c0cf9deb7929a466aeacedfb6" datatype="html">
+        <source> Descripción </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">194,195</context>
+        </context-group>
+        <note priority="1" from="description">descripcion</note>
+      </trans-unit>
+      <trans-unit id="9eeb791a6b182b6901e042cc492523c6f7ee039a" datatype="html">
+        <source> Desayuno: Huevo con nopales </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">197,198</context>
+        </context-group>
+        <note priority="1" from="description">Desayuno post</note>
+      </trans-unit>
+      <trans-unit id="d7e2ba3980d7b86b5d7ddde2d2d4d452571b6444" datatype="html">
+        <source> Comida: Pollo a la mexicana </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">200,201</context>
+        </context-group>
+        <note priority="1" from="description">comida post</note>
+      </trans-unit>
+      <trans-unit id="c8e7f9e54a5d6e4bd5c87ffb8b3b3f55c09eb8d2" datatype="html">
+        <source> Cena: Sandwich de pavo </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
+          <context context-type="linenumber">203,204</context>
+        </context-group>
+        <note priority="1" from="description">cena post</note>
+      </trans-unit>
+      <trans-unit id="30315e71827d970c74b015dc410df516f4eec696" datatype="html">
+        <source>Desayuno</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">desayuno opc</note>
+      </trans-unit>
+      <trans-unit id="012f729c2b42a3fcf781ad2de874e485b5abec7c" datatype="html">
+        <source>Colación 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">colacion1 opc</note>
+      </trans-unit>
+      <trans-unit id="6556a5477aa83e2997b9f46801ac93f7e52ffe47" datatype="html">
+        <source>Comida</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">comida opc</note>
+      </trans-unit>
+      <trans-unit id="5fcff4a4525dfdfd4f4824b39ad8df2a3c389847" datatype="html">
+        <source>Colación 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">colacion2 opc</note>
+      </trans-unit>
+      <trans-unit id="625d7fee717689a590fc5cb547359daaf1e2b7d7" datatype="html">
+        <source>Cena</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">cena opc</note>
+      </trans-unit>
+      <trans-unit id="6dbdc5f0be3d92e33b94bd9a9cb0462ba8599c7e" datatype="html">
+        <source>Desayuno 8:00 a.m.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">desayuno tag</note>
+      </trans-unit>
+      <trans-unit id="9ca92372e66e8524958a7900ee24363ab4a30c8a" datatype="html">
+        <source>Huevo con espinaca</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">desayuno descripcion</note>
+      </trans-unit>
+      <trans-unit id="ea3cf9bad047ab98d2a49b0c77b021d05acf27b3" datatype="html">
+        <source>Pollo co verduras</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">comida descripcion</note>
+      </trans-unit>
+      <trans-unit id="620e11b535c5d88f8598e4b183227a4fb9973200" datatype="html">
+        <source>Colación 11:00 a.m.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">colacion1 tag</note>
+      </trans-unit>
+      <trans-unit id="4b9b049a8e6d3693c2c66ec2823abdff91fa9016" datatype="html">
+        <source>Nueces</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">colacion1 descripcion</note>
+      </trans-unit>
+      <trans-unit id="a360bbefcb28de6634c768411936b3595be542fc" datatype="html">
+        <source>Colación 17:00 p.m.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">colacion2 tag</note>
+      </trans-unit>
+      <trans-unit id="05ce3105c551fd6d30018ac52aa3a5314d03b19d" datatype="html">
+        <source>Paleta de limon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">colacion2 descripcion</note>
+      </trans-unit>
+      <trans-unit id="516840bce2ad8148771c244d4bed515b355629b8" datatype="html">
+        <source> Ensalada de atun</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">cena descripcion</note>
+      </trans-unit>
+      <trans-unit id="c93e737fa0e8440b81fcc13ca40d12129d2801b3" datatype="html">
+        <source>IMC actual: <x id="TAG_INPUT" equiv-text="&lt;input type=&quot;text&quot; class=&quot;datos&quot; name=&quot;fname&quot; placeholder=&quot;IMC&quot; formControlName=&apos;imc&apos; required&gt; "/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">IMC</note>
+      </trans-unit>
+      <trans-unit id="a4a3d7465754e4f14acba0e44a5c10c727a16a27" datatype="html">
+        <source> Peso actual <x id="TAG_INPUT" equiv-text="&lt;input type=&quot;text&quot; class=&quot;datos&quot; name=&quot;fname&quot; placeholder=&quot;KG&quot; formControlName=&apos;kg&apos; required&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Peso</note>
+      </trans-unit>
+      <trans-unit id="2d8766d0de67cbe0ae87b9838173a3cb34ebfcff" datatype="html">
+        <source>Registrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">Registrar</note>
+      </trans-unit>
+      <trans-unit id="3afafb02c3db12eac8dfa4730892b9ef799f856a" datatype="html">
+        <source>ENTRADA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">Entrada</note>
+      </trans-unit>
+      <trans-unit id="99dd94344d4ee2d101c6e30d401a7544f2d227f6" datatype="html">
+        <source>FECHA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">Fecha</note>
+      </trans-unit>
+      <trans-unit id="ed981cb9f74307b05dae9d6b78d741303334812a" datatype="html">
+        <source> Pan Tostado y huevo <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Receta para desayuno<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/>#desayuna #huevo<x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">Receta1</note>
+      </trans-unit>
+      <trans-unit id="8ec66e2dba7bc2425e65ded03a008b9d0e4fedd4" datatype="html">
+        <source> Avena con frutos rojos <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Receta para snack<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/>#snack #avena #frutosrojos<x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">Receta2</note>
+      </trans-unit>
+      <trans-unit id="5b52bdb1f28f446bd3ac945fd391e98e33edabfe" datatype="html">
+        <source> Receta </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
+          <context context-type="linenumber">139,140</context>
+        </context-group>
+        <note priority="1" from="description">RecetaPop</note>
+      </trans-unit>
+      <trans-unit id="145b21457c2b1a96bc97770024830ee4f6007511" datatype="html">
+        <source> Ingredientes pan tostado huevo aguacate </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
+          <context context-type="linenumber">142,147</context>
+        </context-group>
+        <note priority="1" from="description">RecetaDescripcion</note>
+      </trans-unit>
       <trans-unit id="42539b10c427e119d3e75f7f7b07fc0c5c6d698d" datatype="html">
         <source>Nutriólogos: 10</source>
         <context-group purpose="location">
@@ -202,22 +671,6 @@
         </context-group>
         <note priority="1" from="description">TituloRecetas</note>
       </trans-unit>
-      <trans-unit id="990e6bda6eaa5148dbae60604ca54c694f0f50cf" datatype="html">
-        <source>Tus nutriólogos</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-        <note priority="1" from="description">TituloNutriólogos</note>
-      </trans-unit>
-      <trans-unit id="00c9506345c83bb33c9191df0041858c5ffe8750" datatype="html">
-        <source> Agregar nutriólogo </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
-          <context context-type="linenumber">10,11</context>
-        </context-group>
-        <note priority="1" from="description">DescripcionBotonAgregarNutri</note>
-      </trans-unit>
       <trans-unit id="619b6a5c30cfa0859757f89199826ccbf6bed396" datatype="html">
         <source>Registro de Receta</source>
         <context-group purpose="location">
@@ -249,14 +702,6 @@
           <context context-type="linenumber">20</context>
         </context-group>
         <note priority="1" from="description">SubirImagenDescripcion</note>
-      </trans-unit>
-      <trans-unit id="2d8766d0de67cbe0ae87b9838173a3cb34ebfcff" datatype="html">
-        <source>Registrar</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
-          <context context-type="linenumber">23</context>
-        </context-group>
-        <note priority="1" from="description">BotonRegistrarReceta</note>
       </trans-unit>
       <trans-unit id="44503275d61b76c482507f43e69ca25be7977c16" datatype="html">
         <source>Registro de Nutriólogo</source>
@@ -298,121 +743,21 @@
         </context-group>
         <note priority="1" from="description">SalarioRegistroNutriDescripcion</note>
       </trans-unit>
-      <trans-unit id="7533496cedbd12926671001f285391408519c40f" datatype="html">
-        <source> Enero <x id="START_TAG_SPAN" equiv-text="&lt;span class=&quot;sr-only&quot;&gt;"/>(current)<x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+      <trans-unit id="990e6bda6eaa5148dbae60604ca54c694f0f50cf" datatype="html">
+        <source>Tus nutriólogos</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
+          <context context-type="linenumber">6</context>
         </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Enero </note>
+        <note priority="1" from="description">TituloNutriólogos</note>
       </trans-unit>
-      <trans-unit id="e79eb74927ddb819d511e089c9244a409ea851cc" datatype="html">
-        <source>Febrero</source>
+      <trans-unit id="00c9506345c83bb33c9191df0041858c5ffe8750" datatype="html">
+        <source> Agregar nutriólogo </source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
+          <context context-type="linenumber">10,11</context>
         </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Febrero </note>
-      </trans-unit>
-      <trans-unit id="fbd5155cfa41061d314915772ac72dd19e3f0f4f" datatype="html">
-        <source>Marzo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">15</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Marzo </note>
-      </trans-unit>
-      <trans-unit id="0ef847555b4bfe11388eb350b403d31ac59696d9" datatype="html">
-        <source>Abril</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Abril </note>
-      </trans-unit>
-      <trans-unit id="d80255238af390cf3c88db4a8ea8851d462e2f04" datatype="html">
-        <source>Mayo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Mayo </note>
-      </trans-unit>
-      <trans-unit id="b278ca6c33a15b68333477e47b577a01f25cc98b" datatype="html">
-        <source>Junio</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Junio </note>
-      </trans-unit>
-      <trans-unit id="2d4d776356d4861723ee3d2348e4e0109bcad56b" datatype="html">
-        <source>Julio</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Julio </note>
-      </trans-unit>
-      <trans-unit id="95cc77d1f06252cb95216255f05a756851a98bff" datatype="html">
-        <source>Agosto</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Agosto</note>
-      </trans-unit>
-      <trans-unit id="814164a6f476a5e05a29188bacdc11a5042fd18e" datatype="html">
-        <source>Septiembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Septiembre </note>
-      </trans-unit>
-      <trans-unit id="9467688a35d41f7994a049aec068e58f2ad85a50" datatype="html">
-        <source>Octubre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Octubre </note>
-      </trans-unit>
-      <trans-unit id="e94dbc7c925031dab8ddfb7e5204b182d0a3662b" datatype="html">
-        <source>Noviembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">39</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Noviembre </note>
-      </trans-unit>
-      <trans-unit id="8d1fe7de0f687e3bd0d7bfb38cc5a5bf2e029634" datatype="html">
-        <source>Diciembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-        <note priority="1" from="description"> Mes_nutri</note>
-        <note priority="1" from="meaning">Diciembre </note>
-      </trans-unit>
-      <trans-unit id="0077e13a87f0d746b1798ab4c0037fd9458dab59" datatype="html">
-        <source>24 años</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">58</context>
-        </context-group>
-        <note priority="1" from="description">edadPaciente_nutri</note>
+        <note priority="1" from="description">DescripcionBotonAgregarNutri</note>
       </trans-unit>
       <trans-unit id="884f8d12f135433d0a19e9d8c9cd6d12127643a3" datatype="html">
         <source> Mes </source>
@@ -420,135 +765,7 @@
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">72,73</context>
         </context-group>
-        <note priority="1" from="description">Mes_nutri</note>
-      </trans-unit>
-      <trans-unit id="0bed9aa2ead7454e6f9a0d944b1f1bd93df24f04" datatype="html">
-        <source>Enero</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">75</context>
-        </context-group>
-        <note priority="1" from="description">Enero_nutri</note>
-      </trans-unit>
-      <trans-unit id="e3edad09a377e516c85a769b0addb16f50bf1cf8" datatype="html">
-        <source>Febrero</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-        <note priority="1" from="description">Febrero_nutri</note>
-      </trans-unit>
-      <trans-unit id="04ad22cb4a30f231cfd84591be2570761aec5476" datatype="html">
-        <source>Marzo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-        <note priority="1" from="description">Marzo_nutri</note>
-      </trans-unit>
-      <trans-unit id="8ec099a2b64eca5980fa11c5150fe7c54e8419b5" datatype="html">
-        <source>Abril</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">78</context>
-        </context-group>
-        <note priority="1" from="description">Abril_nutri</note>
-      </trans-unit>
-      <trans-unit id="78b577d3b77c48c66815f465e03770aece2a3533" datatype="html">
-        <source>Mayo</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">79</context>
-        </context-group>
-        <note priority="1" from="description">Mayo_nutri</note>
-      </trans-unit>
-      <trans-unit id="a620f944624a38b255a3c11ecee8f81c2b7c2208" datatype="html">
-        <source>Junio</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">80</context>
-        </context-group>
-        <note priority="1" from="description">Junio_nutri</note>
-      </trans-unit>
-      <trans-unit id="db73a03a2d729b8922dcd611de3d4afb7a5162fc" datatype="html">
-        <source>Julio</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">81</context>
-        </context-group>
-        <note priority="1" from="description">Julio_nutri</note>
-      </trans-unit>
-      <trans-unit id="807b4501ee8e27a8cbbcc38eaddd48ab7e5bd919" datatype="html">
-        <source>Agosto</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">82</context>
-        </context-group>
-        <note priority="1" from="description">Agosto_nutri</note>
-      </trans-unit>
-      <trans-unit id="9263f3507924095bfd2152fbbe88da8193047769" datatype="html">
-        <source>Septiembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">83</context>
-        </context-group>
-        <note priority="1" from="description">Septiembre_nutri</note>
-      </trans-unit>
-      <trans-unit id="58fe3a7c876da63bde1232c2ef1ddd4d87582e24" datatype="html">
-        <source>Octubre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">84</context>
-        </context-group>
-        <note priority="1" from="description">Octubre_nutri</note>
-      </trans-unit>
-      <trans-unit id="44577c19caa9175c7cd47676fde099234cd38372" datatype="html">
-        <source>Noviembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">85</context>
-        </context-group>
-        <note priority="1" from="description">Noviembre_nutri</note>
-      </trans-unit>
-      <trans-unit id="e57bc908ff25272c9a908bfd2c3f7b6c88b7826c" datatype="html">
-        <source>Diciembre</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">86</context>
-        </context-group>
-        <note priority="1" from="description">Diciembre_nutri</note>
-      </trans-unit>
-      <trans-unit id="bf22f2aef5495874257201e1dd6fa52c12b11842" datatype="html">
-        <source>Semana 1</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">94</context>
-        </context-group>
-        <note priority="1" from="description">Semana1_nutri</note>
-      </trans-unit>
-      <trans-unit id="edbef55689be7e8ef90ca85d75458644720f6bb1" datatype="html">
-        <source>Semana 2</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">97</context>
-        </context-group>
-        <note priority="1" from="description">Semana2_nutri</note>
-      </trans-unit>
-      <trans-unit id="69d2eddd8dd821202d9cd57e80933e5b615fb37b" datatype="html">
-        <source>Semana 3</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">100</context>
-        </context-group>
-        <note priority="1" from="description">Semana3_nutri</note>
-      </trans-unit>
-      <trans-unit id="0db8a285d8193a67cd55958bc6d3df94a8b56f6e" datatype="html">
-        <source>Semana 4</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
-          <context context-type="linenumber">103</context>
-        </context-group>
-        <note priority="1" from="description">Semana4_nutri</note>
+        <note priority="1" from="description">mes_nutri</note>
       </trans-unit>
       <trans-unit id="fbd9b9e152986ac6cd0c36258c82db7fccfc0eda" datatype="html">
         <source> Descripción </source>
@@ -564,7 +781,7 @@
           <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
           <context context-type="linenumber">193,194</context>
         </context-group>
-        <note priority="1" from="description">Desayuno post_nutri</note>
+        <note priority="1" from="description">desayuno post_nutri</note>
       </trans-unit>
       <trans-unit id="c31ae0a9552e01f91eb3d97b3b2a3b985cd7f043" datatype="html">
         <source> Comida: Pollo a la mexicana </source>
@@ -590,14 +807,6 @@
         </context-group>
         <note priority="1" from="description">RegistroDietaTitulo</note>
       </trans-unit>
-      <trans-unit id="30315e71827d970c74b015dc410df516f4eec696" datatype="html">
-        <source>Desayuno</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <note priority="1" from="description">RecetasDesayunoTitulo</note>
-      </trans-unit>
       <trans-unit id="06286ab258a7562b5dce58448c2d3b4ee07a4f21" datatype="html">
         <source>Agrega la descripción</source>
         <context-group purpose="location">
@@ -606,38 +815,6 @@
         </context-group>
         <note priority="1" from="description">AgregarDescripcion1_Nutri_placeholder</note>
       </trans-unit>
-      <trans-unit id="012f729c2b42a3fcf781ad2de874e485b5abec7c" datatype="html">
-        <source>Colación 1</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
-          <context context-type="linenumber">16</context>
-        </context-group>
-        <note priority="1" from="description">RecetasColacion1Titulo</note>
-      </trans-unit>
-      <trans-unit id="6556a5477aa83e2997b9f46801ac93f7e52ffe47" datatype="html">
-        <source>Comida</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <note priority="1" from="description">RecetasComidaTitulo</note>
-      </trans-unit>
-      <trans-unit id="5fcff4a4525dfdfd4f4824b39ad8df2a3c389847" datatype="html">
-        <source>Colación 2</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-        <note priority="1" from="description">RecetasColacion2Titulo</note>
-      </trans-unit>
-      <trans-unit id="625d7fee717689a590fc5cb547359daaf1e2b7d7" datatype="html">
-        <source>Cena</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-        <note priority="1" from="description">RecetasCenaTitulo</note>
-      </trans-unit>
       <trans-unit id="32cc570e01f240bf1a82c3063c62817224cc662f" datatype="html">
         <source>Colación 3</source>
         <context-group purpose="location">
@@ -645,6 +822,22 @@
           <context context-type="linenumber">32</context>
         </context-group>
         <note priority="1" from="description">RecetasColacion3Titulo</note>
+      </trans-unit>
+      <trans-unit id="17ce213b7d25e7c88cba71f4256505ec6944bd9f" datatype="html">
+        <source> Cambiar dieta </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">BotonCambiarDietaDesayuno</note>
+      </trans-unit>
+      <trans-unit id="1f49a000efc79e4941ddb00a198c93206446b10e" datatype="html">
+        <source>Pollo con verduras</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">comida descripcion_nutri</note>
       </trans-unit>
       <trans-unit id="7db6656696e23103136fbd0d76a97c83468be5f8" datatype="html">
         <source>Registro de Paciente</source>
@@ -669,199 +862,6 @@
           <context context-type="linenumber">31</context>
         </context-group>
         <note priority="1" from="description">NutriRegistroPacienteDescripcion</note>
-      </trans-unit>
-      <trans-unit id="17ce213b7d25e7c88cba71f4256505ec6944bd9f" datatype="html">
-        <source> Cambiar dieta </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">31</context>
-        </context-group>
-        <note priority="1" from="description">BotonCambiarDietaDesayuno</note>
-      </trans-unit>
-      <trans-unit id="6dbdc5f0be3d92e33b94bd9a9cb0462ba8599c7e" datatype="html">
-        <source>Desayuno 8:00 a.m.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">32</context>
-        </context-group>
-        <note priority="1" from="description">desayuno tag_nutri</note>
-      </trans-unit>
-      <trans-unit id="9ca92372e66e8524958a7900ee24363ab4a30c8a" datatype="html">
-        <source>Huevo con espinaca</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-        <note priority="1" from="description">desayuno descripcion_nutri</note>
-      </trans-unit>
-      <trans-unit id="1f49a000efc79e4941ddb00a198c93206446b10e" datatype="html">
-        <source>Pollo con verduras</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
-        <note priority="1" from="description">comida descripcion_nutri</note>
-      </trans-unit>
-      <trans-unit id="620e11b535c5d88f8598e4b183227a4fb9973200" datatype="html">
-        <source>Colación 11:00 a.m.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-        <note priority="1" from="description">colacion1 tag_nutri</note>
-      </trans-unit>
-      <trans-unit id="4b9b049a8e6d3693c2c66ec2823abdff91fa9016" datatype="html">
-        <source>Nueces</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">43</context>
-        </context-group>
-        <note priority="1" from="description">colacion1 descripcion_nutri</note>
-      </trans-unit>
-      <trans-unit id="a360bbefcb28de6634c768411936b3595be542fc" datatype="html">
-        <source>Colación 17:00 p.m.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">47</context>
-        </context-group>
-        <note priority="1" from="description">colacion2 tag_nutri</note>
-      </trans-unit>
-      <trans-unit id="05ce3105c551fd6d30018ac52aa3a5314d03b19d" datatype="html">
-        <source>Paleta de limon</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">48</context>
-        </context-group>
-        <note priority="1" from="description">colacion2 descripcion_nutri</note>
-      </trans-unit>
-      <trans-unit id="516840bce2ad8148771c244d4bed515b355629b8" datatype="html">
-        <source> Ensalada de atun</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <note priority="1" from="description">cena descripcion_nutri</note>
-      </trans-unit>
-      <trans-unit id="484cca509e765d71d8e54192527c57d93499fc72" datatype="html">
-        <source> Cerrar sesión </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">70</context>
-        </context-group>
-        <note priority="1" from="description"> Boton</note>
-        <note priority="1" from="meaning">Cerrar sesión </note>
-      </trans-unit>
-      <trans-unit id="1cf6f87fc03400d030a08f63509d8bc58182e068" datatype="html">
-        <source> Mes </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">75,76</context>
-        </context-group>
-        <note priority="1" from="description">Mes</note>
-      </trans-unit>
-      <trans-unit id="32eab6eab5d6829c0cf9deb7929a466aeacedfb6" datatype="html">
-        <source> Descripción </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">194,195</context>
-        </context-group>
-        <note priority="1" from="description">descripcion</note>
-      </trans-unit>
-      <trans-unit id="9eeb791a6b182b6901e042cc492523c6f7ee039a" datatype="html">
-        <source> Desayuno: Huevo con nopales </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">197,198</context>
-        </context-group>
-        <note priority="1" from="description">Desayuno post</note>
-      </trans-unit>
-      <trans-unit id="d7e2ba3980d7b86b5d7ddde2d2d4d452571b6444" datatype="html">
-        <source> Comida: Pollo a la mexicana </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">200,201</context>
-        </context-group>
-        <note priority="1" from="description">comida post</note>
-      </trans-unit>
-      <trans-unit id="c8e7f9e54a5d6e4bd5c87ffb8b3b3f55c09eb8d2" datatype="html">
-        <source> Cena: Sandwich de pavo </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/inicio/inicio.component.html</context>
-          <context context-type="linenumber">203,204</context>
-        </context-group>
-        <note priority="1" from="description">cena post</note>
-      </trans-unit>
-      <trans-unit id="ea3cf9bad047ab98d2a49b0c77b021d05acf27b3" datatype="html">
-        <source>Pollo co verduras</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/dieta/dieta.component.html</context>
-          <context context-type="linenumber">34</context>
-        </context-group>
-        <note priority="1" from="description">comida descripcion</note>
-      </trans-unit>
-      <trans-unit id="c93e737fa0e8440b81fcc13ca40d12129d2801b3" datatype="html">
-        <source>IMC actual: <x id="TAG_INPUT" equiv-text="&lt;input type=&quot;text&quot; class=&quot;datos&quot; name=&quot;fname&quot; placeholder=&quot;IMC&quot; formControlName=&apos;imc&apos; required&gt; "/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-        <note priority="1" from="description">IMC</note>
-      </trans-unit>
-      <trans-unit id="a4a3d7465754e4f14acba0e44a5c10c727a16a27" datatype="html">
-        <source> Peso actual <x id="TAG_INPUT" equiv-text="&lt;input type=&quot;text&quot; class=&quot;datos&quot; name=&quot;fname&quot; placeholder=&quot;KG&quot; formControlName=&apos;kg&apos; required&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-        <note priority="1" from="description">Peso</note>
-      </trans-unit>
-      <trans-unit id="3afafb02c3db12eac8dfa4730892b9ef799f856a" datatype="html">
-        <source>ENTRADA</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
-          <context context-type="linenumber">38</context>
-        </context-group>
-        <note priority="1" from="description">Entrada</note>
-      </trans-unit>
-      <trans-unit id="99dd94344d4ee2d101c6e30d401a7544f2d227f6" datatype="html">
-        <source>FECHA</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/progreso/progreso.component.html</context>
-          <context context-type="linenumber">39</context>
-        </context-group>
-        <note priority="1" from="description">Fecha</note>
-      </trans-unit>
-      <trans-unit id="ed981cb9f74307b05dae9d6b78d741303334812a" datatype="html">
-        <source> Pan Tostado y huevo <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Receta para desayuno<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/>#desayuna #huevo<x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
-          <context context-type="linenumber">34</context>
-        </context-group>
-        <note priority="1" from="description">Receta1</note>
-      </trans-unit>
-      <trans-unit id="8ec66e2dba7bc2425e65ded03a008b9d0e4fedd4" datatype="html">
-        <source> Avena con frutos rojos <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Receta para snack<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/>#snack #avena #frutosrojos<x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
-          <context context-type="linenumber">75</context>
-        </context-group>
-        <note priority="1" from="description">Receta2</note>
-      </trans-unit>
-      <trans-unit id="5b52bdb1f28f446bd3ac945fd391e98e33edabfe" datatype="html">
-        <source> Receta </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
-          <context context-type="linenumber">139,140</context>
-        </context-group>
-        <note priority="1" from="description">RecetaPop</note>
-      </trans-unit>
-      <trans-unit id="145b21457c2b1a96bc97770024830ee4f6007511" datatype="html">
-        <source> Ingredientes pan tostado huevo aguacate </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
-          <context context-type="linenumber">142,147</context>
-        </context-group>
-        <note priority="1" from="description">RecetaDescripcion</note>
       </trans-unit>
       <trans-unit id="16abd2b4d86209744dc169d031922a6c3860ad42" datatype="html">
         <source>Seguir una dieta puede ser complicado</source>
@@ -1095,22 +1095,6 @@
         </context-group>
         <note priority="1" from="description">Nutriologos</note>
       </trans-unit>
-      <trans-unit id="96a173656451ac4142c01bd89f60a9f1bc641657" datatype="html">
-        <source>Inicia sesión</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/landing/components/iniciarSesion/ini-sesion.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-        <note priority="1" from="description">IniciarSesion-Titulo</note>
-      </trans-unit>
-      <trans-unit id="2164cd8befe40510fe456c8a6bfbcf5a16accbcb" datatype="html">
-        <source><x id="START_HEADING_LEVEL3" equiv-text="&lt;h3&gt;"/>¿No tienes cuenta aún?<x id="LINE_BREAK" equiv-text="&lt;br&gt;"/>¡Únete ahora!<x id="CLOSE_HEADING_LEVEL3" equiv-text="&lt;/h3&gt;"/></source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/module/landing/components/iniciarSesion/ini-sesion.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-        <note priority="1" from="description">BotonIniS-Registro</note>
-      </trans-unit>
       <trans-unit id="bb56b0b9b2690d19b56d12f6ffecdaf96e015b16" datatype="html">
         <source>Unirse</source>
         <context-group purpose="location">
@@ -1134,6 +1118,22 @@
           <context context-type="linenumber">12</context>
         </context-group>
         <note priority="1" from="description">Validacion</note>
+      </trans-unit>
+      <trans-unit id="96a173656451ac4142c01bd89f60a9f1bc641657" datatype="html">
+        <source>Inicia sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/landing/components/iniciarSesion/ini-sesion.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">IniciarSesion-Titulo</note>
+      </trans-unit>
+      <trans-unit id="2164cd8befe40510fe456c8a6bfbcf5a16accbcb" datatype="html">
+        <source><x id="START_HEADING_LEVEL3" equiv-text="&lt;h3&gt;"/>¿No tienes cuenta aún?<x id="LINE_BREAK" equiv-text="&lt;br&gt;"/>¡Únete ahora!<x id="CLOSE_HEADING_LEVEL3" equiv-text="&lt;/h3&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/landing/components/iniciarSesion/ini-sesion.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">BotonIniS-Registro</note>
       </trans-unit>
     </body>
   </file>
