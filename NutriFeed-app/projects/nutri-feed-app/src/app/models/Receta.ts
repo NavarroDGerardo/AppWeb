@@ -6,7 +6,7 @@ export interface Receta{
 
 export const RECETA = [
     {
-        titulo: "Hot cakes de avena y platano", 
+        titulo: "Hot cakes de avena y platano",
         description: "Hot cakes faciles de prepara bajos en calorias y con mucho sabor. Preparados con Avena, huevo, nuez picada, platano, canela, vainilla y endulzante sin calorias.",
         img_url: "../../../../../assets/img/HotCakes.png"
     },
