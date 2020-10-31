@@ -959,6 +959,721 @@
         </context-group>
         <note priority="1" from="description">RecetaDescripcion</note>
       </trans-unit>
+
+
+
+      <!--NUTRI-TRADUCCIÓN-->
+      <trans-unit id="42539b10c427e119d3e75f7f7b07fc0c5c6d698d" datatype="html">
+        <source>Nutriólogos: 10</source>
+        <target>Nutriologists: 10</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionCantidadNutris</note>
+      </trans-unit>
+      <trans-unit id="9a234e49db31512f1dead1eca963eb2f92f691b1" datatype="html">
+        <source>Pacientes: 20</source>
+        <target>Patients: 20</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionCantidadPacientes</note>
+      </trans-unit>
+      <trans-unit id="ae3b8c5f9d1217e8b5b315523914283de12d852b" datatype="html">
+        <source> Cerrar sesión </source>
+        <target>Log out</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">CerrarSesionNutri</note>
+      </trans-unit>
+      <trans-unit id="d38aa71d1f82c5b0b72768749b88bb3545388267" datatype="html">
+        <source>Horario</source>
+        <target>Schedule</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">HorarioTitulo</note>
+      </trans-unit>
+      <trans-unit id="b173ec5192470d6b2da768338bc24a965d7e001c" datatype="html">
+        <source>Fecha</source>
+        <target>Date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionFecha</note>
+      </trans-unit>
+      <trans-unit id="dd2a11ebc737589080ed400dacc33a8c8c84728b" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionNombre</note>
+      </trans-unit>
+      <trans-unit id="d15e649b8eb1ba82aa0e7ea082a12901224b1c87" datatype="html">
+        <source>Apellido</source>
+        <target>Last Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionApellido</note>
+      </trans-unit>
+      <trans-unit id="ea879b278aab3d52677021fa602d40e1868d8e6f" datatype="html">
+        <source> Agregar Nutriólogo </source>
+        <target>Add Nutriologist</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/horario/horario.component.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionBotonAgregarNutriHorario</note>
+      </trans-unit>
+      <trans-unit id="fbdcd5e6cdd6852acfc2ab5ccae5a709b5be3f7b" datatype="html">
+        <source><x id="START_PARAGRAPH" equiv-text="&lt;p&gt;"/>Tus pacientes<x id="CLOSE_PARAGRAPH" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/pacientes/pacientes.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">TituloPacientes</note>
+      </trans-unit>
+      <trans-unit id="1864dacf6261e8ac508daca388f646adc6348feb" datatype="html">
+        <source>Buscar...</source>
+        <target>Search...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/pacientes/pacientes.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Buscar_Paciente_placeholder</note>
+      </trans-unit>
+      <trans-unit id="08fc587855469e567d24c5d14e7a8a3cdbf54ce0" datatype="html">
+        <source> Agregar paciente </source>
+        <target>Add patient</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/pacientes/pacientes.component.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionBotonAgregarPaciente</note>
+      </trans-unit>
+      <trans-unit id="fa4a8e53003344f77a0444014679bcaa769b89b9" datatype="html">
+        <source>RECETAS</source>
+        <target>RECIPES</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/recetas/recetas.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">TituloRecetas</note>
+      </trans-unit>
+      <trans-unit id="990e6bda6eaa5148dbae60604ca54c694f0f50cf" datatype="html">
+        <source>Tus nutriólogos</source>
+        <target>Your nutriologists</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">TituloNutriólogos</note>
+      </trans-unit>
+      <trans-unit id="00c9506345c83bb33c9191df0041858c5ffe8750" datatype="html">
+        <source> Agregar nutriólogo </source>
+        <target> Add Nutriologist </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/nutriologos/nutriologos.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionBotonAgregarNutri</note>
+      </trans-unit>
+      <trans-unit id="619b6a5c30cfa0859757f89199826ccbf6bed396" datatype="html">
+        <source>Registro de Receta</source>
+        <target>Recipe Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">TituloRegistroReceta</note>
+      </trans-unit>
+      <trans-unit id="a91be8cb65c4a786f47d63951bf22f07ec363af4" datatype="html">
+        <source>Nombre de la receta</source>
+        <target>Recipe Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">NombreRecetaRegistroRecetaDescripcion</note>
+      </trans-unit>
+      <trans-unit id="b0e611b2bfac70d1af43295307e558cbf9f48e57" datatype="html">
+        <source>Descripción</source>
+        <target>Description</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">DescripcionRecetaRegistroRecetaDescripcion</note>
+      </trans-unit>
+      <trans-unit id="5c8e8e37eb76555577734cc7f420f57e675f0d1a" datatype="html">
+        <source>Sube una imagen de la receta</source>
+        <target>Upload the recipe picture</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">SubirImagenDescripcion</note>
+      </trans-unit>
+      <trans-unit id="2d8766d0de67cbe0ae87b9838173a3cb34ebfcff" datatype="html">
+        <source>Registrar</source>
+        <target>Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-recetas/registro-recetas.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">BotonRegistrarReceta</note>
+      </trans-unit>
+      <trans-unit id="44503275d61b76c482507f43e69ca25be7977c16" datatype="html">
+        <source>Registro de Nutriólogo</source>
+        <target>Nutriologist Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">TituloRegistroNutriologo</note>
+      </trans-unit>
+      <trans-unit id="244aae9346da82b0922506c2d2581373a15641cc" datatype="html">
+        <source>Email</source>
+        <target>Emailr</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <note priority="1" from="description">MailRegistroNutriDescripcion</note>
+      </trans-unit>
+      <trans-unit id="e9e588741024086a4b24d5db5da4f5c540a07f30" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <note priority="1" from="description">AgregarMailRegistroNutri_Nutri_placeholder</note>
+      </trans-unit>
+      <trans-unit id="e14f04cded78339c3375ca12d3ebc08508cd3954" datatype="html">
+        <source>Ciudad</source>
+        <target>City</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">CiudadRegistroNutriDescripcion</note>
+      </trans-unit>
+      <trans-unit id="3ec9bab38e7d3452b9b0a9ffe58961024e9f719d" datatype="html">
+        <source>Salario</source>
+        <target>Salary</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-nutri/registro-nutri.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">SalarioRegistroNutriDescripcion</note>
+      </trans-unit>
+      <trans-unit id="7533496cedbd12926671001f285391408519c40f" datatype="html">
+        <source> Enero <x id="START_TAG_SPAN" equiv-text="&lt;span class=&quot;sr-only&quot;&gt;"/>(current)<x id="CLOSE_TAG_SPAN" equiv-text="&lt;/span&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Enero </note>
+      </trans-unit>
+      <trans-unit id="e79eb74927ddb819d511e089c9244a409ea851cc" datatype="html">
+        <source>Febrero</source>
+        <target>February</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Febrero </note>
+      </trans-unit>
+      <trans-unit id="fbd5155cfa41061d314915772ac72dd19e3f0f4f" datatype="html">
+        <source>Marzo</source>
+        <target>March</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Marzo </note>
+      </trans-unit>
+      <trans-unit id="0ef847555b4bfe11388eb350b403d31ac59696d9" datatype="html">
+        <source>Abril</source>
+        <source>April</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Abril </note>
+      </trans-unit>
+      <trans-unit id="d80255238af390cf3c88db4a8ea8851d462e2f04" datatype="html">
+        <source>Mayo</source>
+        <source>May</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Mayo </note>
+      </trans-unit>
+      <trans-unit id="b278ca6c33a15b68333477e47b577a01f25cc98b" datatype="html">
+        <source>Junio</source>
+        <source>June</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Junio </note>
+      </trans-unit>
+      <trans-unit id="2d4d776356d4861723ee3d2348e4e0109bcad56b" datatype="html">
+        <source>Julio</source>
+        <source>July</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Julio </note>
+      </trans-unit>
+      <trans-unit id="95cc77d1f06252cb95216255f05a756851a98bff" datatype="html">
+        <source>Agosto</source>
+        <source>August</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Agosto</note>
+      </trans-unit>
+      <trans-unit id="814164a6f476a5e05a29188bacdc11a5042fd18e" datatype="html">
+        <source>Septiembre</source>
+        <source>September</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Septiembre </note>
+      </trans-unit>
+      <trans-unit id="9467688a35d41f7994a049aec068e58f2ad85a50" datatype="html">
+        <source>Octubre</source>
+        <source>October</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Octubre </note>
+      </trans-unit>
+      <trans-unit id="e94dbc7c925031dab8ddfb7e5204b182d0a3662b" datatype="html">
+        <source>Noviembre</source>
+        <source>November</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Noviembre </note>
+      </trans-unit>
+      <trans-unit id="8d1fe7de0f687e3bd0d7bfb38cc5a5bf2e029634" datatype="html">
+        <source>Diciembre</source>
+        <source>December</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description"> Mes_nutri</note>
+        <note priority="1" from="meaning">Diciembre </note>
+      </trans-unit>
+      <trans-unit id="0077e13a87f0d746b1798ab4c0037fd9458dab59" datatype="html">
+        <source>24 años</source>
+        <source>24 years</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">edadPaciente_nutri</note>
+      </trans-unit>
+      <trans-unit id="884f8d12f135433d0a19e9d8c9cd6d12127643a3" datatype="html">
+        <source> Mes </source>
+        <source>Month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+        <note priority="1" from="description">Mes_nutri</note>
+      </trans-unit>
+      <trans-unit id="0bed9aa2ead7454e6f9a0d944b1f1bd93df24f04" datatype="html">
+        <source>Enero</source>
+        <source>January</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <note priority="1" from="description">Enero_nutri</note>
+      </trans-unit>
+      <trans-unit id="e3edad09a377e516c85a769b0addb16f50bf1cf8" datatype="html">
+        <source>Febrero</source>
+        <source>February</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+        <note priority="1" from="description">Febrero_nutri</note>
+      </trans-unit>
+      <trans-unit id="04ad22cb4a30f231cfd84591be2570761aec5476" datatype="html">
+        <source>Marzo</source>
+        <source>March</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">Marzo_nutri</note>
+      </trans-unit>
+      <trans-unit id="8ec099a2b64eca5980fa11c5150fe7c54e8419b5" datatype="html">
+        <source>Abril</source>
+        <source>April</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+        <note priority="1" from="description">Abril_nutri</note>
+      </trans-unit>
+      <trans-unit id="78b577d3b77c48c66815f465e03770aece2a3533" datatype="html">
+        <source>Mayo</source>
+        <source>May</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+        <note priority="1" from="description">Mayo_nutri</note>
+      </trans-unit>
+      <trans-unit id="a620f944624a38b255a3c11ecee8f81c2b7c2208" datatype="html">
+        <source>Junio</source>
+        <source>June</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+        <note priority="1" from="description">Junio_nutri</note>
+      </trans-unit>
+      <trans-unit id="db73a03a2d729b8922dcd611de3d4afb7a5162fc" datatype="html">
+        <source>Julio</source>
+        <source>July</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+        <note priority="1" from="description">Julio_nutri</note>
+      </trans-unit>
+      <trans-unit id="807b4501ee8e27a8cbbcc38eaddd48ab7e5bd919" datatype="html">
+        <source>Agosto</source>
+        <source>August</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <note priority="1" from="description">Agosto_nutri</note>
+      </trans-unit>
+      <trans-unit id="9263f3507924095bfd2152fbbe88da8193047769" datatype="html">
+        <source>Septiembre</source>
+        <source>September</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Septiembre_nutri</note>
+      </trans-unit>
+      <trans-unit id="58fe3a7c876da63bde1232c2ef1ddd4d87582e24" datatype="html">
+        <source>Octubre</source>
+        <source>October</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <note priority="1" from="description">Octubre_nutri</note>
+      </trans-unit>
+      <trans-unit id="44577c19caa9175c7cd47676fde099234cd38372" datatype="html">
+        <source>Noviembre</source>
+        <source>November</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+        <note priority="1" from="description">Noviembre_nutri</note>
+      </trans-unit>
+      <trans-unit id="e57bc908ff25272c9a908bfd2c3f7b6c88b7826c" datatype="html">
+        <source>Diciembre</source>
+        <source>December</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+        <note priority="1" from="description">Diciembre_nutri</note>
+      </trans-unit>
+      <trans-unit id="bf22f2aef5495874257201e1dd6fa52c12b11842" datatype="html">
+        <source>Semana 1</source>
+        <source>Week 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+        <note priority="1" from="description">Semana1_nutri</note>
+      </trans-unit>
+      <trans-unit id="edbef55689be7e8ef90ca85d75458644720f6bb1" datatype="html">
+        <source>Semana 2</source>
+        <source>Week 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <note priority="1" from="description">Semana2_nutri</note>
+      </trans-unit>
+      <trans-unit id="69d2eddd8dd821202d9cd57e80933e5b615fb37b" datatype="html">
+        <source>Semana 3</source>
+        <source>Week 3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+        <note priority="1" from="description">Semana3_nutri</note>
+      </trans-unit>
+      <trans-unit id="0db8a285d8193a67cd55958bc6d3df94a8b56f6e" datatype="html">
+        <source>Semana 4</source>
+        <source>Week 4</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <note priority="1" from="description">Semana4_nutri</note>
+      </trans-unit>
+      <trans-unit id="fbd9b9e152986ac6cd0c36258c82db7fccfc0eda" datatype="html">
+        <source> Descripción </source>
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">190,191</context>
+        </context-group>
+        <note priority="1" from="description">descripcion_nutri</note>
+      </trans-unit>
+      <trans-unit id="1b4bb02ed360093544c27303954fc354f5c9a5a8" datatype="html">
+        <source> Desayuno: Huevo con nopales </source>
+        <source>Breakfast: Eggs with nopales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">193,194</context>
+        </context-group>
+        <note priority="1" from="description">Desayuno post_nutri</note>
+      </trans-unit>
+      <trans-unit id="c31ae0a9552e01f91eb3d97b3b2a3b985cd7f043" datatype="html">
+        <source> Comida: Pollo a la mexicana </source>
+        <source> Lunch:  Mexican chicken</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">196,197</context>
+        </context-group>
+        <note priority="1" from="description">comida post_nutri</note>
+      </trans-unit>
+      <trans-unit id="a96ba683aca01bf23b5f1cd53e98d4c5d8341839" datatype="html">
+        <source> Cena: Sandwich de pavo </source>
+        <source>Dinner: Turkey sandwich</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-perfil-paciente/ver-perfil-paciente.component.html</context>
+          <context context-type="linenumber">199,200</context>
+        </context-group>
+        <note priority="1" from="description">cena post_nutri</note>
+      </trans-unit>
+      <trans-unit id="849a9bdf2f71229576c251c767bbd42441f26729" datatype="html">
+        <source>Registro de Dieta</source>
+        <source>Diet Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">RegistroDietaTitulo</note>
+      </trans-unit>
+      <trans-unit id="30315e71827d970c74b015dc410df516f4eec696" datatype="html">
+        <source>Desayuno</source>
+        <source>Breakfast</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">RecetasDesayunoTitulo</note>
+      </trans-unit>
+      <trans-unit id="06286ab258a7562b5dce58448c2d3b4ee07a4f21" datatype="html">
+        <source>Agrega la descripción</source>
+        <source>Add a description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">AgregarDescripcion1_Nutri_placeholder</note>
+      </trans-unit>
+      <trans-unit id="012f729c2b42a3fcf781ad2de874e485b5abec7c" datatype="html">
+        <source>Colación 1</source>
+        <source>Colation 1</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">RecetasColacion1Titulo</note>
+      </trans-unit>
+      <trans-unit id="6556a5477aa83e2997b9f46801ac93f7e52ffe47" datatype="html">
+        <source>Comida</source>
+        <source>Lunch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">RecetasComidaTitulo</note>
+      </trans-unit>
+      <trans-unit id="5fcff4a4525dfdfd4f4824b39ad8df2a3c389847" datatype="html">
+        <source>Colación 2</source>
+        <source>Colation 2</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">RecetasColacion2Titulo</note>
+      </trans-unit>
+      <trans-unit id="625d7fee717689a590fc5cb547359daaf1e2b7d7" datatype="html">
+        <source>Cena</source>
+        <source>Dinner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">RecetasCenaTitulo</note>
+      </trans-unit>
+      <trans-unit id="32cc570e01f240bf1a82c3063c62817224cc662f" datatype="html">
+        <source>Colación 3</source>
+        <source>Collation 3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-dieta/registro-dieta.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">RecetasColacion3Titulo</note>
+      </trans-unit>
+      <trans-unit id="7db6656696e23103136fbd0d76a97c83468be5f8" datatype="html">
+        <source>Registro de Paciente</source>
+        <source>Patient Register</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">TituloRegistroPaciente</note>
+      </trans-unit>
+      <trans-unit id="afff781d130cccc987ca9f34d68c639596da947e" datatype="html">
+        <source>Estado</source>
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">EstadoRegistroPacienteDescripcion</note>
+      </trans-unit>
+      <trans-unit id="a29812e05509e49c51ed839e0129b8d0e9351102" datatype="html">
+        <source>Nutriólogo</source>
+        <source>Nutriologist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/registro-paciente/registro-paciente.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">NutriRegistroPacienteDescripcion</note>
+      </trans-unit>
+      <trans-unit id="17ce213b7d25e7c88cba71f4256505ec6944bd9f" datatype="html">
+        <source> Cambiar dieta </source>
+        <source>Change Diet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">BotonCambiarDietaDesayuno</note>
+      </trans-unit>
+      <trans-unit id="6dbdc5f0be3d92e33b94bd9a9cb0462ba8599c7e" datatype="html">
+        <source>Desayuno 8:00 a.m.</source>
+        <source>Breakfast 8:00 a.m</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">desayuno tag_nutri</note>
+      </trans-unit>
+      <trans-unit id="9ca92372e66e8524958a7900ee24363ab4a30c8a" datatype="html">
+        <source>Huevo con espinaca</source>
+        <source>Eggs with spinach</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">desayuno descripcion_nutri</note>
+      </trans-unit>
+      <trans-unit id="1f49a000efc79e4941ddb00a198c93206446b10e" datatype="html">
+        <source>Pollo con verduras</source>
+        <source>Chicken and vegetables</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">comida descripcion_nutri</note>
+      </trans-unit>
+      <trans-unit id="620e11b535c5d88f8598e4b183227a4fb9973200" datatype="html">
+        <source>Colación 11:00 a.m.</source>
+        <source>Colation 11:00 a.m.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">colacion1 tag_nutri</note>
+      </trans-unit>
+      <trans-unit id="4b9b049a8e6d3693c2c66ec2823abdff91fa9016" datatype="html">
+        <source>Nueces</source>
+        <source>Nuts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <note priority="1" from="description">colacion1 descripcion_nutri</note>
+      </trans-unit>
+      <trans-unit id="a360bbefcb28de6634c768411936b3595be542fc" datatype="html">
+        <source>Colación 17:00 p.m.</source>
+        <source>Colation 17:00 p.m.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <note priority="1" from="description">colacion2 tag_nutri</note>
+      </trans-unit>
+      <trans-unit id="05ce3105c551fd6d30018ac52aa3a5314d03b19d" datatype="html">
+        <source>Paleta de limon</source>
+        <source>Lemon Ice Pop</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">colacion2 descripcion_nutri</note>
+      </trans-unit>
+      <trans-unit id="516840bce2ad8148771c244d4bed515b355629b8" datatype="html">
+        <source>Tuna salad</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/module/nutri/components/ver-dieta-paciente/ver-dieta-paciente.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+        <note priority="1" from="description">cena descripcion_nutri</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
