@@ -180,6 +180,10 @@ _________________________
           width: 100%;
       }
   }
+  &:active{
+    box-shadow: 0px 4px 8px black;
+    transform: scale(.98);
+  }
 }
 
 .button-basic:active:after {
