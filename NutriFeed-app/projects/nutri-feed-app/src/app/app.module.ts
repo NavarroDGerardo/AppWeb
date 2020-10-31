@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormBuilder, Validators, FormArray, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormBuilder,
+  Validators,
+  FormArray,
+  ReactiveFormsModule,
+} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,9 +18,8 @@ import { PacienteModule } from './module/paciente/paciente.module';
 // import { RegistroComponent } from './module/registro/components/registro/registro.component';
 import { HeaderPacienteComponent } from './Components/header-paciente/header-paciente.component';
 import { LandingModule } from './module/landing/landing.module';
-import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component'
+import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 @NgModule({
   declarations: [
@@ -25,7 +29,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     //RegistroComponent,
     HeaderPacienteComponent,
-    HeaderNutriComponent
+    HeaderNutriComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,9 +37,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NutriModule,
     PacienteModule,
-    LandingModule
+    LandingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

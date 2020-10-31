@@ -8,9 +8,8 @@ describe('RegistroNutriComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RegistroNutriComponent ]
-    })
-    .compileComponents();
+      declarations: [RegistroNutriComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

@@ -8,9 +8,8 @@ describe('VerPerfilPacienteComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VerPerfilPacienteComponent ]
-    })
-    .compileComponents();
+      declarations: [VerPerfilPacienteComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

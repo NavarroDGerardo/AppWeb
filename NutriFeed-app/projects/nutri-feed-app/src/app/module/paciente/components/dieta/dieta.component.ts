@@ -1,18 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { DIETA } from '../../../../models/Dieta'
+import { DIETA } from '../../../../models/Dieta';
 
 @Component({
   selector: 'app-dieta',
   templateUrl: './dieta.component.html',
-  styleUrls: ['./dieta.component.scss']
+  styleUrls: ['./dieta.component.scss'],
 })
 export class DietaComponent implements OnInit {
+  dieta = DIETA;
 
-  dieta = DIETA
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

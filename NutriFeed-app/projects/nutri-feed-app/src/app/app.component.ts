@@ -6,7 +6,7 @@ import { animacionesAplicacion } from './Animaciones';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [animacionesAplicacion]
+  animations: [animacionesAplicacion],
 })
 export class AppComponent {
   title = 'nutriFeed-app';
@@ -15,6 +15,8 @@ export class AppComponent {
   isPaciente = false;
 
   prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+    return (
+      outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
+    );
   }
 }

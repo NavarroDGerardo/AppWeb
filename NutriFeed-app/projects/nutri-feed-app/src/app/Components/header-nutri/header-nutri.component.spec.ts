@@ -8,9 +8,8 @@ describe('HeaderNutriComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeaderNutriComponent ]
-    })
-    .compileComponents();
+      declarations: [HeaderNutriComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

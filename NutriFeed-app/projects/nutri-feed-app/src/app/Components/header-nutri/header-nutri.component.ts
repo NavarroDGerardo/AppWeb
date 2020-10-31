@@ -31,7 +31,7 @@ export class HeaderNutriComponent implements OnInit {
   }
 
   estilo = true;
-  
+
   toggle() {
     this.estilo = !this.estilo;
   }

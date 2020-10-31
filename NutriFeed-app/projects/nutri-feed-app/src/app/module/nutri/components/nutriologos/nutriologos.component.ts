@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-nutriologos',
   templateUrl: './nutriologos.component.html',
-  styleUrls: ['./nutriologos.component.scss']
+  styleUrls: ['./nutriologos.component.scss'],
 })
 export class NutriologosComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,16 +1,20 @@
 import { Injectable } from '@angular/core';
-import { HORARIO } from '../../models/Horario'
+import { HORARIO } from '../../models/Horario';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HorarioService {
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  constructor() {}
 
-
-  constructor() { }
-
-  registrarHorario(horario: any){
-    console.log("Registro exitoso", horario)
-    HORARIO.push(horario)
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  registrarHorario(horario: {
+    nombre: string;
+    apellido: string;
+    horario: string;
+  }) {
+    console.log('Registro exitoso', horario);
+    HORARIO.push(horario);
   }
 }

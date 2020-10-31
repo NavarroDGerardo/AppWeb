@@ -106,9 +106,7 @@
               "projects/nutri-feed-app/src/favicon.ico",
               "projects/nutri-feed-app/src/assets"
             ],
-            "styles": [
-              "projects/nutri-feed-app/src/styles/styles.scss"
-            ],
+            "styles": ["projects/nutri-feed-app/src/styles/styles.scss"],
             "scripts": []
           }
         },
@@ -120,9 +118,7 @@
               "projects/nutri-feed-app/tsconfig.spec.json",
               "projects/nutri-feed-app/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {

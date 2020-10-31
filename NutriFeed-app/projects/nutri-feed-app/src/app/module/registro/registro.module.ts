@@ -4,12 +4,8 @@ import { CommonModule } from '@angular/common';
 import { RegistroRoutingModule } from './registro-routing.module';
 import { RegistroComponent } from './components/registro/registro.component';
 
-
 @NgModule({
   declarations: [RegistroComponent],
-  imports: [
-    CommonModule,
-    RegistroRoutingModule
-  ]
+  imports: [CommonModule, RegistroRoutingModule],
 })
-export class RegistroModule { }
+export class RegistroModule {}

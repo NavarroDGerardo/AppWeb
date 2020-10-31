@@ -13,10 +13,17 @@ import { FooterComponent } from './components/inicio/components/footer/footer.co
 import { HeaderComponent } from './components/inicio/components/header/header.component';
 
 @NgModule({
-  declarations: [AcercaComponent, BeneficiosComponent, ComunidadComponent, W3cComponent, IniSesionComponent, RegistroComponent, InicioComponent, FooterComponent, HeaderComponent],
-  imports: [
-    CommonModule,
-    LandingRoutingModule
-  ]
+  declarations: [
+    AcercaComponent,
+    BeneficiosComponent,
+    ComunidadComponent,
+    W3cComponent,
+    IniSesionComponent,
+    RegistroComponent,
+    InicioComponent,
+    FooterComponent,
+    HeaderComponent,
+  ],
+  imports: [CommonModule, LandingRoutingModule],
 })
-export class LandingModule { }
+export class LandingModule {}

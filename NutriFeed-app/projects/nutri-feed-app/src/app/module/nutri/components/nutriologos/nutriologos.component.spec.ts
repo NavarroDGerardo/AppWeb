@@ -8,9 +8,8 @@ describe('NutriologosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NutriologosComponent ]
-    })
-    .compileComponents();
+      declarations: [NutriologosComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

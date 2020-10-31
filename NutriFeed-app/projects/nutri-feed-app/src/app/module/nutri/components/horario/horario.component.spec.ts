@@ -8,9 +8,8 @@ describe('HorarioComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HorarioComponent ]
-    })
-    .compileComponents();
+      declarations: [HorarioComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {

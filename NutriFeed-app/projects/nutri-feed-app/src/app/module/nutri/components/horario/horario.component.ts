@@ -4,15 +4,14 @@ import { HORARIO } from '../../../../models/Horario';
 @Component({
   selector: 'app-horario',
   templateUrl: './horario.component.html',
-  styleUrls: ['./horario.component.scss']
+  styleUrls: ['./horario.component.scss'],
 })
 export class HorarioComponent implements OnInit {
+  pacHorario = HORARIO;
 
-  pacHorario = HORARIO
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  ngOnInit(): void {}
 }

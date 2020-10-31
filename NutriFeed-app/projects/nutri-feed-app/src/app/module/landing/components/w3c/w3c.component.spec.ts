@@ -8,9 +8,8 @@ describe('W3cComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ W3cComponent ]
-    })
-    .compileComponents();
+      declarations: [W3cComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
