@@ -10,13 +10,13 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { InicioComponent } from '../paciente/components/inicio/inicio.component';
 
 const routes: Routes = [
-  {path: "", component:InicioComponent},
-  {path: "acerca", component:AcercaComponent},
-  {path: "beneficios", component:BeneficiosComponent},
-  {path: "comunidad", component:ComunidadComponent},
-  {path: "w3c", component:W3cComponent},
-  {path: "iniciarSesion", component:IniSesionComponent},
-  {path: "registro", component:RegistroComponent}
+  {path: "", component:InicioComponent, data: {animation: 'Inicio'}},
+  {path: "acerca", component:AcercaComponent, data: {animation: 'Acerca'}},
+  {path: "beneficios", component:BeneficiosComponent, data: {animation: 'Beneficios'}},
+  {path: "comunidad", component:ComunidadComponent, data: {animation: 'Comunidad'}},
+  {path: "w3c", component:W3cComponent, data: {animation: 'w3c'}},
+  {path: "iniciarSesion", component:IniSesionComponent, data: {animation: 'IniciarSesion'}},
+  {path: "registro", component:RegistroComponent, data: {animation: 'Registro'}}
 ];
 
 @NgModule({

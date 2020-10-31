@@ -14,6 +14,7 @@ import { PacienteModule } from './module/paciente/paciente.module';
 import { HeaderPacienteComponent } from './Components/header-paciente/header-paciente.component';
 import { LandingModule } from './module/landing/landing.module';
 import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.com
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NutriModule,
     PacienteModule,

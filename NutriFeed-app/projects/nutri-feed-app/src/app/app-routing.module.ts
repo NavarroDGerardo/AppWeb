@@ -8,10 +8,10 @@ const routes: Routes = [
   // {path: 'comunidad', loadChildren:'./module/comunidad/comunidad.module#ComunidadModule'},
   // {path: 'beneficios', loadChildren:'./module/beneficios/beneficios.module#BeneficiosModule'},
   // {path: 'iniciarSesion', loadChildren:'./module/iniciar-sesion/iniciar-sesion.module#IniciarSesionModule'},
-  {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule'},
+  {path: 'nutri', loadChildren: './module/nutri/nutri.module#NutriModule', data:{animation: "nutri"}},
   // {path: 'w3c', loadChildren: './module/w3c-verificacion/w3c-verificacion-routing.module#W3cVerificacionRoutingModule'},
-  {path: 'paciente', loadChildren: './module/paciente/paciente.module#PacienteModule'},
-  {path: '', loadChildren: './module/landing/landing.module#LandingModule'}
+  {path: 'paciente', loadChildren: './module/paciente/paciente.module#PacienteModule', data:{animation: "Paciente"}},
+  {path: '', loadChildren: './module/landing/landing.module#LandingModule', data:{animation: "LandingPage"}}
   // {path: 'registro', loadChildren:'./module/registro/registro-routing.module#RegistroRoutingModule'},
 ];
 
