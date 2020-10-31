@@ -42,9 +42,9 @@
           <h4> Daniela Fernandez <span> (email@example.com )</span> </h4>
           <div class = "info-data">
             <form [formGroup]='modeloProgreso' (ngSubmit)='registrarProgreso()'>
-              <p >IMC actual: <input type="text" class="datos" name="fname" placeholder="IMC" formControlName='imc' required> </p>
-              <br><p > Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='kg' required></p>
-              <button type="submit " class="btn btn-lg btn-secondary btn-act">Registrar</button>
+              <p i18n="IMC">IMC actual: <input type="text" class="datos" name="fname" placeholder="IMC" formControlName='imc' required> </p>
+              <br><p i18n="Peso"> Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='kg' required></p>
+              <button i18n="Registrar" type="submit " class="btn btn-lg btn-secondary btn-act">Registrar</button>
             </form>
             <!-- <p>Valor del formulario: {{modeloProgreso.value | json}}</p> -->
 
@@ -61,8 +61,8 @@
               <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th scope="col">ENTRADA</th>
-                      <th scope="col">FECHA</th>
+                      <th i18n="Entrada" scope="col">ENTRADA</th>
+                      <th i18n="Fecha" scope="col">FECHA</th>
                       <th scope="col"># KG</th>
                       <th scope="col"># IMC</th>
                     </tr>
