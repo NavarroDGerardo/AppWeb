@@ -4,35 +4,35 @@
       <div class="col-md-8">
         <div class="container-info">
           <div class="registro-titulo">
-            <p>Registro de Dieta</p>
+            <p i18n="RegistroDietaTitulo">Registro de Dieta</p>
           </div>
           <div class="form-container">
             <form [formGroup]='modeloDieta' (ngSubmit)='registrarDieta()'>
                 <div class="form-group">
-                  <label for="inputDescripcion">Desayuno</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='desayuno' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasDesayunoTitulo">Desayuno</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion1_Nutri_placeholder" formControlName='desayuno' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
-                  <label for="inputDescripcion">Colación 1</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion1' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasColacion1Titulo">Colación 1</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion2_Nutri_placeholder" formControlName='colacion1' required></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="inputDescripcion">Comida</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='comida' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasComidaTitulo">Comida</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion3_Nutri_placeholder" formControlName='comida' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
-                  <label for="inputDescripcion">Colación 2</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion2' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasColacion2Titulo">Colación 2</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion4_Nutri_placeholder" formControlName='colacion2' required></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="inputDescripcion">Cena</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='cena' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasCenaTitulo">Cena</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion5_Nutri_placeholder" formControlName='cena' required></textarea>
                 </div>
                 <div class="form-group" formGroupName='colaciones'>
-                  <label for="inputDescripcion">Colación 3</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" formControlName='colacion3' required></textarea>
+                  <label for="inputDescripcion" i18n="RecetasColacion3Titulo">Colación 3</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción" i18n-placeholder="AgregarDescripcion6_Nutri_placeholder" formControlName='colacion3' required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="submit" class="btn btn-primary" i18n="BotonRegistrarDieta">Registrar</button>
               </form>
               <p>Valor del formulario: {{modeloDieta.value | json}}</p>
           </div>

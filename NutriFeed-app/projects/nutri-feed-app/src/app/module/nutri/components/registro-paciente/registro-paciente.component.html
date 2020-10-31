@@ -4,35 +4,35 @@
       <div class="col-md-8">
         <div class="container-info"> 
           <div class="registro-titulo">
-            <p>Registro de Paciente</p>
+            <p i18n="TituloRegistroPaciente">Registro de Paciente</p>
           </div>
           <div class="form-container">
             <form [formGroup]="modeloPaciente" (ngSubmit)="enviar()">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputNombre">Nombre</label>
-                    <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="Nombre">
+                    <label for="inputNombre" i18n="NombreRegistroPacienteDescripcion">Nombre</label>
+                    <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="Nombre" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputApellido">Apellido</label>
-                    <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" placeholder="Apellido">
+                    <label for="inputApellido" i18n="ApellidoRegistroPacienteDescripcion">Apellido</label>
+                    <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" placeholder="Apellido" i18n-placeholder="AgregarApellidosRegistroNutri_Nutri_placeholder">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputEmail4">Email</label>
-                  <input type="email"formControlName="Email"  class="form-control" id="inputEmail" placeholder="Correo electrónico">
+                  <label for="inputEmail4" i18n="MailRegistroPacienteDescripcion">Email</label>
+                  <input type="email"formControlName="Email"  class="form-control" id="inputEmail" placeholder="Correo electrónico" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEstado">Estado</label>
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Estado</label>
                     <input type="text" formControlName="estado" class="form-control" id="inputEstado">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNutri">Nutriólogo</label>
+                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Nutriólogo</label>
                     <input type="text" formControlName="nutriologo" class="form-control" id="inputNutri">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="submit" class="btn btn-primary" i18n="BotonRegistrarPaciente">Registrar</button>
               </form>
           </div>
          

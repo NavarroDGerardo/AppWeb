@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'nutriFeed-app';
   isLanding= false;
-  isNutri = false;
-  isPaciente = true;  
+  isNutri = true;
+  isPaciente = false;  
 }

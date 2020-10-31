@@ -16,24 +16,24 @@
           <div class="info">
             <h4> Estefania Fuentes <span> (email@example.com)</span> </h4> 
             <div class = "info-data">
-              <p>Nutriólogos: 10</p>
-              <p>Pacientes: 20</p>
+              <p i18n="DescripcionCantidadNutris">Nutriólogos: 10</p>
+              <p i18n="DescripcionCantidadPacientes">Pacientes: 20</p>
             </div>
           </div>
         </div>
-        <a href="#" class="btn btn-lg btn-secondary btn-cerrar"> Cerrar sesión </a>
+        <a href="#" class="btn btn-lg btn-secondary btn-cerrar" i18n="CerrarSesionNutri"> Cerrar sesión </a>
       </div>
       <div class="container-horario">
         <div class="horario-titulo">
-          <p>Horario</p>
+          <p i18n="HorarioTitulo">Horario</p>
         </div>
         <table class="table">
           <thead class="p-3 mb-2 bg-success text-white">
             <tr>
-              <th scope="col">Fecha</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Apellido</th>
-              <th scope="col">Horario</th>
+              <th scope="col" i18n="DescripcionFecha">Fecha</th>
+              <th scope="col" i18n="DescripcionNombre">Nombre</th>
+              <th scope="col" i18n="DescripcionApellido">Apellido</th>
+              <th scope="col" i18n="DescripcionHorario">Horario</th>
             </tr>
           </thead>
           <tbody>
@@ -77,7 +77,7 @@
           </tbody>
         </table>
       </div>
-      <a routerLink="/nutri/registro-nutri"><button type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+      <a routerLink="/nutri/registro-nutri"><button type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarNutriHorario">
         Agregar Nutriólogo
       </button></a>
     </div>
