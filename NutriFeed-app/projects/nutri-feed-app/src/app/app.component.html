@@ -7,5 +7,9 @@
 <div *ngIf="isNutri">
   <app-header-nutri></app-header-nutri>
 </div>
-<router-outlet></router-outlet>
+
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
 <app-footer></app-footer>
