@@ -13,16 +13,16 @@ import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-d
 
 
 const routes: Routes = [
-  {path: "horario", component:HorarioComponent},
-  {path: "pacientes", component:PacientesComponent},
-  {path: "recetas", component:RecetasComponent},
-  {path: "nutriologos", component:NutriologosComponent},
-  {path: "registro-recetas", component:RegistroRecetasComponent},
-  {path: "registro-nutri", component:RegistroNutriComponent},
-  {path: "ver-perfil-paciente", component:VerPerfilPacienteComponent},
-  {path: "registro-dieta", component:RegistroDietaComponent},
-  {path: "registro-paciente", component:RegistroPacienteComponent},
-  {path: "ver-dieta-paciente", component:VerDietaPacienteComponent},
+  {path: "horario", component:HorarioComponent, data: {animation: 'horario'}},
+  {path: "pacientes", component:PacientesComponent, data: {animation: 'pacientes'}},
+  {path: "recetas", component:RecetasComponent, data: {animation: 'recetas'}},
+  {path: "nutriologos", component:NutriologosComponent, data: {animation: 'nutriologos'}},
+  {path: "registro-recetas", component:RegistroRecetasComponent, data: {animation: 'registro-recetas'}},
+  {path: "registro-nutri", component:RegistroNutriComponent, data: {animation: 'registro-nutri'}},
+  {path: "ver-perfil-paciente", component:VerPerfilPacienteComponent, data: {animation: 'ver-perfil-paciente'}},
+  {path: "registro-dieta", component:RegistroDietaComponent, data: {animation: 'registro-dieta'}},
+  {path: "registro-paciente", component:RegistroPacienteComponent, data: {animation: 'registro-paciente'}},
+  {path: "ver-dieta-paciente", component:VerDietaPacienteComponent, data: {animation: 'ver-dieta-paciente'}},
 
 ];
 

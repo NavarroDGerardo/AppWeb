@@ -10,9 +10,9 @@ import { animacionesAplicacion } from './Animaciones';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
-  isLanding= false;
+  isLanding= true;
   isNutri = false;
-  isPaciente = true;
+  isPaciente = false;
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
