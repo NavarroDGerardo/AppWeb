@@ -934,7 +934,7 @@
       </trans-unit>
       <trans-unit id="8ec66e2dba7bc2425e65ded03a008b9d0e4fedd4" datatype="html">
         <source> Avena con frutos rojos <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Receta para snack<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/>#snack #avena #frutosrojos<x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></source>
-        <target>Oats with berries<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Snack recipe <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"> /#snack #oats #berries <x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></target>
+        <target>Oats with berries<x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/> Snack recipe <x id="LINE_BREAK" equiv-text="&lt;br&gt;&lt;i &gt;"/><x id="START_ITALIC_TEXT" equiv-text="&lt;i &gt;"/> #snack #oats #berries <x id="CLOSE_ITALIC_TEXT" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/module/paciente/components/receta/receta.component.html</context>
           <context context-type="linenumber">101</context>
