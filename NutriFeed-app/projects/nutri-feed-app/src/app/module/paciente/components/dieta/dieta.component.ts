@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DIETA } from '../../../../models/Dieta'
 
 @Component({
   selector: 'app-dieta',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dieta.component.scss']
 })
 export class DietaComponent implements OnInit {
+
+  dieta = DIETA
 
   constructor() { }
 
