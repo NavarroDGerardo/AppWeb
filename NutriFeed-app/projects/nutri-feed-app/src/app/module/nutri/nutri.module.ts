@@ -14,6 +14,7 @@ import { RegistroDietaComponent } from './components/registro-dieta/registro-die
 import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
 import { HeaderComponent } from './components/header/header.component';
+import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HeaderComponent } from './components/header/header.component';
     RegistroPacienteComponent,
     VerDietaPacienteComponent,
     HeaderComponent,
+    VerRecetaComponent,
   ],
   imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule],
 })

@@ -1,0 +1,193 @@
+$green-color: green; 
+
+$primary: $green-color !default;
+
+.imgReceta{
+    width: 100%;
+}
+
+.cont{
+    float: left;
+}
+
+.imgContainer{
+    background-color: rgb(8, 121, 8);
+    padding: 10px;
+}
+
+.tituloReceta{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(8, 121, 8);
+    margin-top: 50px;
+}
+
+.descripcionCorta{
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.contTittle{
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    opacity: 0.9;
+    margin-top: 25px;
+}
+
+.description{
+    border-top: 2px solid;
+    border-color: $primary;
+    background-color: #fff;
+    opacity: 0.9;
+    padding-bottom: 30px;
+}
+
+.tituloDescripcion{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(8, 121, 8);
+    margin-top: 15px;
+}
+
+.pasosReceta{
+    font-size: 30px;
+    margin-top: 15px;
+    list-style-type: circle;
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px; } }
+  
+  @media screen and (max-width: 1160px) {
+    .boton_card {
+      width: 100%;
+      margin-left: 0; } }
+  
+  @media only screen and (max-width: 600px) {
+    .imgCarroussel {
+      width: 100%;
+      margin-left: 0; }
+    .text {
+      width: 100%;
+      margin-left: 0; } }
+  
+  .footer-style {
+    font-family: "Rubik", sans-serif;
+    background-color: #fff;
+    opacity: 0.9;
+    text-align: center; }
+    .footer-style .content {
+      position: relative;
+      transform: translateY(-50%);
+      top: 50%;
+      line-height: 30px; }
+  
+  .tp {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  
+  .elimination {
+    color: red; }
+    .elimination:hover {
+      color: #C20808; }
+  
+  #agregar {
+    background-color: #087908; }
+  
+  #agregar:hover {
+    color: #087908;
+    background-color: #fff; }
+  
+  .px {
+    margin-bottom: 10px;
+    margin-left: 30%;
+    width: 40%;
+    background-color: #087908; }
+  
+  .px:hover {
+    color: #087908;
+    background-color: #fff; }
+  
+  .copyrightTittle {
+    font: inherit;
+    font-size: 18px; }
+  
+  .contact {
+    font: inherit;
+    font-size: 18px; }
+  
+  .dataTables_info {
+    color: #087908;
+    background-color: #ffffff;
+    opacity: 0.9; }
+  
+  label {
+    color: #087908;
+    font-weight: bolder;
+    opacity: 0.9;
+    background-color: #fff; }
+  
+  .eliminar:hover {
+    color: red;
+    cursor: pointer; }
+  
+  .imgReceta {
+    width: 100%; }
+  
+  .cont {
+    float: left; }
+  
+  .imgContainer {
+    background-color: #087908;
+    padding: 10px; }
+  
+  .tituloReceta {
+    font-size: 50px;
+    text-align: center;
+    color: #087908;
+    margin-top: 50px; }
+  
+  .descripcionCorta {
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px; }
+  
+  .contTittle {
+    background-color: #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    opacity: 0.9;
+    margin-top: 25px; }
+  
+  .description {
+    border-top: 2px solid;
+    border-color: green;
+    background-color: #fff;
+    opacity: 0.9;
+    padding-bottom: 30px; }
+  
+  .tituloDescripcion {
+    text-align: center;
+    font-size: 40px;
+    color: #087908;
+    margin-top: 15px; }
+  
+  .pasosReceta {
+    font-size: 30px;
+    margin-top: 15px;
+    list-style-type: circle;
+    margin-left: 50px; }
+  
+  .row {
+    width: 100%;
+    margin: auto; }

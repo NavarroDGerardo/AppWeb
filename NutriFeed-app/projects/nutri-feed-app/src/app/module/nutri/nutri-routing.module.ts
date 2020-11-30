@@ -10,6 +10,7 @@ import { VerPerfilPacienteComponent } from './components/ver-perfil-paciente/ver
 import { RegistroDietaComponent } from './components/registro-dieta/registro-dieta.component';
 import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
+import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
 
 const routes: Routes = [
   {
@@ -61,6 +62,11 @@ const routes: Routes = [
     path: 'ver-dieta-paciente',
     component: VerDietaPacienteComponent,
     data: { animation: 'ver-dieta-paciente' },
+  },
+  {
+    path: 'ver-receta',
+    component: VerRecetaComponent,
+    data: { animation: 'ver-receta' },
   },
 ];
 
