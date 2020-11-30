@@ -104,8 +104,12 @@ _________________________
 	height: 30px;
 	background-color: rgb(84, 153, 98);
 	position: relative;
-	left: 85%;
+	left: 75%;
 	bottom: 28%;
+}
+.btn-agregar{
+
+
 }
 .menu-semanas {
 	height: 8%;
@@ -253,11 +257,11 @@ a.semana {
 	}
 	.btn-cerrar {
 		font-size: 9px;
-		width: 90px;
+		width: 95px;
 		height: 26px;
 		position: relative;
 		bottom: 16%;
-		left: 73%;
+		left: 44%;
 	}
 	.menu-semanas {
 		height: 17%;
@@ -306,7 +310,7 @@ a.semana {
 		width: 100px;
 		height: 29px;
 		bottom: 41%;
-		left: 78%;
+		left: 57%;
 	}
 	.menu-semanas {
 		height: 12%;
@@ -337,7 +341,7 @@ a.semana {
 		width: 100px;
 		height: 29px;
 		bottom: 41%;
-		left: 84%;
+		left: 68%;
 	}
 	.menu-semanas {
 		span {
@@ -364,6 +368,6 @@ a.semana {
 		width: 100px;
 		height: 29px;
 		bottom: 42%;
-		left: 90%;
+		left: 80%;
 	}
 }
