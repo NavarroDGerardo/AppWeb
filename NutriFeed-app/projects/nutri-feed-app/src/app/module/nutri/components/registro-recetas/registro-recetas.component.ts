@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { RECETA } from '../../../../models/Receta';
 import { RecetaService } from '../../../service/receta.service';
 
 @Component({
@@ -10,13 +9,16 @@ import { RecetaService } from '../../../service/receta.service';
   styleUrls: ['./registro-recetas.component.scss'],
 })
 export class RegistroRecetasComponent implements OnInit {
-  recetas = RECETA;
   //subscribe: Subscription;
 
   modeloReceta = this.formbuild.group({
-    titulo: ['', Validators.required],
-    description: ['', Validators.required],
-    img_url: ['', Validators.required],
+    nombre: ['', Validators.required],
+    descripcion: ['', Validators.required],
+    imagen: ['', Validators.required],
+    tipo: ['', Validators.required],
+    ingrediente: ['', Validators.required],
+    hashtags: ['', Validators.required],
+    // fecha: '',
   });
 
   constructor(
@@ -26,11 +28,20 @@ export class RegistroRecetasComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  registrarReseta() {}
-
-  enviar() {
+  registrarReceta() {
+    // const fech = new Date();
+    // const mes = fech.getMonth();
+    // this.modeloReceta.fecha = mes;
     console.log(this.modeloReceta.value);
-    this.recetaService.agregarReceta(this.modeloReceta.value);
+    this.recetaService.insertarReceta(this.modeloReceta.value);
     this.modeloReceta.reset();
   }
+
+  enviar(){}
+
+  // enviar() {
+  //   console.log(this.modeloReceta.value);
+  //   this.recetaService.agregarReceta(this.modeloReceta.value);
+  //   this.modeloReceta.reset();
+  // }
 }

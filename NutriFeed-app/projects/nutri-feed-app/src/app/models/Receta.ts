@@ -1,7 +1,12 @@
 export interface Receta {
-  titulo: string;
-  description: string;
-  img_url: string;
+  nombre: string;
+  publicado_por: string;
+  ingrediente: string;
+  descripcion: string;
+  imagen: string;
+  tipo: string;
+  hashtags: string;
+  fecha: string;
 }
 
 export const RECETA = [

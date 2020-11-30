@@ -10,17 +10,17 @@
 			  <div class="row">
 				  <div class="col-md-8 col-tarjetas">
 					  <!-- Tarjeta de feed 1 -->
-					  <div class="tarjeta-1">
+					  <div class="tarjeta-1" *ngFor="let receta of recetas">
 						  <div class="instagram-post">
 							  <div class="instagram-post-top">
 								<div class="instagram-post-avatar">
 							  <img src="../../../../../assets/img/profilepic.jpg" width="48" height="48" alt="logo">
 								</div>
 								<div class="instagram-post-username">
-								 Daniela Fernandez
+								 {{receta.publicado_por}}
 								</div>
 								<div class="instagram-post-date">
-								  Sept 1
+								  {{receta.fecha}}
 								</div>
 								<div class="instagram-post-bookmark">
 								  <span class="th th-bookmark-1-o"></span>
@@ -31,7 +31,7 @@
 							  </div>
 							  <div class="instagram-post-bottom">
 								<div class="instagram-post-text">
-								  <div i18n="Receta1">  Pan Tostado y huevo <br> Receta para desayuno<br><i >#desayuna #huevo</i></div>
+								  <div i18n="Receta1">  {{receta.nombre}} <br> Receta para {{receta.tipo}}<br><i >{{receta.hashtags}}</i></div>
 								</div>
 								<div class="instagram-post-icons">
 								  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -50,48 +50,7 @@
 							  </div>
 							</div>
 						   </div>
-							 <!-- Tarjeta de feed 2 -->
-						   <div class="tarjeta-1">
-							  <div class="instagram-post">
-								  <div class="instagram-post-top">
-									<div class="instagram-post-avatar">
-								  <img src="../../../../../assets/img/profilepic.jpg" width="48" height="48" alt="logo">
-									</div>
-									<div class="instagram-post-username">
-									 Daniela Fernandez
-									</div>
-									<div class="instagram-post-date">
-									  Sept 1
-									</div>
-									<div class="instagram-post-bookmark">
-									  <span class="th th-bookmark-1-o"></span>
-									</div>
-								  </div>
-								  <div class="instagram-post-image">
-									<img src="../../../../../assets/img/receta_7.jpg">
-								  </div>
-								  <div class="instagram-post-bottom">
-									<div class="instagram-post-text">
-									  <div i18n="Receta2" > Avena con frutos rojos <br> Receta para snack<br><i >#snack #avena #frutosrojos</i></div>
-									</div>
-									<div class="instagram-post-icons">
-									  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-										  <path fill-rule="evenodd" d="M4 0a2 2 0 0 0-2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4zm4.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
-										</svg></span>
-									  <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" >
-										  <path fill-rule="evenodd" d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z"/>
-										</svg></span>
-									</div>
-									<div class="instagram-post-view">
-									  <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  data-toggle="modal" data-target="#modalQuickView">
-										  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-										  <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-										</svg></span>
-									</div>
-								  </div>
-								</div>
-							   </div>
-				  </div>
+				    </div>
 				  <!-- Area de Search bar -->
 				  <div class="col-md-4">
 					  <div class="search-area">
@@ -138,12 +97,9 @@
 			<h2 i18n="RecetaPop">
 			  Receta
 			</h2>
-			<p i18n="RecetaDescripcion"> 
+			<p i18n="RecetaDescripcion" *ngFor="let item of recetas">
 			  Ingredientes
-			  pan tostado
-			  huevo
-			  aguacate
-
+			  <!-- {{item.ingrediente}} -->
 			</p>
 		  </div>
 			</div>

@@ -10,12 +10,12 @@ import { RecetaService } from '../../../service/receta.service';
 })
 export class RecetasComponent implements OnInit {
   recetas = RECETA;
-  recetasNuevas: object[] = [];
-  constructor(private recetaService: RecetaService) {
-    recetaService.recetaInscritaAnunciada$.subscribe((c) => {
-      console.log(`se agrego ${c}`);
-    });
-  }
+  // recetasNuevas: object[] = [];
+  // constructor(private recetaService: RecetaService) {
+  //   recetaService.recetaInscritaAnunciada$.subscribe((c) => {
+  //     console.log(`se agrego ${c}`);
+  //   });
+  // }
 
   ngOnInit(): void {}
 }
