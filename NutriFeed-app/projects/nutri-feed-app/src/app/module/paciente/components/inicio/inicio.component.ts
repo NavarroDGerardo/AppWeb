@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
 import { DiarioService } from '../../../service/diario.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { PacienteService } from '../../../service/paciente.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,6 +11,10 @@ import { DiarioService } from '../../../service/diario.service';
   styleUrls: ['./inicio.component.scss'],
 })
 export class InicioComponent implements OnInit {
+  paciente:any;
+
+  destroy$: Subject<boolean> = new Subject<boolean>();
+
   modeloDiario = this.formBuild.group({
     desayuno: ['', Validators.required],
     comida: ['', Validators.required],
@@ -17,9 +24,16 @@ export class InicioComponent implements OnInit {
     imgCena: ['', Validators.required],
   });
 
-  constructor(private formBuild: FormBuilder, private diarioS: DiarioService) {}
+  constructor(private formBuild: FormBuilder, private diarioS: DiarioService, private pacienteService: PacienteService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.pacienteService
+      .getPaciente()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.paciente = data;
+      });
+  }
 
   registrarDiario() {
     console.log(this.modeloDiario.value);

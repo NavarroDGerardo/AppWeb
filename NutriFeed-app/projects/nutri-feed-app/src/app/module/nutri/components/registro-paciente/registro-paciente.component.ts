@@ -27,7 +27,7 @@ export class RegistroPacienteComponent implements OnInit {
 
   enviar() {
     console.log(this.modeloPaciente.value);
-    this.pacienteService.agregarPaciente(this.modeloPaciente.value);
+    //this.pacienteService.agregarPaciente(this.modeloPaciente.value);
     this.modeloPaciente.reset();
   }
 }

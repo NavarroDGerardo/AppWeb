@@ -1,9 +1,11 @@
 export interface Paciente {
   nombre: string;
-  apellido: string;
-  Email: string;
+  correo: string;
   estado: string;
-  nutriologo: string;
+  edad: string;
+  ciudad: string;
+  altura: string;
+  peso_actual: string;
 }
 
 export const PACIENTE = [
