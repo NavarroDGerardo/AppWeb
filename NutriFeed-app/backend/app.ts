@@ -1,5 +1,5 @@
-import express from 'express';
-import morgan from 'morgan';
+import * as express from 'express';
+import * as morgan from 'morgan';
 
 import setMongo from './mongo';
 import setRoutes from './routes';
