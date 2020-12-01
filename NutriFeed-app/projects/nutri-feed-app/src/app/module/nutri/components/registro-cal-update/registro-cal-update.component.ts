@@ -11,7 +11,14 @@ import { NutriologoService } from '../../../service/nutriologo.service';
   styleUrls: ['./registro-cal-update.component.scss'],
 })
 export class RegistroCalUpdateComponent implements OnInit {
-  pacientes: Horario | undefined;
+  pacientes: Horario = {
+    _id:'',
+    nombre: '',
+    apellido: '',
+    correoUsuario: '',
+    hora: '',
+    fecha: ''
+  };
 
   destroy$: Subject<boolean> = new Subject<boolean>();
 
