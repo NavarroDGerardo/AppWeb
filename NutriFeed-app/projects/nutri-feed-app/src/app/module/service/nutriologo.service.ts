@@ -17,9 +17,13 @@ export class NutriologoService {
   endpoint = 'http://localhost:3000/api/showHorario';
   endpointAdd = 'http://localhost:3000/api/addHorario';
   endpointDelete = 'http://localhost:3000/api/deletePacienteHorario';
+  endpointEdit = 'http://localhost:3000/api/editPacienteHorario';
+  endpointGetById = 'http://localhost:3000/api/getPacienteHorario';
 
   status: any;
   errorMessage: any;
+
+  id:any;
 
   constructor(private http: HttpClient) {}
 
@@ -48,6 +52,12 @@ export class NutriologoService {
       .pipe(retry(3), catchError(this.handleError));
   }
 
+  getHorarioPaciente(id: string) {
+    return this.http
+      .get<Horario[]>(this.endpointGetById + '/' + id)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
   insertarPacienteHorario(horario: Horario) {
     this.http.post<Horario>(this.endpointAdd, horario).subscribe({
       next: (data) => {
@@ -59,9 +69,19 @@ export class NutriologoService {
     });
   }
 
-  eliminarPacienteHorario(correo: string) {
-    console.log('En el delete');
-    this.http.delete(this.endpointDelete + '/' + correo).subscribe({
+  editarPacienteHorario(horario: Horario, id: string) {
+    this.http.post<Horario>(this.endpointEdit + '/' + id, horario).subscribe({
+      next: (data) => {
+        console.log('datos', data);
+      },
+      error: (error) => {
+        console.error(' error!', error);
+      },
+    });
+  }
+
+  eliminarPacienteHorario(id: string) {
+    this.http.delete(this.endpointDelete + '/' + id).subscribe({
       next: () => {
         this.status = 'Delete successful';
       },

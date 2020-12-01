@@ -33,8 +33,9 @@ export class HorarioComponent implements OnInit {
     this.destroy$.unsubscribe();
   }
 
-  editar(correo: string){
-    console.log('Click editar', correo);
+  editar(id: string){
+    console.log('Click editar', id);
+    this.nutriService.id = id;
   }
 
   eliminar(id: string) {

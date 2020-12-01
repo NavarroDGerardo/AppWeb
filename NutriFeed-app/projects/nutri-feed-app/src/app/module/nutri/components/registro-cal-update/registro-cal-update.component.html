@@ -1,44 +1,44 @@
-<div class="container-fluid">
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
-        <div class="container-info"> 
-          <div class="registro-titulo">
-            <p i18n="TituloRegistroNutriologo">Registro de Nutriólogo</p>
-          </div>
-          <div class="form-container">
-            <form [formGroup]="modeloNutriologa" (ngSubmit)="enviar()">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputNombre" i18n="NombreRegistroNutriDescripcion">Nombre</label>
-                  <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="Nombre" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputApellido" i18n="ApellidoRegistroNutriDescripcion">Apellido</label>
-                  <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" placeholder="Apellido" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputEmail4" i18n="MailRegistroNutriDescripcion">Email</label>
-                <input type="email" formControlName="email" class="form-control" id="inputEmail" placeholder="Correo electrónico" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCiudad" i18n="CiudadRegistroNutriDescripcion">Ciudad</label>
-                  <input type="text" formControlName="ciudad" class="form-control" id="inputCiudad">
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="inputSalario" i18n="SalarioRegistroNutriDescripcion">Salario</label>
-                  <input type="text" formControlName="salario" class="form-control" id="inputSalario">
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Registrar</button>
-            </form>
-          </div>
-         
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="container-info">
+        <div class="registro-titulo">
+          <p i18n="TituloRegistroNutriologo">Registro de paciente en el horario</p>
         </div>
+        <div class="form-container">
+          <form [formGroup]="modeloNutriologaHorario" (ngSubmit)="actualizarPacienteHorario()">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNombre" i18n="NombreRegistroNutriDescripcion">Nombre</label>
+                <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="{{pacientes.nombre}}" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputApellido" i18n="ApellidoRegistroNutriDescripcion">Apellido</label>
+                <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" placeholder="{{pacientes.apellido}}" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail4" i18n="MailRegistroNutriDescripcion">Email</label>
+              <input type="email" formControlName="correoUsuario" class="form-control" id="inputEmail" placeholder="{{pacientes.correoUsuario}}" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputHora" i18n="HoraRegistroConsulta">Hora de consulta</label>
+                <input type="text" formControlName="hora" class="form-control" id="inputHora" placeholder="{{pacientes.hora}}">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputFecha" i18n="FechaConsulta">Fecha de consulta</label>
+                <input type="text" formControlName="fecha" class="form-control" id="inputFecha" placeholder="{{pacientes.fecha}}">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Actualizar</button>
+          </form>
+        </div>
+
       </div>
-      <div class="col-md-2"></div>
     </div>
+    <div class="col-md-2"></div>
   </div>
-  
+</div> -->
+

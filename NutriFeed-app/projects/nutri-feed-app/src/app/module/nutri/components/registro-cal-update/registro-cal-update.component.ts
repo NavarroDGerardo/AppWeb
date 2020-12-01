@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
-import { NUTRIOLOGO } from '../../../../models/Nutriologo';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { Horario } from '../../../../models/Horario';
 import { NutriologoService } from '../../../service/nutriologo.service';
 
 @Component({
@@ -9,25 +11,39 @@ import { NutriologoService } from '../../../service/nutriologo.service';
   styleUrls: ['./registro-cal-update.component.scss'],
 })
 export class RegistroCalUpdateComponent implements OnInit {
-  nutriologos = NUTRIOLOGO;
+  pacientes: Horario | undefined;
 
-  modeloNutriologa = this.formbuild.group({
+  destroy$: Subject<boolean> = new Subject<boolean>();
+
+  modeloNutriologaHorario = this.formbuild.group({
     nombre: ['', Validators.required],
     apellido: ['', Validators.required],
-    email: ['', Validators.required],
-    ciudad: ['', Validators.required],
-    salario: ['', Validators.required],
+    correoUsuario: ['', Validators.required],
+    hora: ['', Validators.required],
+    fecha: ['', Validators.required],
   });
+
   constructor(
     private formbuild: FormBuilder,
     private nutriService: NutriologoService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('valor', this.nutriService.id);
+    this.nutriService
+      .getHorarioPaciente(this.nutriService.id)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any) => {
+        this.pacientes = data;
+      });
+  }
 
-  enviar() {
-    console.log(this.modeloNutriologa.value);
-    this.nutriService.agregarnutriologo(this.modeloNutriologa.value);
-    this.modeloNutriologa.reset();
+  actualizarPacienteHorario() {
+    console.log(this.modeloNutriologaHorario.value, this.nutriService.id);
+    this.nutriService.editarPacienteHorario(
+      this.modeloNutriologaHorario.value,
+      this.nutriService.id
+    );
+    this.modeloNutriologaHorario.reset();
   }
 }

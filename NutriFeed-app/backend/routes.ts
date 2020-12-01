@@ -62,6 +62,7 @@ function setRoutes(app: Express): void{
     .route('/deletePacienteHorario/:id')
     .delete(calendarioController.delete);
   router.route('/editPacienteHorario/:id').post(calendarioController.update);
+  router.route('/getPacienteHorario/:id').get(calendarioController.get);
   //ejemplos
   // router.route('/alumno/:id').get(alumnoController.get);
   // router.route('/alumno/:id').put(alumnoController.update);

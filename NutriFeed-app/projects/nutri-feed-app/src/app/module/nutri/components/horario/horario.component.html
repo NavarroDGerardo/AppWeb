@@ -43,9 +43,11 @@
               <td>{{paciente.hora}}</td>
               <td>{{paciente.correoUsuario}}</td>
               <td>
-                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="BotonEditar" (click)="editar(paciente._id)">
-                  Editar
-                </button>
+                <a routerLink="/nutri/registro-cal-update">
+                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="BotonEditar" (click)="editar(paciente._id)">
+                    Editar
+                  </button>
+                </a>
               </td>
               <td>
                 <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="BotonEditar" (click)="eliminar(paciente._id)">

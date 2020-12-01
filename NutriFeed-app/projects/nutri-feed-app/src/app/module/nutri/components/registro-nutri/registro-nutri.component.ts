@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray } from '@angular/forms';
-import { NUTRIOLOGO } from '../../../../models/Nutriologo';
 import { NutriologoService } from '../../../service/nutriologo.service';
 
 @Component({
@@ -9,8 +8,6 @@ import { NutriologoService } from '../../../service/nutriologo.service';
   styleUrls: ['./registro-nutri.component.scss'],
 })
 export class RegistroNutriComponent implements OnInit {
-  nutriologos = NUTRIOLOGO;
-
   modeloNutriologaHorario = this.formbuild.group({
     nombre: ['', Validators.required],
     apellido: ['', Validators.required],
