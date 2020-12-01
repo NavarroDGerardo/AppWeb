@@ -11,6 +11,6 @@ const recetas = new mongoose.Schema({
   fecha: String,
 });
 
-const Receta = mongoose.model("Receta", recetas);
+const Receta = mongoose.model('Receta', recetas);
 
 export default Receta;

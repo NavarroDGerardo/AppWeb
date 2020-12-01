@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { HORARIO } from '../../../../models/Horario';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { Horario } from '../../../../models/Horario';
+import { NutriologoService } from '../../../service/nutriologo.service';
 
 @Component({
   selector: 'app-horario',
@@ -7,11 +10,41 @@ import { HORARIO } from '../../../../models/Horario';
   styleUrls: ['./horario.component.scss'],
 })
 export class HorarioComponent implements OnInit {
-  pacHorario = HORARIO;
+  pacientes: Horario[] = [];
+
+  destroy$: Subject<boolean> = new Subject<boolean>();
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor() {}
+  constructor(private nutriService: NutriologoService) {}
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.nutriService
+      .getHorario()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.pacientes = data;
+      });
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next(true);
+    // Unsubscribe from the subject
+    this.destroy$.unsubscribe();
+  }
+
+  editar(correo: string){
+    console.log('Click editar', correo);
+  }
+
+  eliminar(id: string) {
+    console.log('Click eliminar', id);
+    this.nutriService.eliminarPacienteHorario(id);
+    this.nutriService
+      .getHorario()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.pacientes = data;
+      });
+  }
 }

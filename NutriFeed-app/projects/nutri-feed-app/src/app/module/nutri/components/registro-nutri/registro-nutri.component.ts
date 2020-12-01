@@ -11,12 +11,12 @@ import { NutriologoService } from '../../../service/nutriologo.service';
 export class RegistroNutriComponent implements OnInit {
   nutriologos = NUTRIOLOGO;
 
-  modeloNutriologa = this.formbuild.group({
+  modeloNutriologaHorario = this.formbuild.group({
     nombre: ['', Validators.required],
     apellido: ['', Validators.required],
-    email: ['', Validators.required],
-    ciudad: ['', Validators.required],
-    salario: ['', Validators.required],
+    correoUsuario: ['', Validators.required],
+    hora: ['', Validators.required],
+    fecha: ['', Validators.required],
   });
   constructor(
     private formbuild: FormBuilder,
@@ -25,9 +25,13 @@ export class RegistroNutriComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  enviar() {
-    console.log(this.modeloNutriologa.value);
-    this.nutriService.agregarnutriologo(this.modeloNutriologa.value);
-    this.modeloNutriologa.reset();
+  registrarPacienteHorario() {
+    console.log(this.modeloNutriologaHorario.value);
+    this.nutriService.insertarPacienteHorario(
+      this.modeloNutriologaHorario.value
+    );
+    this.modeloNutriologaHorario.reset();
+    // this.nutriService.agregarnutriologo(this.modeloNutriologa.value);
+    // this.modeloNutriologa.reset();
   }
 }

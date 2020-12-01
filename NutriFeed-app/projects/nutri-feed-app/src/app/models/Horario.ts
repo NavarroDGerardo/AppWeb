@@ -1,7 +1,10 @@
 export interface Horario {
+  _id: string;
   nombre: string;
   apellido: string;
-  horario: string;
+  hora: string;
+  fecha: string;
+  correoUsuario: string;
 }
 
 export const HORARIO = [

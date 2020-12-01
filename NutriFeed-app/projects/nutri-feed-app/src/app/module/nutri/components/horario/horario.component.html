@@ -30,20 +30,34 @@
               <th scope="col" i18n="DescripcionNombre">Nombre</th>
               <th scope="col" i18n="DescripcionApellido">Apellido</th>
               <th scope="col" i18n="DescripcionHorario">Horario</th>
+              <th scope="col" i18n="DescripcionHorario">Correo paciente</th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let paciente of pacHorario">
-              <th scope="row">22/10/20</th>
+            <tr *ngFor="let paciente of pacientes">
+              <th scope="row">{{paciente.fecha}}</th>
               <td>{{paciente.nombre}}</td>
               <td>{{paciente.apellido}}</td>
-              <td>{{paciente.horario}}</td>
+              <td>{{paciente.hora}}</td>
+              <td>{{paciente.correoUsuario}}</td>
+              <td>
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="BotonEditar" (click)="editar(paciente._id)">
+                  Editar
+                </button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="BotonEditar" (click)="eliminar(paciente._id)">
+                  Eliminar
+                </button>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
       <a routerLink="/nutri/registro-nutri"><button type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarNutriHorario">
-        Agregar Nutriólogo
+        Agregar paciente al horario
       </button></a>
     </div>
     <div class="col-md-2"></div>
