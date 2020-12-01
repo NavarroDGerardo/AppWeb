@@ -34,7 +34,7 @@ export class HorarioComponent implements OnInit {
   }
 
   editar(id: string){
-    console.log('Click editar', id);
+    // console.log('Click editar', id);
     this.nutriService.id = id;
   }
 
