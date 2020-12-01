@@ -11,7 +11,7 @@ import { RegistroDietaComponent } from './components/registro-dieta/registro-die
 import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
 import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
-
+import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
 const routes: Routes = [
   {
     path: 'horario',
@@ -67,6 +67,11 @@ const routes: Routes = [
     path: 'ver-receta',
     component: VerRecetaComponent,
     data: { animation: 'ver-receta' },
+  },
+  {
+    path: 'registro-cal-update',
+    component: RegistroCalUpdateComponent,
+    data: { animation: 'registro-cal-update' },
   },
 ];
 
