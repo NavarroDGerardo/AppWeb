@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { IndexBodyComponent } from './Components/index-body/index-body.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
-
+import { AuthModule } from '@auth0/auth0-angular';
 import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 // import { RegistroComponent } from './module/registro/components/registro/registro.component';
@@ -21,6 +21,7 @@ import { LandingModule } from './module/landing/landing.module';
 import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { environment as env } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     PacienteModule,
     LandingModule,
     HttpClientModule,
+    AuthModule.forRoot({...env.auth})
   ],
   providers: [],
   bootstrap: [AppComponent],

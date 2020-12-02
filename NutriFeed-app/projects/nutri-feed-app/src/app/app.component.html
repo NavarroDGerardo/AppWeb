@@ -1,11 +1,17 @@
+
+
 <div *ngIf="isLanding">
     <app-header></app-header>
 </div>
 <div *ngIf="isPaciente">
-    <app-header-paciente></app-header-paciente>
+  <!-- <div *ngIf="(auth.isAuthenticated$ | async) === false; else elseBlock"> -->
+ <app-header-paciente></app-header-paciente>
+<!-- </div> -->
 </div>
 <div *ngIf="isNutri">
+<!-- <ng-template #elseBlock> -->
   <app-header-nutri></app-header-nutri>
+<!-- </ng-template> -->
 </div>
 
 <div [@routeAnimations]="prepareRoute(outlet)">
