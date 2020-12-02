@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { animacionesAplicacion } from './Animaciones';
+import { AuthService } from '@auth0/auth0-angular';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,8 @@ import { animacionesAplicacion } from './Animaciones';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
-  isLanding= false;
-  isNutri = true;
+  isLanding= true;
+  isNutri = false;
   isPaciente = false;
 
   prepareRoute(outlet: RouterOutlet) {
@@ -19,4 +20,5 @@ export class AppComponent {
       outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
     );
   }
+  constructor(public auth: AuthService) { }
 }

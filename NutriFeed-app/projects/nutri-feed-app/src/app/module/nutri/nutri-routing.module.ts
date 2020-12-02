@@ -11,6 +11,7 @@ import { RegistroDietaComponent } from './components/registro-dieta/registro-die
 import { RegistroPacienteComponent } from './components/registro-paciente/registro-paciente.component';
 import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-dieta-paciente.component';
 import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
+import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.component';
 import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
 const routes: Routes = [
   {
@@ -72,6 +73,11 @@ const routes: Routes = [
     path: 'registro-cal-update',
     component: RegistroCalUpdateComponent,
     data: { animation: 'registro-cal-update' },
+  },
+  {
+    path: 'recetas-feed',
+    component: RecetasFeedComponent,
+    data: { animation: 'recetas-feed' },
   },
 ];
 

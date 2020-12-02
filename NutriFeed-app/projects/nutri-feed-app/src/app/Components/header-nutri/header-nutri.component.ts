@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { animation, trigger, animateChild, group, transition, animate, style, query, state } from '@angular/animations';
+import { AuthService } from "@auth0/auth0-angular";
+import { DOCUMENT } from "@angular/common";
+import { Inject } from '@angular/core'; 
 
 @Component({
   selector: 'app-header-nutri',
@@ -25,7 +28,7 @@ import { animation, trigger, animateChild, group, transition, animate, style, qu
 })
 export class HeaderNutriComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth:AuthService,@Inject(DOCUMENT)private doc: Document) { }
 
   ngOnInit(): void {
   }
@@ -35,4 +38,8 @@ export class HeaderNutriComponent implements OnInit {
   toggle() {
     this.estilo = !this.estilo;
   }
+  logout(): void {
+    this.auth.logout({returnTo: this.doc.location.origin})
+  }
+
 }

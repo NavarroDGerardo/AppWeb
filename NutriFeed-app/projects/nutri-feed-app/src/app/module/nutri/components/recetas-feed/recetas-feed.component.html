@@ -1,0 +1,115 @@
+
+  <!-- Body de la app -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <!-- Area principal de en medio-->
+        <div class="col-md-8">
+            <!-- Grid entro del area principal -->
+            <div class="row">
+                <div class="col-md-8 col-tarjetas">
+                    <!-- Tarjeta de feed 1 -->
+                    <div class="tarjeta-1" *ngFor="let receta of recetas">
+                        <div class="instagram-post">
+                            <div class="instagram-post-top">
+                              <div class="instagram-post-avatar">
+                            <img src="../../../../../assets/img/profilepic.jpg" width="48" height="48" alt="logo">
+                              </div>
+                              <div class="instagram-post-username">
+                               {{receta.publicado_por}}
+                              </div>
+                              <div class="instagram-post-date">
+                                {{receta.fecha}}
+                              </div>
+                              <div class="instagram-post-bookmark">
+                                <span class="th th-bookmark-1-o"></span>
+                              </div>
+                            </div>
+                            <div class="instagram-post-image">
+                              <img src="../../../../../assets/img/receta_6.jpg" >
+                            </div>
+                            <div class="instagram-post-bottom">
+                              <div class="instagram-post-text">
+                                <div i18n="Receta1">  {{receta.nombre}} <br> Receta para {{receta.tipo}}<br><i >{{receta.hashtags}}</i></div>
+                              </div>
+                              <div class="instagram-post-icons">
+                                <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                </svg></span>
+                                <span class="th"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                                </svg></span>
+                              </div>
+                              <div class="instagram-post-view">
+                                <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="modal" data-target="#modalQuickView">
+                                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                  </svg></span>
+                              </div>
+                            </div>
+                          </div>
+                         </div>
+                  </div>
+                <!-- Area de Search bar -->
+                <div class="col-md-4">
+                    <div class="search-area">
+                    <!-- <form> -->
+                        <div class="p-1 bg-light rounded  shadow-sm mb-4">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <button id="button-addon2" type="submit" class="btn btn-link "><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                  </svg></button>
+                              </div>
+                              <input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+                            </div>
+                          </div>
+                    <!-- </form> -->
+                </div>
+                <div class="AgregarReceta">
+                <a routerLink="/nutri/registro-recetas" class="btn btn-primary addReceta">Agregar Receta</a>
+              </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <!-- Modal: modalQuickView Pop up-->
+    <div class="modal fade" id="modalQuickView" tabindex="-1" role="dialog"
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="row row-carousel">
+        <div class="col col-carousel">
+
+            <div class="image-receta">
+                <img class="d-block "
+                  src="../../../../../assets/img/receta_6.jpg"
+                  alt="receta">
+              </div>
+
+        </div>
+        <div class= "description">
+            <div class= "description-text" >
+          <h2 i18n="RecetaPop">
+            Receta
+          </h2>
+          <p i18n="RecetaDescripcion" *ngFor="let item of recetas">
+            Ingredientes
+            <!-- {{item.ingrediente}} -->
+          </p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
