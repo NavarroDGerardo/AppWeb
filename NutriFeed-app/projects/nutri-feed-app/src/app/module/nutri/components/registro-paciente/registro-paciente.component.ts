@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validator, FormArray, Validators } from '@angular/forms';
-import { PACIENTE } from '../../../../models/Paciente';
 import { PacienteService } from '../../../service/paciente.service';
 
 @Component({
@@ -9,13 +8,14 @@ import { PacienteService } from '../../../service/paciente.service';
   styleUrls: ['./registro-paciente.component.scss'],
 })
 export class RegistroPacienteComponent implements OnInit {
-  pacientes = PACIENTE;
   modeloPaciente = this.formbuild.group({
     nombre: ['', Validators.required],
-    apellido: ['', Validators.required],
-    Email: ['', Validators.required],
     estado: ['', Validators.required],
-    nutriologo: ['', Validators.required],
+    edad: ['', Validators.required],
+    ciudad: ['', Validators.required],
+    altura: ['', Validators.required],
+    peso: ['', Validators.required],
+    correo: ['', Validators.required]
   });
 
   constructor(
@@ -25,9 +25,11 @@ export class RegistroPacienteComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  enviar() {
+  registarPacienteNuevo() {
     console.log(this.modeloPaciente.value);
-    //this.pacienteService.agregarPaciente(this.modeloPaciente.value);
+    this.pacienteService.insertarPaciente(
+      this.modeloPaciente.value
+    );
     this.modeloPaciente.reset();
   }
 }

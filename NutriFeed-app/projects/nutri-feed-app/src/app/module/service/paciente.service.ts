@@ -14,8 +14,9 @@ import { map, retry, catchError, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class PacienteService {
-  endpoint = 'http://localhost:3000/api/infoPaciente/5fc53fb84eb8c56e983df1cf';
+  endpointGetById = 'http://localhost:3000/api/infoPaciente/5fc53fb84eb8c56e983df1cf';
   endpointAdd = 'http://localhost:3000/api/addPaciente';
+  endPointGetAll = 'http://localhost:3000/api/GetAllPaciente';
 
   constructor(private http: HttpClient) {}
 
@@ -41,7 +42,13 @@ export class PacienteService {
   getPaciente() {
     console.log('en el servicio');
     return this.http
-      .get<Paciente[]>(this.endpoint)
+      .get<Paciente[]>(this.endpointGetById)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  getAllPaciente(){
+    return this.http
+      .get<Paciente[]>(this.endPointGetAll)
       .pipe(retry(3), catchError(this.handleError));
   }
 

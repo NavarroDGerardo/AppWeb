@@ -7,29 +7,39 @@
             <p i18n="TituloRegistroPaciente">Registro de Paciente</p>
           </div>
           <div class="form-container">
-            <form [formGroup]="modeloPaciente" (ngSubmit)="enviar()">
+            <form [formGroup]="modeloPaciente" (ngSubmit)="registarPacienteNuevo()">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputNombre" i18n="NombreRegistroPacienteDescripcion">Nombre</label>
                     <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="Nombre" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
                   </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputApellido" i18n="ApellidoRegistroPacienteDescripcion">Apellido</label>
-                    <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" placeholder="Apellido" i18n-placeholder="AgregarApellidosRegistroNutri_Nutri_placeholder">
+                  <div class="form-group col-md-6"> 
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Estado</label>
+                    <input type="text" formControlName="estado" class="form-control" placeholder="Estado" id="inputEstado">
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="inputEmail4" i18n="MailRegistroPacienteDescripcion">Email</label>
-                  <input type="email"formControlName="Email"  class="form-control" id="inputEmail" placeholder="Correo electrónico" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
+                  <input type="email"formControlName="correo"  class="form-control" id="inputCorreo" placeholder="Correo electrónico" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Estado</label>
-                    <input type="text" formControlName="estado" class="form-control" id="inputEstado">
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Edad</label>
+                    <input type="text" formControlName="edad" class="form-control" placeholder="Edad" id="inputEdad">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Nutriólogo</label>
-                    <input type="text" formControlName="nutriologo" class="form-control" id="inputNutri">
+                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Ciudad</label>
+                    <input type="text" formControlName="ciudad" class="form-control"  placeholder="Ciudad" id="inputCiudad">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Altura</label>
+                    <input type="text" formControlName="altura" class="form-control" placeholder="Altura" id="inputEdad">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Peso actual</label>
+                    <input type="text" formControlName="peso" class="form-control"  placeholder="Peso actual" id="inputCiudad">
                   </div>
                 </div>
                 <button type="submit" class="btn btn-primary" i18n="BotonRegistrarPaciente">Registrar</button>

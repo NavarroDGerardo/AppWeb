@@ -8,9 +8,9 @@
           </div>
           <div class="pacientes-buscador">
             <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder">
-            <a routerLink="/nutri/registro-paciente"><button type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
+            <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
               Agregar paciente
-            </button></a>
+            </button>
             
           </div>
           
@@ -19,65 +19,28 @@
               
               <div class="row row-gallery " id="gallery-1">
                 
-                <div class="col-4 col-sm-4 col-lg-4 column">
-                  
+                <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes">
                   <a routerLink="/nutri/ver-perfil-paciente" style="color: black;">
                     <div class="user_profile_info">
                       <div style="background-image: url('../../../../../assets/img/profilepic2.jpg');" class="profile_pic_container"></div>
-                      <p class="user_name">Ana Gómez</p>
+                      <p style="margin-top: 10px;" class="user_name">{{paciente.nombre}}</p>
                     </div>
                   </a>
-                
-                </div>
-
-                <div class="col-4 col-sm-4 col-lg-4 column">
-              
-                  <div class="user_profile_info">
-                    <div style="background-image: url('../../../../../assets/img/profilepic3.jpg');" class="profile_pic_container"></div>
-                    <p class="user_name">Sofia Herrera</p>
+                  <div style="padding-top: 0;" class="card-body text-center">
+                    <a href="#" class="card-link">
+                      <span class="material-icons iconosEdicion">
+                        create
+                      </span>
+                    </a>
+                    <a href="#" class="card-link">
+                      <span class="material-icons iconosEdicion">
+                        delete
+                      </span>
+                    </a>
                   </div>
                 
                 </div>
 
-                <div class="col-4 col-sm-4 col-lg-4 column">
-              
-                  <div class="user_profile_info">
-                    
-                    <div style="background-image: url('../../../../../assets/img/profilepic4.jpg');" class="profile_pic_container"></div>
-                    <p class="user_name">Mario Quintero</p>
-                  </div>
-                
-                </div>
-
-                <div class="col-4 col-sm-4 col-lg-4 column">
-              
-                  <div class="user_profile_info">
-                    
-                    <div style="background-image: url('../../../../../assets/img/profilepic5.jpg');" class="profile_pic_container"></div>
-                    <p class="user_name">Elena Nuñez</p>
-                  </div>
-                
-                </div>
-
-                <div class="col-4 col-sm-4 col-lg-4 column">
-              
-                  <div class="user_profile_info">
-                    
-                    <div style="background-image: url('../../../../../assets/img/profilepic6.jpg');" class="profile_pic_container"></div>
-                    <p class="user_name">Victor Ruíz</p>
-                  </div>
-                
-                </div>
-
-                <div class="col-4 col-sm-4 col-lg-4 column">
-              
-                  <div class="user_profile_info">
-                    
-                    <div style="background-image: url('../../../../../assets/img/profilepic7.jpg');" class="profile_pic_container"></div>
-                    <p class="user_name">Antonio Palaceta</p>
-                  </div>
-                
-                </div>
               </div>
             </div>
         </div>

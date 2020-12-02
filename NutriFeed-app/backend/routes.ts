@@ -54,6 +54,7 @@ function setRoutes(app: Express): void{
   //paciente
   router.route('/infoPaciente/:id').get(pacienteController.get);
   router.route('/addPaciente').post(pacienteController.insert);
+  router.route('/GetAllPaciente').get(pacienteController.getAll);
 
   //calendario
   router.route('/addHorario').post(calendarioController.insert);
