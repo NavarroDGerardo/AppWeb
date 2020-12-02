@@ -1,0 +1,288 @@
+@import "../../../../../styles/personalizacion";
+/*
+_________________________
+|						|
+|		  navbar   		|
+|						|
+-------------------------
+*/
+.navbar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.bg-light {
+	background-color: #ffff !important;
+	border: 0.5px solid #d9d9d9;
+}
+.navbar-brand {
+	position: absolute;
+	left: 12%;
+}
+.navbar-nav {
+	position: relative;
+	left: 77%;
+	flex-direction: row;
+	.nav-item {
+		padding-left: 5px;
+	}
+}
+.mini-profilepic {
+	background-color: #fafafa;
+	background-color: rgba(var(--b3f,250,250,250),1);
+	border-radius: 50%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 0 auto;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.image-profile {
+	height: 100%;
+	-webkit-touch-callout: none;
+	width: 100%;
+}
+
+/*
+_________________________
+|						|
+|		  body    		|
+|						|
+-------------------------
+*/
+
+.tarjeta-1 {
+	margin-top: $size-20;
+}
+.instagram-post {
+	position: $relative;
+	height: 600px;
+	width: 440px;
+	margin: 0 auto;
+	background-color: $white;
+	overflow: hidden;
+	cursor: default;
+	border: 0.5px solid #d9d9d9;
+}
+.instagram-post-top {
+	position: $relative;
+	height: $size-60;
+	overflow: hidden;
+}
+.instagram-post-avatar {
+	position: $absolute;
+	top: $size-10;
+	left: $size-10;
+	height: $size-40;
+	width: $size-40;
+	overflow: hidden;
+	border-radius: $full-size;
+}
+.instagram-post-username {
+	position: $absolute;
+	top: 16px;
+	left: $size-60;
+	font-family: $font-family-raleway;
+	font-weight: 400;
+	color: $black;
+	font-size: 12px;
+}
+.instagram-post-date {
+	position: $absolute;
+	right: 56px;
+	top: 25px;
+	font-family: $font-family-raleway;
+	font-size: 8px;
+	font-weight: bold;
+	color: grey;
+}
+.instagram-post-bookmark {
+	position: $absolute;
+	right: $size-20;
+	top: 18px;
+	font-size: 24px;
+	color: #cecece;
+}
+.instagram-post-image {
+	position: $relative;
+	img {
+		max-width: 440px;
+		min-width: 440px;
+		max-height: 370px;
+		min-height: 370px;
+		overflow: hidden;
+	}
+}
+.instagram-post-bottom {
+	position: $relative;
+}
+.instagram-post-text {
+	position: $relative;
+	width: 350px;
+	height: $size-100;
+	margin: $size-20 auto 0 auto;
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;
+	div {
+		position: $relative;
+		font-size: 14px;
+		color: #707070;
+		i {
+			color: #e1cbcf;
+		}
+	}
+}
+.instagram-post-icons {
+	position: $absolute;
+	width: $size-200;
+	height: $size-30;
+	left: 44px;
+	margin-top: $size-10;
+	overflow: hidden;
+	span {
+		display: inline-block;
+		margin-right: 8px;
+		font-size: $size-20;
+		color: $verde_nutrifeed;
+	}
+}
+.instagram-post-view {
+	position: $absolute;
+	right: $size-50;
+	margin-top: $size-20;
+	text-align: right;
+	font-size: 12px;
+	span {
+		color: $verde_nutrifeed;
+	}
+}
+.search-area {
+	margin-top: $size-20;
+}
+.form-control {
+	&:focus {
+		box-shadow: none;
+	}
+	&::placeholder {
+		font-size: 0.95rem;
+		color: #aaa;
+		font-style: italic;
+	}
+}
+button {
+	svg {
+		color: $verde_nutrifeed;
+	}
+}
+.modal-content {
+	font-family: $font-family-raleway;
+	background-color: #f2f2f2;
+	min-height: 450px;
+}
+.image-receta {
+	img {
+		width: $scale-80;
+	}
+}
+.description {
+	position: $relative;
+	right: $scale-10;
+	margin-top: $size-20;
+}
+
+/*
+ _________________________
+ |						|
+ |		  Responsive  	|
+ |						|
+ -------------------------
+ */
+@media (max-width: 767.98px) {
+	.col-tarjetas {
+		margin-top: $size-60;
+	}
+	.search-area {
+		position: relative;
+		bottom: 1410%;
+	}
+	.instagram-post {
+		height: 600px;
+		width: auto;
+	}
+	.instagram-post-image {
+		img {
+			max-width: auto;
+			min-width: auto;
+		}
+	}
+	.instagram-post-text {
+		div {
+			left: 5%;
+		}
+	}
+	.image-receta {
+		img {
+			width: 210%;
+		}
+	}
+	.description {
+		h2 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	.description-text {
+		position: $relative;
+		top: 110%;
+		right: $scale-80;
+	}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.search-area {
+		position: $relative;
+		left: 228%;
+		margin-top: $size-20;
+	}
+	.form-control {
+		&::placeholder {
+			font-size: 8.5px;
+		}
+	}
+	button {
+		svg {
+			width: 0.6em;
+			height: 0.6em;
+		}
+	}
+	.col-md-4 {
+		position: $relative;
+		right: 40%;
+	}
+	.image-receta {
+		text-align: $center;
+		img {
+			width: 130%;
+		}
+	}
+	.description {
+		h2 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	.description-text {
+		position: $relative;
+		top: 105%;
+		right: 150%;
+	}
+}
