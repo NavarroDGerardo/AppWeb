@@ -96,6 +96,12 @@ _________________________
     border-bottom: solid 0.5px black;
     width: 30%;
 }
+.buscar{
+    background-color: transparent;
+    background-color: green;
+    border-color: green;
+    margin-left: 5px;
+}
 .agregar{
     position: absolute;
     top: 50%;
@@ -106,7 +112,7 @@ _________________________
     margin-bottom: 20px;
 }
 
-.agregar:hover{
+.pacientes-buscador button:hover{
     background-color: white;
     border-color: green;
     color: green;

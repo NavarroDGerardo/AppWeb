@@ -10,7 +10,7 @@
           <div class="pacientes-buscador">
             <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
               <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
-              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+              <button type="submit" class="buscar btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
             </form>
             <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
               Agregar paciente
