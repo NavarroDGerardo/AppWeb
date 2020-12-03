@@ -1,4 +1,10 @@
+
+
 {
     "domain":"dev-3hczp56w.us.auth0.com",
-    "clientId":"5cjNos2ouzDTv2Nx8FAH2fa54hjoR2JF"
+    "clientId":"5cjNos2ouzDTv2Nx8FAH2fa54hjoR2JF",
+    "apiUri": "http://localhost:3000/api",
+    "audience":"https://dev-3hczp56w.us.auth0.com/api/v2/",
+    "appUri": "http://localhost:4200"
   }
+

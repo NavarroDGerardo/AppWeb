@@ -5,8 +5,8 @@ import RecetaController from './controllers/recetaController'
 import PacienteController from './controllers/pacienteController'
 import CalendarioController from './controllers/calendarioController';
 //jwt
-// var jwt = require('express-jwt');
-// var jwks = require('jwks-rsa');
+ var jwt = require('express-jwt');
+ var jwks = require('jwks-rsa');
 /// npm
 ///fin de jwt npm install jsonwebtoken
 
@@ -32,18 +32,17 @@ function setRoutes(app: Express): void{
     }
     next();
   }); //funcion habilita el middleware
-
-// var jwtCheck = jwt({
-//       secret: jwks.expressJwtSecret({
-//           cache: true,
-//           rateLimit: true,
-//           jwksRequestsPerMinute: 5,
-//           jwksUri: 'https://dev-qz51ohsc.auth0.com/.well-known/jwks.json'
-//     }),
-//     audience: 'http://localhost:3000/',
-//     issuer: 'https://dev-qz51ohsc.auth0.com/',
-//     algorithms: ['RS256']
-// });
+  var jwtCheck = jwt({
+    secret: jwks.expressJwtSecret({
+        cache: true,
+        rateLimit: true,
+        jwksRequestsPerMinute: 5,
+        jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
+  }),
+  audience: 'http://localhost:3000/',
+  issuer: 'https://dev-3hczp56w.us.auth0.com/',
+  algorithms: ['RS256']
+});
 
   router.route('/addUser').post(usuarioController.insert);
 
