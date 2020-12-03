@@ -23,6 +23,30 @@ class RecetaController{
     }
   };
 
+  findByNombreReceta = async (req, res) => {
+    try {
+      console.log('Request en find', req.params.nombre);
+      const receta = await Receta.find({
+        ingrediente: { $regex: req.params.nombre, $options: 'i' },
+      }).sort({ _id: '-1' });
+      res.status(200).json(receta);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  };
+
+  findByHashtags = async (req, res) => {
+    try {
+      console.log('Request en find', req.params.hashtag);
+      const receta = await Receta.find({
+        ingrediente: { $regex: req.params.hashtag, $options: 'i' },
+      }).sort({ _id: '-1' });
+      res.status(200).json(receta);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  };
+
   insert = async (req, res) => {
     try {
       console.log(req.body)

@@ -19,6 +19,8 @@ export class PacienteService {
   endPointGetAll = 'http://localhost:3000/api/GetAllPaciente';
   endPointDelete = 'http://localhost:3000/api/deletePaciente';
   endPointEdit = 'http://localhost:3000/api/editePaciente';
+  endPointBuscarNom = 'http://localhost:3000/api/getPacienteNombre';
+  endPointBuscarApe = 'http://localhost:3000/api/getPacienteApellido';
 
   status: any;
   errorMessage: any;
@@ -49,6 +51,18 @@ export class PacienteService {
   getPaciente(id: string) {
     return this.http
       .get<Paciente[]>(this.endpointGetById + '/' + id)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  getPacienteNombre(buscar: string) {
+    return this.http
+      .get<Paciente[]>(this.endPointBuscarNom + '/' + buscar)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  getPacienteApellido(buscar: string) {
+    return this.http
+      .get<Paciente[]>(this.endPointBuscarNom + '/' + buscar)
       .pipe(retry(3), catchError(this.handleError));
   }
 

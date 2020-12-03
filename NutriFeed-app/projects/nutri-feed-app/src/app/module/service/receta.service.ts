@@ -20,6 +20,8 @@ export class RecetaService {
   endpointDelete = 'http://localhost:3000/api/deleteReceta';
   endpointGetById = 'http://localhost:3000/api/getReceta';
   endpointBuscarIng = 'http://localhost:3000/api/getByIngrediente';
+  endpointBuscarNom = 'http://localhost:3000/api/getByNombre';
+  endpointBuscarHash = 'http://localhost:3000/api/getByHashtag';
 
   errorMessage: any;
   id: any;
@@ -47,7 +49,7 @@ export class RecetaService {
   }
 
   getRecetas() {
-    console.log('en el servicio');
+    // console.log('en el servicio');
     return this.http
       .get<Receta[]>(this.endpoint)
       .pipe(retry(3), catchError(this.handleError));
@@ -93,9 +95,21 @@ export class RecetaService {
     });
   }
 
-  buscarRecetaIngrediente(ingrediente: string){
+  buscarRecetaIngrediente(buscar: string){
     return this.http
-      .get<Receta[]>(this.endpointBuscarIng + '/' + ingrediente)
+      .get<Receta[]>(this.endpointBuscarIng + '/' + buscar)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  buscarRecetaNombre(buscar: string){
+    return this.http
+      .get<Receta[]>(this.endpointBuscarNom + '/' + buscar)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  buscarRecetaHashtag(buscar: string){
+    return this.http
+      .get<Receta[]>(this.endpointBuscarHash + '/' + buscar)
       .pipe(retry(3), catchError(this.handleError));
   }
 }

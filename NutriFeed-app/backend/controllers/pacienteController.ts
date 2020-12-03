@@ -11,6 +11,30 @@ class PacienteController{
       }
     }
 
+  findByNombre = async (req, res) => {
+    try {
+      console.log('Request en find', req.params.nombre);
+      const paciente = await Paciente.find({
+        nombre: { $regex: req.params.nombre, $options: 'i' },
+      }).sort({ _id: '-1' });
+      res.status(200).json(paciente);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  };
+
+  findByApellido = async (req, res) => {
+    try {
+      console.log('Request en find', req.params.apellido);
+      const paciente = await Paciente.find({
+        apellido: { $regex: req.params.apellido, $options: 'i' },
+      }).sort({ _id: '-1' });
+      res.status(200).json(paciente);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  };
+
 
   insert = async (req, res) => {
     try {
