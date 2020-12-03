@@ -11,25 +11,25 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputNombre" i18n="NombreRegistroNutriDescripcion">Nombre</label>
-                <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" value="{{pacientes.nombre}}" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
+                <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" value="{{paciente.nombre}}" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputApellido" i18n="ApellidoRegistroNutriDescripcion">Apellido</label>
-                <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" value="{{pacientes.apellido}}" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
+                <input type="apellido" formControlName="apellido" class="form-control" id="inputApellido" value="{{paciente.apellido}}" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
               </div>
             </div>
             <div class="form-group">
               <label for="inputEmail4" i18n="MailRegistroNutriDescripcion">Email</label>
-              <input type="email" formControlName="correoUsuario" class="form-control" id="inputEmail" value="{{pacientes.correoUsuario}}" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
+              <input type="email" formControlName="correoUsuario" class="form-control" id="inputEmail" value="{{paciente.correoUsuario}}" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputHora" i18n="HoraRegistroConsulta">Hora de consulta</label>
-                <input type="text" formControlName="hora" class="form-control" id="inputHora" value="{{pacientes.hora}}">
+                <input type="text" formControlName="hora" class="form-control" id="inputHora" value="{{paciente.hora}}">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputFecha" i18n="FechaConsulta">Fecha de consulta</label>
-                <input type="text" formControlName="fecha" class="form-control" id="inputFecha" value="{{pacientes.fecha}}">
+                <input type="text" formControlName="fecha" class="form-control" id="inputFecha" value="{{paciente.fecha}}">
               </div>
             </div>
             <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Actualizar</button>

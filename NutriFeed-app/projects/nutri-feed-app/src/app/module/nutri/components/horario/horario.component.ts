@@ -19,6 +19,16 @@ export class HorarioComponent implements OnInit {
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   ngOnInit(): void {
+    this.getHorarioNutri();
+    // this.nutriService
+    //   .getHorario()
+    //   .pipe(takeUntil(this.destroy$))
+    //   .subscribe((data: any[]) => {
+    //     this.pacientes = data;
+    //   });
+  }
+
+  getHorarioNutri(){
     this.nutriService
       .getHorario()
       .pipe(takeUntil(this.destroy$))
@@ -47,5 +57,7 @@ export class HorarioComponent implements OnInit {
       .subscribe((data: any[]) => {
         this.pacientes = data;
       });
+
+    this.getHorarioNutri();
   }
 }

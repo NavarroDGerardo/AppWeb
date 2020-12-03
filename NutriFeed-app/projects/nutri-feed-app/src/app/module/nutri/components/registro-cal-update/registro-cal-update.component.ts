@@ -18,7 +18,7 @@ export class RegistroCalUpdateComponent implements OnInit {
   hora = '';
   fecha = '';
 
-  pacientes: Horario = {
+  paciente: Horario = {
     _id: '',
     nombre: '',
     apellido: '',
@@ -48,7 +48,7 @@ export class RegistroCalUpdateComponent implements OnInit {
       .getHorarioPaciente(this.nutriService.id)
       .pipe(takeUntil(this.destroy$))
       .subscribe((data: any) => {
-        this.pacientes = data;
+        this.paciente = data;
         this.nombre = data.nombre;
         this.apellido = data.apellido;
         this.correoUsuario = data.correoUsuario;
@@ -58,11 +58,25 @@ export class RegistroCalUpdateComponent implements OnInit {
   }
 
   actualizarPacienteHorario() {
-    this.modeloNutriologaHorario.value.nombre = this.modeloNutriologaHorario.controls["nombre"];
-    console.log(this.modeloNutriologaHorario.value.nombre);
-    console.log(this.modeloNutriologaHorario.value, this.nutriService.id);
+    if (this.modeloNutriologaHorario.value.nombre != "") {
+      this.paciente.nombre = this.modeloNutriologaHorario.value.nombre;
+    }
+    if (this.modeloNutriologaHorario.value.apellido != "") {
+      this.paciente.apellido = this.modeloNutriologaHorario.value.apellido;
+    }
+    if (this.modeloNutriologaHorario.value.correoUsuario != ""){
+      this.paciente.correoUsuario = this.modeloNutriologaHorario.value.correoUsuario;
+    }
+    if (this.modeloNutriologaHorario.value.edad != "") {
+      this.paciente.hora = this.modeloNutriologaHorario.value.hora;
+    }
+    if (this.modeloNutriologaHorario.value.fecha != ""){
+      this.paciente.fecha = this.modeloNutriologaHorario.value.fecha;
+    }
+
+    // console.log(this.paciente);
     this.nutriService.editarPacienteHorario(
-      this.modeloNutriologaHorario.value,
+      this.paciente,
       this.nutriService.id
     );
     this.modeloNutriologaHorario.reset();
