@@ -54,6 +54,8 @@ function setRoutes(app: Express): void{
   router.route('/infoPaciente/:id').get(pacienteController.get);
   router.route('/addPaciente').post(pacienteController.insert);
   router.route('/GetAllPaciente').get(pacienteController.getAll);
+  router.route('/deletePaciente/:id').delete(pacienteController.delete);
+  router.route('/editePaciente/:id').post(pacienteController.update);
 
   //calendario
   router.route('/addHorario').post(calendarioController.insert);

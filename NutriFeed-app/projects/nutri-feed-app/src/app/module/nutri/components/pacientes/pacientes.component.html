@@ -27,12 +27,12 @@
                     </div>
                   </a>
                   <div style="padding-top: 0;" class="card-body text-center">
-                    <a href="#" class="card-link">
+                    <a routerLink="/nutri/update-info-paciente" class="card-link" (click)="editar(paciente._id)">
                       <span class="material-icons iconosEdicion">
                         create
                       </span>
                     </a>
-                    <a href="#" class="card-link">
+                    <a style="cursor: pointer;" (click)="eliminar(paciente._id)" class="card-link">
                       <span class="material-icons iconosEdicion">
                         delete
                       </span>

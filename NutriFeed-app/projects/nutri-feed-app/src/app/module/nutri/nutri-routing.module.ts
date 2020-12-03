@@ -13,6 +13,8 @@ import { VerDietaPacienteComponent } from './components/ver-dieta-paciente/ver-d
 import { VerRecetaComponent } from './components/ver-receta/ver-receta.component';
 import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.component';
 import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
+import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
+
 const routes: Routes = [
   {
     path: 'horario',
@@ -79,6 +81,11 @@ const routes: Routes = [
     component: RecetasFeedComponent,
     data: { animation: 'recetas-feed' },
   },
+  {
+    path: 'update-info-paciente',
+    component: UpdateInfoPacienteComponent,
+    data: { animation: 'recetas-feed'}
+  }
 ];
 
 @NgModule({

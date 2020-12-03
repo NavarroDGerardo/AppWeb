@@ -28,7 +28,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.pacienteService
-      .getPaciente()
+      .getPaciente("5fc53fb84eb8c56e983df1cf")
       .pipe(takeUntil(this.destroy$))
       .subscribe((data: any[]) => {
         this.paciente = data;

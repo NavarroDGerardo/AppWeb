@@ -14,9 +14,16 @@ import { map, retry, catchError, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class PacienteService {
-  endpointGetById = 'http://localhost:3000/api/infoPaciente/5fc53fb84eb8c56e983df1cf';
+  endpointGetById = 'http://localhost:3000/api/infoPaciente';
   endpointAdd = 'http://localhost:3000/api/addPaciente';
   endPointGetAll = 'http://localhost:3000/api/GetAllPaciente';
+  endPointDelete = 'http://localhost:3000/api/deletePaciente';
+  endPointEdit = 'http://localhost:3000/api/editePaciente';
+
+  status: any;
+  errorMessage: any;
+
+  id:any;
 
   constructor(private http: HttpClient) {}
 
@@ -39,10 +46,9 @@ export class PacienteService {
     return throwError(errorMessage);
   }
 
-  getPaciente() {
-    console.log('en el servicio');
+  getPaciente(id: string) {
     return this.http
-      .get<Paciente[]>(this.endpointGetById)
+      .get<Paciente[]>(this.endpointGetById + '/' + id)
       .pipe(retry(3), catchError(this.handleError));
   }
 
@@ -59,6 +65,29 @@ export class PacienteService {
       },
       error: (error) => {
         console.error(' error!', error);
+      },
+    });
+  }
+
+  editarPaciente(paciente: Paciente, id: string){
+    this.http.post<Paciente>(this.endPointEdit + '/' + id, paciente).subscribe({
+      next: (data) => {
+        console.log('datos', data);
+      },
+      error: (error) => {
+        console.error(' error!', error);
+      },
+    });
+  }
+
+  eliminarPaciente(id: string){
+    this.http.delete(this.endPointDelete + '/' + id).subscribe({
+      next: () => {
+        this.status = 'Delete successful';
+      },
+      error: (error) => {
+        this.errorMessage = error.message;
+        console.error('There was an error!', error);
       },
     });
   }

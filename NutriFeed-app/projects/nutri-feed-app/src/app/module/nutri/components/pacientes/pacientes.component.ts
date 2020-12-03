@@ -18,6 +18,16 @@ export class PacientesComponent implements OnInit {
   constructor(private pacienteService: PacienteService) {}
 
   ngOnInit(): void {
+    this.getAllPacientes();
+  }
+
+  ngDestoy(){
+    this.destroy$.next(true);
+    this.destroy$.unsubscribe();
+  }
+
+  eliminar(id: string){
+    this.pacienteService.eliminarPaciente(id);
     this.pacienteService
       .getAllPaciente()
       .pipe(takeUntil(this.destroy$))
@@ -26,8 +36,16 @@ export class PacientesComponent implements OnInit {
       });
   }
 
-  ngDestoy(){
-    this.destroy$.next(true);
-    this.destroy$.unsubscribe();
+  editar(id: string){
+    this.pacienteService.id = id;
+  }
+
+  getAllPacientes(){
+    this.pacienteService
+      .getAllPaciente()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.pacientes = data;
+      });
   }
 }
