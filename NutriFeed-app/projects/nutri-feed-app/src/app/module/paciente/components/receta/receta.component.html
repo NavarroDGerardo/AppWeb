@@ -54,7 +54,7 @@
 				  <!-- Area de Search bar -->
 				  <div class="col-md-4">
 					  <div class="search-area">
-					  <!-- <form> -->
+					  <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
 						  <div class="p-1 bg-light rounded  shadow-sm mb-4">
 							  <div class="input-group">
 								<div class="input-group-prepend">
@@ -63,10 +63,10 @@
 									  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
 									</svg></button>
 								</div>
-								<input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light">
+								<input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light" formControlName="buscar">
 							  </div>
 							</div>
-					  <!-- </form> -->
+					  </form>
 				  </div>
 
 				  </div>
