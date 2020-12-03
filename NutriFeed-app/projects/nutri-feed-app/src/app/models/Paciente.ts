@@ -1,4 +1,5 @@
 export interface Paciente {
+  _id: string;
   nombre: string;
   correo: string;
   estado: string;

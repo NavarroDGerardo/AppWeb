@@ -58,6 +58,8 @@ export class RegistroCalUpdateComponent implements OnInit {
   }
 
   actualizarPacienteHorario() {
+    this.modeloNutriologaHorario.value.nombre = this.modeloNutriologaHorario.controls["nombre"];
+    console.log(this.modeloNutriologaHorario.value.nombre);
     console.log(this.modeloNutriologaHorario.value, this.nutriService.id);
     this.nutriService.editarPacienteHorario(
       this.modeloNutriologaHorario.value,
