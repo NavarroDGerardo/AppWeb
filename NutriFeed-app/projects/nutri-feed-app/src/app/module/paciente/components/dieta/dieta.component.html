@@ -49,7 +49,44 @@
 
 		</div>
 		<div class="col-md-2">
+      <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
 		</div>
 	</div>
+</div>
+
+<div class="form-container">
+  <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputNombre" i18n="NombreRegistroNutriDescripcion">Ingrediente principal</label>
+        <input type="nombre" formControlName="ingPrincipal" class="form-control" id="inputNombre" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputApellido" i18n="ApellidoRegistroNutriDescripcion">Máxima cantidad de recetas a mostrar</label>
+        <input type="apellido" formControlName="maxReceta" class="form-control" id="inputApellido" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputHora" i18n="HoraRegistroConsulta">Restricción alimenticia</label>
+        <input type="text" formControlName="restriccion" class="form-control" id="inputHora">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+  </form>
+</div>
+
+<div class="card" style="width: 18rem;" *ngFor="let recipe of infoRes">
+  <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{recipe.label}}</h5>
+    <p>Ingredientes:</p>
+    <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
+      {{ing}}
+    </p>
+    <p>Calorías: {{recipe.calories}}</p>
+    <p>Tiempo estimado: {{recipe.totalTime}}</p>
+    <p>Recetas de: {{recipe.source}}</p>
+  </div>
 </div>
 
