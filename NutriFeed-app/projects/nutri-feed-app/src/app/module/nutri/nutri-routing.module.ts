@@ -14,6 +14,7 @@ import { VerRecetaComponent } from './components/ver-receta/ver-receta.component
 import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.component';
 import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
 import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
+import { RecetaUpdateComponent } from './components/receta-update/receta-update.component';
 
 const routes: Routes = [
   {
@@ -85,6 +86,11 @@ const routes: Routes = [
     path: 'update-info-paciente',
     component: UpdateInfoPacienteComponent,
     data: { animation: 'recetas-feed'}
+  },
+  {
+    path: 'receta-update',
+    component: RecetaUpdateComponent,
+    data: { animation: 'receta-update'}
   }
 ];
 
