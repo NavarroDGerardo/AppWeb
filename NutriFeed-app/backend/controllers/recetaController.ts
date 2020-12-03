@@ -3,14 +3,25 @@ import Receta from '../models/receta';
 class RecetaController{
   getAll = async (req, res) => {
     try {
-      console.log("Request", req.headers);
+      console.log('Request', req.headers);
       const receta = await Receta.find({}).sort({ _id: '-1' });
       res.status(200).json(receta);
     } catch (err) {
       return res.status(400).json({error: err.message})
-      }
     }
+  };
 
+  findByIngrediente = async (req, res) => {
+    try {
+      console.log('Request en find', req.params.ing);
+      const receta = await Receta.find({
+        ingrediente: { $regex: req.params.ing, $options: 'i' },
+      }).sort({ _id: '-1' });
+      res.status(200).json(receta);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  };
 
   insert = async (req, res) => {
     try {

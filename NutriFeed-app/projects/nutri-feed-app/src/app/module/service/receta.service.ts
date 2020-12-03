@@ -19,9 +19,11 @@ export class RecetaService {
   endpointEdit = 'http://localhost:3000/api/editReceta';
   endpointDelete = 'http://localhost:3000/api/deleteReceta';
   endpointGetById = 'http://localhost:3000/api/getReceta';
+  endpointBuscarIng = 'http://localhost:3000/api/getByIngrediente';
 
   errorMessage: any;
   id: any;
+  recetasFiltro: Receta[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -89,5 +91,11 @@ export class RecetaService {
         console.error('There was an error!', error);
       },
     });
+  }
+
+  buscarRecetaIngrediente(ingrediente: string){
+    return this.http
+      .get<Receta[]>(this.endpointBuscarIng + '/' + ingrediente)
+      .pipe(retry(3), catchError(this.handleError));
   }
 }
