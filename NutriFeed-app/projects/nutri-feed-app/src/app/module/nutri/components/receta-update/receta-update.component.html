@@ -4,41 +4,41 @@
       <div class="col-md-8">
         <div class="container-info">
           <div class="registro-titulo">
-            <p i18n="TituloRegistroReceta">Registro de Receta</p>
+            <p i18n="TituloRegistroReceta">Actualización de receta</p>
           </div>
           <div class="form-container">
-            <form [formGroup]="modeloReceta" (ngSubmit)="registrarReceta()">
+            <form [formGroup]="modeloReceta" (ngSubmit)="actualizarReceta()">
               <div class="form-group">
                 <label for="inputNreceta" i18n="NombreRecetaRegistroRecetaDescripcion">Nombre de la receta</label>
-                <input type="email" formControlName="nombre" required class="form-control" id="inputNreceta" placeholder="Nombre de la receta">
+                <input type="email" formControlName="nombre" required class="form-control" id="inputNreceta" value={{receta.nombre}}>
               </div>
               <div class="form-group">
                 <label for="inputDescripcion" i18n="DescripcionRecetaRegistroRecetaDescripcion">Descripción</label>
-                <textarea class="form-control" formControlName="descripcion" required id="exampleFormControlTextarea1" rows="3" placeholder="Agrega la descripción"></textarea>
+                <textarea class="form-control" formControlName="descripcion" required id="exampleFormControlTextarea1" rows="3" value="{{receta.descripcion}}"></textarea>
               </div>
               <div class="form-group">
                 <label for="inputTipo" i18n="DescripcionRecetaRegistroRecetaTipo">Tipo de alimento</label>
-                <textarea class="form-control" formControlName="tipo" required class="form-control" id="inputNreceta" rows="3" placeholder="Agrega el tipo de alimento"></textarea>
+                <textarea class="form-control" formControlName="tipo" required class="form-control" id="inputNreceta" rows="3" value="{{receta.tipo}}"></textarea>
               </div>
               <div class="form-group">
                 <label for="inputIngrediente" i18n="DescripcionRecetaRegistroRecetaIngrediente">Ingrediente principal</label>
-                <textarea class="form-control" formControlName="ingrediente" required class="form-control" id="inputNreceta" rows="3" placeholder="Agrega el ingrediente principal de la receta"></textarea>
+                <textarea class="form-control" formControlName="ingrediente" required class="form-control" id="inputNreceta" rows="3" value="{{receta.ingrediente}}"></textarea>
               </div>
               <div class="form-group">
                 <label for="inputHashtag" i18n="DescripcionRecetaRegistroRecetaHashtag">Hashtags</label>
-                <textarea class="form-control" formControlName="hashtags" required class="form-control" id="inputNreceta" rows="3" placeholder="Agrega hashtags"></textarea>
+                <textarea class="form-control" formControlName="hashtags" required class="form-control" id="inputNreceta" rows="3" value="{{receta.hashtags}}"></textarea>
               </div>
               <div class="form-group">
                 <label for="exampleFormControlFile1" i18n="SubirImagenDescripcion">Sube una imagen de la receta</label>
                 <input type="file" formControlName="imagen" required class="form-control-file" id="exampleFormControlFile1">
               </div>
-              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarReceta">Registrar</button>
+              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarReceta">Actualizar</button>
             </form>
           </div>
-  
+
         </div>
       </div>
       <div class="col-md-2"></div>
     </div>
   </div>
-  
+

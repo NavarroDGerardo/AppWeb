@@ -49,6 +49,9 @@ function setRoutes(app: Express): void{
   //receta
   router.route('/addReceta').post(recetaController.insert);
   router.route('/allReceta').get(recetaController.getAll);
+  router.route('/deleteReceta/:id').delete(recetaController.delete);
+  router.route('/editReceta/:id').post(recetaController.update);
+  router.route('/getReceta/:id').get(recetaController.get);
 
   //paciente
   router.route('/infoPaciente/:id').get(pacienteController.get);

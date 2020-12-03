@@ -4,7 +4,7 @@ class RecetaController{
   getAll = async (req, res) => {
     try {
       console.log("Request", req.headers);
-      const receta =  await Receta.find({});
+      const receta = await Receta.find({}).sort({ _id: '-1' });
       res.status(200).json(receta);
     } catch (err) {
       return res.status(400).json({error: err.message})

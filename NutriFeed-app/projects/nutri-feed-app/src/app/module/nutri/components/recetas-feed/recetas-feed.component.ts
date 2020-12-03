@@ -18,13 +18,26 @@ export class RecetasFeedComponent implements OnInit {
   constructor(private recetaService: RecetaService) {}
 
   ngOnInit(): void {
-    this.recetaService
-    .getRecetas()
-    .pipe(takeUntil(this.destroy$))
-    .subscribe((data: any[]) => {
-      this.recetas = data;
-    });
-}
+    this.getAllRecetas();
   }
 
+  getAllRecetas(){
+    this.recetaService
+      .getRecetas()
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.recetas = data;
+      });
+  }
 
+  editarReceta(id:string){
+    console.log('editar', id);
+    this.recetaService.id = id;
+  }
+
+  eliminarReceta(id:string){
+    console.log('eliminar', id);
+    this.recetaService.eliminarReceta(id);
+    this.getAllRecetas();
+  }
+}

@@ -51,13 +51,6 @@ export class HorarioComponent implements OnInit {
   eliminar(id: string) {
     console.log('Click eliminar', id);
     this.nutriService.eliminarPacienteHorario(id);
-    this.nutriService
-      .getHorario()
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((data: any[]) => {
-        this.pacientes = data;
-      });
-
     this.getHorarioNutri();
   }
 }

@@ -29,19 +29,9 @@ export class RegistroRecetasComponent implements OnInit {
   ngOnInit(): void {}
 
   registrarReceta() {
-    // const fech = new Date();
-    // const mes = fech.getMonth();
-    // this.modeloReceta.fecha = mes;
     console.log(this.modeloReceta.value);
     this.recetaService.insertarReceta(this.modeloReceta.value);
     this.modeloReceta.reset();
   }
 
-  enviar(){}
-
-  // enviar() {
-  //   console.log(this.modeloReceta.value);
-  //   this.recetaService.agregarReceta(this.modeloReceta.value);
-  //   this.modeloReceta.reset();
-  // }
 }

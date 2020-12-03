@@ -1,4 +1,5 @@
 export interface Receta {
+  _id: string;
   nombre: string;
   publicado_por: string;
   ingrediente: string;

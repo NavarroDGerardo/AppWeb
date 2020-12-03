@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormArray, FormGroup } from '@angular/forms';
-import Paciente from 'backend/models/paciente';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Horario } from '../../../../models/Horario';
@@ -67,7 +66,7 @@ export class RegistroCalUpdateComponent implements OnInit {
     if (this.modeloNutriologaHorario.value.correoUsuario != ""){
       this.paciente.correoUsuario = this.modeloNutriologaHorario.value.correoUsuario;
     }
-    if (this.modeloNutriologaHorario.value.edad != "") {
+    if (this.modeloNutriologaHorario.value.hora != "") {
       this.paciente.hora = this.modeloNutriologaHorario.value.hora;
     }
     if (this.modeloNutriologaHorario.value.fecha != ""){
