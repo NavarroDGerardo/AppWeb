@@ -85,6 +85,10 @@ class PacienteController{
       return res.status(400).json({ error: err.message });
     }
   }
+
+  subirFoto = async(req, res) => {
+    return res.json({message: "mensaje subido exitosamente"});
+  }
 }
 
 

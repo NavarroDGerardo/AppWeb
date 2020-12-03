@@ -4,6 +4,8 @@ import UsuarioController from './controllers/usuarioController'
 import RecetaController from './controllers/recetaController'
 import PacienteController from './controllers/pacienteController'
 import CalendarioController from './controllers/calendarioController';
+import multer from './libs/multer';
+
 //jwt
  var jwt = require('express-jwt');
  var jwks = require('jwks-rsa');
@@ -70,6 +72,17 @@ function setRoutes(app: Express): void{
   router
     .route('/getPacienteApellido/:apellido')
     .get(pacienteController.findByApellido);
+
+  router.route('/subirImagen').post(multer.single('file'), (req, res, next) => {
+    const file = req.file
+    console.log(file.filename);
+    if(!file){
+      const error = new Error('Please upload a file')
+      res.status(400).json({ error: error.message });
+      return next(error);
+    }
+    res.send(file);
+  });
 
   //calendario
   router.route('/addHorario').post(calendarioController.insert);
