@@ -19,6 +19,7 @@ import { RegistroCalUpdateComponent } from './components/registro-cal-update/reg
 import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.component';
 import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
 import { RecetaUpdateComponent } from './components/receta-update/receta-update.component';
+import { HorarioNutriComponent } from './components/horario-nutri/horario-nutri.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { RecetaUpdateComponent } from './components/receta-update/receta-update.
     RegistroCalUpdateComponent,
     RecetasFeedComponent,
     UpdateInfoPacienteComponent,
-    RecetaUpdateComponent
+    RecetaUpdateComponent,
+    HorarioNutriComponent
   ],
   imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule],
 })

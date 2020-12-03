@@ -15,12 +15,18 @@ import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.com
 import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
 import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
 import { RecetaUpdateComponent } from './components/receta-update/receta-update.component';
+import { HorarioNutriComponent } from './components/horario-nutri/horario-nutri.component';
 
 const routes: Routes = [
   {
     path: 'horario',
     component: HorarioComponent,
     data: { animation: 'horario' },
+  },
+  {
+    path: 'horario-nutri',
+    component: HorarioNutriComponent,
+    data: { animation: 'horario-nutri' },
   },
   {
     path: 'pacientes',
