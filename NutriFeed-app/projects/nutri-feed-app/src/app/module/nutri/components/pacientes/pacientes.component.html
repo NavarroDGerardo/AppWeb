@@ -6,6 +6,7 @@
           <div class="pacientes-titulo" i18n="TituloPacientes">
             <p>Tus pacientes</p>
           </div>
+          
           <div class="pacientes-buscador">
             <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
               <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
@@ -14,7 +15,6 @@
             <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
               Agregar paciente
             </button>
-
           </div>
 
            <!-- Profile Feed -->

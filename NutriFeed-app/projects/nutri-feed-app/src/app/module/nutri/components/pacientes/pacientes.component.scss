@@ -84,6 +84,7 @@ _________________________
     border-bottom: 0.5px solid #d9d9d9;
 } 
 .pacientes-buscador{
+    position: relative;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -95,14 +96,16 @@ _________________________
     border-bottom: solid 0.5px black;
     width: 30%;
 }
-
 .agregar{
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 25px;
     background-color: green;
     border-color: green;
     margin-bottom: 20px;
 }
+
 .agregar:hover{
     background-color: white;
     border-color: green;
