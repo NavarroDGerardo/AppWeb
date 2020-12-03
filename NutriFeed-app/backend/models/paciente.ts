@@ -8,6 +8,7 @@ const paciente = new mongoose.Schema({
   altura: String,
   peso_actual: String,
   correo: String,
+  imageUrl: String,
   dieta: [{
     desayuno: String,
     colacion_uno: String,
