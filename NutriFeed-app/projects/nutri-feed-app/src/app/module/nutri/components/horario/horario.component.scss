@@ -196,18 +196,22 @@ _________________________
 	border: 0.5px solid #d9d9d9;
 }
 .horario-titulo {
+	position: relative;
+	border-bottom: 0.5px solid #d9d9d9;
 	height: 60px;
-	text-align: center;
+}
+.horario-titulo p{
+	margin-left: 15px;
 	font-size: 29px;
 	line-height: 60px;
-	border-bottom: 0.5px solid #d9d9d9;
 }
 .agregar {
+	top: 50%;
+	transform: translateY(-50%);
 	position: absolute;
 	right: 15px;
 	background-color: green;
 	border-color: green;
-	margin-bottom: 20px;
 	&:hover {
 		background-color: white;
 		border-color: green;
