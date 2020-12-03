@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { PacienteService } from '../../../service/paciente.service';
 import { PACIENTE } from '../../../../models/Paciente';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-pacientes',
@@ -11,11 +12,17 @@ import { PACIENTE } from '../../../../models/Paciente';
 })
 export class PacientesComponent implements OnInit {
   //pacientes = PACIENTE;
+  modeloBuscar = this.formbuild.group({
+    buscar: ['', Validators.required],
+  });
   pacientes:any;
 
   destroy$: Subject<boolean> = new Subject<boolean>();
 
-  constructor(private pacienteService: PacienteService) {}
+  constructor(
+    private formbuild: FormBuilder,
+    private pacienteService: PacienteService
+  ) {}
 
   ngOnInit(): void {
     this.getAllPacientes();
@@ -47,5 +54,28 @@ export class PacientesComponent implements OnInit {
       .subscribe((data: any[]) => {
         this.pacientes = data;
       });
+  }
+
+  buscar(){
+    console.log('nombre', this.modeloBuscar.value);
+    if (this.modeloBuscar.value.buscar == '') {
+      this.getAllPacientes();
+    } else {
+      this.pacienteService
+        .getPacienteNombre(this.modeloBuscar.value.buscar)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe((data: any[]) => {
+          // console.log('la data', data);
+          this.pacientes = data;
+        });
+    }
+
+    // this.pacienteService
+    //   .getPacienteApellido(this.modeloBuscar.value.buscar)
+    //   .pipe(takeUntil(this.destroy$))
+    //   .subscribe((data: any[]) => {
+    //     // console.log('la data', data);
+    //     this.pacientes = data;
+    //   });
   }
 }

@@ -2,23 +2,26 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <div class="container-pacientes"> 
+        <div class="container-pacientes">
           <div class="pacientes-titulo" i18n="TituloPacientes">
             <p>Tus pacientes</p>
           </div>
           <div class="pacientes-buscador">
-            <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder">
+            <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
+              <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
+              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+            </form>
             <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
               Agregar paciente
             </button>
-            
+
           </div>
-          
-           <!-- Profile Feed --> 
+
+           <!-- Profile Feed -->
             <div class="container-gallery">
-              
+
               <div class="row row-gallery " id="gallery-1">
-                
+
                 <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes">
                   <a routerLink="/nutri/ver-perfil-paciente" style="color: black;">
                     <div class="user_profile_info">
@@ -38,7 +41,7 @@
                       </span>
                     </a>
                   </div>
-                
+
                 </div>
 
               </div>
