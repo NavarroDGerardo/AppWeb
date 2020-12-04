@@ -4,89 +4,94 @@
 		<div class="col-md-2">
 		</div>
 		<div class="col-md-8">
-            <div class="container-horario">
-                <ul class="nav nav-tabs nav-justified md-tabs nav-horario" id="myTabJust" role="tablist">
-                    <li class="nav-item">
-                      <a i18n="desayuno opc" class="nav-link active" id="desayuno-tab" data-toggle="tab" href="#desayuno" role="tab" aria-controls="desayuno" aria-selected="true">Desayuno</a>
-                    </li>
-                    <li class="nav-item">
-                        <a i18n="colacion1 opc" class="nav-link" id="colacion1-tab" data-toggle="tab" href="#colacion1" role="tab" aria-controls="colacion1" aria-selected="false">Colación 1</a>
-                      </li>
-                    <li class="nav-item">
-                      <a i18n="comida opc" class="nav-link" id="comida-tab" data-toggle="tab" href="#comida" role="tab" aria-controls="comida" aria-selected="false">Comida</a>
-                    </li>
-                    <li class="nav-item">
-                        <a i18n="colacion2 opc" class="nav-link" id="colacion2-tab" data-toggle="tab" href="#colacion2" role="tab" aria-controls="colacion2" aria-selected="false">Colación 2</a>
-                      </li>
-                    <li class="nav-item">
-                      <a i18n="cena opc" class="nav-link" id="cena-tab" data-toggle="tab" href="#cena" role="tab" aria-controls="cena" aria-selected="false">Cena</a>
-                    </li>
-                </ul>
+      <div class="container-horario">
+        <ul class="nav nav-tabs nav-justified md-tabs nav-horario" id="myTabJust" role="tablist">
+          <li class="nav-item">
+            <a i18n="desayuno opc" class="nav-link active" id="desayuno-tab" data-toggle="tab" href="#desayuno" role="tab" aria-controls="desayuno" aria-selected="true">Desayuno</a>
+          </li>
+          <li class="nav-item">
+            <a i18n="colacion1 opc" class="nav-link" id="colacion1-tab" data-toggle="tab" href="#colacion1" role="tab" aria-controls="colacion1" aria-selected="false">Colación 1</a>
+          </li>
+          <li class="nav-item">
+            <a i18n="comida opc" class="nav-link" id="comida-tab" data-toggle="tab" href="#comida" role="tab" aria-controls="comida" aria-selected="false">Comida</a>
+          </li>
+          <li class="nav-item">
+           <a i18n="colacion2 opc" class="nav-link" id="colacion2-tab" data-toggle="tab" href="#colacion2" role="tab" aria-controls="colacion2" aria-selected="false">Colación 2</a>
+          </li>
+          <li class="nav-item">
+            <a i18n="cena opc" class="nav-link" id="cena-tab" data-toggle="tab" href="#cena" role="tab" aria-controls="cena" aria-selected="false">Cena</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="tab-content card pt-5">
+        <div class="tab-pane fade show active" id="desayuno" role="tabpanel" aria-labelledby="desayuno-tab">
+          <h1 i18n="desayuno tag" >Desayuno 8:00 a.m.</h1>
+            <br><p i18n="desayuno descripcion">{{dieta[0].desayuno}}</p>
+        </div>
+        <div class="tab-pane fade" id="comida" role="tabpanel" aria-labelledby="comida-tab">
+          <h1 i18n="comida tag">Comida</h1>
+          <br><p i18n="comida descripcion">{{dieta[0].comida}}</p>
+        </div>
+        <div class="tab-pane fade" id="colacion1" role="tabpanel" aria-labelledby="colacion1-tab">
+          <h1 i18n="colacion1 tag">Colación 11:00 a.m.</h1>
+          <br><p i18n="colacion1 descripcion">{{dieta[0].colaciones.colacion1}}</p>
+        </div>
+        <div class="tab-pane fade" id="colacion2" role="tabpanel" aria-labelledby="colacion2-tab">
+          <h1 i18n="colacion2 tag">Colación 17:00 p.m.</h1>
+          <br><p i18n="colacion2 descripcion">{{dieta[0].colaciones.colacion2}}</p>
+        </div>
+        <div class="tab-pane fade" id="cena" role="tabpanel" aria-labelledby="cena-tab">
+          <h1 i18n="cena tag">Cena</h1>
+          <br><p i18n="cena descripcion">{{dieta[0].cena}}</p>
+        </div>
+      </div>
 
-              </div>
-              <div class="tab-content card pt-5">
-                <div class="tab-pane fade show active" id="desayuno" role="tabpanel" aria-labelledby="desayuno-tab">
-                    <h1 i18n="desayuno tag" >Desayuno 8:00 a.m.</h1>
-                    <br><p i18n="desayuno descripcion">{{dieta[0].desayuno}}</p>
-                </div>
-                <div class="tab-pane fade" id="comida" role="tabpanel" aria-labelledby="comida-tab">
-                    <h1 i18n="comida tag">Comida</h1>
-                    <br><p i18n="comida descripcion">{{dieta[0].comida}}</p>
-                </div>
-                <div class="tab-pane fade" id="colacion1" role="tabpanel" aria-labelledby="colacion1-tab">
-                     <h1 i18n="colacion1 tag">Colación 11:00 a.m.</h1>
-                    <br><p i18n="colacion1 descripcion">{{dieta[0].colaciones.colacion1}}</p>
-                </div>
-                <div class="tab-pane fade" id="colacion2" role="tabpanel" aria-labelledby="colacion2-tab">
-                    <h1 i18n="colacion2 tag">Colación 17:00 p.m.</h1>
-                    <br><p i18n="colacion2 descripcion">{{dieta[0].colaciones.colacion2}}</p>
-                </div>
-                <div class="tab-pane fade" id="cena" role="tabpanel" aria-labelledby="cena-tab">
-                     <h1 i18n="cena tag">Cena</h1>
-                    <br><p i18n="cena descripcion">{{dieta[0].cena}}</p>
-                </div>
-            </div>
+      <div class="buscador-recetas">
+        <div class="form-container">
+          <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
+            <label for="ingredientePrincipal">Ingrediente Principal</label>
+            <select name="ingredientePrincipal" id="ingredientePrincipal">
+              <option value="chicken">chicken</option>
+              <option value="fish">fish</option>
+              <option value="meat">meat</option>
+            </select>
 
-		</div>
+            <label for="desc">Descripción</label>
+            <select name="desc" id="desc">
+              <option value="alcohol-free">alcohol-free</option>
+              <option value="gluten">gluten</option>
+              <option value="keto">keto</option>
+              <option value="vegan">vegan</option>
+              <option value="vegetarian">vegetarian</option>
+            </select>
+
+            <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
+            
+            <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;" *ngFor="let recipe of infoRes">
+        <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{recipe.label}}</h5>
+          <p>Ingredientes:</p>
+          <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
+            {{ing}}
+          </p>
+          <p>Calorías: {{recipe.calories}}</p>
+          <p>Tiempo estimado: {{recipe.totalTime}}</p>
+          <p>Recetas de: {{recipe.source}}</p>
+        </div>
+      </div>
+    </div>
+    
 		<div class="col-md-2">
       <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
 		</div>
-	</div>
-</div>
-
-<div class="form-container">
-  <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputNombre" i18n="NombreRegistroNutriDescripcion">Ingrediente principal</label>
-        <input type="nombre" formControlName="ingPrincipal" class="form-control" id="inputNombre" i18n-placeholder="AgregarNombreRegistroNutri_Nutri_placeholder">
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputApellido" i18n="ApellidoRegistroNutriDescripcion">Máxima cantidad de recetas a mostrar</label>
-        <input type="apellido" formControlName="maxReceta" class="form-control" id="inputApellido" i18n-placeholder="AgregarApellidoRegistroNutri_Nutri_placeholder">
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputHora" i18n="HoraRegistroConsulta">Restricción alimenticia</label>
-        <input type="text" formControlName="restriccion" class="form-control" id="inputHora">
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
-  </form>
-</div>
-
-<div class="card" style="width: 18rem;" *ngFor="let recipe of infoRes">
-  <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">{{recipe.label}}</h5>
-    <p>Ingredientes:</p>
-    <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
-      {{ing}}
-    </p>
-    <p>Calorías: {{recipe.calories}}</p>
-    <p>Tiempo estimado: {{recipe.totalTime}}</p>
-    <p>Recetas de: {{recipe.source}}</p>
   </div>
-</div>
+
+
 
