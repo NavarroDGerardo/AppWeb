@@ -101,6 +101,11 @@ export class PacienteService {
       },
       error: (error) => {
         this.errorMessage = error.message;
+        if (this.errorMessage.status == 200) {
+          console.log('hola');
+        } else {
+          console.log('adios');
+        }
         console.error('There was an error!', error);
       },
     });
