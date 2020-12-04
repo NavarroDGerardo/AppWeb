@@ -21,6 +21,14 @@ const paciente = new mongoose.Schema({
       peso: String,
       fecha: String,
       imc: String,
+  }],
+  diario: [{
+    descripcion_desayuno: String,
+    descripcion_comida: String,
+    descripcion_cena: String,
+    image_desayuno: String,
+    image_comida: String,
+    image_cena: String
   }]
 });
 
