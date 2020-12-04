@@ -109,21 +109,17 @@ _________________________
     transform: translateY(-50%);
     right: 10px;
 }
-.dropdown{
-    position: relative;
-    float: left;
-    z-index: 100; 
-}
-.dropdown-menu{
-    float: left;
-    z-index: 100; 
-}
 .agregar{
     margin-left: 5px;
     background-color: green;
     border-color: green;
 }
-
+.tipo{
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+    height: 40px;
+}
 .pacientes-buscador button:hover{
     background-color: white;
     border-color: green;
