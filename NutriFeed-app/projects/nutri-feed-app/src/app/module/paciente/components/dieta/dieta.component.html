@@ -46,7 +46,15 @@
           <br><p i18n="cena descripcion">{{dieta[0].cena}}</p>
         </div>
       </div>
+		<div class="col-md-2">
+      <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
+		</div>
+</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
       <div class="buscador-recetas">
         <div class="buscador-titulo">
           <h1>Buscador de Dietas</h1>
@@ -73,27 +81,27 @@
             <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
           </form>
         </div>
-      </div>
 
-      <div class="card" style="width: 18rem;" *ngFor="let recipe of infoRes">
-        <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{recipe.label}}</h5>
-          <p>Ingredientes:</p>
-          <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
-            {{ing}}
-          </p>
-          <p>Calorías: {{recipe.calories}}</p>
-          <p>Tiempo estimado: {{recipe.totalTime}}</p>
-          <p>Recetas de: {{recipe.source}}</p>
+        <div class="card" style="width: 100%;" *ngFor="let recipe of infoRes">
+          <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{recipe.label}}</h5>
+            <p>Ingredientes:</p>
+            <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
+              {{ing}}
+            </p>
+            <p>Calorías: {{recipe.calories}}</p>
+            <p>Tiempo estimado: {{recipe.totalTime}}</p>
+            <p>Recetas de: {{recipe.source}}</p>
+          </div>
         </div>
+        
+      </div>
       </div>
     </div>
-
-		<div class="col-md-2">
-      <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
-		</div>
+    <div class="col-md-2"></div>
   </div>
+</div>
 
 
 
