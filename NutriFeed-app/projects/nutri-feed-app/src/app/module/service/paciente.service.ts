@@ -15,7 +15,7 @@ import { map, retry, catchError, tap } from 'rxjs/operators';
 })
 export class PacienteService {
   endpointGetById = 'http://localhost:3000/api/infoPaciente';
-  endpointAdd = 'http://localhost:3000/api/addPaciente';
+  endpointAdd = 'http://localhost:3000/api/addPacienteFoto';
   endPointGetAll = 'http://localhost:3000/api/GetAllPaciente';
   endPointDelete = 'http://localhost:3000/api/deletePaciente';
   endPointEdit = 'http://localhost:3000/api/editePaciente';
@@ -62,7 +62,7 @@ export class PacienteService {
 
   getPacienteApellido(buscar: string) {
     return this.http
-      .get<Paciente[]>(this.endPointBuscarNom + '/' + buscar)
+      .get<Paciente[]>(this.endPointBuscarApe + '/' + buscar)
       .pipe(retry(3), catchError(this.handleError));
   }
 
@@ -72,8 +72,8 @@ export class PacienteService {
       .pipe(retry(3), catchError(this.handleError));
   }
 
-  insertarPaciente(paciente: Paciente) {
-    this.http.post<Paciente>(this.endpointAdd, paciente).subscribe({
+  insertarPaciente(fd: FormData) {
+    this.http.post<FormData>(this.endpointAdd, fd).subscribe({
       next: (data) => {
         console.log('datos', data);
       },
