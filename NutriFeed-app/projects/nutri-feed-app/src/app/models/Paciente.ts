@@ -7,6 +7,15 @@ export interface Paciente {
   ciudad: string;
   altura: string;
   peso_actual: string;
+  // dieta: [
+  //   {
+  //     desayuno: string;
+  //     comida: string;
+  //     cena: string;
+  //     colacion_uno: string;
+  //     colacion_dos: string;
+  //   }
+  // ];
 }
 
 export const PACIENTE = [
