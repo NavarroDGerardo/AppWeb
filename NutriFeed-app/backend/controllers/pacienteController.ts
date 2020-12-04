@@ -59,6 +59,19 @@ class PacienteController{
     }
   }
 
+  insertProgreso = async (req, res) => {
+    try {
+      console.log('el body', req.body);
+      await Paciente.findOneAndUpdate(
+        { _id: req.params.id },
+        { $push: { progreso: req.body } }
+      );
+      res.sendStatus(200);
+    } catch (err) {
+      return res.status(400).json({ error: err.message });
+    }
+  }
+
    count = async (req, res) => {
     try {
       const count = await Paciente.count();

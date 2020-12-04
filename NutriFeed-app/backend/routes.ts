@@ -73,6 +73,9 @@ function setRoutes(app: Express): void{
     .route('/getPacienteApellido/:apellido')
     .get(pacienteController.findByApellido);
   router.route('/registrarDieta/:id').post(pacienteController.insertDieta);
+  router
+    .route('/registrarProgreso/:id')
+    .post(pacienteController.insertProgreso);
 
   router.route('/subirImagen').post(multer.single('file'), (req, res, next) => {
     const file = req.file

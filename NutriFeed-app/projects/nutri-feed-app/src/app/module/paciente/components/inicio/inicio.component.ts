@@ -24,7 +24,11 @@ export class InicioComponent implements OnInit {
     imgCena: ['', Validators.required],
   });
 
-  constructor(private formBuild: FormBuilder, private diarioS: DiarioService, private pacienteService: PacienteService) {}
+  constructor(
+    private formBuild: FormBuilder,
+    private diarioS: DiarioService,
+    private pacienteService: PacienteService
+  ) {}
 
   ngOnInit(): void {
     this.pacienteService
