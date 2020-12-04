@@ -62,7 +62,7 @@ export class PacienteService {
 
   getPacienteApellido(buscar: string) {
     return this.http
-      .get<Paciente[]>(this.endPointBuscarNom + '/' + buscar)
+      .get<Paciente[]>(this.endPointBuscarApe + '/' + buscar)
       .pipe(retry(3), catchError(this.handleError));
   }
 

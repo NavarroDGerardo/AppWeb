@@ -10,6 +10,7 @@ import { PacienteService } from '../../../service/paciente.service';
 export class RegistroPacienteComponent implements OnInit {
   modeloPaciente = this.formbuild.group({
     nombre: ['', Validators.required],
+    apellido: ['', Validators.required],
     estado: ['', Validators.required],
     edad: ['', Validators.required],
     ciudad: ['', Validators.required],

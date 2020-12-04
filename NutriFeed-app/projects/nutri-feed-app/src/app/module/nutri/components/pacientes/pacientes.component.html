@@ -6,12 +6,12 @@
           <div class="pacientes-titulo" i18n="TituloPacientes">
             <p>Tus pacientes</p>
           </div>
-          
+
           <div class="pacientes-buscador">
             <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
               <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
               <button type="submit" class="buscar btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
-              
+
             </form>
             <div class="buscar-op">
               <!--<div class="dropdown">
@@ -23,7 +23,7 @@
                   <a class="dropdown-item">Apellido</a>
                 </div>
               </div>-->
-              <select name="tipo" id="tipo" class="tipo">
+              <select name="tipo" id="tipo" class="tipo" (change)="selectChange($event)">
                 <option value="nombre">Nombre</option>
                 <option value="apellido">Apellido</option>
               </select>

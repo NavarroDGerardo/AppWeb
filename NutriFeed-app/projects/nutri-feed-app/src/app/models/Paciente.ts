@@ -1,21 +1,13 @@
 export interface Paciente {
   _id: string;
   nombre: string;
+  apellido: string;
   correo: string;
   estado: string;
   edad: string;
   ciudad: string;
   altura: string;
   peso_actual: string;
-  // dieta: [
-  //   {
-  //     desayuno: string;
-  //     comida: string;
-  //     cena: string;
-  //     colacion_uno: string;
-  //     colacion_dos: string;
-  //   }
-  // ];
 }
 
 export const PACIENTE = [
