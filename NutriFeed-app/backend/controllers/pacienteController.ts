@@ -118,7 +118,7 @@ class PacienteController{
         res.status(400).json({ error: error.message });
         return next(error);
     }
-    res.send(file.path);
+    //res.send(file.path);
     try {
       const { nombre, estado, edad, ciudad, altura, peso_actual, correo } = req.body;
       const infoPaciente = {

@@ -9,7 +9,7 @@ import { RecetaService } from '../../../service/receta.service';
   styleUrls: ['./registro-recetas.component.scss'],
 })
 export class RegistroRecetasComponent implements OnInit {
-  //subscribe: Subscription;
+  selectedFile!: File;
 
   modeloReceta = this.formbuild.group({
     nombre: ['', Validators.required],
@@ -28,9 +28,19 @@ export class RegistroRecetasComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  onFileSelected(event: any){
+    this.selectedFile = <File>event.target.files[0];
+  }
+
   registrarReceta() {
-    console.log(this.modeloReceta.value);
-    this.recetaService.insertarReceta(this.modeloReceta.value);
+    const fd = new FormData();
+    fd.append('file', this.selectedFile);
+    fd.append('nombre', this.modeloReceta.value.nombre);
+    fd.append('descripcion', this.modeloReceta.value.descripcion);
+    fd.append('tipo', this.modeloReceta.value.tipo);
+    fd.append('ingrediente', this.modeloReceta.value.ingrediente);
+    fd.append('hashtags', this.modeloReceta.value.hashtag);
+    this.recetaService.insertarReceta(fd);
     this.modeloReceta.reset();
   }
 

@@ -15,7 +15,7 @@ import { map, retry, catchError, tap } from 'rxjs/operators';
 })
 export class RecetaService {
   endpoint = 'http://localhost:3000/api/allReceta';
-  endpointAdd = 'http://localhost:3000/api/addReceta';
+  endpointAdd = 'http://localhost:3000/api/addRecetaFoto';
   endpointEdit = 'http://localhost:3000/api/editReceta';
   endpointDelete = 'http://localhost:3000/api/deleteReceta';
   endpointGetById = 'http://localhost:3000/api/getReceta';
@@ -61,8 +61,8 @@ export class RecetaService {
       .pipe(retry(3), catchError(this.handleError));
   }
 
-  insertarReceta(recetas: Receta) {
-    this.http.post<Receta>(this.endpointAdd, recetas).subscribe({
+  insertarReceta(fd: FormData) {
+    this.http.post<FormData>(this.endpointAdd, fd).subscribe({
       next: (data) => {
         console.log('datos', data);
       },

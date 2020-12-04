@@ -22,6 +22,7 @@ export class UpdateInfoPacienteComponent implements OnInit {
   paciente: Paciente = {
     _id: '',
     nombre: '',
+    apellido: '',
     correo: '',
     estado: '',
     edad: '',
