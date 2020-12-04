@@ -14,15 +14,6 @@
 
             </form>
             <div class="buscar-op">
-              <!--<div class="dropdown">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tipo
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item">Nombre</a>
-                  <a class="dropdown-item">Apellido</a>
-                </div>
-              </div>-->
               <select name="tipo" id="tipo" class="tipo" (change)="selectChange($event)">
                 <option value="nombre">Nombre</option>
                 <option value="apellido">Apellido</option>
@@ -38,7 +29,7 @@
 
               <div class="row row-gallery " id="gallery-1">
 
-                <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes" style="z-index: -1;">
+                <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes">
                   <a routerLink="/nutri/ver-perfil-paciente" style="color: black;" (click)="verPaciente(paciente._id)">
                     <div class="user_profile_info">
                       <div class="profile_pic_container">

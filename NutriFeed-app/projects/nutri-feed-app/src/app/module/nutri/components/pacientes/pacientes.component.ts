@@ -36,12 +36,8 @@ export class PacientesComponent implements OnInit {
 
   eliminar(id: string){
     this.pacienteService.eliminarPaciente(id);
-    this.pacienteService
-      .getAllPaciente()
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((data: any[]) => {
-        this.pacientes = data;
-      });
+    this.getAllPacientes();
+    this.getAllPacientes();
   }
 
   editar(id: string){
