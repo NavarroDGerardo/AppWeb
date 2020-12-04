@@ -1,7 +1,9 @@
 export interface Dieta {
-  titulo: string;
-  description: string;
-  img_url: string;
+  desayuno: string;
+  comida: string;
+  cena: string;
+  colacion_uno: string;
+  colacion_dos: string;
 }
 
 export const DIETA = [

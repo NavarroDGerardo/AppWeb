@@ -27,7 +27,7 @@ export class UpdateInfoPacienteComponent implements OnInit {
     edad: '',
     ciudad: '',
     altura: '',
-    peso_actual: ''
+    peso_actual: '',
   };
 
   destroy$: Subject<boolean> = new Subject<boolean>();
@@ -42,7 +42,7 @@ export class UpdateInfoPacienteComponent implements OnInit {
     peso: [this.peso_actual, Validators.required]
   });
 
-  constructor( private formbuild: FormBuilder, private pacienteService: PacienteService) { 
+  constructor( private formbuild: FormBuilder, private pacienteService: PacienteService) {
   }
 
   ngOnInit(): void {

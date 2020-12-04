@@ -46,27 +46,28 @@
       </div>
       <div class="col-md-8">
               <!-- Perfil de usuario -->
-        <div class="container-perfil-info"> 
-        
+        <div class="container-perfil-info">
+
           <a class = "profile-photo">
           <img class="photo img-circle" src="../../../../../assets/img/profilepic.jpg" alt="Avatar" width="130" height="130" >
           </a>
-          
+
           <div class ="perfil-info">
-          <h4> Daniela Fernandez <span> (email@example.com )</span> </h4> 
+          <h4> {{paciente.nombre}} <span> {{paciente.correo}} </span> </h4>
           <div class = "info-data">
-          <p i18n="edadPaciente_nutri">24 años</p>
-          <p > 1.70 m</p>
-          <p >72 kg</p>
+          <p i18n="edadPaciente_nutri">{{paciente.edad}} años</p>
+          <p> {{paciente.altura}} m</p>
+          <p> {{paciente.peso_actual}} kg</p>
+          <p>Estado: {{paciente.estado}}</p>
           <div> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-            </svg>CDMX, México </div>
+            </svg>{{paciente.ciudad}} </div>
         </div>
-        
+
         </div>
         <a href="" routerLink="/nutri/ver-dieta-paciente" class="btn btn-lg btn-secondary btn-cerrar"> Ver dieta </a>
-        <a href="" routerLink="/nutri/registro-dieta" class="btn btn-lg btn-secondary btn-cerrar btn-agregar"> Agregar dieta </a>
-        
+        <a href="" routerLink="/nutri/registro-dieta" class="btn btn-lg btn-secondary btn-cerrar btn-agregar" (click)="agregarDieta()"> Agregar dieta </a>
+
         <!-- Dropdown mes -->
     <div class="btn-group drop" >
       <button i18n="mes_nutri" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,7 +88,7 @@
         <a i18n="Diciembre_nutri" class="dropdown-item" href="#">Diciembre</a>
       </div>
     </div>
-        
+
         </div>
             <!-- Menu semanas -->
         <div class = "menu-semanas">
@@ -103,10 +104,10 @@
         <a class=" semana semana4">
             <span i18n="Semana4_nutri">Semana 4</span>
         </a>
-  
+
         </div>
-  
-               <!-- Profile Feed --> 
+
+               <!-- Profile Feed -->
         <div class="container-gallery">
           <div class="row row-gallery " id="gallery-1">
               <div class="col-4 col-sm-4 col-lg-4 column">
@@ -137,14 +138,14 @@
                 </div>
             </div>
           </div>
-  
-          
+
+
       <div class="col-md-2">
       </div>
       </div>
-      
+
       <!-- Modal Ver comidas del día: modalComidas Pop up Carousel -->
-  <div class="modal fade" id="modalComidas" tabindex="-1" role="dialog" 
+  <div class="modal fade" id="modalComidas" tabindex="-1" role="dialog"
   aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
@@ -181,7 +182,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
-              
+
             </div>
             <!--/.Carousel Wrapper-->
           </div>
@@ -193,7 +194,7 @@
                 <p i18n="desayuno post_nutri">
                   Desayuno: Huevo con nopales
                 </p>
-                <p i18n="comida post_nutri"> 
+                <p i18n="comida post_nutri">
                   Comida: Pollo a la mexicana
                 </p>
                 <p i18n="cena post_nutri">
@@ -206,8 +207,8 @@
       </div>
     </div>
   </div>
-  
-     
+
+
   </div>
   <!--Funcionalidad pop up carousel-->
   <script>

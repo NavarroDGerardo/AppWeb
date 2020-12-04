@@ -78,4 +78,9 @@ export class PacientesComponent implements OnInit {
     //     this.pacientes = data;
     //   });
   }
+
+  verPaciente(id: string){
+    console.log('el id', id);
+    this.pacienteService.id = id;
+  }
 }
