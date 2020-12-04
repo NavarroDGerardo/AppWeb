@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 import { NutriRoutingModule } from './nutri-routing.module';
 import { HorarioComponent } from './components/horario/horario.component';
@@ -39,6 +40,6 @@ import { RecetaUpdateComponent } from './components/receta-update/receta-update.
     UpdateInfoPacienteComponent,
     RecetaUpdateComponent
   ],
-  imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule],
+  imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule, NgxPaginationModule],
 })
 export class NutriModule {}

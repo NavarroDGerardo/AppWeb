@@ -7,6 +7,7 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 
+import { NgxPaginationModule } from 'ngx-pagination';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexBodyComponent } from './Components/index-body/index-body.component';
@@ -43,6 +44,7 @@ import { ProfileComponent } from './Components/profile/profile.component';
     PacienteModule,
     LandingModule,
     HttpClientModule,
+    NgxPaginationModule,
     AuthModule.forRoot({
       // The domain and clientId were configured in the previous chapter
       domain: 'dev-3hczp56w.us.auth0.com',

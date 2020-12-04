@@ -8,6 +8,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { DietaComponent } from './components/dieta/dieta.component';
 import { ProgresoComponent } from './components/progreso/progreso.component';
 import { RecetaComponent } from './components/receta/receta.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { RecetaComponent } from './components/receta/receta.component';
     PacienteRoutingModule,
     ReactiveFormsModule,
     ChartsModule,
+    NgxPaginationModule
   ],
 })
 export class PacienteModule {}

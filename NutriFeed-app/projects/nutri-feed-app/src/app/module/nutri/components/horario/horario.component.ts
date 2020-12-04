@@ -11,6 +11,7 @@ import { NutriologoService } from '../../../service/nutriologo.service';
 })
 export class HorarioComponent implements OnInit {
   pacientes: Horario[] = [];
+  p: number = 1;
 
   destroy$: Subject<boolean> = new Subject<boolean>();
 
