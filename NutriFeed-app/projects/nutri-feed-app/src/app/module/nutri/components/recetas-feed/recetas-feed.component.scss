@@ -163,6 +163,11 @@ _________________________
 .search-area {
 	margin-top: $size-20;
 }
+.buscar{
+    background-color: green;
+    border-color: green;
+    margin-left: 5px;
+}
 .form-control {
 	&:focus {
 		box-shadow: none;
@@ -196,7 +201,98 @@ button {
 .addReceta{
 	background-color: $verde_nutrifeed;
 	border-color:$verde_nutrifeed ;
-
 }
 
 
+/*
+ _________________________
+ |						|
+ |		  Responsive  	|
+ |						|
+ -------------------------
+ */
+ /*@media (max-width: 767.98px) {
+	.col-tarjetas {
+		margin-top: $size-60;
+	}
+	.search-area {
+		position: relative;
+		bottom: 1410%;
+	}
+	.instagram-post {
+		height: 600px;
+		width: auto;
+	}
+	.instagram-post-image {
+		img {
+			max-width: auto;
+			min-width: auto;
+		}
+	}
+	.instagram-post-text {
+		div {
+			left: 5%;
+		}
+	}
+	.image-receta {
+		img {
+			width: 210%;
+		}
+	}
+	.description {
+		h2 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	.description-text {
+		position: $relative;
+		top: 110%;
+		right: $scale-80;
+	}
+}*/
+/*@media (min-width: 768px) and (max-width: 991.98px) {
+	.search-area {
+		position: $relative;
+		left: 228%;
+		margin-top: $size-20;
+	}
+	.form-control {
+		&::placeholder {
+			font-size: 8.5px;
+		}
+	}
+	button {
+		svg {
+			width: 0.6em;
+			height: 0.6em;
+		}
+	}
+	.col-md-4 {
+		position: $relative;
+		right: 40%;
+	}
+	.image-receta {
+		text-align: $center;
+		img {
+			width: 130%;
+		}
+	}
+	.description {
+		h2 {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+	.description-text {
+		position: $relative;
+		top: 105%;
+		right: 150%;
+	}
+}*/
