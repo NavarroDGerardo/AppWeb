@@ -73,16 +73,7 @@ function setRoutes(app: Express): void{
     .route('/getPacienteApellido/:apellido')
     .get(pacienteController.findByApellido);
 
-  router.route('/subirImagen').post(multer.single('file'), (req, res, next) => {
-    const file = req.file
-    console.log(file.filename);
-    if(!file){
-      const error = new Error('Please upload a file')
-      res.status(400).json({ error: error.message });
-      return next(error);
-    }
-    res.send(file);
-  });
+  router.route('/addPacienteFoto').post(multer.single('file'), pacienteController.subirFoto);
 
   //calendario
   router.route('/addHorario').post(calendarioController.insert);
