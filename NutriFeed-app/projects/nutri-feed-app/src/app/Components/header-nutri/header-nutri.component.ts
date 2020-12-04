@@ -28,10 +28,13 @@ import { Inject } from '@angular/core';
 })
 export class HeaderNutriComponent implements OnInit {
 
+
   constructor(private auth:AuthService,@Inject(DOCUMENT)private doc: Document) { }
 
   ngOnInit(): void {
+  
   }
+  
 
   estilo = true;
 

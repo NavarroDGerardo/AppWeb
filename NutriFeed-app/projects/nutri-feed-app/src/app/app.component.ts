@@ -12,8 +12,30 @@ import { AuthService } from '@auth0/auth0-angular';
 export class AppComponent {
   title = 'nutriFeed-app';
   isLanding= false;
-  isNutri = true;
-  isPaciente = false;
+   
+  loggedIn = true;
+  user: string= "";
+   emailT = "";
+   substring = "@admin.com";
+   
+   isPaciente = false;
+   isNutri=false;
+
+  ngOnInit(): void {
+    console.log(this.isNutri);
+    this.auth.user$.subscribe((user) => {
+      this.user = user;
+      console.log(user)
+      this.emailT = user.email;
+     console.log(this.emailT)
+     this.isNutri=this.emailT.includes(this.substring);
+   
+    
+      /* user.uid => user id */
+      /* user.displayName => user displayName */
+    })
+   
+  }
 
   prepareRoute(outlet: RouterOutlet) {
     return (

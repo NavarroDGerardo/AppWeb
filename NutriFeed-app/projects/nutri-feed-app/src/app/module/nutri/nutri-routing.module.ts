@@ -15,82 +15,83 @@ import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.com
 import { RegistroCalUpdateComponent } from './components/registro-cal-update/registro-cal-update.component';
 import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
 import { RecetaUpdateComponent } from './components/receta-update/receta-update.component';
+import { AuthGuard } from '@auth0/auth0-angular';
 
 const routes: Routes = [
   {
     path: 'horario',
     component: HorarioComponent,
-    data: { animation: 'horario' },
+    data: { animation: 'horario' }, canActivate:[AuthGuard]
   },
   {
     path: 'pacientes',
     component: PacientesComponent,
-    data: { animation: 'pacientes' },
+    data: { animation: 'pacientes' }, canActivate:[AuthGuard]
   },
   {
     path: 'recetas',
     component: RecetasComponent,
-    data: { animation: 'recetas' },
+    data: { animation: 'recetas' },canActivate:[AuthGuard]
   },
   {
     path: 'nutriologos',
     component: NutriologosComponent,
-    data: { animation: 'nutriologos' },
+    data: { animation: 'nutriologos' },canActivate:[AuthGuard]
   },
   {
     path: 'registro-recetas',
     component: RegistroRecetasComponent,
-    data: { animation: 'registro-recetas' },
+    data: { animation: 'registro-recetas' },canActivate:[AuthGuard]
   },
   {
     path: 'registro-nutri',
     component: RegistroNutriComponent,
-    data: { animation: 'registro-nutri' },
+    data: { animation: 'registro-nutri' }, canActivate:[AuthGuard]
   },
   {
     path: 'ver-perfil-paciente',
     component: VerPerfilPacienteComponent,
-    data: { animation: 'ver-perfil-paciente' },
+    data: { animation: 'ver-perfil-paciente' },canActivate:[AuthGuard]
   },
   {
     path: 'registro-dieta',
     component: RegistroDietaComponent,
-    data: { animation: 'registro-dieta' },
+    data: { animation: 'registro-dieta' },canActivate:[AuthGuard]
   },
   {
     path: 'registro-paciente',
     component: RegistroPacienteComponent,
-    data: { animation: 'registro-paciente' },
+    data: { animation: 'registro-paciente' },canActivate:[AuthGuard]
   },
   {
     path: 'ver-dieta-paciente',
     component: VerDietaPacienteComponent,
-    data: { animation: 'ver-dieta-paciente' },
+    data: { animation: 'ver-dieta-paciente' },canActivate:[AuthGuard]
   },
   {
     path: 'ver-receta',
     component: VerRecetaComponent,
-    data: { animation: 'ver-receta' },
+    data: { animation: 'ver-receta' },canActivate:[AuthGuard]
   },
   {
     path: 'registro-cal-update',
     component: RegistroCalUpdateComponent,
-    data: { animation: 'registro-cal-update' },
+    data: { animation: 'registro-cal-update' },canActivate:[AuthGuard]
   },
   {
     path: 'recetas-feed',
     component: RecetasFeedComponent,
-    data: { animation: 'recetas-feed' },
+    data: { animation: 'recetas-feed' },canActivate:[AuthGuard]
   },
   {
     path: 'update-info-paciente',
     component: UpdateInfoPacienteComponent,
-    data: { animation: 'recetas-feed'}
+    data: { animation: 'recetas-feed'}, canActivate:[AuthGuard]
   },
   {
     path: 'receta-update',
     component: RecetaUpdateComponent,
-    data: { animation: 'receta-update'}
+    data: { animation: 'receta-update'}, canActivate:[AuthGuard]
   }
 ];
 
