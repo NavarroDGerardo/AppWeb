@@ -38,7 +38,6 @@ class PacienteController{
 
   insert = async (req, res) => {
     try {
-      console.log(req.body)
       const paciente = await new Paciente(req.body).save();
       res.status(201).json(paciente);
     } catch (err) {
@@ -112,8 +111,29 @@ class PacienteController{
     }
   }
 
-  subirFoto = async(req, res) => {
-    return res.json({message: "mensaje subido exitosamente"});
+  subirFoto = async (req, res, next) => {
+    const file = req.file
+    if(!file){
+        const error = new Error('Please upload a file')
+        res.status(400).json({ error: error.message });
+        return next(error);
+    }
+    res.send(file.path);
+    try {
+      const { nombre, estado, edad, ciudad, altura, peso_actual, correo } = req.body;
+      const infoPaciente = {
+        nombre: nombre,
+        estado: estado,
+        edad: edad,
+        ciudad: ciudad,
+        altura: altura,
+        peso_actual: peso_actual,
+        correo: correo,
+        imageUrl: file.path,
+      }
+      const paciente = await new Paciente(infoPaciente).save();
+      res.status(201).json(paciente);
+    } catch (err) { }
   }
 }
 

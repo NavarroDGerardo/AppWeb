@@ -41,7 +41,9 @@
                 <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes" style="z-index: -1;">
                   <a routerLink="/nutri/ver-perfil-paciente" style="color: black;" (click)="verPaciente(paciente._id)">
                     <div class="user_profile_info">
-                      <div style="background-image: url('../../../../../assets/img/profilepic2.jpg');" class="profile_pic_container"></div>
+                      <div class="profile_pic_container">
+                        <img style="width: 100%; height: 100%; border-radius: 50%;" [src]="'http://localhost:3000/' + paciente.imageUrl">
+                      </div>
                       <p style="margin-top: 10px;" class="user_name">{{paciente.nombre}}</p>
                     </div>
                   </a>
