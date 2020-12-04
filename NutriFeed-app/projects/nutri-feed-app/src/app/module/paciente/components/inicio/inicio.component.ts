@@ -68,4 +68,20 @@ export class InicioComponent implements OnInit {
     this.diarioS.registarDiario("5fc53fb84eb8c56e983df1cf", fd);
     this.modeloDiario.reset();
   }
+
+  iDesa = "";
+  iComida = "";
+  iCena = "";
+  dDesa = "";
+  dComida = "";
+  dCena = "";
+
+  desplegarInfo(iDesa: string, iComida: string, iCena: string, dDesa: string, dComida: string, dCena: string){
+    this.iDesa = iDesa;
+    this.iComida = iComida;
+    this.iCena = iCena;
+    this.dDesa = dDesa;
+    this.dComida = dComida;
+    this.dCena = dCena;
+  }
 }
