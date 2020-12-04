@@ -110,7 +110,9 @@ _________________________
     right: 10px;
 }
 .dropdown{
+    position: relative;
     float: left;
+    z-index:-1
 }
 .agregar{
     margin-left: 5px;
