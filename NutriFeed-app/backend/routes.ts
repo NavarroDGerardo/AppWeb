@@ -50,6 +50,7 @@ function setRoutes(app: Express): void{
 
   //receta
   router.route('/addReceta').post(recetaController.insert);
+  router.route('/addRecetaFoto').post(multer.single('file'), recetaController.addReceta);
   router.route('/allReceta').get(recetaController.getAll);
   router.route('/deleteReceta/:id').delete(recetaController.delete);
   router.route('/editReceta/:id').post(recetaController.update);

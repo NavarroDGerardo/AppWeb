@@ -1,3 +1,4 @@
+import Paciente from 'models/paciente';
 import Receta from '../models/receta';
 
 class RecetaController{
@@ -55,6 +56,31 @@ class RecetaController{
     } catch (err) {
 
     }
+  }
+
+  addReceta = async (req, res, next) => {
+    const file = req.file
+    if(!file){
+      const error = new Error('Please upload a file')
+      res.status(400).json({ error: error.message });
+      return next(error);
+    }
+    //res.send(file.path);
+    try{
+      const{ nombre, publicado_por, ingrediente, descripcion, imagen, tipo, hashtags, fecha } = req.body;
+      const infoReceta = {
+        nombre: nombre,
+        publicado_por: publicado_por,
+        ingrediente: ingrediente,
+        descripcion: descripcion,
+        imagen: file.path,
+        tipo: tipo,
+        hashtags: hashtags,
+        fecha: fecha,
+      }
+      const receta = await new Receta(infoReceta).save();
+      res.status(201).json(receta);
+    } catch(err){ }
   }
 
    count = async (req, res) => {
