@@ -48,6 +48,9 @@
       </div>
 
       <div class="buscador-recetas">
+        <div class="buscador-titulo">
+          <h1>Buscador de Recetas</h1>
+        </div>
         <div class="form-container">
           <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
             <label for="ingredientePrincipal">Ingrediente Principal</label>
@@ -64,10 +67,9 @@
               <option value="keto">keto</option>
               <option value="vegan">vegan</option>
               <option value="vegetarian">vegetarian</option>
-            </select>
-
-            <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
-            
+            </select><br>
+            <label for="desc">Máximo de recetas</label>
+            <input type="text" placeholder="Ingresar máximo" i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar"><br>
             <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
           </form>
         </div>
