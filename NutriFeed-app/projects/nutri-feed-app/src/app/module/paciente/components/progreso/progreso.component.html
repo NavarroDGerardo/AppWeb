@@ -1,5 +1,5 @@
 <body>
-  
+
 
   <div class="container-fluid">
     <div class="row">
@@ -13,11 +13,11 @@
           <img class="photo img-circle" src="../../../../../assets/img/profilepic.jpg" alt="Avatar" width="130" height="130" >
           </a>
           <div class ="perfil-info">
-          <h4> Daniela Fernandez <span> (email@example.com )</span> </h4>
+          <h4> {{paciente.nombre}} <span> {{paciente.correo}} </span> </h4>
           <div class = "info-data">
             <form [formGroup]='modeloProgreso' (ngSubmit)='registrarProgreso()'>
               <p i18n="IMC">IMC actual: <input type="text" class="datos" name="fname" placeholder="IMC" formControlName='imc' required> </p>
-              <br><p i18n="Peso"> Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='kg' required></p>
+              <br><p i18n="Peso"> Peso actual <input type="text" class="datos" name="fname" placeholder="KG" formControlName='peso' required></p>
               <button i18n="Registrar" type="submit " class="btn btn-lg btn-secondary btn-act">Registrar</button>
             </form>
             <!-- <p>Valor del formulario: {{modeloProgreso.value | json}}</p> -->
@@ -35,17 +35,15 @@
               <table class="table">
                   <thead class="thead-dark">
                     <tr>
-                      <th i18n="Entrada" scope="col">ENTRADA</th>
                       <th i18n="Fecha" scope="col">FECHA</th>
                       <th scope="col"># KG</th>
                       <th scope="col"># IMC</th>
                     </tr>
                   </thead>
                   <tbody class="table-light">
-                    <tr *ngFor="let pro of progreso">
-                      <th scope="row">1</th>
+                    <tr *ngFor="let pro of progresoM">
                       <td>{{ pro.fecha }}</td>
-                      <td>{{ pro.kg }}</td>
+                      <td>{{ pro.peso }}</td>
                       <td>{{ pro.imc }}</td>
                     </tr>
                   </tbody>

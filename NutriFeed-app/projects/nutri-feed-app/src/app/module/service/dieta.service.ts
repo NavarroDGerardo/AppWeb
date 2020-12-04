@@ -18,6 +18,7 @@ import { DIETA } from '../../models/Dieta';
 export class DietaService {
   endpoint =
     'https://api.edamam.com/search?q=chicken&app_id=7ce661c7&app_key=f718a700794dfcb0de84300a9b6f50b3&from=0&to=4&calories=591-722&health=alcohol-free';
+  endpoinRegdieta = 'http://localhost:3000/api/registrarDieta';
 
   constructor(private http: HttpClient) {}
 
@@ -52,13 +53,24 @@ export class DietaService {
     return this.http.get(this.endpoint);
   }
 
-  registrarDieta(dieta: {
-    desayuno: string;
-    comida: string;
-    cena: string;
-    colaciones: { colacion1: string; colacion2: string; colacion3: string };
-  }) {
-    console.log('Registro exitoso', dieta);
-    DIETA.push(dieta);
+  // registrarDieta(dieta: {
+  //   desayuno: string;
+  //   comida: string;
+  //   cena: string;
+  //   colaciones: { colacion1: string; colacion2: string; colacion3: string };
+  // }) {
+  //   console.log('Registro exitoso', dieta);
+  //   DIETA.push(dieta);
+  // }
+
+  registrarDieta(id: string, dieta: Dieta) {
+    this.http.post<Dieta>(this.endpoinRegdieta + '/' + id, dieta).subscribe({
+      next: (data) => {
+        console.log('datos', data);
+      },
+      error: (error) => {
+        console.error(' error!', error);
+      },
+    });
   }
 }

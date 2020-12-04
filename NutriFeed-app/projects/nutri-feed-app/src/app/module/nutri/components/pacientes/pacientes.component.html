@@ -10,11 +10,27 @@
           <div class="pacientes-buscador">
             <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
               <input type="text" placeholder="Buscar..." i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar">
-              <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+              <button type="submit" class="buscar btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
+              
             </form>
-            <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
-              Agregar paciente
-            </button>
+            <div class="buscar-op">
+              <!--<div class="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tipo
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item">Nombre</a>
+                  <a class="dropdown-item">Apellido</a>
+                </div>
+              </div>-->
+              <select name="tipo" id="tipo" class="tipo">
+                <option value="nombre">Nombre</option>
+                <option value="apellido">Apellido</option>
+              </select>
+              <button routerLink="/nutri/registro-paciente" type="button" class=" agregar btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" i18n="DescripcionBotonAgregarPaciente">
+                Agregar paciente
+              </button>
+            </div>
           </div>
 
            <!-- Profile Feed -->
@@ -22,8 +38,8 @@
 
               <div class="row row-gallery " id="gallery-1">
 
-                <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes">
-                  <a routerLink="/nutri/ver-perfil-paciente" style="color: black;">
+                <div class="col-4 col-sm-4 col-lg-4 column" *ngFor="let paciente of pacientes" style="z-index: -1;">
+                  <a routerLink="/nutri/ver-perfil-paciente" style="color: black;" (click)="verPaciente(paciente._id)">
                     <div class="user_profile_info">
                       <div class="profile_pic_container">
                         <img style="width: 100%; height: 100%; border-radius: 50%;" [src]="'http://localhost:3000/' + paciente.imageUrl">
@@ -43,7 +59,6 @@
                       </span>
                     </a>
                   </div>
-
                 </div>
 
               </div>

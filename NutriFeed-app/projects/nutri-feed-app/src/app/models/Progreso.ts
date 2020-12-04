@@ -1,7 +1,7 @@
 export interface Progreso {
-  titulo: string;
-  description: string;
-  img_url: string;
+  imc: string;
+  peso: string;
+  fecha: string;
 }
 
 export const PROGRESO = [

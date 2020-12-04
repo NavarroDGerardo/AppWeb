@@ -72,6 +72,10 @@ function setRoutes(app: Express): void{
   router
     .route('/getPacienteApellido/:apellido')
     .get(pacienteController.findByApellido);
+  router.route('/registrarDieta/:id').post(pacienteController.insertDieta);
+  router
+    .route('/registrarProgreso/:id')
+    .post(pacienteController.insertProgreso);
 
   router.route('/addPacienteFoto').post(multer.single('file'), pacienteController.subirFoto);
 

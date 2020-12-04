@@ -6,6 +6,11 @@ import { PROGRESO } from '../../../../models/Progreso';
 import { ProgresoService } from '../../../service/progreso.service';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
+import { PacienteService } from '../../../service/paciente.service';
+import { Paciente } from '../../../../models/Paciente';
+import { Progreso } from '../../../../models/Progreso';
+import { takeUntil } from 'rxjs/operators';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-progreso',
@@ -13,43 +18,72 @@ import { Color, Label } from 'ng2-charts';
   styleUrls: ['./progreso.component.scss'],
 })
 export class ProgresoComponent implements OnInit {
-  progreso = PROGRESO;
   fechaCompleta = new Date();
   dia = this.fechaCompleta.getDay();
   mes = this.fechaCompleta.getMonth();
   anio = this.fechaCompleta.getFullYear();
-  imcV : any[] = []
-  fechaV : any[] = []
-  pesoV : any[] = []
+  imcV: any[] = [];
+  fechaV: any[] = [];
+  pesoV: any[] = [];
+
+  paciente: any;
+
+  // progresoM: Progreso = {
+  //   imc: '',
+  //   peso: '',
+  //   fecha: '',
+  // };
+  progresoM: Progreso[] = [];
+
+  destroy$: Subject<boolean> = new Subject<boolean>();
 
   modeloProgreso = this.formBuild.group({
     imc: ['', Validators.required],
-    kg: ['', Validators.required],
+    peso: ['', Validators.required],
     fecha: `${this.dia}/${this.mes}/${this.anio}`,
   });
 
   constructor(
     private formBuild: FormBuilder,
-    private progresoS: ProgresoService
+    private progresoService: ProgresoService,
+    private pacienteService: PacienteService
   ) {}
 
   ngOnInit(): void {
-    this.obtenerValores();
+    this.getInfoPaciente();
+  }
+
+  getInfoPaciente(){
+    this.pacienteService
+      .getPaciente("5fc53fb84eb8c56e983df1cf")
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        this.paciente = data;
+        this.progresoM = data['progreso'];
+        // console.log('data', this.progresoM);
+        this.obtenerValores();
+      });
   }
 
   registrarProgreso() {
-    console.log(this.modeloProgreso.value);
-    this.progresoS.registrarProgreso(this.modeloProgreso.value);
+    // console.log(this.modeloProgreso.value);
+    this.progresoService.registrarProgreso(
+      '5fc53fb84eb8c56e983df1cf',
+      this.modeloProgreso.value
+    );
+    this.modeloProgreso.reset();
+    this.getInfoPaciente();
     this.imcV.push(this.modeloProgreso.value.imc);
     this.fechaV.push(this.modeloProgreso.value.fecha);
-    this.pesoV.push(this.modeloProgreso.value.kg);
+    this.pesoV.push(this.modeloProgreso.value.peso);
   }
 
   obtenerValores() {
-    for (let i = 0; i < this.progreso.length; i++) {
-      this.imcV.push(this.progreso[i].imc);
-      this.fechaV.push(this.progreso[i].fecha);
-      this.pesoV.push(this.progreso[i].kg);
+    console.log(this.progresoM.length);
+    for (let i = 0; i < this.progresoM.length; i++) {
+      this.imcV.push(this.progresoM[i].imc);
+      this.fechaV.push(this.progresoM[i].fecha);
+      this.pesoV.push(this.progresoM[i].peso);
     }
   }
 
