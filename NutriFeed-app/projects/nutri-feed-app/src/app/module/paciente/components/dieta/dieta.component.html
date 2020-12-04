@@ -23,7 +23,7 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="tab-content card pt-5">
         <div class="tab-pane fade show active" id="desayuno" role="tabpanel" aria-labelledby="desayuno-tab">
           <h1 i18n="desayuno tag" >Desayuno 8:00 a.m.</h1>
@@ -46,22 +46,30 @@
           <br><p i18n="cena descripcion">{{dieta[0].cena}}</p>
         </div>
       </div>
+		<div class="col-md-2">
+      <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
+		</div>
+</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
       <div class="buscador-recetas">
         <div class="buscador-titulo">
-          <h1>Buscador de Recetas</h1>
+          <h1>Buscador de Dietas</h1>
         </div>
         <div class="form-container">
           <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
             <label for="ingredientePrincipal">Ingrediente Principal</label>
-            <select name="ingredientePrincipal" id="ingredientePrincipal">
+            <select name="ingredientePrincipal" id="ingredientePrincipal" (change)="selectChangeIng($event)">
               <option value="chicken">chicken</option>
               <option value="fish">fish</option>
               <option value="meat">meat</option>
             </select>
 
             <label for="desc">Descripción</label>
-            <select name="desc" id="desc">
+            <select name="desc" id="desc" (change)="selectChangeRes($event)">
               <option value="alcohol-free">alcohol-free</option>
               <option value="gluten">gluten</option>
               <option value="keto">keto</option>
@@ -69,31 +77,31 @@
               <option value="vegetarian">vegetarian</option>
             </select><br>
             <label for="desc">Máximo de recetas</label>
-            <input type="text" placeholder="Ingresar máximo" i18n-placeholder="Buscar_Paciente_placeholder" formControlName="buscar"><br>
+            <input type="text" placeholder="Ingresar máximo" i18n-placeholder="Buscar_Paciente_placeholder" formControlName="maxReceta"><br>
             <button type="submit" class="btn btn-primary" i18n="BotonRegistrarNutri">Buscar</button>
           </form>
         </div>
-      </div>
-      
-      <div class="card" style="width: 18rem;" *ngFor="let recipe of infoRes">
-        <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">{{recipe.label}}</h5>
-          <p>Ingredientes:</p>
-          <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
-            {{ing}}
-          </p>
-          <p>Calorías: {{recipe.calories}}</p>
-          <p>Tiempo estimado: {{recipe.totalTime}}</p>
-          <p>Recetas de: {{recipe.source}}</p>
+
+        <div class="card" style="width: 100%;" *ngFor="let recipe of infoRes">
+          <img class="card-img-top" src={{recipe.image}} alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{recipe.label}}</h5>
+            <p>Ingredientes:</p>
+            <p class="card-text" *ngFor="let ing of recipe.ingredientLines">
+              {{ing}}
+            </p>
+            <p>Calorías: {{recipe.calories}}</p>
+            <p>Tiempo estimado: {{recipe.totalTime}}</p>
+            <p>Recetas de: {{recipe.source}}</p>
+          </div>
         </div>
+        
+      </div>
       </div>
     </div>
-    
-		<div class="col-md-2">
-      <!-- <button type="button" class="btn btn-primary" (click)="click()">Prueba valores definidos</button> -->
-		</div>
+    <div class="col-md-2"></div>
   </div>
+</div>
 
 
 

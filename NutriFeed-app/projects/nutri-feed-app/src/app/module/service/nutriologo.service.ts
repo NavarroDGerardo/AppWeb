@@ -75,7 +75,16 @@ export class NutriologoService {
         console.log('datos', data);
       },
       error: (error) => {
-        console.error(' error!', error);
+        // this.errorMessage = error.status;
+        // console.log(this.errorMessage);
+        if (error.status == 200) {
+          // console.log('hola');
+          this.errorMessage = 'Se editó con exito, estatus ' + error.status;
+        } else {
+          this.errorMessage = 'Hubo un error, estatus ' + error.status;
+        }
+        alert(this.errorMessage);
+        // console.error(' error!', error);
       },
     });
   }

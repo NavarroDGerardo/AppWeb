@@ -13,9 +13,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class DietaComponent implements OnInit {
   modeloBucaApi = this.formbuild.group({
-    ingPrincipal: ['', Validators.required],
     maxReceta: ['', Validators.required],
-    restriccion: ['', Validators.required],
   });
 
   dieta = DIETA;
@@ -28,6 +26,8 @@ export class DietaComponent implements OnInit {
   infoRes: any[];
 
   resFinal: RecetaApi[] = [];
+  selectionIng = 'chicken';
+  selectionRes = 'alcohol-free';
 
   constructor(
     private dietaService: DietaService,
@@ -56,12 +56,14 @@ export class DietaComponent implements OnInit {
   }
 
   buscar(){
-    console.log('hi', this.modeloBucaApi.value);
+    console.log('hi', this.selectionIng);
+    console.log('hi', this.modeloBucaApi.value.maxReceta);
+    console.log('hi', this.selectionRes);
     this.dietaService
       .getApiRecetasPersonalizado(
-        this.modeloBucaApi.value.ingPrincipal,
+        this.selectionIng,
         this.modeloBucaApi.value.maxReceta,
-        this.modeloBucaApi.value.restriccion
+        this.selectionRes
       )
       .subscribe((data: any) => {
         this.resFinal = data;
@@ -76,5 +78,13 @@ export class DietaComponent implements OnInit {
         // console.log('info res count', this.infoRes.length);
       });
     this.modeloBucaApi.reset();
+  }
+
+  selectChangeIng(event: any){
+    this.selectionIng = event.target.value;
+  }
+
+  selectChangeRes(event: any){
+    this.selectionRes = event.target.value;
   }
 }
