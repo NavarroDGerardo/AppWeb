@@ -71,6 +71,43 @@ class PacienteController{
     }
   }
 
+  insertDiario = async (req, res, next) => {
+    const file = req.files
+    if(!file){
+        const error = new Error('Please upload a file')
+        res.status(400).json({ error: error.message });
+        return next(error);
+    }
+    var url_desayuno = "";
+    var url_comida = "";
+    var url_cena = "";
+    for(let i in file){
+      if(i == "0"){
+        url_desayuno = file[i].path;
+      }else if(i == "1"){
+        url_comida = file[i].path;
+      }else if(i == "2"){
+        url_cena = file[i].path;
+      }
+    }
+    try {
+      const { descripcion_desayuno, descripcion_comida, descripcion_cena } = req.body;
+      const infoPaciente = {
+        descripcion_desayuno: descripcion_desayuno,
+        descripcion_comida: descripcion_comida,
+        descripcion_cena: descripcion_cena, 
+        image_desayuno: url_desayuno,
+        image_comida: url_comida,
+        image_cena: url_cena
+      }
+      await Paciente.findOneAndUpdate(
+        { _id: req.params.id },
+        { $push: { diario: infoPaciente } }
+      );
+      res.sendStatus(200);
+    } catch (err) { }
+  }
+
    count = async (req, res) => {
     try {
       const count = await Paciente.count();

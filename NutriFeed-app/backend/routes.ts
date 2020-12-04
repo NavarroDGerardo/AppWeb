@@ -55,9 +55,7 @@ function setRoutes(app: Express): void{
   router.route('/deleteReceta/:id').delete(recetaController.delete);
   router.route('/editReceta/:id').post(recetaController.update);
   router.route('/getReceta/:id').get(recetaController.get);
-  router
-    .route('/getByIngrediente/:ing')
-    .get(recetaController.findByIngrediente);
+  router.route('/getByIngrediente/:ing').get(recetaController.findByIngrediente);
   router.route('/getByNombre/:nombre').get(recetaController.findByNombreReceta);
   router.route('/getByHashtag/:hashtag').get(recetaController.findByHashtags);
 
@@ -67,25 +65,18 @@ function setRoutes(app: Express): void{
   router.route('/GetAllPaciente').get(pacienteController.getAll);
   router.route('/deletePaciente/:id').delete(pacienteController.delete);
   router.route('/editePaciente/:id').post(pacienteController.update);
-  router
-    .route('/getPacienteNombre/:nombre')
-    .get(pacienteController.findByNombre);
-  router
-    .route('/getPacienteApellido/:apellido')
-    .get(pacienteController.findByApellido);
+  router.route('/getPacienteNombre/:nombre').get(pacienteController.findByNombre);
+  router.route('/getPacienteApellido/:apellido').get(pacienteController.findByApellido);
   router.route('/registrarDieta/:id').post(pacienteController.insertDieta);
-  router
-    .route('/registrarProgreso/:id')
-    .post(pacienteController.insertProgreso);
-
+  router.route('/registrarProgreso/:id').post(pacienteController.insertProgreso);
+  router.route('/addDiario/:id').post(multer.array('files'),pacienteController.insertDiario);
   router.route('/addPacienteFoto').post(multer.single('file'), pacienteController.subirFoto);
+
 
   //calendario
   router.route('/addHorario').post(calendarioController.insert);
   router.route('/showHorario').get(calendarioController.getAll);
-  router
-    .route('/deletePacienteHorario/:id')
-    .delete(calendarioController.delete);
+  router.route('/deletePacienteHorario/:id').delete(calendarioController.delete);
   router.route('/editPacienteHorario/:id').post(calendarioController.update);
   router.route('/getPacienteHorario/:id').get(calendarioController.get);
   //ejemplos

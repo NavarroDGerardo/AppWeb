@@ -1,7 +1,11 @@
 export interface Diario {
-  titulo: string;
-  description: string;
-  img_url: string;
+  _id: string;
+  descripcion_desayuno: string;
+  descripcion_comida: string;
+  descripcion_cena: string;
+  image_desayuno: string;
+  image_comida: string;
+  image_cena: string;
 }
 
 export const DIARIO = [

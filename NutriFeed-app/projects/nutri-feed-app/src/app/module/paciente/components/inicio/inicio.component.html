@@ -106,36 +106,15 @@
 
              <!-- Profile Feed -->
       <div class="container-gallery">
-        <div class="row row-gallery " id="gallery-1">
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100" src="../../../../../assets/img/feed1.jpg" data-toggle="modal" data-target="#modalComidas">
+        <div *ngFor="let dia of diario" class="row row-gallery " id="gallery-1">
+            <div  style="margin-top: 25px;" class="col-4 col-sm-4 col-lg-4 column">
+              <img class="w-100 h-100" [src]="'http://localhost:3000/' + dia.image_desayuno" (click)="desplegarInfo(dia.image_desayuno, dia.image_comida, dia.image_cena, dia.descripcion_desayuno, dia.descripcion_comida, dia.descripcion_cena )" data-toggle="modal" data-target="#modalComidas">
             </div>
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100" src="../../../../../assets/img/feed2.jpg " data-toggle="modal" data-target="#modalComidas">
-            </div>
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100" src="../../../../../assets/img/feed3.jpg" data-toggle="modal" data-target="#modalComidas">
-            </div>
-
-          </div>
-      </div>
-      <div class="row row-gallery" id="gallery-2">
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100"  src="../../../../../assets/img/feed4.jpg" data-toggle="modal" data-target="#modalComidas">
-            </div>
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100" src="../../../../../assets/img/feed5.jpg" data-toggle="modal" data-target="#modalComidas">
-            </div>
-            <div class="col-4 col-sm-4 col-lg-4 column">
-              <img class="w-100 h-100" src="../../../../../assets/img/no-image.png" data-toggle="modal" data-target="#modalSubirC">
-            </div>
-          </div>
-          <div class="row row-gallery" id="gallery-2">
-            <div class="col-4 col-sm-4 col-lg-4 column">
-                <img class="w-100 h-100" src="../../../../../assets/img/no-image.png" data-toggle="modal" data-target="#modalSubirC">
-              </div>
-          </div>
         </div>
+        <div style="margin-top: 25px;"  class="col-4 col-sm-4 col-lg-4 column">
+          <img class="w-100 h-100" src="../../../../../assets/img/no-image.png" data-toggle="modal" data-target="#modalSubirC">
+        </div>
+      </div>
 
 
 		<div class="col-md-2">
@@ -157,17 +136,17 @@ aria-hidden="true">
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
                 <img class="d-block w-100 "
-                  src="../../../../../assets/img/c1.jpg"
+                  [src]="'http://localhost:3000/' + iDesa"
                   alt="First slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100"
-                  src="../../../../../assets/img/c2.jpg"
+                  [src]="'http://localhost:3000/' + iComida"
                   alt="Second slide">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100"
-                  src="../../../../../assets/img/c3.jpg"
+                  [src]="'http://localhost:3000/' + iCena"
                   alt="Third slide">
               </div>
             </div>
@@ -190,13 +169,13 @@ aria-hidden="true">
             Descripción
           </h2>
           <p i18n="Desayuno post">
-            Desayuno: Huevo con nopales
+            Desayuno: {{dDesa}}
           </p>
           <p i18n="comida post"> 
-            Comida: Pollo a la mexicana
+            Comida: {{dComida}}
           </p>
           <p i18n="cena post">
-            Cena: Sandwich de pavo
+            Cena: {{dCena}}
           </p>
         </div>
           </div>
@@ -216,18 +195,17 @@ aria-hidden="true">
            <div class="col col-upload">
              <!--Botones subir foto-->
            <div class="upload-container">
+            <h1>Ingresar día en el Diario</h1>
             <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
-              <input type="file" id="myFile" name="filename" formControlName='imgDesayuno' required>
-              <br><input type="file" id="myFile" name="filename" formControlName='imgComida' required>
-              <br><input type="file" id="myFile" name="filename" formControlName='imgCena'required>
-              <br><textarea id="w3review" name="w3review" rows="4" cols="50">
-              Desayuno:
+              <input type="file" id="myFile" name="filename" (change)="onSelectedDesayuno($event)" formControlName='imgDesayuno' required>
+              <br><input type="file" id="myFile" name="filename" (change)="onSelectedComida($event)" formControlName='imgComida' required>
+              <br><input type="file" id="myFile" name="filename" (change)="onSelectedCena($event)" formControlName='imgCena'required>
+              <h3>Desayuno:</h3>
               <input type="text" formControlName="desayuno" required/>
-              Comida:
+              <h3>Comida:</h3>
               <input type="text" formControlName="comida" required/>
-              Cena:
+              <h3>Cena:</h3>
               <input type="text" formControlName="cena" required/>
-                </textarea>
               <br><input type="submit">
             </form>
            </div>
