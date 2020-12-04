@@ -163,6 +163,11 @@ _________________________
 .search-area {
 	margin-top: $size-20;
 }
+.buscar{
+    background-color: green;
+    border-color: green;
+    margin-left: 5px;
+}
 .form-control {
 	&:focus {
 		box-shadow: none;
@@ -196,8 +201,8 @@ button {
 .addReceta{
 	background-color: $verde_nutrifeed;
 	border-color:$verde_nutrifeed ;
-
 }
+
 
 /*
  _________________________
@@ -206,7 +211,7 @@ button {
  |						|
  -------------------------
  */
-@media (max-width: 767.98px) {
+ /*@media (max-width: 767.98px) {
 	.col-tarjetas {
 		margin-top: $size-60;
 	}
@@ -248,8 +253,8 @@ button {
 		top: 110%;
 		right: $scale-80;
 	}
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
+}*/
+/*@media (min-width: 768px) and (max-width: 991.98px) {
 	.search-area {
 		position: $relative;
 		left: 228%;
@@ -290,4 +295,4 @@ button {
 		top: 105%;
 		right: 150%;
 	}
-}
+}*/
