@@ -48,7 +48,7 @@ export class DietaService {
 
   getApiRecetasPersonalizado(ing: string, max: string, restriccion: string) {
     console.log('en el servicio api personalizado');
-    this.endpoint = `https://api.edamam.com/search?q=${ing}&app_id=7ce661c7&app_key=f718a700794dfcb0de84300a9b6f50b3&from=0&to=${max}&calories=591-722&health=${restriccion}`;
+    this.endpoint = `https://api.edamam.com/search?q=${ing}&app_id=7ce661c7&app_key=f718a700794dfcb0de84300a9b6f50b3&from=0&to=${max}&health=${restriccion}`;
     console.log('url nueva', this.endpoint);
     return this.http.get(this.endpoint);
   }

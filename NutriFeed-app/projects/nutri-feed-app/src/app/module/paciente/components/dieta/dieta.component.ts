@@ -85,9 +85,12 @@ export class DietaComponent implements OnInit {
   }
 
   buscar(){
-    console.log('hi', this.selectionIng);
-    console.log('hi', this.modeloBucaApi.value.maxReceta);
-    console.log('hi', this.selectionRes);
+    this.resFinal = [];
+    this.infoRes = [];
+    this.hits = [];
+    // console.log('hi', this.selectionIng);
+    // console.log('hi', this.modeloBucaApi.value.maxReceta);
+    // console.log('hi', this.selectionRes);
     this.dietaService
       .getApiRecetasPersonalizado(
         this.selectionIng,

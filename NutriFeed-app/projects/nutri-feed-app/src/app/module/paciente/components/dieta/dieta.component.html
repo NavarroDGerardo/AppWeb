@@ -63,20 +63,22 @@
         </div>
         <div class="form-container">
           <form [formGroup]="modeloBucaApi" (ngSubmit)="buscar()">
-            <label for="ingredientePrincipal">Ingrediente Principal</label>
+            <label for="ingredientePrincipal">Tipo de comida</label>
             <select name="ingredientePrincipal" id="ingredientePrincipal" (change)="selectChangeIng($event)">
-              <option value="chicken">chicken</option>
-              <option value="fish">fish</option>
-              <option value="meat">meat</option>
+              <option value="">Selecciona</option>
+              <option value="breakfast">Desayuno</option>
+              <option value="lunch">Comida</option>
+              <option value="dinner">Cena</option>
+              <option value="snack">Snack</option>
             </select>
 
             <label for="desc">Descripción</label>
             <select name="desc" id="desc" (change)="selectChangeRes($event)">
-              <option value="alcohol-free">alcohol-free</option>
-              <option value="gluten">gluten</option>
-              <option value="keto">keto</option>
-              <option value="vegan">vegan</option>
-              <option value="vegetarian">vegetarian</option>
+              <option value="">Selecciona</option>
+              <option value="alcohol-free">Sin alcohol</option>
+              <option value="vegan">Vegano</option>
+              <option value="vegetarian">Vegetariano</option>
+              <option value="dairy-free">Sin lactosa</option>
             </select><br>
             <label for="desc">Máximo de recetas</label>
             <input type="text" placeholder="Ingresar máximo" i18n-placeholder="Buscar_Paciente_placeholder" formControlName="maxReceta"><br>
@@ -97,7 +99,7 @@
             <p>Recetas de: {{recipe.source}}</p>
           </div>
         </div>
-        
+
       </div>
       </div>
     </div>
