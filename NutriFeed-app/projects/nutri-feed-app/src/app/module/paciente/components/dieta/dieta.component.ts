@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { DIETA } from '../../../../models/Dieta';
+//import { DIETA } from '../../../../models/Dieta';
+import { Dieta } from '../../../../models/Dieta';
 import { DietaService } from '../../../service/dieta.service';
 import { RecetaApi } from '../../../../models/RecetaApi';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Paciente } from 'projects/nutri-feed-app/src/app/models/Paciente';
+import { PacienteService } from '../../../service/paciente.service';
 
 @Component({
   selector: 'app-dieta',
@@ -16,7 +19,14 @@ export class DietaComponent implements OnInit {
     maxReceta: ['', Validators.required],
   });
 
-  dieta = DIETA;
+  paciente: Paciente[] = [];
+  dieta: Dieta = {
+    desayuno: '',
+    comida: '',
+    cena: '',
+    colacion_uno: '',
+    colacion_dos: '',
+  };
 
   destroy$: Subject<boolean> = new Subject<boolean>();
   // eslint-disable-next-line @typescript-eslint/ban-types
@@ -31,13 +41,32 @@ export class DietaComponent implements OnInit {
 
   constructor(
     private dietaService: DietaService,
-    private formbuild: FormBuilder
+    private formbuild: FormBuilder,
+    private pacienteService: PacienteService
   ) {
     this.hits = [];
     this.infoRes = [];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getPaciente();
+  }
+
+  _id = "5fc53fb84eb8c56e983df1cf";
+
+  getPaciente(){
+    this.pacienteService
+      .getPaciente(this._id)
+      .pipe(takeUntil(this.destroy$))
+      .subscribe((data: any[]) => {
+        // console.log('la data', data);
+        let len = data['dieta'].length;
+        this.paciente = data;
+        // console.log('cuenta', len);
+        this.dieta = data['dieta'][len - 1];
+        // console.log('la dieta', this.dieta);
+      });
+  }
 
   click(){
     console.log('hola');
