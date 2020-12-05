@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { animacionesAplicacion } from './Animaciones';
 import { AuthService } from '@auth0/auth0-angular';
 import { PacienteService } from '../app/module/service/paciente.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,10 @@ export class AppComponent {
   
   isLanding= false;
   
-  constructor(public auth: AuthService, private pacienteService: PacienteService) { }
+  constructor(public auth: AuthService, private pacienteService: PacienteService, translate: TranslateService) { 
+    translate.setDefaultLang('es');
+    translate.use('es');
+  }
   
    
   loggedIn = true;

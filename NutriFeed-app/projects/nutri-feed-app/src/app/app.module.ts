@@ -21,10 +21,14 @@ import { HeaderPacienteComponent } from './Components/header-paciente/header-pac
 import { LandingModule } from './module/landing/landing.module';
 import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './Components/profile/profile.component';
 import { ToastrModule } from 'ngx-toastr';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function createTranslateLoader(http: HttpClient){ return new TranslateHttpLoader(http, './assets/il8n/', '.json');}
 
 @NgModule({
   declarations: [
@@ -47,6 +51,13 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     NgxPaginationModule,
     ToastrModule.forRoot(),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
     AuthModule.forRoot({
       // The domain and clientId were configured in the previous chapter
       domain: 'dev-3hczp56w.us.auth0.com',
