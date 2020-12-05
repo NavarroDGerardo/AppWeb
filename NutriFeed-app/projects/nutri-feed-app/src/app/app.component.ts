@@ -11,6 +11,7 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
+
   isLanding= false;
    
   loggedIn = true;
@@ -36,6 +37,8 @@ export class AppComponent {
     })
    
   }
+
+
 
   prepareRoute(outlet: RouterOutlet) {
     return (

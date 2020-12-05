@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { IndexBodyComponent } from './Components/index-body/index-body.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
-import { AuthModule } from '@auth0/auth0-angular';
+import { AuthHttpInterceptor, AuthModule } from '@auth0/auth0-angular';
 import { NutriModule } from './module/nutri/nutri.module';
 import { PacienteModule } from './module/paciente/paciente.module';
 // import { RegistroComponent } from './module/registro/components/registro/registro.component';
@@ -20,7 +20,7 @@ import { HeaderPacienteComponent } from './Components/header-paciente/header-pac
 import { LandingModule } from './module/landing/landing.module';
 import { HeaderNutriComponent } from './Components/header-nutri/header-nutri.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './Components/profile/profile.component';
 
@@ -66,14 +66,19 @@ import { ProfileComponent } from './Components/profile/profile.component';
     
               // The attached token should have these scopes
               scope: 'read:current_user'
-            }
-          }
+            },
+           
+          },
+          {uri: `http://localhost:3000/api/*`
+        }
         ]
       }
     }),
    
   ],
-  providers: [],
+  providers: [{ provide: HTTP_INTERCEPTORS,
+    useClass: AuthHttpInterceptor,
+    multi: true,}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

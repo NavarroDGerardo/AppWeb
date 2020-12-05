@@ -39,8 +39,7 @@ function setRoutes(app: Express): void{
         jwksRequestsPerMinute: 5,
         jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
   }),
-  audience: 'http://localhost:3000/',
-  issuer: 'https://dev-3hczp56w.us.auth0.com/',
+  aud: 'http://localhost:3000/api',
   algorithms: ['RS256']
 });
 
@@ -72,7 +71,7 @@ function setRoutes(app: Express): void{
   // router.route("/addUser").get(alumnoController.getAll); //recurso /api/alumno
   // router.route('/alumnos/count').get(alumnoController.count);
 
-  //app.use(jwtCheck);
+  app.use(jwtCheck);
 
   app.use('/api', router); //baseUri
 }
