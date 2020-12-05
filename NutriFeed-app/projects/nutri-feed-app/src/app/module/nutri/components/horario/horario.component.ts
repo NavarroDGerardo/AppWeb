@@ -4,6 +4,9 @@ import { takeUntil } from 'rxjs/operators';
 import { Horario } from '../../../../models/Horario';
 import { NutriologoService } from '../../../service/nutriologo.service';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from "@auth0/auth0-angular";
+import { DOCUMENT } from "@angular/common";
+import { Inject } from '@angular/core'; 
 
 @Component({
   selector: 'app-horario',
@@ -19,7 +22,8 @@ export class HorarioComponent implements OnInit {
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   constructor(
     private nutriService: NutriologoService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private auth:AuthService,@Inject(DOCUMENT)private doc: Document
   ) {}
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -64,4 +68,10 @@ export class HorarioComponent implements OnInit {
     this.getHorarioNutri();
     this.getHorarioNutri();
   }
+  
+
+  logout(): void {
+    this.auth.logout({returnTo: this.doc.location.origin})
+  }
+
 }
