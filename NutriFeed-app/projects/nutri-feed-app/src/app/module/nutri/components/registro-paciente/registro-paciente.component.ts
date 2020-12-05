@@ -20,6 +20,8 @@ export class RegistroPacienteComponent implements OnInit {
   altura = "";
   peso_actual = "";
 
+  seleccionEstado = '';
+
   modeloPaciente = this.formbuild.group({
     nombre: ['', Validators.required],
     apellido: ['', Validators.required],
@@ -81,6 +83,7 @@ export class RegistroPacienteComponent implements OnInit {
         'revisa que sea un correo válido'
       );
     } else {
+      this.modeloPaciente.value.estado = this.seleccionEstado
       const fd = new FormData();
       fd.append('file', this.selectedFile);
       fd.append('nombre', this.modeloPaciente.value.nombre);
@@ -94,5 +97,9 @@ export class RegistroPacienteComponent implements OnInit {
       this.modeloPaciente.reset();
       this.showToastExito();
     }
+  }
+
+  selectChange(event: any){
+    this.seleccionEstado = event.target.value;
   }
 }
