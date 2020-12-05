@@ -61,9 +61,9 @@ export class PacientesComponent implements OnInit {
   }
 
   buscar(){
-    console.log('nombre', this.modeloBuscar.value);
-    console.log('selection', this.selection);
-    if (this.selection == 'nombre') {
+    // console.log('nombre', this.modeloBuscar.value);
+    // console.log('selection', this.selection);
+    if (this.selection == 'nombre' && this.modeloBuscar.value.buscar != '') {
       // console.log('por nombre');
       this.pacienteService
         .getPacienteNombre(this.modeloBuscar.value.buscar)
@@ -72,7 +72,10 @@ export class PacientesComponent implements OnInit {
           // console.log('la data', data);
           this.pacientes = data;
         });
-    } else if (this.selection == 'apellido') {
+    } else if (
+      this.selection == 'apellido' &&
+      this.modeloBuscar.value.buscar != ''
+    ) {
       // console.log('por apellido');
       this.pacienteService
         .getPacienteApellido(this.modeloBuscar.value.buscar)

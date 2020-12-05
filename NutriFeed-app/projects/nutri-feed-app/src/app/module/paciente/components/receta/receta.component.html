@@ -64,11 +64,12 @@
 									</svg></button>
 								</div>
 								<input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light" formControlName="buscar">
-								<select name="tipo" id="tipo" class="tipo">
-									<option value="nombre">Nombre</option>
-									<option value="apellido">Hashtags</option>
-									<option value="apellido">Ingrediente</option>
-								</select>
+								<select name="tipo" id="tipo" class="tipo" (change)="selectChange($event)">
+                  <option value="">Selecciona</option>
+                  <option value="nombre">Nombre</option>
+                  <option value="hashtag">Hashtags</option>
+                  <option value="ingrediente">Ingrediente</option>
+                </select>
 							</div>
 							</div>
 					  </form>

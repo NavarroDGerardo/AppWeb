@@ -28,7 +28,7 @@ class RecetaController{
     try {
       console.log('Request en find', req.params.nombre);
       const receta = await Receta.find({
-        ingrediente: { $regex: req.params.nombre, $options: 'i' },
+        nombre: { $regex: req.params.nombre, $options: 'i' },
       }).sort({ _id: '-1' });
       res.status(200).json(receta);
     } catch (err) {
@@ -40,7 +40,7 @@ class RecetaController{
     try {
       console.log('Request en find', req.params.hashtag);
       const receta = await Receta.find({
-        ingrediente: { $regex: req.params.hashtag, $options: 'i' },
+        hashtags: { $regex: req.params.hashtag, $options: 'i' },
       }).sort({ _id: '-1' });
       res.status(200).json(receta);
     } catch (err) {
