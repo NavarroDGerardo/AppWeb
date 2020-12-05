@@ -141,6 +141,15 @@ _________________________
 		color: green;
 	}
 }
+.editar{
+	background-color: green;
+	border-color: green;
+	&:hover {
+		background-color: white;
+		border-color: green;
+		color: green;
+	}
+}
 
 /*
 _________________________
@@ -151,7 +160,7 @@ _________________________
 */
 @media (max-width: 650px) {
 	.container-perfil-info {
-		height: 270px;
+		height: 210px;
 	}
 	.perfil-info {
 		width: 100%;
