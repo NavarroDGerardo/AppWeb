@@ -12,17 +12,17 @@ import { PacienteService } from '../app/module/service/paciente.service';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
-  
+
   isLanding= false;
-  
+
   constructor(public auth: AuthService, private pacienteService: PacienteService) { }
-  
-   
+
+
   loggedIn = true;
   user: string= "";
    emailT = "";
    substring = "@admin.com";
-   
+
    isPaciente = false;
    isNutri=false;
 
@@ -34,9 +34,9 @@ export class AppComponent {
       this.emailT = user.email;
      console.log(this.emailT)
      this.isNutri=this.emailT.includes(this.substring);
-      this.pacienteService.emailLoggeado = user.email; 
+      this.pacienteService.emailLoggeado = user.email;
     })
-   
+
   }
 
 
