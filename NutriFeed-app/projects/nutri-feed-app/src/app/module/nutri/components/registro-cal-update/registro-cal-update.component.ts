@@ -4,6 +4,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Horario } from '../../../../models/Horario';
 import { NutriologoService } from '../../../service/nutriologo.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-registro-cal-update',
@@ -38,7 +39,8 @@ export class RegistroCalUpdateComponent implements OnInit {
 
   constructor(
     private formbuild: FormBuilder,
-    private nutriService: NutriologoService
+    private nutriService: NutriologoService,
+    private toastr: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -56,7 +58,16 @@ export class RegistroCalUpdateComponent implements OnInit {
       });
   }
 
+  showToastExito(){
+    this.toastr.success('el paciente', 'Se actualizó con éxito');
+  }
+
+  showToastError(texto1:string, texto2:string){
+    this.toastr.error(texto2, texto1);
+  }
+
   actualizarPacienteHorario() {
+    let actualizar = true;
     if (this.modeloNutriologaHorario.value.nombre != "") {
       this.paciente.nombre = this.modeloNutriologaHorario.value.nombre;
     }
@@ -64,20 +75,47 @@ export class RegistroCalUpdateComponent implements OnInit {
       this.paciente.apellido = this.modeloNutriologaHorario.value.apellido;
     }
     if (this.modeloNutriologaHorario.value.correoUsuario != ""){
-      this.paciente.correoUsuario = this.modeloNutriologaHorario.value.correoUsuario;
+      if (!this.modeloNutriologaHorario.value.correoUsuario.includes('@')) {
+        this.showToastError(
+          'Correo incorrecto',
+          'revisa que sea un correo válido'
+        );
+        actualizar = false;
+      } else {
+        this.paciente.correoUsuario = this.modeloNutriologaHorario.value.correoUsuario;
+      }
     }
     if (this.modeloNutriologaHorario.value.hora != "") {
-      this.paciente.hora = this.modeloNutriologaHorario.value.hora;
+      if (!this.modeloNutriologaHorario.value.hora.includes(':')) {
+        this.showToastError(
+          'Hora incorrecta',
+          'revisa que esté en formato HH:MM'
+        );
+        actualizar = false;
+      } else {
+        this.paciente.hora = this.modeloNutriologaHorario.value.hora;
+      }
     }
     if (this.modeloNutriologaHorario.value.fecha != ""){
-      this.paciente.fecha = this.modeloNutriologaHorario.value.fecha;
+      if (!this.modeloNutriologaHorario.value.fecha.includes('/')) {
+        this.showToastError(
+          'Fecha incorrecta',
+          'revisa que esté en formato DD/MM/AA'
+        );
+        actualizar = false;
+      } else {
+        this.paciente.fecha = this.modeloNutriologaHorario.value.fecha;
+      }
     }
 
     // console.log(this.paciente);
-    this.nutriService.editarPacienteHorario(
-      this.paciente,
-      this.nutriService.id
-    );
-    this.modeloNutriologaHorario.reset();
+    if (actualizar) {
+      this.nutriService.editarPacienteHorario(
+        this.paciente,
+        this.nutriService.id
+      );
+      this.modeloNutriologaHorario.reset();
+      this.showToastExito();
+    }
   }
 }

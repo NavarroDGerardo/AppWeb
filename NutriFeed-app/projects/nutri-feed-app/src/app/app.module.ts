@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { environment as env } from '../environments/environment';
 import { ProfileComponent } from './Components/profile/profile.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -45,17 +46,18 @@ import { ProfileComponent } from './Components/profile/profile.component';
     LandingModule,
     HttpClientModule,
     NgxPaginationModule,
+    ToastrModule.forRoot(),
     AuthModule.forRoot({
       // The domain and clientId were configured in the previous chapter
       domain: 'dev-3hczp56w.us.auth0.com',
       clientId: '5cjNos2ouzDTv2Nx8FAH2fa54hjoR2JF',
-    
+
       // Request this audience at user authentication time
       audience: 'https://dev-3hczp56w.us.auth0.com/api/v2/',
-    
+
       // Request this scope at user authentication time
       scope: 'read:current_user',
-    
+
       // Specify configuration for the interceptor
       httpInterceptor: {
         allowedList: [
@@ -65,7 +67,7 @@ import { ProfileComponent } from './Components/profile/profile.component';
             tokenOptions: {
               // The attached token should target this audience
               audience: 'https://dev-3hczp56w.us.auth0.com/api/v2/',
-    
+
               // The attached token should have these scopes
               scope: 'read:current_user'
             }
@@ -73,7 +75,7 @@ import { ProfileComponent } from './Components/profile/profile.component';
         ]
       }
     }),
-   
+
   ],
   providers: [],
   bootstrap: [AppComponent],

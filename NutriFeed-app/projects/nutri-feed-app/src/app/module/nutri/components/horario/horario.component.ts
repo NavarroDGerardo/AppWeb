@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Horario } from '../../../../models/Horario';
 import { NutriologoService } from '../../../service/nutriologo.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-horario',
@@ -16,7 +17,10 @@ export class HorarioComponent implements OnInit {
   destroy$: Subject<boolean> = new Subject<boolean>();
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  constructor(private nutriService: NutriologoService) {}
+  constructor(
+    private nutriService: NutriologoService,
+    private toastr: ToastrService
+  ) {}
 
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   ngOnInit(): void {
@@ -27,6 +31,10 @@ export class HorarioComponent implements OnInit {
     //   .subscribe((data: any[]) => {
     //     this.pacientes = data;
     //   });
+  }
+
+  showToast(texto1:string, texto2:string){
+    this.toastr.error(texto2, texto1);
   }
 
   getHorarioNutri(){
@@ -52,6 +60,8 @@ export class HorarioComponent implements OnInit {
   eliminar(id: string) {
     console.log('Click eliminar', id);
     this.nutriService.eliminarPacienteHorario(id);
+    this.showToast('Eliminaste al usuario', `con id ${id}`);
+    this.getHorarioNutri();
     this.getHorarioNutri();
   }
 }

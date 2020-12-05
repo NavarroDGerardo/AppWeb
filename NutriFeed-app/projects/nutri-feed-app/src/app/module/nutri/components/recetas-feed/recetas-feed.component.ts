@@ -11,6 +11,11 @@ import { RecetaService } from '../../../service/receta.service';
   styleUrls: ['./recetas-feed.component.scss']
 })
 export class RecetasFeedComponent implements OnInit {
+  nombreReceta = "";
+  IngredienteReceta = "";
+  descripcionReceta = "";
+  imagenReceta = "";
+  
 
   recetas: Receta[] = [];
   recetasFiltro: Receta[] = [];
@@ -39,6 +44,13 @@ export class RecetasFeedComponent implements OnInit {
       });
   }
 
+  viewReceta(nombreReceta: string, IngredienteReceta: string, descripcionReceta: string, imagenReceta: string){
+    this.nombreReceta = nombreReceta;
+    this.IngredienteReceta = IngredienteReceta;
+    this.descripcionReceta = descripcionReceta;
+    this.imagenReceta = imagenReceta;
+  }
+
   editarReceta(id:string){
     console.log('editar', id);
     this.recetaService.id = id;
@@ -63,6 +75,7 @@ export class RecetasFeedComponent implements OnInit {
           this.recetas = data;
         });
     }
+
 
     // this.recetaService
     //   .buscarRecetaNombre(this.modeloBuscar.value.buscar)
