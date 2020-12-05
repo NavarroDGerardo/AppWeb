@@ -73,21 +73,12 @@ function setRoutes(app: Express): void{
   router.route('/addDiario/:id').post(multer.array('files'),pacienteController.insertDiario);
   router.route('/addPacienteFoto').post(multer.single('file'), pacienteController.subirFoto);
 
-
   //calendario
   router.route('/addHorario').post(calendarioController.insert);
   router.route('/showHorario').get(calendarioController.getAll);
   router.route('/deletePacienteHorario/:id').delete(calendarioController.delete);
   router.route('/editPacienteHorario/:id').post(calendarioController.update);
   router.route('/getPacienteHorario/:id').get(calendarioController.get);
-  //ejemplos
-  // router.route('/alumno/:id').get(alumnoController.get);
-  // router.route('/alumno/:id').put(alumnoController.update);
-  // router.route('/alumno/:id').delete(alumnoController.delete);
-  // router.route("/addUser").get(alumnoController.getAll); //recurso /api/alumno
-  // router.route('/alumnos/count').get(alumnoController.count);
-
-  //app.use(jwtCheck);
 
   app.use('/api', router); //baseUri
 }
