@@ -33,8 +33,6 @@ export class RegistroNutriComponent implements OnInit {
   }
 
   registrarPacienteHorario() {
-    console.log(this.modeloNutriologaHorario.value.correoUsuario.includes('@'));
-
     console.log(this.modeloNutriologaHorario.value);
     if (this.modeloNutriologaHorario.value.nombre == '') {
       this.showToastError('Nombre incorrecto', 'el nombre no puede ser vacío');
