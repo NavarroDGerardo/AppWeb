@@ -10,57 +10,63 @@
             <form [formGroup]="modeloPaciente" (ngSubmit)="registarPacienteNuevo()">
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputNombre" i18n="NombreRegistroPacienteDescripcion">Nombre</label>
-                    <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="Nombre" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
+                    <label for="inputNombre" i18n="NombreRegistroPacienteDescripcion">{{ 'Nombre'  | translate }}</label>
+                    <input type="nombre" formControlName="nombre" class="form-control" id="inputNombre" placeholder="{{ 'Nombre'  | translate }}" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNombre">Apellido</label>
-                    <input type="nombre" formControlName="apellido" class="form-control" id="inputNombre" placeholder="Apellido" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
+                    <label for="inputNombre">{{ 'Apellido'  | translate }}</label>
+                    <input type="nombre" formControlName="apellido" class="form-control" id="inputNombre" placeholder="{{ 'Apellido'  | translate }}" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNombre">Estado</label><br>
+                    <label for="inputNombre">{{ 'Estado'  | translate }}</label><br>
                     <select name="tipo" formControlName="estado" id="tipo" class="tipo" (change)="selectChange($event)">
-                      <option value="">Selecciona</option>
+                      <option value="">{{ 'Seleccion'  | translate }}</option>
                       <option value="{{ 'Desnutricion'  | translate }}">{{ 'Desnutricion'  | translate }}</option>
                       <option value="{{ 'PesoNormal'  | translate }}">{{ 'PesoNormal'  | translate }}</option>
                       <option value="{{ 'SobrePesoUno'  | translate }}">{{ 'SobrePesoUno'  | translate }}</option>
                       <option value="{{ 'SobrePesoDos'  | translate }}">{{ 'SobrePesoDos'  | translate }}</option>
                     </select>
                   </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputNombre">{{ 'Idioma'  | translate }}</label><br>
+                    <select #langSelect (change)="changeLang(langSelect.value)">
+                      <option *ngFor="let lang of langs" [value]="lang">{{lang}}</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="inputEmail4" i18n="MailRegistroPacienteDescripcion">Email</label>
-                  <input type="email" formControlName="correo"  class="form-control" id="inputCorreo" placeholder="Correo electrónico" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
+                  <label for="inputEmail4" i18n="MailRegistroPacienteDescripcion">{{ 'Correo'  | translate }}</label>
+                  <input type="email" formControlName="correo"  class="form-control" id="inputCorreo" placeholder="{{ 'Correo'  | translate }}" i18n-placeholder="AgregarMailRegistroNutri_Nutri_placeholder">
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Edad</label>
-                    <input type="text" formControlName="edad" class="form-control" placeholder="Edad" id="inputEdad">
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">{{ 'Edad'  | translate }}</label>
+                    <input type="text" formControlName="edad" class="form-control" placeholder="{{ 'Edad'  | translate }}" id="inputEdad">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Ciudad</label>
-                    <input type="text" formControlName="ciudad" class="form-control"  placeholder="Ciudad" id="inputCiudad">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Altura</label>
-                    <input type="text" formControlName="altura" class="form-control" placeholder="Altura" id="inputEdad">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">Peso actual</label>
-                    <input type="text" formControlName="peso" class="form-control"  placeholder="Peso actual" id="inputCiudad">
+                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">{{ 'Ciudad'  | translate }}</label>
+                    <input type="text" formControlName="ciudad" class="form-control"  placeholder="{{ 'Ciudad'  | translate }}" id="inputCiudad">
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Foto de Perfil</label><br>
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">{{ 'Altura'  | translate }}</label>
+                    <input type="text" formControlName="altura" class="form-control" placeholder="{{ 'Altura'  | translate }}" id="inputEdad">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputNutri" i18n="NutriRegistroPacienteDescripcion">{{ 'PesoActual'  | translate }}</label>
+                    <input type="text" formControlName="peso" class="form-control"  placeholder="{{ 'PesoActual'  | translate }}" id="inputCiudad">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">{{ 'FotoPerfil'  | translate }}</label><br>
                     <input type="file" formControlName="file" (change)="onFileSelected($event)">
                   </div>
                   <div class="form-group col-md-6">
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary" i18n="BotonRegistrarPaciente">Registrar</button>
+                <button type="submit" class="btn btn-primary" i18n="BotonRegistrarPaciente">{{ 'Registrar'  | translate }}</button>
               </form>
           </div>
 

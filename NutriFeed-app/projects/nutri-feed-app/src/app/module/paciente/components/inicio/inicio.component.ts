@@ -110,6 +110,7 @@ export class InicioComponent implements OnInit {
       this.modeloDiario.reset();
       this.getAllDiario();
       this.getAllDiario();
+      this.getAllDiario();
       this.showToastExito();
     }
   }

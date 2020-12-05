@@ -2,5 +2,17 @@
     "Desnutricion": "Desnutrición",
     "PesoNormal": "Peso normal",
     "SobrePesoUno": "Sobrepeso grado I",
-    "SobrePesoDos": "Sobrepeso grado II"
+    "SobrePesoDos": "Sobrepeso grado II",
+    "Nombre": "Nombre",
+    "Apellido": "Apellido",
+    "Estado": "Estado",
+    "Correo": "Correo Electronico",
+    "Edad": "Edad",
+    "Ciudad": "Ciudad",
+    "Altura": "Altura",
+    "PesoActual": "Peso Actual",
+    "FotoPerfil": "Foto perfil",
+    "Registrar": "Registrar",
+    "Seleccion": "Selecciona",
+    "Idioma": "Idioma del formulario"
 }

@@ -2,5 +2,17 @@
     "Desnutricion": "malnutrition",
     "PesoNormal": "normal weight",
     "SobrePesoUno": "Grade I overweight",
-    "SobrePesoDos": "Grade II overweight"
+    "SobrePesoDos": "Grade II overweight",
+    "Nombre": "Name",
+    "Apellido": "Lastname",
+    "Estado": "Status",
+    "Correo": "Email",
+    "Edad": "Age",
+    "Ciudad": "City",
+    "Altura": "Height",
+    "PesoActual": "Current Weight",
+    "FotoPerfil": "Profile pic",
+    "Registrar": "Submit",
+    "Seleccion": "Selection",
+    "Idioma": "forms language"
 }

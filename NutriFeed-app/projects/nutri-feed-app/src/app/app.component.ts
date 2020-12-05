@@ -20,7 +20,7 @@ export class AppComponent {
   
   constructor(public auth: AuthService, private pacienteService: PacienteService, translate: TranslateService) { 
     translate.setDefaultLang('es');
-    translate.use('es');
+    translate.use('en');
   }  
    
   loggedIn = true;

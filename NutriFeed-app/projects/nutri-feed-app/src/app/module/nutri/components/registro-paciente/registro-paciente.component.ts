@@ -11,6 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./registro-paciente.component.scss'],
 })
 export class RegistroPacienteComponent implements OnInit {
+  langs: string[] =['es', 'en'];
   selectedFile!: File;
 
   nombre = "";
@@ -40,6 +41,8 @@ export class RegistroPacienteComponent implements OnInit {
     private toastr: ToastrService,
     private translate: TranslateService
   ) {}
+
+  changeLang(lang: string){ this.translate.use(lang); }
 
   ngOnInit(): void {}
 
