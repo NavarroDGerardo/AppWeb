@@ -196,6 +196,34 @@ a.semana {
 	margin-top: $size-20;
 }
 
+.upload-container{
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+		text-align: center;
+	}
+	h3{
+		font-size: 15px;
+	}
+}
+#myFile{
+	margin-bottom: 10px;
+}
+.titulo{
+	text-align: center;
+	border-bottom: 0.1px solid grey;
+	color: black;
+	margin-bottom: 15px;
+}
+.desc{
+	margin-bottom: 10px;
+	width: 100%;
+}
+.submit-comida{
+	margin-top: 10px;
+}
 /*
  _________________________
  |						|

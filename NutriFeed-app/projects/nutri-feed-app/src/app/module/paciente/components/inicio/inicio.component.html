@@ -197,21 +197,26 @@ aria-hidden="true">
          <div class="row row-carousel">
            <div class="col col-upload">
              <!--Botones subir foto-->
-           <div class="upload-container">
-            <h1>Ingresar día en el Diario</h1>
-            <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
-              <input type="file" id="myFile" name="filename" (change)="onSelectedDesayuno($event)" formControlName='imgDesayuno' required>
-              <br><input type="file" id="myFile" name="filename" (change)="onSelectedComida($event)" formControlName='imgComida' required>
-              <br><input type="file" id="myFile" name="filename" (change)="onSelectedCena($event)" formControlName='imgCena'required>
-              <h3>Desayuno:</h3>
-              <input type="text" formControlName="desayuno" required/>
-              <h3>Comida:</h3>
-              <input type="text" formControlName="comida" required/>
-              <h3>Cena:</h3>
-              <input type="text" formControlName="cena" required/>
-              <br><input type="submit">
-            </form>
-           </div>
+            <div class="upload-container">
+              <div class="titulo">
+                <h1>Ingresar día en el Diario</h1>
+              </div>
+              <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
+                <div class="archivos">
+                  <h2>¡Sube las fotografías de tus comidas!</h2>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedDesayuno($event)" formControlName='imgDesayuno' required><br>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedComida($event)" formControlName='imgComida' required><br>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedCena($event)" formControlName='imgCena'required>
+                </div>
+                <h3>Desayuno:</h3>
+                <input type="text" formControlName="desayuno"  class="desc" required/>
+                <h3>Comida:</h3>
+                <input type="text" formControlName="comida" class="desc" required/>
+                <h3>Cena:</h3>
+                <input type="text" formControlName="cena" class="desc" required/>
+                <br><input type="submit" class="submit-comida btn btn-success">
+              </form>
+            </div>
           </div>
            </div>
          </div>
