@@ -18,8 +18,15 @@
                     <input type="nombre" formControlName="apellido" class="form-control" id="inputNombre" placeholder="Apellido" i18n-placeholder="AgregarNombreRegistroPaciente_Nutri_placeholder">
                   </div>
                   <div class="form-group col-md-6">
-                    <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Estado</label>
-                    <input type="text" formControlName="estado" class="form-control" placeholder="Estado" id="inputEstado">
+                    <select name="tipo" id="tipo" class="tipo" (change)="selectChange($event)">
+                      <option value="">Selecciona</option>
+                      <option value="desnutricion">Desnutrición</option>
+                      <option value="normal">Peso normal</option>
+                      <option value="sobrepeso1">Sobrepeso grado I</option>
+                      <option value="sobrepeso2">Sobrepeso grado II</option>
+                    </select>
+                    <!-- <label for="inputEstado" i18n="EstadoRegistroPacienteDescripcion">Estado</label>  -->
+                    <!-- <input type="text" formControlName="estado" class="form-control" placeholder="Estado" id="inputEstado"> -->
                   </div>
                 </div>
                 <div class="form-group">
