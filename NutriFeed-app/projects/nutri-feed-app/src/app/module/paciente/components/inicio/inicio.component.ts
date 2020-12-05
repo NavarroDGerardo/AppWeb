@@ -6,6 +6,9 @@ import { takeUntil } from 'rxjs/operators';
 import { PacienteService } from '../../../service/paciente.service';
 import { Diario } from 'projects/nutri-feed-app/src/app/models/Diario';
 import { ToastrService } from 'ngx-toastr';
+import { AuthService } from "@auth0/auth0-angular";
+import { DOCUMENT } from "@angular/common";
+import { Inject } from '@angular/core'; 
 
 @Component({
   selector: 'app-inicio',
@@ -35,7 +38,8 @@ export class InicioComponent implements OnInit {
     private formBuild: FormBuilder,
     private diarioS: DiarioService,
     private pacienteService: PacienteService,
-    private toastr : ToastrService
+    private toastr : ToastrService,
+    private auth:AuthService,@Inject(DOCUMENT)private doc: Document
   ) {}
 
   showToastExito(){this.toastr.success('el diario', 'se guardo correctamente')}
@@ -125,4 +129,8 @@ export class InicioComponent implements OnInit {
     this.dComida = dComida;
     this.dCena = dCena;
   }
+  logout(): void {
+    this.auth.logout({returnTo: this.doc.location.origin})
+  }
+
 }
