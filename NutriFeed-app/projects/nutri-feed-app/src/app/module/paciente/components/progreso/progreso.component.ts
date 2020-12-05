@@ -10,7 +10,9 @@ import { PacienteService } from '../../../service/paciente.service';
 import { Paciente } from '../../../../models/Paciente';
 import { Progreso } from '../../../../models/Progreso';
 import { takeUntil } from 'rxjs/operators';
-import { Subject } from 'rxjs';
+import { from, Subject } from 'rxjs';
+import { ToastrService } from 'ngx-toastr';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-progreso',
@@ -46,8 +48,12 @@ export class ProgresoComponent implements OnInit {
   constructor(
     private formBuild: FormBuilder,
     private progresoService: ProgresoService,
-    private pacienteService: PacienteService
+    private pacienteService: PacienteService,
+    private toastrService: ToastrService
   ) {}
+
+  showToastExito(){ this.toastrService.success('el progreso', 'se registro correctamente'); }
+  showToastError(text1:string, texto2:string){this.toastrService.error(texto2, text1);}
 
   ngOnInit(): void {
     this.getInfoPaciente();
@@ -67,15 +73,31 @@ export class ProgresoComponent implements OnInit {
 
   registrarProgreso() {
     // console.log(this.modeloProgreso.value);
-    this.progresoService.registrarProgreso(
-      '5fc53fb84eb8c56e983df1cf',
-      this.modeloProgreso.value
-    );
-    this.modeloProgreso.reset();
-    this.getInfoPaciente();
-    this.imcV.push(this.modeloProgreso.value.imc);
-    this.fechaV.push(this.modeloProgreso.value.fecha);
-    this.pesoV.push(this.modeloProgreso.value.peso);
+    let canSubmit = true;
+
+    if(this.modeloProgreso.value.imc == ""){
+      this.showToastError('IMC', 'por favor ingresar datos validos');
+      canSubmit = false;
+    }else if(isNaN(this.modeloProgreso.value.imc)){
+        this.showToastError('IMC', 'por favor ingresar datos validos');
+        canSubmit = false;
+    }
+    if(this.modeloProgreso.value.peso == ""){
+        this.showToastError('Peso', 'por favor ingresar datos validos');
+        canSubmit = false;
+    }else if(isNaN(this.modeloProgreso.value.peso)){
+        this.showToastError('Peso', 'por favor ingresar datos validos');
+        canSubmit = false;
+    }
+    if(canSubmit){
+      this.progresoService.registrarProgreso('5fc53fb84eb8c56e983df1cf', this.modeloProgreso.value);
+      this.modeloProgreso.reset();
+      this.getInfoPaciente();
+      this.imcV.push(this.modeloProgreso.value.imc);
+      this.fechaV.push(this.modeloProgreso.value.fecha);
+      this.pesoV.push(this.modeloProgreso.value.peso);
+      this.showToastExito();
+    }
   }
 
   obtenerValores() {

@@ -5,6 +5,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { PacienteService } from '../../../service/paciente.service';
 import { Diario } from 'projects/nutri-feed-app/src/app/models/Diario';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-inicio',
@@ -33,8 +34,15 @@ export class InicioComponent implements OnInit {
   constructor(
     private formBuild: FormBuilder,
     private diarioS: DiarioService,
-    private pacienteService: PacienteService
+    private pacienteService: PacienteService,
+    private toastr : ToastrService
   ) {}
+
+  showToastExito(){this.toastr.success('el diario', 'se guardo correctamente')}
+
+  showToast(text1: string, text2: string){
+    this.toastr.error(text2, text1); 
+  }
 
   ngOnInit(): void {
     this.pacienteService
@@ -57,16 +65,43 @@ export class InicioComponent implements OnInit {
   }
 
   registrarDiario() {
-    //console.log(this.modeloDiario.value);
-    const fd = new FormData();
-    fd.append('files', this.selectedFileDesayuno);
-    fd.append('files', this.selectedFileComida);
-    fd.append('files', this.selectedFileCena);
-    fd.append('descripcion_desayuno', this.modeloDiario.value.desayuno);
-    fd.append('descripcion_comida', this.modeloDiario.value.comida);
-    fd.append('descripcion_cena', this.modeloDiario.value.cena);
-    this.diarioS.registarDiario("5fc53fb84eb8c56e983df1cf", fd);
-    this.modeloDiario.reset();
+    let registrar = true;
+    if(this.selectedFileDesayuno == null){
+      this.showToast('ingresa una imagen', 'para desayuno');
+      registrar = false;
+    }
+    if(this.selectedFileComida == null){
+      this.showToast('ingresa una imagen', 'para comida');
+      registrar = false;
+    }
+    if(this.selectedFileCena == null){
+      this.showToast('ingresa una imagen', 'para cena');
+      registrar = false;
+    }
+    if(this.modeloDiario.value.desayuno == ""){
+      this.showToast('ingresa una descripcion', 'para desayuno');
+      registrar = false;
+    }
+    if(this.modeloDiario.value.comida == ""){
+      this.showToast('ingresa una descripcion', 'para comida');
+      registrar = false;
+    }
+    if(this.modeloDiario.value.cena == ""){
+      this.showToast('ingresa una descripcion', 'para cena');
+      registrar = false;
+    }
+    if(registrar){
+      const fd = new FormData();
+      fd.append('files', this.selectedFileDesayuno);
+      fd.append('files', this.selectedFileComida);
+      fd.append('files', this.selectedFileCena);
+      fd.append('descripcion_desayuno', this.modeloDiario.value.desayuno);
+      fd.append('descripcion_comida', this.modeloDiario.value.comida);
+      fd.append('descripcion_cena', this.modeloDiario.value.cena);
+      this.diarioS.registarDiario("5fc53fb84eb8c56e983df1cf", fd);
+      this.modeloDiario.reset();
+      this.showToastExito();
+    }
   }
 
   iDesa = "";
