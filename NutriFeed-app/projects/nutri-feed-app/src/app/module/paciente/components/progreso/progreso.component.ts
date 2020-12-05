@@ -42,7 +42,7 @@ export class ProgresoComponent implements OnInit {
   modeloProgreso = this.formBuild.group({
     imc: ['', Validators.required],
     peso: ['', Validators.required],
-    fecha: `${this.dia}/${this.mes}/${this.anio}`,
+    fecha: ['', Validators.required],
   });
 
   constructor(
@@ -60,6 +60,14 @@ export class ProgresoComponent implements OnInit {
   }
 
   id_paciente = "";
+  formatDate(date: Date){
+    let month = String(date.getMonth() + 1);
+    let day = String(date.getDate());
+    const year = String(date.getFullYear());
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+    return `${day}/${month}/${year}`;
+  }
 
   getInfoPaciente(){
     this.pacienteService.getPacienteCorreo().pipe(takeUntil(this.destroy$)).subscribe((data: any[]) => {
@@ -74,6 +82,8 @@ export class ProgresoComponent implements OnInit {
   registrarProgreso() {
     // console.log(this.modeloProgreso.value);
     let canSubmit = true;
+    const fechaS = new Date();
+    this.modeloProgreso.value.fecha = this.formatDate(fechaS);
 
     if(this.modeloProgreso.value.imc == ""){
       this.showToastError('IMC', 'por favor ingresar datos validos');

@@ -18,7 +18,7 @@ export class RegistroRecetasComponent implements OnInit {
     tipo: ['', Validators.required],
     ingrediente: ['', Validators.required],
     hashtags: ['', Validators.required],
-    // fecha: '',
+    fecha: ['', Validators.required],
   });
 
   constructor(
@@ -32,14 +32,27 @@ export class RegistroRecetasComponent implements OnInit {
     this.selectedFile = <File>event.target.files[0];
   }
 
+  formatDate(date: Date){
+    let month = String(date.getMonth() + 1);
+    let day = String(date.getDate());
+    const year = String(date.getFullYear());
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+    return `${day}/${month}/${year}`;
+  }
+
   registrarReceta() {
+    const fechaS = new Date();
+    this.modeloReceta.value.fecha = this.formatDate(fechaS);
+
     const fd = new FormData();
     fd.append('file', this.selectedFile);
     fd.append('nombre', this.modeloReceta.value.nombre);
     fd.append('descripcion', this.modeloReceta.value.descripcion);
     fd.append('tipo', this.modeloReceta.value.tipo);
     fd.append('ingrediente', this.modeloReceta.value.ingrediente);
-    fd.append('hashtags', this.modeloReceta.value.hashtag);
+    fd.append('hashtags', this.modeloReceta.value.hashtags);
+    fd.append('fecha', this.modeloReceta.value.fecha);
     this.recetaService.insertarReceta(fd);
     this.modeloReceta.reset();
   }

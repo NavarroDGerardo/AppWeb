@@ -4,6 +4,7 @@ import { animacionesAplicacion } from './Animaciones';
 import { AuthService } from '@auth0/auth0-angular';
 import { PacienteService } from '../app/module/service/paciente.service';
 import { TranslateService } from '@ngx-translate/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-root',
@@ -12,21 +13,23 @@ import { TranslateService } from '@ngx-translate/core';
   animations: [animacionesAplicacion],
 })
 export class AppComponent {
+  langs: string[] = [];
   title = 'nutriFeed-app';
-  
+
   isLanding= false;
   
   constructor(public auth: AuthService, private pacienteService: PacienteService, translate: TranslateService) { 
     translate.setDefaultLang('es');
     translate.use('es');
   }
+
   
    
   loggedIn = true;
   user: string= "";
    emailT = "";
    substring = "@admin.com";
-   
+
    isPaciente = false;
    isNutri=false;
 
@@ -38,9 +41,9 @@ export class AppComponent {
       this.emailT = user.email;
      console.log(this.emailT)
      this.isNutri=this.emailT.includes(this.substring);
-      this.pacienteService.emailLoggeado = user.email; 
+      this.pacienteService.emailLoggeado = user.email;
     })
-   
+
   }
 
 

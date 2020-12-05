@@ -3,6 +3,7 @@ import { FormBuilder, Validator, FormArray, Validators } from '@angular/forms';
 import { PacienteService } from '../../../service/paciente.service';
 import { Paciente } from '../../../../models/Paciente';
 import { ToastrService } from 'ngx-toastr';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-registro-paciente',
@@ -20,6 +21,8 @@ export class RegistroPacienteComponent implements OnInit {
   altura = "";
   peso_actual = "";
 
+  seleccionEstado = '';
+
   modeloPaciente = this.formbuild.group({
     nombre: ['', Validators.required],
     apellido: ['', Validators.required],
@@ -34,7 +37,8 @@ export class RegistroPacienteComponent implements OnInit {
   constructor(
     private formbuild: FormBuilder,
     private pacienteService: PacienteService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private translate: TranslateService
   ) {}
 
   ngOnInit(): void {}
@@ -81,6 +85,7 @@ export class RegistroPacienteComponent implements OnInit {
         'revisa que sea un correo válido'
       );
     } else {
+      this.modeloPaciente.value.estado = this.seleccionEstado
       const fd = new FormData();
       fd.append('file', this.selectedFile);
       fd.append('nombre', this.modeloPaciente.value.nombre);
@@ -94,5 +99,9 @@ export class RegistroPacienteComponent implements OnInit {
       this.modeloPaciente.reset();
       this.showToastExito();
     }
+  }
+
+  selectChange(event: any){
+    this.seleccionEstado = event.target.value;
   }
 }

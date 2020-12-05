@@ -20,6 +20,7 @@ import { RegistroCalUpdateComponent } from './components/registro-cal-update/reg
 import { RecetasFeedComponent } from './components/recetas-feed/recetas-feed.component';
 import { UpdateInfoPacienteComponent } from './components/update-info-paciente/update-info-paciente.component';
 import { RecetaUpdateComponent } from './components/receta-update/receta-update.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,6 @@ import { RecetaUpdateComponent } from './components/receta-update/receta-update.
     UpdateInfoPacienteComponent,
     RecetaUpdateComponent
   ],
-  imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule, NgxPaginationModule],
+  imports: [CommonModule, NutriRoutingModule, ReactiveFormsModule, NgxPaginationModule, TranslateModule],
 })
 export class NutriModule {}
