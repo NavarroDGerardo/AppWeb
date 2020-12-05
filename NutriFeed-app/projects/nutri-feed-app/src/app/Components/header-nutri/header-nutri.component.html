@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
     <!-- Brand/logo -->
+    
     <a class="navbar-brand" routerLink="/nutri/horario"><img src="../../../../../assets/img/logo-prov.png" width="48" height="48" alt="logo"></a>
-
+  
     <!--
     <div class="mensajeEngrane" [@childAnimation]="estilo ? 'closed' : 'open'">
       <p>El engrane estara disponible en proximas actualizaciones</p>
@@ -16,11 +17,12 @@
             <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
         </svg>
       </li>
-      <li class="nav-item">
+      <li class="nav-item"  routerLinkActive="selected">
           <a class="nav-link" routerLink="/nutri/pacientes"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-people-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
           </svg></a>
       </li>
+
       <li class="nav-item">
         <a class="nav-link" routerLink="/nutri/recetas-feed"><svg width="1.4em" height="1.4em" viewBox="0 0 16 16" class="bi bi-journals" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2z"/>
@@ -33,7 +35,10 @@
           <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
         </svg></a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" routerLinkActive="selected">
       <a routerLink="/nutri/horario"><span class="mini-profilepic" role="link" tabindex="0" style="width: 40px; height: 40px;"><img alt="Foto del perfil" class="image-profile" data-testid="user-avatar" draggable="false" src="../../../../../assets/img/profilepic.jpg"></span></a>
     </ul>
   </nav>
+
+  
+

@@ -1,18 +1,26 @@
 
 
-<div *ngIf="isLanding">
-    <app-header></app-header>
-</div>
-<div *ngIf="isPaciente">
-  <!-- <div *ngIf="(auth.isAuthenticated$ | async) === false; else elseBlock"> -->
+<!-- <div *ngIf="isPaciente">
+
  <app-header-paciente></app-header-paciente>
+
+</div> -->
+
+<div *ngIf="(auth.isAuthenticated$ | async) === false; else elseBlock"> 
+<!-- <div *ngIf="isNutri"> -->
+  <app-header></app-header>
 <!-- </div> -->
-</div>
-<div *ngIf="isNutri">
-<!-- <ng-template #elseBlock> -->
-  <app-header-nutri></app-header-nutri>
-<!-- </ng-template> -->
-</div>
+</div> 
+
+<ng-template #elseBlock> 
+  <div *ngIf="isNutri;  else elseBlock">
+    <app-header-nutri></app-header-nutri>
+  </div>
+  <ng-template #elseBlock> 
+    <app-header-paciente></app-header-paciente>
+  </ng-template>
+   
+  </ng-template>
 
 <div [@routeAnimations]="prepareRoute(outlet)">
   <router-outlet #outlet="outlet"></router-outlet>

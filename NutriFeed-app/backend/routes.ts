@@ -37,15 +37,15 @@ function setRoutes(app: Express): void{
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   let jwtCheck = jwt({
     secret: jwks.expressJwtSecret({
-      cache: true,
-      rateLimit: true,
-      jwksRequestsPerMinute: 5,
-      jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
-    }),
-    audience: 'http://localhost:3000/',
-    issuer: 'https://dev-3hczp56w.us.auth0.com/',
-    algorithms: ['RS256'],
-  });
+        cache: true,
+        rateLimit: true,
+        jwksRequestsPerMinute: 5,
+        jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
+  }),
+  aud: 'http://localhost:3000/api',
+  algorithms: ['RS256']
+});
+
 
   router.route('/addUser').post(usuarioController.insert);
 
@@ -79,6 +79,16 @@ function setRoutes(app: Express): void{
   router.route('/deletePacienteHorario/:id').delete(calendarioController.delete);
   router.route('/editPacienteHorario/:id').post(calendarioController.update);
   router.route('/getPacienteHorario/:id').get(calendarioController.get);
+
+  //ejemplos
+  // router.route('/alumno/:id').get(alumnoController.get);
+  // router.route('/alumno/:id').put(alumnoController.update);
+  // router.route('/alumno/:id').delete(alumnoController.delete);
+  // router.route("/addUser").get(alumnoController.getAll); //recurso /api/alumno
+  // router.route('/alumnos/count').get(alumnoController.count);
+
+  app.use(jwtCheck);
+
 
   app.use('/api', router); //baseUri
 }
