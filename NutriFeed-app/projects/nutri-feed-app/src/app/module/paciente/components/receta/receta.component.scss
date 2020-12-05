@@ -204,13 +204,13 @@ button {
  -------------------------
  */
 @media (max-width: 767.98px) {
-	.col-tarjetas {
+	/*.col-tarjetas {
 		margin-top: $size-60;
 	}
 	.search-area {
 		position: relative;
 		bottom: 1410%;
-	}
+	}*/
 	.instagram-post {
 		height: 600px;
 		width: auto;
@@ -247,7 +247,7 @@ button {
 	}
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-	.search-area {
+	/*.search-area {
 		position: $relative;
 		left: 228%;
 		margin-top: $size-20;
@@ -266,7 +266,7 @@ button {
 	.col-md-4 {
 		position: $relative;
 		right: 40%;
-	}
+	}*/
 	.image-receta {
 		text-align: $center;
 		img {

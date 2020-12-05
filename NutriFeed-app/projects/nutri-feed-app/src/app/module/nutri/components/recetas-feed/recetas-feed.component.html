@@ -55,7 +55,7 @@
                 <!-- Area de Search bar -->
                 <div class="col-md-4">
                     <div class="search-area">
-                    <form [formGroup]="modeloBuscar" (ngSubmit)="buscarIngrediente()">
+                    <form [formGroup]="modeloBuscar" (ngSubmit)="buscar()">
                         <div class="p-1 bg-light rounded  shadow-sm mb-4">
                             <div class="input-group">
                               <div class="input-group-prepend">
@@ -67,9 +67,18 @@
                                 </button>
                               </div>
                               <input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light" formControlName="buscar">
+                              <select name="tipo" id="tipo" class="tipo" (change)="selectChange($event)">
+                                <option value="">Selecciona</option>
+                                <option value="nombre">Nombre</option>
+                                <option value="hashtag">Hashtags</option>
+                                <option value="ingrediente">Ingrediente</option>
+                              </select>
                             </div>
+
                           </div>
+
                     </form>
+
                 </div>
                 <div class="AgregarReceta">
                 <a routerLink="/nutri/registro-recetas" class="btn btn-primary addReceta">Agregar Receta</a>

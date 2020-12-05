@@ -15,7 +15,8 @@ export class RecetasFeedComponent implements OnInit {
   IngredienteReceta = "";
   descripcionReceta = "";
   imagenReceta = "";
-  
+
+  selection = '';
 
   recetas: Receta[] = [];
   recetasFiltro: Receta[] = [];
@@ -62,11 +63,31 @@ export class RecetasFeedComponent implements OnInit {
     this.getAllRecetas();
   }
 
-  buscarIngrediente(){
+  buscar() {
     // console.log('ingrediente', this.modeloBuscar.value);
-    if (this.modeloBuscar.value.buscar == '') {
-      this.getAllRecetas();
-    } else {
+
+    console.log('selection', this.selection);
+    if (this.selection == 'nombre' && this.modeloBuscar.value.buscar != '') {
+      this.recetaService
+        .buscarRecetaNombre(this.modeloBuscar.value.buscar)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe((data: any[]) => {
+          this.recetas = data;
+        });
+    } else if (
+      this.selection == 'hashtag' &&
+      this.modeloBuscar.value.buscar != ''
+    ) {
+      this.recetaService
+        .buscarRecetaHashtag(this.modeloBuscar.value.buscar)
+        .pipe(takeUntil(this.destroy$))
+        .subscribe((data: any[]) => {
+          this.recetas = data;
+        });
+    } else if (
+      this.selection == 'ingrediente' &&
+      this.modeloBuscar.value.buscar != ''
+    ) {
       this.recetaService
         .buscarRecetaIngrediente(this.modeloBuscar.value.buscar)
         .pipe(takeUntil(this.destroy$))
@@ -74,21 +95,12 @@ export class RecetasFeedComponent implements OnInit {
           // console.log('la data', data);
           this.recetas = data;
         });
+    } else {
+      this.getAllRecetas();
     }
+  }
 
-
-    // this.recetaService
-    //   .buscarRecetaNombre(this.modeloBuscar.value.buscar)
-    //   .pipe(takeUntil(this.destroy$))
-    //   .subscribe((data: any[]) => {
-    //     this.recetas = data;
-    //   });
-
-    // this.recetaService
-    //   .buscarRecetaHashtag(this.modeloBuscar.value.buscar)
-    //   .pipe(takeUntil(this.destroy$))
-    //   .subscribe((data: any[]) => {
-    //     this.recetas = data;
-    //   });
+  selectChange(event: any){
+    this.selection = event.target.value;
   }
 }
