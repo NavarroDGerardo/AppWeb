@@ -11,6 +11,11 @@ import { RecetaService } from '../../../service/receta.service';
   styleUrls: ['./receta.component.scss'],
 })
 export class RecetaComponent implements OnInit {
+  nombreReceta = "";
+  IngredienteReceta = "";
+  descripcionReceta = "";
+  imagenReceta = "";
+
   recetas: Receta[] = [];
   selection = '';
 
@@ -75,5 +80,12 @@ export class RecetaComponent implements OnInit {
 
   selectChange(event: any){
     this.selection = event.target.value;
+  }
+
+  viewReceta(nombreReceta: string, IngredienteReceta: string, descripcionReceta: string, imagenReceta: string){
+    this.nombreReceta = nombreReceta;
+    this.IngredienteReceta = IngredienteReceta;
+    this.descripcionReceta = descripcionReceta;
+    this.imagenReceta = imagenReceta;
   }
 }

@@ -44,14 +44,18 @@ export class InicioComponent implements OnInit {
     this.toastr.error(text2, text1); 
   }
 
+  id_paciente = "";
+
   ngOnInit(): void {
-    this.pacienteService
-      .getPaciente("5fc53fb84eb8c56e983df1cf")
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((data: any[]) => {
-        this.paciente = data;
-        this.diario = data["diario"];
-      });
+    this.getAllDiario();
+  }
+
+  getAllDiario(){
+    this.pacienteService.getPacienteCorreo().pipe(takeUntil(this.destroy$)).subscribe((data: any[]) => {
+      this.paciente = data;
+      this.diario = data["diario"];
+      this.id_paciente = data["_id"];
+    });
   }
 
   onSelectedDesayuno(event: any){
@@ -98,8 +102,10 @@ export class InicioComponent implements OnInit {
       fd.append('descripcion_desayuno', this.modeloDiario.value.desayuno);
       fd.append('descripcion_comida', this.modeloDiario.value.comida);
       fd.append('descripcion_cena', this.modeloDiario.value.cena);
-      this.diarioS.registarDiario("5fc53fb84eb8c56e983df1cf", fd);
+      this.diarioS.registarDiario(this.id_paciente, fd);
       this.modeloDiario.reset();
+      this.getAllDiario();
+      this.getAllDiario();
       this.showToastExito();
     }
   }

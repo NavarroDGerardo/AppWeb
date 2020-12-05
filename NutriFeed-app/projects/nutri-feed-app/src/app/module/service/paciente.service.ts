@@ -21,11 +21,13 @@ export class PacienteService {
   endPointEdit = 'http://localhost:3000/api/editePaciente';
   endPointBuscarNom = 'http://localhost:3000/api/getPacienteNombre';
   endPointBuscarApe = 'http://localhost:3000/api/getPacienteApellido';
+  endPointGetByEmial = 'http://localhost:3000/api/getPacienteByEmail';
 
   status: any;
   errorMessage: any;
 
   id:any;
+  emailLoggeado: any;
 
   constructor(private http: HttpClient) {}
 
@@ -63,6 +65,12 @@ export class PacienteService {
   getPacienteApellido(buscar: string) {
     return this.http
       .get<Paciente[]>(this.endPointBuscarApe + '/' + buscar)
+      .pipe(retry(3), catchError(this.handleError));
+  }
+
+  getPacienteCorreo() {
+    return this.http
+      .get<Paciente[]>(this.endPointGetByEmial + '/' + this.emailLoggeado)
       .pipe(retry(3), catchError(this.handleError));
   }
 

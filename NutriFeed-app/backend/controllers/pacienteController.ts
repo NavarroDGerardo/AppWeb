@@ -128,6 +128,15 @@ class PacienteController{
     }
   }
 
+  getByEmail = async (req, res) => {
+    try {
+      const obj = await Paciente.findOne({ correo: req.params.correo });
+      res.status(200).json(obj);
+    } catch (err) {
+      return res.status(500).json({ error: err.message });
+    }
+  }
+
   // Update by id
   update = async (req, res) => {
     try {

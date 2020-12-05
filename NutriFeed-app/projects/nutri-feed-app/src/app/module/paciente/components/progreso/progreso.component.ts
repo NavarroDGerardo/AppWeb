@@ -59,11 +59,11 @@ export class ProgresoComponent implements OnInit {
     this.getInfoPaciente();
   }
 
+  id_paciente = "";
+
   getInfoPaciente(){
-    this.pacienteService
-      .getPaciente("5fc53fb84eb8c56e983df1cf")
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((data: any[]) => {
+    this.pacienteService.getPacienteCorreo().pipe(takeUntil(this.destroy$)).subscribe((data: any[]) => {
+        this.id_paciente = data["_id"];
         this.paciente = data;
         this.progresoM = data['progreso'];
         // console.log('data', this.progresoM);
@@ -90,7 +90,7 @@ export class ProgresoComponent implements OnInit {
         canSubmit = false;
     }
     if(canSubmit){
-      this.progresoService.registrarProgreso('5fc53fb84eb8c56e983df1cf', this.modeloProgreso.value);
+      this.progresoService.registrarProgreso(this.id_paciente, this.modeloProgreso.value);
       this.modeloProgreso.reset();
       this.getInfoPaciente();
       this.imcV.push(this.modeloProgreso.value.imc);

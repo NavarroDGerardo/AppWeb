@@ -64,7 +64,7 @@
 									</svg></span>
 								</div>
 								<div class="instagram-post-view">
-								  <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="modal" data-target="#modalQuickView">
+								  <span><svg width="1.9em" height="1.9em" viewBox="0 0 16 16" class="bi bi-eye-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg" data-toggle="modal" (click)="viewReceta(receta.nombre, receta.ingrediente, receta.descripcion, receta.imagen)" data-target="#modalQuickView">
 									  <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
 									  <path fill-rule="evenodd" d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
 									</svg></span>
@@ -92,23 +92,26 @@
 		  <div class="col col-carousel">
 
 			  <div class="image-receta">
-				  <img class="d-block "
-					src="../../../../../assets/img/receta_6.jpg"
-					alt="receta">
+				<img class="d-block " [src]="'http://localhost:3000/' + imagenReceta" alt="receta">
 				</div>
 
 		  </div>
 		  <div class= "description">
-			  <div class= "description-text" >
-			<h2 i18n="RecetaPop">
-			  Receta
-			</h2>
-			<p i18n="RecetaDescripcion" *ngFor="let item of recetas">
-			  Ingredientes
-			  <!-- {{item.ingrediente}} -->
-			</p>
-		  </div>
-			</div>
+            <div class= "description-text" >
+				<h2 style="font-weight: bold;" i18n="RecetaPop">
+					{{nombreReceta}}
+				</h2>
+				<hr>
+				<p style="text-decoration: underline; font-weight: bold;" i18n="RecetaDescripcion">
+					Ingredientes
+				</p>
+				<p>{{IngredienteReceta}}</p>
+				<p style="text-decoration: underline; font-weight: bold;">
+					descripcion
+				</p>
+				<p>{{descripcionReceta}}</p>
+				</div>
+          </div>
 		  </div>
 		</div>
 	  </div>

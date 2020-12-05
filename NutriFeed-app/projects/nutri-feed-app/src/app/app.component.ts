@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { animacionesAplicacion } from './Animaciones';
 import { AuthService } from '@auth0/auth0-angular';
+import { PacienteService } from '../app/module/service/paciente.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,11 @@ import { AuthService } from '@auth0/auth0-angular';
 })
 export class AppComponent {
   title = 'nutriFeed-app';
-
+  
   isLanding= false;
-
+  
+  constructor(public auth: AuthService, private pacienteService: PacienteService) { }
+  
    
   loggedIn = true;
   user: string= "";
@@ -31,10 +34,7 @@ export class AppComponent {
       this.emailT = user.email;
      console.log(this.emailT)
      this.isNutri=this.emailT.includes(this.substring);
-   
-    
-      /* user.uid => user id */
-      /* user.displayName => user displayName */
+      this.pacienteService.emailLoggeado = user.email; 
     })
    
   }
@@ -47,5 +47,4 @@ export class AppComponent {
       outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
     );
   }
-  constructor(public auth: AuthService) { }
 }

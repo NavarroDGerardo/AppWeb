@@ -52,19 +52,14 @@ export class DietaComponent implements OnInit {
     this.getPaciente();
   }
 
-  _id = "5fc53fb84eb8c56e983df1cf";
+  _id = "";
 
   getPaciente(){
-    this.pacienteService
-      .getPaciente(this._id)
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((data: any[]) => {
-        // console.log('la data', data);
+    this.pacienteService.getPacienteCorreo().pipe(takeUntil(this.destroy$)).subscribe((data: any[]) => {
+        this._id = data["_id"];
         let len = data['dieta'].length;
         this.paciente = data;
-        // console.log('cuenta', len);
         this.dieta = data['dieta'][len - 1];
-        // console.log('la dieta', this.dieta);
       });
   }
 
