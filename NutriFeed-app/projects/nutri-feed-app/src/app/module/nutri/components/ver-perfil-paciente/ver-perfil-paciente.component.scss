@@ -1,3 +1,5 @@
+@import "../../../../../styles/personalizacion";
+
 /*
 _________________________
 |						|
@@ -5,14 +7,14 @@ _________________________
 |						|
 -------------------------
 */
-.bg-light {
-	background-color: #ffff !important;
-	border: 0.5px solid #d9d9d9;
-}
 .navbar {
 	position: sticky;
 	top: 0;
 	z-index: 100;
+}
+.bg-light {
+	background-color: #ffff !important;
+	border: 0.5px solid #d9d9d9;
 }
 .navbar-brand {
 	position: absolute;
@@ -46,8 +48,6 @@ _________________________
 	width: 100%;
 }
 
-
-
 /*
 _________________________
 |						|
@@ -56,64 +56,63 @@ _________________________
 -------------------------
 */
 
- .container-fluid {
-	height: 100%;
+.container-fluid {
+	height: $full-size;
 }
 .drop {
 	display: none;
 }
 .container-perfil-info {
-	font-family: 'Raleway', sans-serif;
-	background-color: #ffff;
+	font-family: $font-family-raleway;
+	background-color: $white;
 	border: 0.5px solid #d9d9d9;
-	height: 200px;
+	height: $size-200;
 }
 .profile-photo {
-	position: relative;
-	top: 10%;
+	position: $relative;
+	top: $scale-10;
 	margin-left: 28px;
 	img {
-		border-radius: 50%;
+		border-radius: $scale-50;
 	}
 }
 .perfil-info {
-	position: relative;
+	position: $relative;
 	left: 29%;
 	bottom: 45%;
-	width: 50%;
+	width: $scale-50;
 	span {
 		font-size: 14px;
 	}
 }
 .bi-gear-fill {
-	position: relative;
+	position: $relative;
 	left: 73%;
 	bottom: 15%;
 }
 .info-data {
-	position: relative;
-	top: 20px;
+	position: $relative;
+	top: $size-20;
 	p {
 		display: inline;
-		padding-right: 20px;
+		padding-right: $size-20;
 	}
 }
 .btn-cerrar {
 	font-size: 12px;
 	width: 110px;
-	height: 30px;
-	background-color: rgb(84, 153, 98);
-	position: relative;
-	left: 75%;
+	height: $size-30;
+	background-color: $verde_nutrifeed;
+	position: $relative;
+	left: 85%;
 	bottom: 28%;
 }
-
 .menu-semanas {
 	height: 8%;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+	-webkit-box-align: $center;
+	-webkit-align-items: $center;
+	-ms-flex-align: $center;
+	align-items: $center;
 	color: #8e8e8e;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -133,21 +132,21 @@ _________________________
 	letter-spacing: 1px;
 	text-align: center;
 	span {
-		margin: 50px;
+		margin: $size-50;
 	}
 }
 a.semana {
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
+	-webkit-box-align: $center;
+	-webkit-align-items: $center;
+	-ms-flex-align: $center;
+	align-items: $center;
 	color: #8e8e8e;
 	color: rgba(var(--f52,142,142,142),1);
 	&:visited {
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
+		-webkit-box-align: $center;
+		-webkit-align-items: $center;
+		-ms-flex-align: $center;
+		align-items: $center;
 		color: #8e8e8e;
 		color: rgba(var(--f52,142,142,142),1);
 	}
@@ -156,8 +155,8 @@ a.semana {
 	margin-top: 12px;
 }
 .sidebar {
-	font-family: 'Raleway', sans-serif;
-	position: fixed;
+	font-family: $font-family-raleway;
+	position: $fixed;
 	overflow-x: hidden;
 	overflow-y: auto;
 	border-right: 0.5px solid #d9d9d9;
@@ -165,55 +164,78 @@ a.semana {
 }
 .nav-item {
 	a {
-		color: black;
+		color: $black;
 	}
 }
 .nav-pills {
 	.nav-link.active {
-		color: #fff;
-		background-color: rgb(84, 153, 98);
+		color: $white;
+		background-color: $verde_nutrifeed;
 	}
 	.show {
 		>.nav-link {
 			color: #fff;
-			background-color: rgb(84, 153, 98);
+			background-color: $verde_nutrifeed;
 		}
 	}
 }
 .modal-content {
-	font-family: 'Raleway', sans-serif;
+	font-family: $font-family-raleway;
 	background-color: #f2f2f2;
 	min-height: 450px;
 }
 .row-carousel {
-	margin-top: 60px;
+	margin-top: $size-60;
 }
 #carousel-thumb {
-	width: 80%;
+	width: $scale-80;
 }
 .description {
-	position: relative;
-	right: 10%;
-	margin-top: 20px;
-}
-.col-upload {
-	display: flex;
-	justify-content: center;
+	position: $relative;
+	right: $scale-10;
+	margin-top: $size-20;
 }
 
-
+.upload-container{
+	h1{
+		font-size: 25px;
+	}
+	h2{
+		font-size: 20px;
+		text-align: center;
+	}
+	h3{
+		font-size: 15px;
+	}
+}
+#myFile{
+	margin-bottom: 10px;
+}
+.titulo{
+	text-align: center;
+	border-bottom: 0.1px solid grey;
+	color: black;
+	margin-bottom: 15px;
+}
+.desc{
+	margin-bottom: 10px;
+	width: 100%;
+}
+.submit-comida{
+	margin-top: 10px;
+}
 /*
  _________________________
  |						|
- |		  Responsive  	|
+ |		Responsive  	|
  |						|
  -------------------------
  */
 @media (max-width: 767.98px) {
 	.drop {
 		display: block;
-		position: relative;
-		bottom: 30%;
+		position: $relative;
+		bottom: $scale-30;
 		left: 5%;
 		button {
 			font-size: 12px;
@@ -221,53 +243,54 @@ a.semana {
 	}
 	.profile-photo {
 		img {
-			height: 80px;
-			width: 80px;
+			height: $size-80;
+			width: $size-80;
 		}
 	}
 	.perfil-info {
-		position: relative;
+		position: $relative;
 		left: 42%;
 		bottom: 26%;
 		h4 {
-			font-size: 20px;
+			font-size: $size-20;
 		}
 	}
 	.bi-pencil-square {
-		position: relative;
-		top: 10%;
+		position: $relative;
+		top: $scale-10;
 		left: 88%;
 	}
 	.info-data {
-		position: relative;
-		top: 10px;
+		position: $relative;
+		top: $size-10;
 		font-size: 14px;
 		p {
 			display: inline;
-			padding-right: 10px;
+			padding-right: $size-10;
 		}
 	}
 	.bi-gear-fill {
-		position: relative;
+		position: $relative;
 		left: 58%;
-		bottom: 10%;
+		bottom: $scale-10;
 	}
 	.btn-cerrar {
 		font-size: 9px;
-		width: 95px;
+		width: $size-90;
 		height: 26px;
-		position: relative;
+		position: $relative;
 		bottom: 16%;
-		left: 44%;
+		left: 71%;
 	}
 	.menu-semanas {
-		height: 17%;
+		background-color: white;
+		height: 50px;
 		span {
 			margin: 5px;
 		}
 	}
 	.container-gallery {
-		margin-top: 10px;
+		margin-top: $size-10;
 	}
 	.row-gallery {
 		.column {
@@ -287,27 +310,27 @@ a.semana {
 		}
 	}
 	.description-text {
-		position: relative;
+		position: $relative;
 		top: 110%;
-		right: 40%;
+		right: $scale-40;
 	}
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
 	.perfil-info {
-		position: relative;
+		position: $relative;
 		left: 42%;
-		bottom: 50%;
+		bottom: $scale-50;
 	}
 	.bi-gear-fill {
 		left: 57%;
 		bottom: 10%;
 	}
 	.btn-cerrar {
-		font-size: 10px;
-		width: 100px;
+		font-size: $scale-10;
+		width: $size-100;
 		height: 29px;
 		bottom: 41%;
-		left: 57%;
+		left: 78%;
 	}
 	.menu-semanas {
 		height: 12%;
@@ -323,9 +346,9 @@ a.semana {
 		min-height: 350px;
 	}
 	.description {
-		position: relative;
+		position: $relative;
 		right: 4%;
-		margin-top: 10px;
+		margin-top: $size-10;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -334,21 +357,21 @@ a.semana {
 		bottom: 10%;
 	}
 	.btn-cerrar {
-		font-size: 10px;
-		width: 100px;
+		font-size: $scale-10;
+		width: $size-100;
 		height: 29px;
 		bottom: 41%;
-		left: 68%;
+		left: 84%;
 	}
 	.menu-semanas {
 		span {
-			margin: 40px;
+			margin: $size-40;
 		}
 	}
 }
 @media (min-width: 1445px) {
 	.profile-photo {
-		position: relative;
+		position: $relative;
 		left: 8%;
 		img {
 			width: 160px;
@@ -356,15 +379,15 @@ a.semana {
 		}
 	}
 	.perfil-info {
-		position: relative;
-		left: 30%;
-		bottom: 60%;
+		position: $relative;
+		left: $scale-30;
+		bottom: $scale-60;
 	}
 	.btn-cerrar {
-		font-size: 10px;
-		width: 100px;
+		font-size: $size-10;
+		width: $size-100;
 		height: 29px;
 		bottom: 42%;
-		left: 80%;
+		left: $size-90;
 	}
 }
