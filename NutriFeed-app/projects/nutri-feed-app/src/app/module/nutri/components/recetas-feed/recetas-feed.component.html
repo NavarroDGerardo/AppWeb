@@ -2,36 +2,8 @@
   <!-- Body de la app -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-4">
-        <div class="search-area">
-        <form [formGroup]="modeloBuscar" (ngSubmit)="buscarIngrediente()">
-            <div class="p-1 bg-light rounded  shadow-sm mb-4">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <button id="button-addon2" type="submit" class="btn btn-link">
-                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light" formControlName="buscar">
-                  <select name="tipo" id="tipo" class="tipo">
-                    <option value="nombre">Nombre</option>
-                    <option value="apellido">Hashtags</option>
-                    <option value="apellido">Ingrediente</option>
-                  </select>
-                </div>
-                
-              </div>
-              
-        </form>
-        
-    </div>
-    <div class="AgregarReceta">
-    <a routerLink="/nutri/registro-recetas" class="btn btn-primary addReceta">Agregar Receta</a>
-  </div>
-    </div>
+        <div class="col-md-2">
+        </div>
         <!-- Area principal de en medio-->
         <div class="col-md-8">
             <!-- Grid entro del area principal -->
@@ -81,7 +53,36 @@
                          </div>
                   </div>
                 <!-- Area de Search bar -->
-                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="search-area">
+                    <form [formGroup]="modeloBuscar" (ngSubmit)="buscarIngrediente()">
+                        <div class="p-1 bg-light rounded  shadow-sm mb-4">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <button id="button-addon2" type="submit" class="btn btn-link">
+                                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                                  </svg>
+                                </button>
+                              </div>
+                              <input type="search" placeholder="Buscar recetas" aria-describedby="button-addon2" class="form-control border-0 bg-light" formControlName="buscar">
+                              <select name="tipo" id="tipo" class="tipo">
+                                <option value="nombre">Nombre</option>
+                                <option value="apellido">Hashtags</option>
+                                <option value="apellido">Ingrediente</option>
+                              </select>
+                            </div>
+                            
+                          </div>
+                          
+                    </form>
+                    
+                </div>
+                <div class="AgregarReceta">
+                <a routerLink="/nutri/registro-recetas" class="btn btn-primary addReceta">Agregar Receta</a>
+              </div>
+                </div>
             </div>
 
         </div>
