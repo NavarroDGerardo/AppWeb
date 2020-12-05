@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Diario } from 'projects/nutri-feed-app/src/app/models/Diario';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { PacienteService } from '../../../service/paciente.service';
@@ -12,6 +13,7 @@ export class VerPerfilPacienteComponent implements OnInit {
   destroy$: Subject<boolean> = new Subject<boolean>();
 
   paciente:any;
+  diario: Diario[] = [];
 
   constructor(private pacienteService: PacienteService) {}
 
@@ -31,7 +33,24 @@ export class VerPerfilPacienteComponent implements OnInit {
       .subscribe((data: any[]) => {
         console.log('la data', data);
         this.paciente = data;
+        this.diario = data["diario"];
       });
+  }
+
+  iDesa = "";
+  iComida = "";
+  iCena = "";
+  dDesa = "";
+  dComida = "";
+  dCena = "";
+
+  desplegarInfo(iDesa: string, iComida: string, iCena: string, dDesa: string, dComida: string, dCena: string){
+    this.iDesa = iDesa;
+    this.iComida = iComida;
+    this.iCena = iCena;
+    this.dDesa = dDesa;
+    this.dComida = dComida;
+    this.dCena = dCena;
   }
 
   agregarDieta(){
