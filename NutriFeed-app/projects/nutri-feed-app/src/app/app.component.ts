@@ -4,6 +4,7 @@ import { animacionesAplicacion } from './Animaciones';
 import { AuthService } from '@auth0/auth0-angular';
 import { PacienteService } from '../app/module/service/paciente.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -35,6 +36,9 @@ export class AppComponent {
      console.log(this.emailT)
      this.isNutri=this.emailT.includes(this.substring);
       this.pacienteService.emailLoggeado = user.email;
+     
+      
+    
     })
 
   }
