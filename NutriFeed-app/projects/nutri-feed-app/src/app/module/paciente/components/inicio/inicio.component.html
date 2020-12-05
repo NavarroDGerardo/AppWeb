@@ -63,7 +63,7 @@
       </div>
 
       </div>
-      <a i18n="Cerrar sesión | Boton" routerLink="/" class="btn btn-lg btn-secondary btn-cerrar"> Cerrar sesión </a>
+      <a i18n="Cerrar sesión | Boton"  class="btn btn-lg btn-secondary btn-cerrar" (click)="logout()"> Cerrar sesión </a>
 
       <!-- Dropdown mes -->
   <div class="btn-group drop" >
@@ -106,14 +106,17 @@
 
              <!-- Profile Feed -->
       <div class="container-gallery">
-        <div *ngFor="let dia of diario" class="row row-gallery " id="gallery-1">
-            <div  style="margin-top: 25px;" class="col-4 col-sm-4 col-lg-4 column">
+        <div *ngFor="let dia of diario">
+            <div  style="margin-top: 10px;">
               <img class="w-100 h-100" [src]="'http://localhost:3000/' + dia.image_desayuno" (click)="desplegarInfo(dia.image_desayuno, dia.image_comida, dia.image_cena, dia.descripcion_desayuno, dia.descripcion_comida, dia.descripcion_cena )" data-toggle="modal" data-target="#modalComidas">
             </div>
         </div>
-        <div style="margin-top: 25px;"  class="col-4 col-sm-4 col-lg-4 column">
+        <div style="margin-top: 10px;">
           <img class="w-100 h-100" src="../../../../../assets/img/no-image.png" data-toggle="modal" data-target="#modalSubirC">
         </div>
+        <!--<div style="margin-top: 10px;">
+          <img class="w-100 h-100" src="../../../../../assets/img/no-image.png" data-toggle="modal" data-target="#modalSubirC">
+        </div>-->
       </div>
 
 
@@ -194,21 +197,26 @@ aria-hidden="true">
          <div class="row row-carousel">
            <div class="col col-upload">
              <!--Botones subir foto-->
-           <div class="upload-container">
-            <h1>Ingresar día en el Diario</h1>
-            <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
-              <input type="file" id="myFile" name="filename" (change)="onSelectedDesayuno($event)" formControlName='imgDesayuno' required>
-              <br><input type="file" id="myFile" name="filename" (change)="onSelectedComida($event)" formControlName='imgComida' required>
-              <br><input type="file" id="myFile" name="filename" (change)="onSelectedCena($event)" formControlName='imgCena'required>
-              <h3>Desayuno:</h3>
-              <input type="text" formControlName="desayuno" required/>
-              <h3>Comida:</h3>
-              <input type="text" formControlName="comida" required/>
-              <h3>Cena:</h3>
-              <input type="text" formControlName="cena" required/>
-              <br><input type="submit">
-            </form>
-           </div>
+            <div class="upload-container">
+              <div class="titulo">
+                <h1>Ingresar día en el Diario</h1>
+              </div>
+              <form [formGroup]='modeloDiario' (ngSubmit)="registrarDiario()">
+                <div class="archivos">
+                  <h2>¡Sube las fotografías de tus comidas!</h2>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedDesayuno($event)" formControlName='imgDesayuno' required><br>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedComida($event)" formControlName='imgComida' required><br>
+                  <input type="file" id="myFile" name="filename" (change)="onSelectedCena($event)" formControlName='imgCena'required>
+                </div>
+                <h3>Desayuno:</h3>
+                <input type="text" formControlName="desayuno"  class="desc" required/>
+                <h3>Comida:</h3>
+                <input type="text" formControlName="comida" class="desc" required/>
+                <h3>Cena:</h3>
+                <input type="text" formControlName="cena" class="desc" required/>
+                <br><input type="submit" class="submit-comida btn btn-success">
+              </form>
+            </div>
           </div>
            </div>
          </div>

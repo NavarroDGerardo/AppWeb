@@ -6,6 +6,7 @@ import { PacienteService } from '../app/module/service/paciente.service';
 import { TranslateService } from '@ngx-translate/core';
 import { ToastrService } from 'ngx-toastr';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -42,6 +43,9 @@ export class AppComponent {
      console.log(this.emailT)
      this.isNutri=this.emailT.includes(this.substring);
       this.pacienteService.emailLoggeado = user.email;
+     
+      
+    
     })
 
   }
