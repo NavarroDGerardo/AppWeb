@@ -4,6 +4,7 @@ import { Paciente } from '../../../../models/Paciente';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { PacienteService } from '../../../service/paciente.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-update-info-paciente',
@@ -43,7 +44,7 @@ export class UpdateInfoPacienteComponent implements OnInit {
     peso: [this.peso_actual, Validators.required]
   });
 
-  constructor( private formbuild: FormBuilder, private pacienteService: PacienteService) {
+  constructor( private formbuild: FormBuilder, private pacienteService: PacienteService, private toastr: ToastrService) {
   }
 
   ngOnInit(): void {
@@ -55,8 +56,17 @@ export class UpdateInfoPacienteComponent implements OnInit {
       });
   }
 
+  showToastExito(){
+    this.toastr.success('el paciente', 'Se actualizó con éxito');
+  }
+
+  showToastError(texto1:string, texto2:string){
+    this.toastr.error(texto2, texto1);
+  }
+
   actualizarDatosPaciente(){
     //console.log(this.modeloPaciente.value, this.pacienteService.id);
+    let actualizar = true;
     if(this.modeloPaciente.value.nombre != ""){
       this.paciente.nombre = this.modeloPaciente.value.nombre;
     }
@@ -64,7 +74,15 @@ export class UpdateInfoPacienteComponent implements OnInit {
       this.paciente.estado = this.modeloPaciente.value.estado;
     }
     if(this.modeloPaciente.value.correo != ""){
-      this.paciente.correo = this.modeloPaciente.value.correo;
+      if (!this.modeloPaciente.value.correo.includes('@')) {
+        this.showToastError(
+          'Correo incorrecto',
+          'revisa que sea un correo válido'
+        );
+        actualizar = false;
+      } else {
+        this.paciente.correo = this.modeloPaciente.value.correo;
+      }
     }
     if(this.modeloPaciente.value.edad != ""){
       this.paciente.edad = this.modeloPaciente.value.edad;
@@ -78,8 +96,13 @@ export class UpdateInfoPacienteComponent implements OnInit {
     if(this.modeloPaciente.value.peso != ""){
       this.paciente.peso_actual = this.modeloPaciente.value.peso;
     }
-    this.pacienteService.editarPaciente(this.paciente, this.pacienteService.id);
-    this.modeloPaciente.reset();
+    if (actualizar) {
+      this.pacienteService.editarPaciente(
+        this.paciente,
+        this.pacienteService.id
+      );
+      this.modeloPaciente.reset();
+      this.showToastExito();
+    }
   }
-
 }
