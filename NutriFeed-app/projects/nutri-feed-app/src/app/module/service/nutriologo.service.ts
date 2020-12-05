@@ -83,7 +83,7 @@ export class NutriologoService {
         } else {
           this.errorMessage = 'Hubo un error, estatus ' + error.status;
         }
-        alert(this.errorMessage);
+        // alert(this.errorMessage);
         // console.error(' error!', error);
       },
     });

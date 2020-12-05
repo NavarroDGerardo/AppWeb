@@ -34,17 +34,18 @@ function setRoutes(app: Express): void{
     }
     next();
   }); //funcion habilita el middleware
-  var jwtCheck = jwt({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  let jwtCheck = jwt({
     secret: jwks.expressJwtSecret({
-        cache: true,
-        rateLimit: true,
-        jwksRequestsPerMinute: 5,
-        jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
-  }),
-  audience: 'http://localhost:3000/',
-  issuer: 'https://dev-3hczp56w.us.auth0.com/',
-  algorithms: ['RS256']
-});
+      cache: true,
+      rateLimit: true,
+      jwksRequestsPerMinute: 5,
+      jwksUri: 'https://dev-3hczp56w.us.auth0.com/.well-known/jwks.json'
+    }),
+    audience: 'http://localhost:3000/',
+    issuer: 'https://dev-3hczp56w.us.auth0.com/',
+    algorithms: ['RS256'],
+  });
 
   router.route('/addUser').post(usuarioController.insert);
 

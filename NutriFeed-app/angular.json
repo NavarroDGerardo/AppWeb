@@ -29,7 +29,8 @@
             ],
             "styles": [
               "projects/nutri-feed-app/src/styles/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "projects/nutri-feed-app/src/styles.scss"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -106,7 +107,7 @@
               "projects/nutri-feed-app/src/favicon.ico",
               "projects/nutri-feed-app/src/assets"
             ],
-            "styles": ["projects/nutri-feed-app/src/styles/styles.scss"],
+            "styles": ["projects/nutri-feed-app/src/styles/styles.scss", "projects/nutri-feed-app/src/styles.scss"],
             "scripts": []
           }
         },
